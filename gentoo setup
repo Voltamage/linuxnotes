@@ -75,9 +75,9 @@ Safe CFLAGS: https://wiki.gentoo.org/wiki/Safe_CFLAGS
 ___
 The MAKEOPTS variable defines how many parallel compilations should occur when installing a package. A good choice is the number of CPUs (or CPU cores) in the system plus one, but this guideline isn't always perfect.
 PLUS ONE???
-___(edited)
+___
 The default sync-uri variable value listed above will determine a mirror location based on a rotation. This will aid in easing bandwidth stress on Gentoo's infrastructure and will provide a fail-safe in case a specific mirror is offline. It is recommended the default URI is retained unless a local, private Portage mirror will be used.
-___(edited)
+___
 When selecting the initial profile, make sure to use profile corresponding to the same version as the one initially used by stage3 (e.g. 13.0). Each new profile version is announced through a news item containing migration instructions. Make sure to read it and follow them before switching to a newer profile.
 ___
 Please avoid the /usr/share/zoneinfo/Etc/GMT* timezones as their names do not indicate the expected zones. For instance, GMT-8 is in fact GMT+8.
