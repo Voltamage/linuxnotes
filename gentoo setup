@@ -5,6 +5,7 @@ https://www.youtube.com/watch?v=13HUQ0LHI7g&list=PLo8tBedUXjpafCCx4fO7P-UbHerBLy
 https://wiki.gentoo.org/wiki/LVM
 https://wiki.gentoo.org/wiki/SSD
 https://raptorcs.com/TALOSIILITE/
+https://www.youtube.com/watch?v=IzUf-wFEirQ
 
 So here are the levels of enlightenment:
 He (the human, it is masculine), who just uses any distro with an easy desktop environment
@@ -118,3 +119,7 @@ heh
 also i suggest adding -fPIC, just because some libs require that
 
 I accidentally installed the bootloader to /boot instead of /boot/efi
+
+Maybe don't use march native, set compiler manually
+
+btrfs might be ok now
