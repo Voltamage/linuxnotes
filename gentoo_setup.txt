@@ -71,7 +71,21 @@ Make sure to write down the names of the kernel and initrd so we can properly se
 sandboxed firefox with firejail
 disable intel management engine by mobo flashing
 
-COMMANDS_
+COMMANDS RUN FROM SYSTEMRESCUECD
+dhcpcd
+ping -c 3 www.gentoo.org
+cd /root/Downloads/
+wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso
+wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso.CONTENTS
+wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
+gpg --keyserver hkp://pool.sks-keyservers.net:80 --recv-key 2D182910
+gpg --fingerprint 2D182910
+
+	check to see if this matches with the whole key provided on https://wiki.gentoo.org/wiki/Project:RelEng
+
+gpg --verify install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
+awk '/SHA512 HASH/{getline;print}' install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc | sha512sum --check
+
 
 fdisk -l
 
