@@ -1,39 +1,11 @@
-Links:
-https://www.youtube.com/watch?v=13HUQ0LHI7g&list=PLo8tBedUXjpafCCx4fO7P-UbHerBLy-ku
-https://raptorcs.com/TALOSIILITE/
-https://www.youtube.com/watch?v=IzUf-wFEirQ
-https://www.howtoforge.com/linux_lvm
-
-So here are the levels of enlightenment:
-He (the human, it is masculine), who just uses any distro with an easy desktop environment
-He, who uses his favorite distro because of cool stuff it has
-He, who uses his favorite distro with an own window manager
-He, who uses his favorite distro with an own window manager and an own kernel
-He, who uses gentoo
-He, who uses no distro at all, his own kernel and window manager
-He who regularly uses no graphical desktop at all, with a tiling window manager, his own kernel and his own distro
-
 stage3 tar and the DIGESTS.ASC are the two files that you want
 
-providing that you are not using the minimal install cd, instead of the SystemRescueCD
-
 Official Mirrors: https://www.gentoo.org/downloads/mirrors/#US
-
-if doing a uefi install, boot directly to the uefi option, not just the usb
 
 choose gentoo over gentoo-nofb, because you probably wont get proper display text without framebuffer. maybe gentoo-nofb is for headless install with ssh or something
 
 doscsi
 This loads support for most SCSI controllers. This is also a requirement for booting most USB devices, as they use the SCSI subsystem of the kernel.
-
-network device name might not necessarily be eth0, especially the more recent you get. I'm enp6s0
-
-can i use parted instead of fdisk even thought i am going to be using MBR instead of GPT?
-
-15-partition limit for SCSI and SATA unless the disk uses GPT labels.
-Probably not going to exceed this though.
-
-Should make a BIOS partition, this is the small one 1-2 mb, not the /boot partition
 
 Changing the partition type (i.e. GPT vs MBR?) will remove all partitions from the disk. All data on the disk will be lost.
 To have the disk with MBR layout, use mklabel msdos.
@@ -56,20 +28,10 @@ With fdisk and MBR, Start from sector 2048 as a fail-safe in case the boot loade
 
 !!! When using ext2, ext3, or ext4 on a small partition (less than 8GB), then the file system must be created with the proper options to reserve enough inodes.  !!!
 
-If /tmp/ needs to reside on a separate partition, be sure to change its permissions after mounting:
-root #chmod 1777 /mnt/gentoo/tmp
-This also holds for /var/tmp.
-
 Time:
 Motherboards that do not include a Real-Time Clock (RTC) should be configured to automatically sync the system clock with a time server. This is also true for systems that do include a RTC, but have a failed battery.
 
-instead of ntpd for time, use ntpdc, but ntpcd is depreciated, use ntpq?
-also, how to exit ntpq?
-the command is "quit"
-
 Automatic time sync comes at a price. It will reveal the system's IP address and related network information to a time server (in the case of the example below ntp.org). Users with privacy concerns should be aware of this before setting the system clock using the below method.
-
-use Multilib tarball, most customizable. 64bit always unless necessary fallback.
 
 We will not explain all possible optimization options. To understand them all, read the GNU Online Manual(s) or the gcc info page (info gcc - only works on a working Linux system). The make.conf.example file itself also contains lots of examples and information; don't forget to read it too.
 https://gcc.gnu.org/onlinedocs/
@@ -87,14 +49,7 @@ When selecting the initial profile, make sure to use profile corresponding to th
 
 Please avoid the /usr/share/zoneinfo/Etc/GMT* timezones as their names do not indicate the expected zones. For instance, GMT-8 is in fact GMT+8.
 
-Extended reading:
-https://wiki.gentoo.org/wiki/Localization/Guide
-https://wiki.gentoo.org/wiki/UTF-8
-
 Make sure that every driver that is vital to the booting of the system (such as SCSI controller, etc.) is compiled in the kernel and not as a module, otherwise the system will not be able to boot completely.
-
-https://www.reddit.com/r/Gentoo/comments/3i141w/now_that_portage_is_using_git_how_do_i_git_pull/
-Git is faster than rsync apparently
 
 Don't compile the file system that is used for the root filesystem as module, otherwise the Gentoo system will not be able to mount the partition.
 
@@ -103,21 +58,6 @@ definitely the profile
 possibly the stage 3
 
 We will use the kernel and initrd when configuring a boot loader later in this document. Write down the names of the kernel and initrd as this information is used when the boot loader configuration file is edited.
-
-enp6s0 is my name apparently
-
-just -march -O2 and youll be fine
-
-CFLAGS="-march=native -02 -pipe"
-CXXFLAGS="${CFLAGS}"
-
-you know you can just use -mnative
-heh
-also i suggest adding -fPIC, just because some libs require that
-
-I accidentally installed the bootloader to /boot instead of /boot/efi
-
-Maybe don't use march native, set compiler manually
 
 btrfs might be ok now
 
