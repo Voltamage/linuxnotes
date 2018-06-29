@@ -1,18 +1,44 @@
-stage3 tar and the DIGESTS.ASC are the two files that you want
+https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
+https://wiki.gentoo.org/wiki/Sakaki%27s_EFI_Install_Guide/Preparing_the_LUKS-LVM_Filesystem_and_Boot_USB_Key
+https://wiki.gentoo.org/wiki/Complete_Handbook
 
-Official Mirrors: https://www.gentoo.org/downloads/mirrors/#US
+https://www.gentoo.org/downloads/mirrors/#US
 
-choose gentoo over gentoo-nofb, because you probably wont get proper display text without framebuffer. maybe gentoo-nofb is for headless install with ssh or something
+https://wiki.gentoo.org/wiki/LVM
+https://wiki.gentoo.org/wiki/SSD
 
-doscsi
-This loads support for most SCSI controllers. This is also a requirement for booting most USB devices, as they use the SCSI subsystem of the kernel.
+https://wiki.gentoo.org/wiki/EFI_System_Partition
+https://wiki.gentoo.org/wiki/EFI_stub_kernel
 
-Changing the partition type (i.e. GPT vs MBR?) will remove all partitions from the disk. All data on the disk will be lost.
-To have the disk with MBR layout, use mklabel msdos.
-Make sure to not make any mistakes here - parted executes the changes immediately
+https://0x00sec.org/t/why-is-gentoo-so-great-linux/1423
+https://www.howtoforge.com/linux_lvm
+https://www.youtube.com/watch?v=13HUQ0LHI7g&list=PLo8tBedUXjpafCCx4fO7P-UbHerBLy-ku
+https://www.youtube.com/watch?v=IzUf-wFEirQ
 
-do i want to do MiB to MB conversion for llinux? Windows seems to recognize MiB for flat numbers, so i believe that is solved
-(Looks like it)
+is hardened linux depreciated
+can i do full lvm with EFI Stub
+can i transfer to usb fully with gentoo
+how and where do my kernel bakcups go
+what's the difference between /tmp and tmp/var
+	do i mount both
+	what permissions do i have to specify for these
+	If /tmp/ needs to reside on a separate partition, be sure to change its permissions after mounting:
+	root #chmod 1777 /mnt/gentoo/tmp
+	root #chmod 1777 /mnt/gentoo/var/tmp
+
+should i make my grub partition ext2 or ext4
+what's the difference between vfat and fat32 and which one should i be using for my boot partition
+what do i need to compile into the kernel so it is compatible with LVM
+what ssd trimming do i need to do
+i believe grub2 cant read LVM, nor can brub 1.0
+if tmpfs uses 50% ram, does that mean that i can only use 8gb of ram in other places?
+is btrfs worth it
+how do my chunk sizes work on a disk, and is 4MiB good and/or regular
+does gentoo read MB or MiB by default
+why do my partitions change size externally when i format them in different filetypes
+should i still do auto time sync with hardened stage 3
+	do time syncs in case battery fails and privacy isn't that big of an issue
+
 (parted)print
 Model: Virtio Block Device (virtblk)
 Disk /dev/sda: 20480MiB 
@@ -24,41 +50,23 @@ Number  Start     End       Size    File system   Name      Flags
 3       131MiB    643MiB    512MiB                swap
 4       643MiB    20479MiB  19836MiB              rootfs
 
-With fdisk and MBR, Start from sector 2048 as a fail-safe in case the boot loader does not detect this partition as being available for its use.
+17.1 profile is experimental
 
-!!! When using ext2, ext3, or ext4 on a small partition (less than 8GB), then the file system must be created with the proper options to reserve enough inodes.  !!!
+CFLAGS="-fPIC -march=ivybridge -02 -pipe"
+CXXFLAGS="${CFLAGS}"
+	-mnative is an optional replacement for -march=native here
+	a better option would be to use -march=ivybridge
 
-Time:
-Motherboards that do not include a Real-Time Clock (RTC) should be configured to automatically sync the system clock with a time server. This is also true for systems that do include a RTC, but have a failed battery.
+install bootloader to /boot/efi
+set how many cores to utilize when compiling
+	MAKEOPTS="-j5"
+make sure your profile version matches with your stage 3 version
+enp6s0 is my network name
+use official rsync atm since git mirror hack
+use Multilib tarball because 32 & 64 bit support
+When making an ext* partition less than 8GB, format with the proper options to reserve enough inodes
+make sure to compile the options for your desired root filesystem into the kernel, and not loaded as a module, otherwise Gentoo will not be able to boot
+	on that note make sure that everything that is vital to the booting of your system is compiled in the kernel
+Make sure to write down the names of the kernel and initrd so we can properly set up the boot loader config later
 
-Automatic time sync comes at a price. It will reveal the system's IP address and related network information to a time server (in the case of the example below ntp.org). Users with privacy concerns should be aware of this before setting the system clock using the below method.
-
-We will not explain all possible optimization options. To understand them all, read the GNU Online Manual(s) or the gcc info page (info gcc - only works on a working Linux system). The make.conf.example file itself also contains lots of examples and information; don't forget to read it too.
-https://gcc.gnu.org/onlinedocs/
-
-Although the GCC optimization article has more information on how the various compilation options can affect a system, the Safe CFLAGS article may be a more practical place for beginners to start optimizing their systems.
-GCC Optimizations: https://wiki.gentoo.org/wiki/GCC_optimization
-Safe CFLAGS: https://wiki.gentoo.org/wiki/Safe_CFLAGS
-
-The MAKEOPTS variable defines how many parallel compilations should occur when installing a package. A good choice is the number of CPUs (or CPU cores) in the system plus one, but this guideline isn't always perfect.
-PLUS ONE???
-
-The default sync-uri variable value listed above will determine a mirror location based on a rotation. This will aid in easing bandwidth stress on Gentoo's infrastructure and will provide a fail-safe in case a specific mirror is offline. It is recommended the default URI is retained unless a local, private Portage mirror will be used.
-
-When selecting the initial profile, make sure to use profile corresponding to the same version as the one initially used by stage3 (e.g. 13.0). Each new profile version is announced through a news item containing migration instructions. Make sure to read it and follow them before switching to a newer profile.
-
-Please avoid the /usr/share/zoneinfo/Etc/GMT* timezones as their names do not indicate the expected zones. For instance, GMT-8 is in fact GMT+8.
-
-Make sure that every driver that is vital to the booting of the system (such as SCSI controller, etc.) is compiled in the kernel and not as a module, otherwise the system will not be able to boot completely.
-
-Don't compile the file system that is used for the root filesystem as module, otherwise the Gentoo system will not be able to mount the partition.
-
-17.1 is experiemental
-definitely the profile
-possibly the stage 3
-
-We will use the kernel and initrd when configuring a boot loader later in this document. Write down the names of the kernel and initrd as this information is used when the boot loader configuration file is edited.
-
-btrfs might be ok now
-
-github repos possibly compromised, rsync has some form of verification i guess.
+fdisk -l
