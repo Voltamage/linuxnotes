@@ -1,8 +1,12 @@
 https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
 https://wiki.gentoo.org/wiki/Sakaki%27s_EFI_Install_Guide/Preparing_the_LUKS-LVM_Filesystem_and_Boot_USB_Key
+https://wiki.gentoo.org/wiki/Complete_Handbook
+
 https://wiki.gentoo.org/wiki/LVM
 https://wiki.gentoo.org/wiki/SSD
-https://wiki.gentoo.org/wiki/Complete_Handbook
+
+https://wiki.gentoo.org/wiki/EFI_System_Partition
+https://wiki.gentoo.org/wiki/EFI_stub_kernel
 
 is hardened linux depreciated
 can i do full lvm with EFI Stub
