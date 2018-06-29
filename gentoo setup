@@ -124,3 +124,5 @@ I accidentally installed the bootloader to /boot instead of /boot/efi
 Maybe don't use march native, set compiler manually
 
 btrfs might be ok now
+
+github repos possibly compromised, rsync has some form of verification i guess.
