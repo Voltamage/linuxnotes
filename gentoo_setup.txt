@@ -75,4 +75,42 @@ COMMANDS_
 
 fdisk -l
 
-fdisk /dev/sda && mkfs.ext4 /dev/sda1 && mkswap /dev/sda2 && swapon /dev/sda2 && mount /dev/sda1 /mnt/gentoo && cd /mnt/gentoo && links https:/ftp.gentoo.io/pub/gentoo/releases/amd64/currrent-stage3 && tar xvjpf stage3-*.tar.bz2 -- xattrs && nano -w /mnt/gentoo/etc/portage/make.conf && mount -t proc proc /mnt/gentoo/proc && mount --rbind /dev/mnt/gentoo/dev/ && mount --rbibd /sys/mnt/gentoo/sys && mount--make-rslave /mnt/gentoo/sys && cp -L /etc/resolv.conf /mnt/gentoo/etc/ && chroot /mnt/gentoo /bin/bash && source /etc/profile && export PS1="(chroot) $PS1" && mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf && emerge-webrsync && eselect profile set 15 && echo "America/Eastern" > /etc/timezone && locale-gen && env-update && source/etc/profile && export PS1="(chroot) $PS1" && emerge-av hardened-sources && cd /usr/src/linux && make menuconfig && make && make modules_install && make install && nano -w /etc/fstab && emerge -ab grub && grub2-install /dev/sda && grub2-mkconfig -o /boot/grub/grub.cfg && passwd && emerge -av netifrc && exit && reboot
+fdisk /dev/sda
+mkfs.ext4 /dev/sda1
+mkswap /dev/sda2
+swapon /dev/sda2
+mount /dev/sda1 /mnt/gentoo
+cd /mnt/gentoo
+links https:/ftp.gentoo.io/pub/gentoo/releases/amd64/currrent-stage3
+tar xvjpf stage3-*.tar.bz2 -- xattrs
+nano -w /mnt/gentoo/etc/portage/make.conf
+mount -t proc proc /mnt/gentoo/proc
+mount --rbind /dev/mnt/gentoo/dev/
+mount --rbibd /sys/mnt/gentoo/sys
+mount--make-rslave /mnt/gentoo/sys
+cp -L /etc/resolv.conf /mnt/gentoo/etc/
+chroot /mnt/gentoo /bin/bash
+source /etc/profile
+export PS1="(chroot) $PS1"
+mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
+emerge-webrsync
+eselect profile set 15
+echo "America/Eastern" > /etc/timezone
+locale-gen
+env-update
+source/etc/profile
+export PS1="(chroot) $PS1"
+emerge-av hardened-sources
+cd /usr/src/linux
+make menuconfig
+make
+make modules_install
+make install
+nano -w /etc/fstab
+emerge -ab grub
+grub2-install /dev/sda
+grub2-mkconfig -o /boot/grub/grub.cfg
+passwd
+emerge -av netifrc
+exit
+reboot
