@@ -85,7 +85,7 @@ gpg --fingerprint 2D182910
 
 gpg --verify install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
 awk '/SHA512 HASH/{getline;print}' install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc | sha512sum --check
-
+lsblk
 
 fdisk -l
 
