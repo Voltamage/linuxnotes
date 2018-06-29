@@ -72,6 +72,8 @@ sandboxed firefox with firejail
 disable intel management engine by mobo flashing
 
 COMMANDS RUN FROM SYSTEMRESCUECD
+date MMDDhhmmYYYY
+		UTC timezone
 dhcpcd
 ping -c 3 www.gentoo.org
 cd /root/Downloads/
@@ -94,6 +96,11 @@ dd if=/root/Downloads/install-amd64-minimal-20180415T214502Z.iso of=/dev/sdX bs=
 	
 passwd root
 		Input your desired password for SSH
+
+date MMDDhhmmYYYY
+		UTC timezone
+		
+
 
 fdisk -l
 
