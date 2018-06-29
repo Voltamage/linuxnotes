@@ -1,3 +1,9 @@
+https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
+https://wiki.gentoo.org/wiki/Sakaki%27s_EFI_Install_Guide/Preparing_the_LUKS-LVM_Filesystem_and_Boot_USB_Key
+https://wiki.gentoo.org/wiki/LVM
+https://wiki.gentoo.org/wiki/SSD
+https://wiki.gentoo.org/wiki/Complete_Handbook
+
 is hardened linux depreciated
 can i do full lvm with EFI Stub
 can i transfer to usb fully with gentoo
@@ -15,3 +21,5 @@ is btrfs worth it
 how do my chunk sizes work on a disk, and is 4MiB good and/or regular
 does gentoo read MB or MiB by default
 why do my partitions change size externally when i format them in different filetypes
+
+fdisk -l
