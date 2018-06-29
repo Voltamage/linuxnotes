@@ -1,9 +1,5 @@
 Links:
-https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
-https://wiki.gentoo.org/wiki/Sakaki%27s_EFI_Install_Guide/Preparing_the_LUKS-LVM_Filesystem_and_Boot_USB_Key
 https://www.youtube.com/watch?v=13HUQ0LHI7g&list=PLo8tBedUXjpafCCx4fO7P-UbHerBLy-ku
-https://wiki.gentoo.org/wiki/LVM
-https://wiki.gentoo.org/wiki/SSD
 https://raptorcs.com/TALOSIILITE/
 https://www.youtube.com/watch?v=IzUf-wFEirQ
 https://www.howtoforge.com/linux_lvm
