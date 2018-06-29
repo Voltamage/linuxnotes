@@ -80,12 +80,20 @@ wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/i
 wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
 gpg --keyserver hkp://pool.sks-keyservers.net:80 --recv-key 2D182910
 gpg --fingerprint 2D182910
-
-	check to see if this matches with the whole key provided on https://wiki.gentoo.org/wiki/Project:RelEng
+		check to see if this matches with the whole key provided on https://wiki.gentoo.org/wiki/Project:RelEng
 
 gpg --verify install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
 awk '/SHA512 HASH/{getline;print}' install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc | sha512sum --check
 lsblk
+lsblk
+		Compare results to find the correct sdXY info
+
+umount --verbose /dev/sdXY
+dd if=/root/Downloads/install-amd64-minimal-20180415T214502Z.iso of=/dev/sdX bs=8192k && sync
+		Boot into BIOS not UEFI Mode after this
+	
+passwd root
+		Input your desired password for SSH
 
 fdisk -l
 
