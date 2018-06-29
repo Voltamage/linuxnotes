@@ -1,20 +1,5 @@
-https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
-https://wiki.gentoo.org/wiki/Sakaki%27s_EFI_Install_Guide/Preparing_the_LUKS-LVM_Filesystem_and_Boot_USB_Key
-https://wiki.gentoo.org/wiki/Complete_Handbook
-
-https://www.gentoo.org/downloads/mirrors/#US
-
-https://wiki.gentoo.org/wiki/LVM
-https://wiki.gentoo.org/wiki/SSD
-
-https://wiki.gentoo.org/wiki/EFI_System_Partition
-https://wiki.gentoo.org/wiki/EFI_stub_kernel
-
-https://0x00sec.org/t/why-is-gentoo-so-great-linux/1423
-https://www.howtoforge.com/linux_lvm
-https://www.youtube.com/watch?v=13HUQ0LHI7g&list=PLo8tBedUXjpafCCx4fO7P-UbHerBLy-ku
-https://www.youtube.com/watch?v=IzUf-wFEirQ
-
+QUESTIONS
+---------
 is hardened linux depreciated
 can i do full lvm with EFI Stub
 can i transfer to usb fully with gentoo
@@ -25,7 +10,6 @@ what's the difference between /tmp and tmp/var
 	If /tmp/ needs to reside on a separate partition, be sure to change its permissions after mounting:
 	root #chmod 1777 /mnt/gentoo/tmp
 	root #chmod 1777 /mnt/gentoo/var/tmp
-
 should i make my grub partition ext2 or ext4
 what's the difference between vfat and fat32 and which one should i be using for my boot partition
 what do i need to compile into the kernel so it is compatible with LVM
@@ -39,6 +23,10 @@ why do my partitions change size externally when i format them in different file
 should i still do auto time sync with hardened stage 3
 	do time syncs in case battery fails and privacy isn't that big of an issue
 
+
+
+TIPS AND TRICKS AND NOTES
+-------------------------
 (parted)print
 Model: Virtio Block Device (virtblk)
 Disk /dev/sda: 20480MiB 
@@ -50,16 +38,14 @@ Number  Start     End       Size    File system   Name      Flags
 3       131MiB    643MiB    512MiB                swap
 4       643MiB    20479MiB  19836MiB              rootfs
 
-17.1 profile is experimental
-
 CFLAGS="-fPIC -march=ivybridge -02 -pipe"
 CXXFLAGS="${CFLAGS}"
 	-mnative is an optional replacement for -march=native here
 	a better option would be to use -march=ivybridge
-
 install bootloader to /boot/efi
 set how many cores to utilize when compiling
 	MAKEOPTS="-j5"
+17.1 profile is experimental
 make sure your profile version matches with your stage 3 version
 enp6s0 is my network name
 use official rsync atm since git mirror hack
@@ -71,39 +57,38 @@ Make sure to write down the names of the kernel and initrd so we can properly se
 sandboxed firefox with firejail
 disable intel management engine by mobo flashing
 
+
+
 COMMANDS RUN FROM SYSTEMRESCUECD
-date MMDDhhmmYYYY
-		UTC timezone
-dhcpcd
-ping -c 3 www.gentoo.org
-cd /root/Downloads/
-wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso
-wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso.CONTENTS
-wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
-gpg --keyserver hkp://pool.sks-keyservers.net:80 --recv-key 2D182910
-gpg --fingerprint 2D182910
-		check to see if this matches with the whole key provided on https://wiki.gentoo.org/wiki/Project:RelEng
-
-gpg --verify install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
-awk '/SHA512 HASH/{getline;print}' install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc | sha512sum --check
-lsblk
-lsblk
-		Compare results to find the correct sdXY info
-
-umount --verbose /dev/sdXY
-dd if=/root/Downloads/install-amd64-minimal-20180415T214502Z.iso of=/dev/sdX bs=8192k && sync
-		Boot into BIOS not UEFI Mode after this
-	
-passwd root
-		Input your desired password for SSH
-
-date MMDDhhmmYYYY
-		UTC timezone
-		
+--------------------------------
+	date MMDDhhmmYYYY
+UTC timezone
+	dhcpcd
+	ping -c 3 www.gentoo.org
+	cd /root/Downloads/
+	wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso
+	wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso.CONTENTS
+	wget -c http://distfiles.gentoo.org/releases/amd64/autobuilds/20180415T214502Z/install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
+	gpg --keyserver hkp://pool.sks-keyservers.net:80 --recv-key 2D182910
+	gpg --fingerprint 2D182910
+check to see if this matches with the whole key provided on https://wiki.gentoo.org/wiki/Project:RelEng
+	gpg --verify install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc
+	awk '/SHA512 HASH/{getline;print}' install-amd64-minimal-20180415T214502Z.iso.DIGESTS.asc | sha512sum --check
+	lsblk
+	lsblk
+Compare results to find the correct sdXY info
+	umount --verbose /dev/sdXY
+	dd if=/root/Downloads/install-amd64-minimal-20180415T214502Z.iso of=/dev/sdX bs=8192k && sync
+Boot into BIOS not UEFI Mode after this
+	passwd root
+Input your desired password for SSH
+	date MMDDhhmmYYYY
+UTC timezone
 
 
-fdisk -l
 
+EXAMPLE COMMANDS
+----------------
 fdisk /dev/sda
 mkfs.ext4 /dev/sda1
 mkswap /dev/sda2
@@ -143,3 +128,20 @@ passwd
 emerge -av netifrc
 exit
 reboot
+
+
+
+LINKS
+-----
+https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
+https://wiki.gentoo.org/wiki/Sakaki%27s_EFI_Install_Guide/Preparing_the_LUKS-LVM_Filesystem_and_Boot_USB_Key
+https://wiki.gentoo.org/wiki/Complete_Handbook
+https://wiki.gentoo.org/wiki/LVM
+https://wiki.gentoo.org/wiki/SSD
+https://wiki.gentoo.org/wiki/EFI_System_Partition
+https://wiki.gentoo.org/wiki/EFI_stub_kernel
+https://www.gentoo.org/downloads/mirrors/#US
+https://0x00sec.org/t/why-is-gentoo-so-great-linux/1423
+https://www.howtoforge.com/linux_lvm
+https://www.youtube.com/watch?v=13HUQ0LHI7g&list=PLo8tBedUXjpafCCx4fO7P-UbHerBLy-ku
+https://www.youtube.com/watch?v=IzUf-wFEirQ
