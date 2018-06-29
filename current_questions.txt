@@ -8,6 +8,8 @@ https://wiki.gentoo.org/wiki/SSD
 https://wiki.gentoo.org/wiki/EFI_System_Partition
 https://wiki.gentoo.org/wiki/EFI_stub_kernel
 
+https://0x00sec.org/t/why-is-gentoo-so-great-linux/1423
+
 is hardened linux depreciated
 can i do full lvm with EFI Stub
 can i transfer to usb fully with gentoo
