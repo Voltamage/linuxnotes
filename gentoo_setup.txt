@@ -68,5 +68,9 @@ When making an ext* partition less than 8GB, format with the proper options to r
 make sure to compile the options for your desired root filesystem into the kernel, and not loaded as a module, otherwise Gentoo will not be able to boot
 	on that note make sure that everything that is vital to the booting of your system is compiled in the kernel
 Make sure to write down the names of the kernel and initrd so we can properly set up the boot loader config later
+sandboxed firefox with firejail
+disable intel management engine by mobo flashing
+
+COMMANDS_
 
 fdisk -l
