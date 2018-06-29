@@ -1,1 +1,17 @@
-
+is hardened linux depreciated
+can i do full lvm with EFI Stub
+can i transfer to usb fully with gentoo
+how and where do my kernel bakcups go
+what's the difference between /tmp and tmp/var
+	do i mount both
+	what permissions do i have to specify for these
+should i make my grub partition ext2 or ext4
+what's the difference between vfat and fat32 and which one should i be using for my boot partition
+what do i need to compile into the kernel so it is compatible with LVM
+what ssd trimming do i need to do
+i believe grub2 cant read LVM, nor can brub 1.0
+if tmpfs uses 50% ram, does that mean that i can only use 8gb of ram in other places?
+is btrfs worth it
+how do my chunk sizes work on a disk, and is 4MiB good and/or regular
+does gentoo read MB or MiB by default
+why do my partitions change size externally when i format them in different filetypes
