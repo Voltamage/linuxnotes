@@ -14,7 +14,7 @@ should i make my grub partition ext2 or ext4
 whats the difference between vfat and fat32 and which one should i be using for my boot partition
 what do i need to compile into the kernel so it is compatible with LVM
 what ssd trimming do i need to do
-i believe grub2 cant read LVM, nor can brub 1.0
+i believe grub2 cant read LVM, nor can grub 1.0
 if tmpfs uses 50% ram, does that mean that i can only use 8gb of ram in other places?
 is btrfs worth it
 how do my chunk sizes work on a disk, and is 4MiB good and/or regular
@@ -61,6 +61,7 @@ disable intel management engine by mobo flashing
 
 COMMANDS RUN FROM SYSTEMRESCUECD
 --------------------------------
+H E L P E R _ P C
 	date MMDDhhmmYYYY
 UTC timezone
 	dhcpcd
@@ -79,13 +80,26 @@ check to see if this matches with the whole key provided on https://wiki.gentoo.
 Compare results to find the correct sdXY info
 	umount --verbose /dev/sdXY
 	dd if=/root/Downloads/install-amd64-minimal-20180415T214502Z.iso of=/dev/sdX bs=8192k && sync
+
+M A I N _ P C
 Boot into BIOS not UEFI Mode after this
 	passwd root
 Input your desired password for SSH
 	date MMDDhhmmYYYY
 UTC timezone
+	ifconfig
+Check network output to see name, I believe mine is enp6s0
+	ping -c 3 www.gentoo.org
+	sed -i 's/^#PermitRootLogin.*$/PermitRootLogin yes/' /etc/ssh/sshd_config
+	/etc/init.d/sshd start 
+	for K in /etc/ssh/ssh_host_*key.pub; do ssh-keygen -l -f "${K}"; done
 
-
+H E L P E R _ P C
+	sed -i '/^[^[:digit:]]*192.168.1.106[^[:digit:]]/d' ~/.ssh/known_hosts
+	ssh root@192.168.1.106 
+Of course, substitute whatever IP address you got back from ifconfig for 192.168.1.106 in the above commands.
+	screen 
+Run "TERM=xterm-color screen" if you get an error returned to you
 
 EXAMPLE COMMANDS
 ----------------
