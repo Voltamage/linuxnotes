@@ -56,7 +56,7 @@ make sure to compile the options for your desired root filesystem into the kerne
 Make sure to write down the names of the kernel and initrd so we can properly set up the boot loader config later
 sandboxed firefox with firejail
 disable intel management engine by mobo flashing
-
+load microcode in directly, and not as a module for the kernelvg
 
 
 COMMANDS RUN FROM SYSTEMRESCUECD
@@ -100,6 +100,9 @@ H E L P E R _ P C
 Of course, substitute whatever IP address you got back from ifconfig for 192.168.1.106 in the above commands.
 	screen 
 Run "TERM=xterm-color screen" if you get an error returned to you
+
+
+genkernel --lvm
 
 EXAMPLE COMMANDS
 ----------------
