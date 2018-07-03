@@ -156,7 +156,6 @@ https://wiki.gentoo.org/wiki/Complete_Handbook
 https://wiki.gentoo.org/wiki/LVM
 https://wiki.gentoo.org/wiki/SSD
 https://wiki.gentoo.org/wiki/EFI_System_Partition
-https://wiki.gentoo.org/wiki/EFI_stub_kernel
 https://www.gentoo.org/downloads/mirrors/#US
 https://0x00sec.org/t/why-is-gentoo-so-great-linux/1423
 https://www.howtoforge.com/linux_lvm
