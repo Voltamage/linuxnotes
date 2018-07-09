@@ -1,4 +1,6 @@
-https://github.com/Voltamage/notes/edit/master/gentoo_setup.txtQUESTIONS
+https://github.com/Voltamage/notes/edit/master/gentoo_setup.txt
+
+QUESTIONS
 ---------
 is hardened linux depreciated
 can i do full lvm with EFI Stub
