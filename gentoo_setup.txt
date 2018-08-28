@@ -115,6 +115,10 @@ set 3 lvm on
 emerge --ask sys-kernel/genkernel
 genkernel --lvm --install initramfs
 
+STUFF FROM HINA
+---------------
+tmpfs /tmp tmpfs defaults,noatime,nosuid,nodev,noexec,mode=1777,size=512M 0 0
+
 EXAMPLE COMMANDS
 ----------------
 fdisk /dev/sda
