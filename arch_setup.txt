@@ -1,1 +1,28 @@
-
+ls /sys/firmware/efi/efivars
+ping www.archlinux.org -c 3
+timedatectl set-ntp true
+    (check with timedatectl status)
+nano -w /etc/pacman.d/mirrorlist
+    (comment everything but a few american mirrors)
+pacstrap /mnt base base-devel
+genfstab -U /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+hwclock --systohc
+nano -w /etc/locale.gen 
+    (uncomment en_US.UTF-8 UTF-8)
+locale-gen
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+echo arch > /etc/hostname
+nano -w /etc/hosts
+    (127.0.0.1	localhost
+     ::1		localhost
+     127.0.1.1	arch.localdomain	arch)
+systemctl enable dhcpcd
+timedatectl set-ntp true
+pacman -S grub os-prober intel-ucode
+grub-install --recheck --target=i386-pc /dev/sdX
+grub-mkconfig -o /boot/grub/grub.cfg
+exit
+umount -R /mnt
+reboot
