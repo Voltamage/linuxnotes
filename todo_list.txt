@@ -5,3 +5,5 @@ menu theming
 convert to openrc
 youtube-dl good command
 display config save
+windows vm
+vim
