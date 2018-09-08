@@ -7,3 +7,5 @@ youtube-dl good command
 display config save
 windows vm
 vim
+vpn and torrenter
+drive mounting
