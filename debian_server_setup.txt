@@ -5,19 +5,24 @@ defaults: user:root
           password: odroid
 
 apt-get update && apt-get upgrade && apt-get dist-upgrade
-setup-odroid
 apt-get install console-setup keyboard-configuration
 dpkg-reconfigure locales
 dpkg-reconfigure keyboard-configuration
 dpkg-reconfigure tzdata
-sudo passwd root
+passwd
+nano -w /etc/hostname
+reboot
+apt-get install ranger neofetch sudo
 
-change hostname
-create new user
+adduser voltamage
+nano -w /etc/sudoers
+add line voltamage  ALL=(ALL:ALL) ALL under the line that says root
+exit and log back in as voltamage
 
-sudo apt-get install ranger neofetch sudo
 nano -w ~/.bashrc
 add
 # Custom commands
 neofetch
 to the bottom
+
+sudo apt-get --purge autoremove setup-odroid mc vim
