@@ -16,8 +16,7 @@ apt-get install ranger neofetch sudo
 
 adduser voltamage
 nano -w /etc/sudoers
-add line voltamage  ALL=(ALL:ALL) ALL under the line that says root
-exit and log back in as voltamage
+          voltamage  ALL=(ALL:ALL) ALL
 
 nano -w ~/.bashrc
 add
@@ -33,8 +32,6 @@ rm 1
 mklabel gpt
 mkpart data ext4 0% 100%
 align-check opt 1
-
-quit parted
 
 lsblk
 sudo mkfs.ext4 /dev/sda1
