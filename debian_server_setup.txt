@@ -12,7 +12,7 @@ dpkg-reconfigure tzdata
 passwd
 nano -w /etc/hostname
 reboot
-apt-get install ranger neofetch sudo
+apt-get install ranger neofetch sudo hdparm
 
 adduser voltamage
 nano -w /etc/sudoers
@@ -37,6 +37,7 @@ lsblk
 sudo mkfs.ext4 /dev/sda1
 
 edit fstab
+sudo blkid
 sudo nano -w /etc/fstab
 UUID      /mount    /filesystem         /defaults           0         1
 
@@ -47,3 +48,12 @@ sudo cp /etc/samba/smb.conf /etc/samba/smb.conf_backup
 sudo nano -w /etc/samba/smb.conf
 sudo systemctl restart smbd
 sudo smbclient -L localhost
+
+sudo hdparm -I /dev/sda | grep level
+sudo nano -w /etc/hdparm.conf
+
+/dev/disk/by-uuid/DISKUUID {
+    spindown_time = 0
+}
+
+sudo hdparm -C /dev/sda
