@@ -45,6 +45,7 @@ UUID      /mount    /filesystem         /defaults           0         1
 
 sudo apt-get install samba
 sudo apt-get install smbclient
+sudo systemctl status smbd
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf_backup
 sudo nano -w /etc/samba/smb.conf
 sudo systemctl restart smbd
