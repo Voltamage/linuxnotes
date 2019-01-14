@@ -26,3 +26,16 @@ neofetch
 to the bottom
 
 sudo apt-get --purge autoremove setup-odroid mc vim
+
+lsblk
+cat /sys/block/sda/queue/optimal_io_size 33553920
+cat /sys/block/sda/alignment_offset 0
+cat /sys/block/sda/queue/physical_block_size 4096
+
+(33553920 + 0)/4096 = 8192
+
+sudo parted -a optimal /dev/sda
+mklabel gpt
+unit mib
+mkpart primary 0% 100%
+name 1 data
