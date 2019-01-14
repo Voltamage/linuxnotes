@@ -1,13 +1,21 @@
 https://oph.mdrjr.net/meveric/images/Stretch/Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
+use SD Card Formatter to format
 use etcher.io to burn
+defaults: user:root
+          password: odroid
 
 apt-get update && apt-get upgrade && apt-get dist-upgrade
 setup-odroid
 apt-get install console-setup keyboard-configuration
+dpkg-reconfigure locales
 dpkg-reconfigure keyboard-configuration
 dpkg-reconfigure tzdata
+sudo passwd root
 
-sudo apt-get install ranger neofetch
+change hostname
+create new user
+
+sudo apt-get install ranger neofetch sudo
 nano -w ~/.bashrc
 add
 # Custom commands
