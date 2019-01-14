@@ -2,6 +2,10 @@ https://oph.mdrjr.net/meveric/images/Stretch/Debian-Stretch-1.0~RC2-20180403-XU3
 use etcher.io to burn
 
 apt-get update && apt-get upgrade && apt-get dist-upgrade
+setup-odroid
+apt-get install console-setup keyboard-configuration
+dpkg-reconfigure keyboard-configuration
+dpkg-reconfigure tzdata
 
 sudo apt-get install ranger neofetch
 nano -w ~/.bashrc
