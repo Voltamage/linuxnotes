@@ -29,10 +29,12 @@ sudo apt-get --purge autoremove setup-odroid mc vim
 
 lsblk
 sudo parted -a optimal /dev/sda
+rm 1
 mklabel gpt
-mkpart primary 0% 100%
-name 1 data
+mkpart data ext4 0% 100%
+align-check opt 1
 
 quit parted
 
+lsblk
 sudo mkfs.ext4 /dev/sda1
