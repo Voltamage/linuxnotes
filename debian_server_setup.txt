@@ -71,4 +71,8 @@ sudo usermod -a -G server serveradmin
 sudo mkdir /server
 sudo chown -R serveradmin:server /server
 sudo chmod -R 600 /server
+sudo mkdir /server/archive
+sudo chown -R serveradmin:server /server/archive
+sudo chmod -R 640 /server/archive
+sudo nano -w /etc/fstab
 mkdir -m 640 /server/archive
