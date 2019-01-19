@@ -12,7 +12,7 @@ dpkg-reconfigure tzdata
 passwd
 nano -w /etc/hostname
 reboot
-apt-get install ranger neofetch sudo hdparm
+apt-get install ranger neofetch sudo hdparm smartmontools
 
 adduser voltamage
 nano -w /etc/sudoers
@@ -34,7 +34,7 @@ mkpart data ext4 0% 100%
 align-check opt 1
 
 lsblk
-sudo mkfs.ext4 /dev/sda1
+sudo mkfs.ext4 -m 0 /dev/sda1
 
 edit fstab
 sudo blkid
