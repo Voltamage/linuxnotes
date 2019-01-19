@@ -75,9 +75,9 @@ sudo pdbedit -w -L
 
 sudo mkdir /server
 sudo chown -R serveradmin:server /server
-sudo chmod -R 600 /server
+sudo chmod -R 770 /server
 sudo mkdir /server/archive
 
 sudo chown -R serveradmin:server /server/archive
-sudo chmod -R 640 /server/archive
+sudo chmod -R 770 /server/archive
 sudo nano -w /etc/fstab
