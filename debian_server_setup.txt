@@ -65,14 +65,19 @@ sudo smartctl -d sat -i /dev/sda
 sudo groupadd server
 sudo adduser serveradmin
 sudo usermod -a -G server serveradmin
+sudo smbpasswd -a
+
 sudo adduser serverguest
 sudo usermod -a -G server serveradmin
+sudo smbpasswd -a
+
+sudo pdbedit -w -L
 
 sudo mkdir /server
 sudo chown -R serveradmin:server /server
 sudo chmod -R 600 /server
 sudo mkdir /server/archive
+
 sudo chown -R serveradmin:server /server/archive
 sudo chmod -R 640 /server/archive
 sudo nano -w /etc/fstab
-mkdir -m 640 /server/archive
