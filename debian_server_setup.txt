@@ -39,7 +39,7 @@ sudo mkfs.ext4 /dev/sda1
 edit fstab
 sudo blkid
 
-sudo smartctl -d sat -i /dev/sda
+
 sudo nano -w /etc/fstab
 UUID      /mount    /filesystem         /defaults           0         1
 
@@ -59,3 +59,5 @@ sudo nano -w /etc/hdparm.conf
 }
 
 sudo hdparm -C /dev/sda
+
+sudo smartctl -d sat -i /dev/sda
