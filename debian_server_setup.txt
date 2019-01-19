@@ -62,5 +62,10 @@ sudo hdparm -C /dev/sda
 
 sudo smartctl -d sat -i /dev/sda
 
-adduser serveradmin
-mkdir -m 640 /server
+sudo groupadd server
+sudo adduser serveradmin
+sudo usermod -a -G server serveradmin
+sudo adduser serverguest
+sudo usermod -a -G server serveradmin
+
+mkdir -m 640 /server/archive
