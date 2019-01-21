@@ -12,7 +12,7 @@ dpkg-reconfigure tzdata
 passwd
 nano -w /etc/hostname
 reboot
-apt-get install ranger neofetch sudo hdparm smartmontools
+apt-get install ranger neofetch sudo hdparm smartmontools lm-sensors
 
 adduser voltamage
 nano -w /etc/sudoers
@@ -76,8 +76,10 @@ sudo pdbedit -w -L
 sudo mkdir /server
 sudo chown -R serveradmin:server /server
 sudo chmod -R 750 /server
-sudo mkdir /server/archive
 
+sudo mkdir /server/archive
 sudo chown -R serveradmin:server /server/archive
 sudo chmod -R 750 /server/archive
 sudo nano -w /etc/fstab
+
+
