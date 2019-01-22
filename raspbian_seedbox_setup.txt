@@ -1,0 +1,3 @@
+minimal distro
+log2ram
+pihole
