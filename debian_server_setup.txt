@@ -12,7 +12,9 @@ dpkg-reconfigure tzdata
 passwd
 nano -w /etc/hostname
 reboot
-apt-get install ranger neofetch sudo hdparm smartmontools lm-sensors
+apt-get install ranger neofetch sudo hdparm smartmontools aria2
+
+also install youtube-dl and log2ram
 
 adduser voltamage
 nano -w /etc/sudoers
