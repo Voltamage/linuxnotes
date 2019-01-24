@@ -1,62 +1,99 @@
-#UPDATE
-#--update
-
-#FILEPATH
+#FILEPATHS
 #-o "/server/archive/Video/test/channels/%(uploader)s/%(upload_date)s %(title)s %(height)sx%(fps)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
 #PLAYLIST 
 #-o "/server/archive/Video/test/playlists/%(playlist_title)s %(playlist_uploader)s/%(autonumber)s %(upload_date)s %(title)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
 #NSFW
 #-o "/server/archive/Video/test/%(extractor_key)s/%(title)s %(height)s/%(title)s %(height)s %(extractor)s.%(ext)s"
 
--o "/server/archive/Video/test/%(upload_date)s %(title)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
---format bestvideo+bestaudio/best
-
-#FILES
---write-description
---write-all-thumbnails
-
-#SUBTITLES
---write-sub
---sub-lang en
---convert-subs vtt
-
---add-metadata
-
 #OPTIONS
+--update
 --ignore-errors
+--no-mark-watched
+
+#NETWORK OPTIONS
+--force-ipv4
+
+#GEO RESTRICTION
+--geo-bypass
+
+#VIDEO SELECTION
+--no-playlist
+#--yes-playlist
+#--download-archive "/server/archive/Video/youtube/youtube_channels_url.txt"
+
+#DOWNLOAD OPTIONS
+#--limit-rate 7M
+--playlist-reverse
+--hls-use-mpegts
+#--external-downloader aria2c
+#--external-downloader-args "--file-allocation=falloc --min-split-size=1M --split=16 --max-connection-per-server=16"
+
+#FILESYSTEM OPTIONS
+#--batch-file "/server/archive/Video/youtube/youtube_channels.txt"
+-o "/server/archive/Video/test/%(upload_date)s %(title)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
+--autonumber-start 1
 --restrict-filenames
 --no-overwrites
+--no-continue
+--write-description
+--cookies "/server/archive/Video/youtube/cookies.txt"
+
+#THUMBNAIL IMAGES
+--write-all-thumbnails
+
+#VERBOSITY / SIMULATION OPTIONS
 --console-title
+#--verbose
 --no-call-home
 
-#PLAYLIST
-#--playlist-reverse
---no-playlist
+#WORKAROUNDS
 
-#ARCHIVE
-#--download-archive "/server/archive/Video/youtube/youtube_channels_url.txt"
-#--batch-file "/server/archive/Video/youtube/youtube_channels.txt"
+#VIDEO FORMAT
+--format bestvideo+bestaudio/best
+#--format bestaudio/best
+#--list-formats
+
+#SUBTITLE OPTIONS
+--write-sub
+#--write-auto-sub
+#--list-subs
+--sub-lang en
+
+
+#AUTHENTICATION OPTIONS
+#--netrc
+
+#POST PROCESSING OPTIONS
+#--extract-audio
+#--audio-format best
+#--audio-format mp3
+#--audio-quality 0
+#--embed-thumbnail
+--add-metadata
+--xattrs
+--fixup detect_or_warn
+--prefer-ffmpeg
+#--exec
+--convert-subs vtt
 
 #special characters / subtitle MKV
 https://www.youtube.com/watch?v=xW4hI_METac
 
 #broken filename on windows MP4
-https://www.youtube.com/watch?v=GAxWyaSWwcg#
+#https://www.youtube.com/watch?v=GAxWyaSWwcg#
 
 #double folder
-#https://www.youtube.com/watch?v=Xrh-AfAz-34
+https://www.youtube.com/watch?v=Xrh-AfAz-34
 
 #very long
-#https://www.youtube.com/watch?v=pZKsUq78Y-E
+https://www.youtube.com/watch?v=pZKsUq78Y-E
 
 #no description
-#https://www.youtube.com/watch?v=nTJuwdupOMY
+https://www.youtube.com/watch?v=nTJuwdupOMY
 
-#4k webm
+#4k WEBM
 https://www.youtube.com/watch?v=VppjX4to9s4
 
-#mox funky symbol for metadata
-https://www.youtube.com/watch?v=4ItTileySJA
+#special character channel name
+#https://www.youtube.com/watch?v=PptxE8nvqBE
 
-#--external-downloader aria2c
-#--external-downloader-args "--file-allocation=falloc --min-split-size=1M --split=16 --max-connection-per-server=16"
