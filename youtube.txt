@@ -9,17 +9,18 @@
 #-o "/server/archive/Video/test/%(extractor_key)s/%(title)s %(height)s/%(title)s %(height)s %(extractor)s.%(ext)s"
 
 -o "/server/archive/Video/test/%(upload_date)s %(title)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
+--format bestvideo+bestaudio/best
 
 #FILES
 --write-description
-#--write-info-json
+--write-all-thumbnails
 
+#SUBTITLES
 --write-sub
 --sub-lang en
---convert-subs lrc
+--convert-subs vtt
 
---write-all-thumbnails
---format bestvideo+bestaudio/best
+--add-metadata
 
 #OPTIONS
 --ignore-errors
@@ -36,20 +37,26 @@
 #--download-archive "/server/archive/Video/youtube/youtube_channels_url.txt"
 #--batch-file "/server/archive/Video/youtube/youtube_channels.txt"
 
-#special characters / subtitle
+#special characters / subtitle MKV
 https://www.youtube.com/watch?v=xW4hI_METac
+
+#broken filename on windows MP4
+https://www.youtube.com/watch?v=GAxWyaSWwcg#
 
 #double folder
 #https://www.youtube.com/watch?v=Xrh-AfAz-34
-
-#broken filename on windows
-#https://www.youtube.com/watch?v=GAxWyaSWwcg
 
 #very long
 #https://www.youtube.com/watch?v=pZKsUq78Y-E
 
 #no description
-https://www.youtube.com/watch?v=nTJuwdupOMY
+#https://www.youtube.com/watch?v=nTJuwdupOMY
+
+#4k webm
+https://www.youtube.com/watch?v=VppjX4to9s4
+
+#mox funky symbol for metadata
+https://www.youtube.com/watch?v=4ItTileySJA
 
 #--external-downloader aria2c
 #--external-downloader-args "--file-allocation=falloc --min-split-size=1M --split=16 --max-connection-per-server=16"
