@@ -1,5 +1,3 @@
-#sudo find /server/archive/Video/youtube/channels -empty -delete
-
 #OPTIONS
 --ignore-errors
 --no-mark-watched
@@ -12,13 +10,12 @@
 
 #VIDEO SELECTION
 --no-playlist
-#--download-archive "/server/archive/configs/youtube-dl/youtube_channels_url.txt"
+--download-archive "/server/archive/configs/youtube-dl/youtube_channels_url.txt"
 
 #FILESYSTEM OPTIONS
 --batch-file "/server/archive/configs/youtube-dl/youtube_channels.txt"
 -o "/server/archive/Video/youtube/channels/%(uploader)s/%(upload_date)s %(title)s %(height)sp/%(upload_date)s %(title)s %(height)sp%(fps)s %(uploader)s.%(ext)s"
 
---autonumber-start 1
 --restrict-filenames
 --no-overwrites
 --continue
@@ -44,27 +41,3 @@
 --fixup detect_or_warn
 --prefer-ffmpeg
 --convert-subs vtt
-
-#special characters / subtitle MKV
-https://www.youtube.com/watch?v=xW4hI_METac
-
-#broken filename on windows MP4
-https://www.youtube.com/watch?v=GAxWyaSWwcg#
-
-#double folder
-https://www.youtube.com/watch?v=Xrh-AfAz-34
-
-#very long
-https://www.youtube.com/watch?v=pZKsUq78Y-E
-
-#no description
-https://www.youtube.com/watch?v=nTJuwdupOMY
-
-#4k WEBM
-https://www.youtube.com/watch?v=VppjX4to9s4
-
-#special character channel name
-https://www.youtube.com/watch?v=PptxE8nvqBE
-
-#short regular
-https://www.youtube.com/watch?v=Il7rOAUetfw
