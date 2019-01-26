@@ -1,12 +1,6 @@
-#FILEPATHS
-#-o "/server/archive/Video/test/channels/%(uploader)s/%(upload_date)s %(title)s %(height)sx%(fps)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
-#PLAYLIST 
-#-o "/server/archive/Video/test/playlists/%(playlist_title)s %(playlist_uploader)s/%(autonumber)s %(upload_date)s %(title)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
-#NSFW
-#-o "/server/archive/Video/test/%(extractor_key)s/%(title)s %(height)s/%(title)s %(height)s %(extractor)s.%(ext)s"
+#sudo find /server/archive/Video/youtube/channels -empty -delete
 
 #OPTIONS
---update
 --ignore-errors
 --no-mark-watched
 
@@ -18,69 +12,44 @@
 
 #VIDEO SELECTION
 --no-playlist
-#--yes-playlist
-#--download-archive "/server/archive/Video/youtube/youtube_channels_url.txt"
-
-#DOWNLOAD OPTIONS
-#--limit-rate 7M
---playlist-reverse
---hls-use-mpegts
-#--external-downloader aria2c
-#--external-downloader-args "--file-allocation=falloc --min-split-size=1M --split=16 --max-connection-per-server=16"
+#--download-archive "/server/archive/configs/youtube-dl/youtube_channels_url.txt"
 
 #FILESYSTEM OPTIONS
-#--batch-file "/server/archive/Video/youtube/youtube_channels.txt"
--o "/server/archive/Video/test/%(upload_date)s %(title)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
+--batch-file "/server/archive/configs/youtube-dl/youtube_channels.txt"
+-o "/server/archive/Video/youtube/channels/%(uploader)s/%(upload_date)s %(title)s %(height)sp/%(upload_date)s %(title)s %(height)sp%(fps)s %(uploader)s.%(ext)s"
+
 --autonumber-start 1
 --restrict-filenames
 --no-overwrites
---no-continue
+--continue
 --write-description
---cookies "/server/archive/Video/youtube/cookies.txt"
 
 #THUMBNAIL IMAGES
 --write-all-thumbnails
 
 #VERBOSITY / SIMULATION OPTIONS
 --console-title
-#--verbose
 --no-call-home
-
-#WORKAROUNDS
 
 #VIDEO FORMAT
 --format bestvideo+bestaudio/best
-#--format bestaudio/best
-#--list-formats
 
 #SUBTITLE OPTIONS
 --write-sub
-#--write-auto-sub
-#--list-subs
 --sub-lang en
 
-
-#AUTHENTICATION OPTIONS
-#--netrc
-
 #POST PROCESSING OPTIONS
-#--extract-audio
-#--audio-format best
-#--audio-format mp3
-#--audio-quality 0
-#--embed-thumbnail
 --add-metadata
 --xattrs
 --fixup detect_or_warn
 --prefer-ffmpeg
-#--exec
 --convert-subs vtt
 
 #special characters / subtitle MKV
 https://www.youtube.com/watch?v=xW4hI_METac
 
 #broken filename on windows MP4
-#https://www.youtube.com/watch?v=GAxWyaSWwcg#
+https://www.youtube.com/watch?v=GAxWyaSWwcg#
 
 #double folder
 https://www.youtube.com/watch?v=Xrh-AfAz-34
@@ -95,5 +64,7 @@ https://www.youtube.com/watch?v=nTJuwdupOMY
 https://www.youtube.com/watch?v=VppjX4to9s4
 
 #special character channel name
-#https://www.youtube.com/watch?v=PptxE8nvqBE
+https://www.youtube.com/watch?v=PptxE8nvqBE
 
+#short regular
+https://www.youtube.com/watch?v=Il7rOAUetfw
