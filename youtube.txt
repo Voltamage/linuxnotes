@@ -2,9 +2,6 @@
 --ignore-errors
 --no-mark-watched
 
-#NETWORK OPTIONS
---force-ipv4
-
 #GEO RESTRICTION
 --geo-bypass
 
