@@ -11,7 +11,7 @@
 
 #FILESYSTEM OPTIONS
 --batch-file "/server/archive/configs/youtube-dl/youtube_channels.txt"
--o "/server/archive/Video/youtube/channels/%(uploader)s/%(upload_date)s %(title)s %(height)sp/%(upload_date)s %(title)s %(height)sp%(fps)s %(uploader)s.%(ext)s"
+-o "/server/archive/Video/youtube/channels/%(uploader)s/%(upload_date)s %(title)s %(height)sx%(fps)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
 
 --restrict-filenames
 --no-overwrites
