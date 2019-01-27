@@ -7,19 +7,19 @@
 
 #VIDEO SELECTION
 --no-playlist
---download-archive "/server/archive/configs/youtube-dl/youtube_channels_url.txt"
+#--download-archive "/server/archive/configs/youtube-dl/archives/youtube_channels_url.txt"
 
 #FILESYSTEM OPTIONS
---batch-file "/server/archive/configs/youtube-dl/youtube_channels.txt"
+--batch-file "/server/archive/configs/youtube-dl/lists/youtube_channels.txt"
 -o "/server/archive/Video/youtube/channels/%(uploader)s/%(upload_date)s %(title)s %(height)sx%(fps)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
 
---restrict-filenames
 --no-overwrites
 --continue
 --write-description
+--restrict-filenames
 
 #THUMBNAIL IMAGES
---write-all-thumbnails
+--write-thumbnail
 
 #VERBOSITY / SIMULATION OPTIONS
 --console-title
@@ -34,7 +34,6 @@
 
 #POST PROCESSING OPTIONS
 --add-metadata
---xattrs
 --fixup detect_or_warn
 --prefer-ffmpeg
 --convert-subs vtt
