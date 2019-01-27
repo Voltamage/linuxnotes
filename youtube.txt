@@ -7,7 +7,7 @@
 
 #VIDEO SELECTION
 --no-playlist
-#--download-archive "/server/archive/configs/youtube-dl/archives/youtube_channels_url.txt"
+--download-archive "/server/archive/configs/youtube-dl/archives/youtube_channels_url.txt"
 
 #FILESYSTEM OPTIONS
 --batch-file "/server/archive/configs/youtube-dl/lists/youtube_channels.txt"
