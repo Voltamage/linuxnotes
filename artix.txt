@@ -1,4 +1,5 @@
+sudo pacman -Syy
 sudo pacman -Rns qpdfview vlc falkon
+sudo rm /etc/artix-release
 sudo pacman -Syy
 sudo pacman -Syu
-sudo rm /etc/artix-release
