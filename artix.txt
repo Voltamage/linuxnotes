@@ -1,1 +1,5 @@
-
+sudo pacman -Rns qpdfview
+sudo pacman -Rns vlc
+sudo pacman -Syy
+sudo pacman -Syu
+sudo rm /etc/artix-release
