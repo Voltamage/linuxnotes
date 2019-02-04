@@ -14,7 +14,7 @@ nano -w /etc/hostname
 reboot
 apt-get install ranger neofetch sudo hdparm smartmontools aria2 attr
 
-also install youtube-dl and log2ram
+also install youtube-dl log2ram and gotop
 
 adduser voltamage
 nano -w /etc/sudoers
@@ -78,4 +78,7 @@ sudo chmod -R 750 /server
 
 sudo nano -w /etc/fstab
 
-
+git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
+/tmp/gotop/scripts/download.sh
+sudo mv ~/gotop /usr/local/bin
+sudo rm -rf /tmp/gotop
