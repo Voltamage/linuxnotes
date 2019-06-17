@@ -26,6 +26,7 @@ dpkg-reconfigure locales
 dpkg-reconfigure keyboard-configuration
           i dont know why this ^ does nothing
 dpkg-reconfigure tzdata
+          i would want 'US/Pacific-New'
 passwd
 nano -w /etc/hostname
 reboot
