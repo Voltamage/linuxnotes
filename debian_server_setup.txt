@@ -1,10 +1,13 @@
 https://oph.mdrjr.net/meveric/images/Stretch/Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
 download the other files as well, and run this to verify
 
-md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 && sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512 && gpg --verify Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
+          md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 && sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512 && gpg --verify Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
 
-use SD Card Formatter to format
-use etcher.io to burn
+lsblk to check which dev is the sd card
+then run 
+          sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
+to zero out the sd card
+
 defaults: user:root
           password: odroid
 
