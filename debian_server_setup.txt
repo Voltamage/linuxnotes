@@ -1,3 +1,4 @@
+https://forum.odroid.com/viewtopic.php?f=96&t=30552
 https://oph.mdrjr.net/meveric/images/Stretch/Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
 download the other files as well, and run this to verify
 
@@ -7,6 +8,8 @@ lsblk to check which dev is the sd card
 then run 
           sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
 to zero out the sd card
+then to write out the file to the sd card, cd into the file directory and run
+          sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdd oflag=sync status=progress 
 
 defaults: user:root
           password: odroid
