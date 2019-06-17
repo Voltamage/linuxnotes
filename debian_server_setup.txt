@@ -9,8 +9,13 @@ then run
           sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
 to zero out the sd card
 then to write out the file to the sd card, cd into the file directory and run
-          sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdd oflag=sync status=progress 
+          sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdX oflag=sync status=progress
 i didn't modify the write size, so the disk has less chance of getting errors, though for larger disk images this can become a pain
+or just install etcher and do it, because gparrted shows unknown disk label and i dont know why
+
+wait for system to boot, and then reboot
+then use ipscan to find it's ip address, then ssh in with the correct username such as
+ssh root@ipadress
 
 defaults: user:root
           password: odroid
