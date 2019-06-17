@@ -8,6 +8,7 @@ lsblk to check which dev is the sd card
 then run 
           sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
 to zero out the sd card
+use gparted to apply gpt partition table
 then to write out the file to the sd card, cd into the file directory and run
           sudo dd bs=4M if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdd oflag=sync status=progress 
 i didn't modify the write size, so the disk has less chance of getting errors, though for larger disk images this can become a pain
