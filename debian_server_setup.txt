@@ -24,6 +24,7 @@ apt-get update && apt-get upgrade && apt-get dist-upgrade
 apt-get install console-setup keyboard-configuration
 dpkg-reconfigure locales
 dpkg-reconfigure keyboard-configuration
+          i dont know why this ^ does nothing
 dpkg-reconfigure tzdata
 passwd
 nano -w /etc/hostname
