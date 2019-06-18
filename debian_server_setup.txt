@@ -48,6 +48,9 @@ so you can disconnect and then log back in as user and not root
 TO SEARCH FOR PACKAGES
           apt-cache search packagename
 
+MANPAGES
+          sudo apt-get install man-db
+
 RANGER
           sudo apt-get install ranger
 ranger fix hidden files
