@@ -42,6 +42,7 @@ nano -w /etc/sudoers
 
 type "exit" so you can disconnect and then log back in as user and not root
 
+
 install these later
 hdparm smartmontools aria2 attr youtube-dl log2ram and gotop
 
