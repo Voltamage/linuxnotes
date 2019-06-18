@@ -56,7 +56,9 @@ to the bottom
 install these later
 hdparm smartmontools aria2 attr youtube-dl log2ram and gotop
 
-
+apt-get install tmux
+          from now on, you can connect to this server by
+ssh user@ipaddress -t tmux a -t sessionname
 
 sudo apt-get --purge autoremove setup-odroid mc vim
 
