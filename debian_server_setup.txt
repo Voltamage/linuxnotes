@@ -159,6 +159,11 @@ sudo chmod 755 /usr/bin/youtube-dl
 ls -l /usr/bin/youtube-dl
 sudo rm -rf /usr/bin/youtube-dl
 
+apt-get install zsh
+sudo apt-get install zsh
+sudo nano -w /etc/passwd
+git clone https://github.com/zsh-users/zsh-autosuggestions /home/helix/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
 aria2 attr
 sudo apt-get --purge autoremove setup-odroid mc vim
 https://www.linuxquestions.org/questions/debian-26/how-do-i-get-apt-get-to-completely-uninstall-a-package-237772/
