@@ -114,16 +114,21 @@ sudo nano -w /etc/samba/smb.conf
 sudo systemctl restart smbd
 sudo smbclient -L localhost
 
+HDPARM
 sudo apt-get install hdparm
-sudo hdparm -I /dev/sda | grep level
+lsblk
+          to figure out which drive is the one we want to modify
+sudo hdparm -I /dev/sdX | grep level
+          we are using grep to find the advanced power management level
+sudo hdparm -B 255 -S 0 /dev/sda
+          -B this sets the power management level to off
+          -S this sets the spindown time to off
+
+udevadm info -n /dev/sda | grep ID_SERIAL_SHORT
 sudo nano -w /etc/hdparm.conf
-
-/dev/disk/by-uuid/DISKUUID {
-    spindown_time = 0
-}
-
-sudo hdparm -C /dev/sda
-
+          /dev/disk/by-uuid/DISKUUID {
+             spindown_time = 0
+          }
 sudo smartctl -d sat -i /dev/sda
 
 sudo groupadd server
