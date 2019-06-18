@@ -156,6 +156,7 @@ install these later
 apt-get install ffmpeg
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/bin/youtube-dl
 sudo chmod a+rx /usr/bin/youtube-dl
+sudo chmod 755 /usr/bin/youtube-dl
 
 aria2 attr
 sudo apt-get --purge autoremove setup-odroid mc vim
