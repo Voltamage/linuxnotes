@@ -153,5 +153,5 @@ sudo chown -R voltamage:server /server
 sudo chmod -R 750 /server
 
 install these later
-hdparm smartmontools aria2 attr youtube-dl
+aria2 attr youtube-dl
 sudo apt-get --purge autoremove setup-odroid mc vim
