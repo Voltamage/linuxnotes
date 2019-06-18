@@ -40,8 +40,8 @@ i liked "odroid-server"
 CREATING USER
           apt-get install sudo
           adduser helix
-nano -w /etc/sudoers
-helix  ALL=(ALL:ALL) ALL
+          nano -w /etc/sudoers
+          helix  ALL=(ALL:ALL) ALL
           exit
 so you can disconnect and then log back in as user and not root
 
@@ -49,24 +49,25 @@ TO SEARCH FOR PACKAGES
           apt-cache search packagename
 
 RANGER
-sudo apt-get install ranger
-          ranger fix hidden files
-ranger --copy-config=all
-nano -w /home/helix/.config/ranger/rc.conf
-          change set show_hidden to true
+          sudo apt-get install ranger
+ranger fix hidden files
+          ranger --copy-config=all
+          nano -w /home/helix/.config/ranger/rc.conf
+change set show_hidden to true
 
 NEOFETCH
-sudo apt-get install neofetch
-nano -w ~/.bashrc
+          sudo apt-get install neofetch
+          nano -w ~/.bashrc
 add
 # Custom commands
 neofetch
 to the bottom
 
 TMUX
-sudo apt-get install tmux
-          from now on, you can connect to this server by
-ssh user@ipaddress -t tmux a -t sessionname
+          sudo apt-get install tmux
+from now on, you can connect to this server by
+          ssh user@ipaddress -t tmux a -t sessionname
+you can make an alias for it as well with the server name for easy connection
 
 GOTOP
           sudo apt-get install git-core
@@ -76,18 +77,18 @@ GOTOP
           sudo rm -rf /tmp/gotop
 
 LOG2RAM
-sudo apt-get install curl
-curl -Lo log2ram.tar.gz https://github.com/azlux/log2ram/archive/master.tar.gz
-tar xf log2ram.tar.gz
-cd log2ram-master
-chmod +x install.sh && sudo ./install.sh
-cd ..
-rm -r log2ram-master
-rm log2ram.tar.gz
-sudo reboot now
-          log back in and check to see if it's working
-df -h
-mount
+          sudo apt-get install curl
+          curl -Lo log2ram.tar.gz https://github.com/azlux/log2ram/archive/master.tar.gz
+          tar xf log2ram.tar.gz
+          cd log2ram-master
+          chmod +x install.sh && sudo ./install.sh
+          cd ..
+          rm -r log2ram-master
+          rm log2ram.tar.gz
+          sudo reboot now
+log back in and check to see if it's working
+          df -h
+          mount
 
 FORMATTING DISK
           lsblk
@@ -101,10 +102,10 @@ FORMATTING DISK
           sudo mkfs.ext4 -m 0 /dev/sda1
           
 MOUNTING DISK
-sudo blkid
-          copy and paste uuid of your drive and paste in in fstab like so
-sudo nano -w /etc/fstab
-UUID      /server    /ext4         /rw,noatime           0         0
+          sudo blkid
+copy and paste uuid of your drive and paste in in fstab like so
+          sudo nano -w /etc/fstab
+          UUID      /server    /ext4         /rw,noatime           0         0
 
 
 sudo apt-get install samba smbclient
@@ -115,18 +116,19 @@ sudo systemctl restart smbd
 sudo smbclient -L localhost
 
 HDPARM
-sudo apt-get install hdparm
-lsblk
-          to figure out which drive is the one we want to modify
-sudo hdparm -I /dev/sdX | grep level
-          we are using grep to find the advanced power management level
-sudo hdparm -B 255 -S 0 /dev/sda
-          -B this sets the power management level to off
-          -S this sets the spindown time to off
-udevadm info -n /dev/sda
-udevadm info -n /dev/sda | grep ID_SERIAL_SHORT
-sudo nano -w /etc/udev/rules.d/69-hdparm.rules
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sda", ENV{ID_SERIAL_SHORT}=="JEG8HZKN", RUN+="/usr/bin/hdparm -B 255 -S 0 /dev/%k"
+          sudo apt-get install hdparm
+          lsblk
+to figure out which drive is the one we want to modify
+          sudo hdparm -I /dev/sdX | grep level
+we are using grep to find the advanced power management level
+          sudo hdparm -B 255 -S 0 /dev/sda
+-B this sets the power management level to off
+-S this sets the spindown time to off
+          udevadm info -n /dev/sda
+          udevadm info -n /dev/sda | grep ID_SERIAL_SHORT
+          sudo nano -w /etc/udev/rules.d/69-hdparm.rules
+          ACTION=="add", SUBSYSTEM=="block", KERNEL=="sda", ENV{ID_SERIAL_SHORT}=="copiedserial", RUN+="/usr/bin/hdparm -B 255 -S 0 /dev/%k"
+          
 sudo smartctl -d sat -i /dev/sda
 
 sudo groupadd server
