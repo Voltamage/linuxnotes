@@ -33,14 +33,17 @@ apt-get install rxvt-unicode-256color
 nano -w /etc/hostname
           i liked "odroid-server"
 reboot
-apt-get install ranger neofetch sudo 
 
-install these later
-hdparm smartmontools aria2 attr youtube-dl log2ram and gotop
+apt-get install ranger neofetch sudo 
 
 adduser helix
 nano -w /etc/sudoers
           helix  ALL=(ALL:ALL) ALL
+
+type "exit" so you can disconnect and then log back in as user and not root
+
+install these later
+hdparm smartmontools aria2 attr youtube-dl log2ram and gotop
 
 nano -w ~/.bashrc
 add
