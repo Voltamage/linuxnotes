@@ -60,6 +60,23 @@ apt-get install tmux
           from now on, you can connect to this server by
 ssh user@ipaddress -t tmux a -t sessionname
 
+curl -Lo log2ram.tar.gz https://github.com/azlux/log2ram/archive/master.tar.gz
+tar xf log2ram.tar.gz
+cd log2ram-master
+chmod +x install.sh && sudo ./install.sh
+cd ..
+rm -r log2ram-master
+rm log2ram.tar.gz
+sudo reboot now
+          log back in and check to see if it's working
+df -h
+mount
+
+git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
+/tmp/gotop/scripts/download.sh
+sudo mv ~/gotop /usr/local/bin
+sudo rm -rf /tmp/gotop
+
 sudo apt-get --purge autoremove setup-odroid mc vim
 
 lsblk
@@ -111,16 +128,3 @@ sudo chown -R voltamage:server /server
 sudo chmod -R 750 /server
 
 sudo nano -w /etc/fstab
-
-git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
-/tmp/gotop/scripts/download.sh
-sudo mv ~/gotop /usr/local/bin
-sudo rm -rf /tmp/gotop
-
-curl -Lo log2ram.tar.gz https://github.com/azlux/log2ram/archive/master.tar.gz
-tar xf log2ram.tar.gz
-cd log2ram-master
-chmod +x install.sh && sudo ./install.sh
-cd ..
-rm -r log2ram-master
-rm log2ram.tar.gz
