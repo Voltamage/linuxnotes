@@ -50,10 +50,10 @@ TO SEARCH FOR PACKAGES
 
 RANGER
 sudo apt-get install ranger
-ranger fix hidden files
-          ranger --copy-config=all
-          nano -w /home/helix/.config/ranger/rc.conf
-change set show_hidden to true
+          ranger fix hidden files
+ranger --copy-config=all
+nano -w /home/helix/.config/ranger/rc.conf
+          change set show_hidden to true
 
 NEOFETCH
 sudo apt-get install neofetch
@@ -123,12 +123,10 @@ sudo hdparm -I /dev/sdX | grep level
 sudo hdparm -B 255 -S 0 /dev/sda
           -B this sets the power management level to off
           -S this sets the spindown time to off
-
+udevadm info -n /dev/sda
 udevadm info -n /dev/sda | grep ID_SERIAL_SHORT
-sudo nano -w /etc/hdparm.conf
-          /dev/disk/by-uuid/DISKUUID {
-             spindown_time = 0
-          }
+sudo nano -w /etc/udev/rules.d/69-hdparm.rules
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sda", ENV{ID_SERIAL_SHORT}=="JEG8HZKN", RUN+="/usr/bin/hdparm -B 255 -S 0 /dev/%k"
 sudo smartctl -d sat -i /dev/sda
 
 sudo groupadd server
