@@ -42,6 +42,14 @@ nano -w /etc/sudoers
 
 type "exit" so you can disconnect and then log back in as user and not root
 
+          ranger fix hidden files
+
+ranger --copy-config=all
+
+nano -w /home/helix/.config/ranger/rc.conf
+
+          change set show_hidden to true
+
 
 install these later
 hdparm smartmontools aria2 attr youtube-dl log2ram and gotop
