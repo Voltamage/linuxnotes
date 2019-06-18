@@ -45,6 +45,9 @@ helix  ALL=(ALL:ALL) ALL
           exit
 so you can disconnect and then log back in as user and not root
 
+TO SEARCH FOR PACKAGES
+          apt-cache search packagename
+
 RANGER
 apt-get install ranger
 ranger fix hidden files
@@ -104,8 +107,7 @@ sudo nano -w /etc/fstab
 UUID      /server    /ext4         /rw,noatime           0         0
 
 
-sudo apt-get install samba
-sudo apt-get install smbclient
+sudo apt-get install samba smbclient
 sudo systemctl status smbd
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf_backup
 sudo nano -w /etc/samba/smb.conf
