@@ -119,7 +119,7 @@ sudo systemctl restart smbd
 sudo smbclient -L localhost
 
 HDPARM
-          sudo apt-get install hdparm smartmontools hd-idle
+          sudo apt-get install hdparm smartmontools hd-idle idle3-tools
           lsblk
 to figure out which drive is the one we want to modify
           sudo hdparm -I /dev/sdX | grep level
