@@ -49,14 +49,14 @@ TO SEARCH FOR PACKAGES
           apt-cache search packagename
 
 RANGER
-apt-get install ranger
+sudo apt-get install ranger
 ranger fix hidden files
           ranger --copy-config=all
           nano -w /home/helix/.config/ranger/rc.conf
 change set show_hidden to true
 
 NEOFETCH
-apt-get install neofetch
+sudo apt-get install neofetch
 nano -w ~/.bashrc
 add
 # Custom commands
@@ -64,19 +64,19 @@ neofetch
 to the bottom
 
 TMUX
-apt-get install tmux
+sudo apt-get install tmux
           from now on, you can connect to this server by
 ssh user@ipaddress -t tmux a -t sessionname
 
 GOTOP
-          apt-get install git-core
+          sudo apt-get install git-core
           git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
           /tmp/gotop/scripts/download.sh
           sudo mv ~/gotop /usr/local/bin
           sudo rm -rf /tmp/gotop
 
 LOG2RAM
-apt-get install curl
+sudo apt-get install curl
 curl -Lo log2ram.tar.gz https://github.com/azlux/log2ram/archive/master.tar.gz
 tar xf log2ram.tar.gz
 cd log2ram-master
@@ -114,6 +114,7 @@ sudo nano -w /etc/samba/smb.conf
 sudo systemctl restart smbd
 sudo smbclient -L localhost
 
+sudo apt-get install hdparm
 sudo hdparm -I /dev/sda | grep level
 sudo nano -w /etc/hdparm.conf
 
