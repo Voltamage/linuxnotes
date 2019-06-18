@@ -28,15 +28,19 @@ dpkg-reconfigure keyboard-configuration
 dpkg-reconfigure tzdata
           i would want 'US/Pacific-New'
 passwd
+apt-get install rxvt-unicode-256color
+          so i can use nano, and also have a familiar terminal
 nano -w /etc/hostname
+          i liked "odroid-server"
 reboot
-apt-get install ranger neofetch sudo hdparm smartmontools aria2 attr
+apt-get install ranger neofetch sudo 
 
-also install youtube-dl log2ram and gotop
+install these later
+hdparm smartmontools aria2 attr youtube-dl log2ram and gotop
 
-adduser voltamage
+adduser helix
 nano -w /etc/sudoers
-          voltamage  ALL=(ALL:ALL) ALL
+          helix  ALL=(ALL:ALL) ALL
 
 nano -w ~/.bashrc
 add
