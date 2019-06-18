@@ -91,10 +91,9 @@ sudo mkfs.ext4 -m 0 /dev/sda1
 
 edit fstab
 sudo blkid
-
-
+          copy and paste uuid
 sudo nano -w /etc/fstab
-UUID      /mount    /filesystem         /defaults           0         1
+UUID      /server    /ext4         /rw,noatime           0         0
 
 sudo apt-get install samba
 sudo apt-get install smbclient
