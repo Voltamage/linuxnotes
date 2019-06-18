@@ -1,24 +1,23 @@
-https://forum.odroid.com/viewtopic.php?f=96&t=30552
-https://oph.mdrjr.net/meveric/images/Stretch/Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
-download the other files as well, and run this to verify
+          original link and direct download
+          https://forum.odroid.com/viewtopic.php?f=96&t=30552
+          https://oph.mdrjr.net/meveric/images/Stretch/Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
+          
+          download the other files as well, and run this to verify
+md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 && sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512 && gpg --verify Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
+lsblk
+          to check which dev is the sd card, then run 
+sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
+          to zero out the sd card
+          then to write out the file to the sd card, cd into the file directory and run
+sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdX oflag=sync status=progress
+          i didn't modify the write size, so the disk has less chance of getting errors, though for larger disk images this can become a pain
+          or just install etcher and do it, because gparrted shows unknown disk label and i dont know why
 
-          md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 && sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512 && gpg --verify Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
-
-lsblk to check which dev is the sd card
-then run 
-          sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
-to zero out the sd card
-then to write out the file to the sd card, cd into the file directory and run
-          sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdX oflag=sync status=progress
-i didn't modify the write size, so the disk has less chance of getting errors, though for larger disk images this can become a pain
-or just install etcher and do it, because gparrted shows unknown disk label and i dont know why
-
-wait for system to boot, and then reboot
-then use ipscan to find it's ip address, then ssh in with the correct username such as
+          wait for system to boot, and then reboot
+          then use ipscan on the workstation to find the server's ip address, then ssh in with the correct username such as
 ssh root@ipadress
-
-defaults: user:root
-          password: odroid
+          defaults: user:root
+                    password: odroid
 
 apt-get update && apt-get upgrade && apt-get dist-upgrade
 apt-get install console-setup keyboard-configuration
@@ -40,21 +39,19 @@ adduser helix
 nano -w /etc/sudoers
           helix  ALL=(ALL:ALL) ALL
 
-type "exit" so you can disconnect and then log back in as user and not root
+exit
+          so you can disconnect and then log back in as user and not root
 
           ranger fix hidden files
 ranger --copy-config=all
 nano -w /home/helix/.config/ranger/rc.conf
           change set show_hidden to true
-          
+
 nano -w ~/.bashrc
 add
 # Custom commands
 neofetch
 to the bottom
-
-install these later
-hdparm smartmontools aria2 attr youtube-dl log2ram and gotop
 
 apt-get install tmux
           from now on, you can connect to this server by
@@ -77,6 +74,8 @@ git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
 sudo mv ~/gotop /usr/local/bin
 sudo rm -rf /tmp/gotop
 
+install these later
+hdparm smartmontools aria2 attr youtube-dl
 sudo apt-get --purge autoremove setup-odroid mc vim
 
 lsblk
