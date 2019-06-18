@@ -110,13 +110,24 @@ copy and paste uuid of your drive and paste in in fstab like so
           sudo nano -w /etc/fstab
           UUID      /server    /ext4         /rw,noatime           0         0
 
-
 sudo apt-get install samba smbclient
 sudo systemctl status smbd
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf_backup
 sudo nano -w /etc/samba/smb.conf
 sudo systemctl restart smbd
 sudo smbclient -L localhost
+
+sudo groupadd server
+
+sudo adduser serverguest
+sudo usermod -a -G server serverguest
+sudo smbpasswd -a
+
+sudo pdbedit -w -L
+
+sudo mkdir /server
+sudo chown -R voltamage:server /server
+sudo chmod -R 750 /server
 
 HDPARM
           sudo apt-get install hdparm smartmontools hd-idle idle3-tools
@@ -140,17 +151,7 @@ check drive state with
 
 sudo smartctl -d sat -i /dev/sda
 
-sudo groupadd server
 
-sudo adduser serverguest
-sudo usermod -a -G server serverguest
-sudo smbpasswd -a
-
-sudo pdbedit -w -L
-
-sudo mkdir /server
-sudo chown -R voltamage:server /server
-sudo chmod -R 750 /server
 
 install these later
 apt-get install ffmpeg
