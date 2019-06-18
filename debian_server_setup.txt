@@ -136,10 +136,13 @@ drive doesn't want to turn off power management, you will get 254 when checking 
 check drive state with 
           sudo hdparm -C /dev/sdX
           
-sudo systemctl enable --now hd-idle.service
+          sudo systemctl enable --now hd-idle.service
+          sudo smartctl -d sat -i /dev/sda
+          START_HD_IDLE=true
+          HD_IDLE_OPTS="-i 0 -a /dev/sda -i 600 -a /dev/disk/by-uuid/01CF0AC9AA5EAF70 -i 60
+
 sudo smartctl -d sat -i /dev/sda
-START_HD_IDLE=true
-HD_IDLE_OPTS="-i 0 -l /var/log/hd-idle.log"
+
 sudo groupadd server
 
 sudo adduser serverguest
