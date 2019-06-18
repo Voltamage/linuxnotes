@@ -176,3 +176,4 @@ check drive state with
           HD_IDLE_OPTS="-i 0 -a /dev/disk/by-uuid/DISKUUID -i 0"
 
 sudo smartctl -d sat -i /dev/sda
+smb://odroid-server/server
