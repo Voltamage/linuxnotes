@@ -34,7 +34,7 @@ nano -w /etc/hostname
           i liked "odroid-server"
 reboot
 
-apt-get install ranger neofetch sudo 
+apt-get install ranger neofetch sudo git-core curl
 
 adduser helix
 nano -w /etc/sudoers
