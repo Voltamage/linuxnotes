@@ -153,5 +153,6 @@ sudo chown -R voltamage:server /server
 sudo chmod -R 750 /server
 
 install these later
+apt-get install youtube-dl ffmpeg
 aria2 attr youtube-dl
 sudo apt-get --purge autoremove setup-odroid mc vim
