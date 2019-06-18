@@ -62,8 +62,8 @@ NEOFETCH
           sudo apt-get install neofetch
           nano -w ~/.bashrc
 add
-# Custom commands
-neofetch
+          # Custom commands
+          neofetch
 to the bottom
 
 TMUX
@@ -93,7 +93,7 @@ log back in and check to see if it's working
           df -h
           mount
 
-FORMATTING DISK
+FORMATTING DISK - COULD USE MORE NOTES
           lsblk
           sudo parted -a optimal /dev/sda
           rm 1
@@ -129,6 +129,32 @@ sudo mkdir /server
 sudo chown -R voltamage:server /server
 sudo chmod -R 750 /server
 
+install these later
+apt-get install ffmpeg
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/bin/youtube-dl
+sudo chmod 755 /usr/bin/youtube-dl
+ls -l /usr/bin/youtube-dl
+sudo rm -rf /usr/bin/youtube-dl
+
+apt-get install zsh
+sudo apt-get install zsh
+sudo nano -w /etc/passwd
+git clone https://github.com/zsh-users/zsh-autosuggestions /home/helix/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+
+
+
+
+
+
+
+
+install these later
+aria2 attr
+sudo apt-get --purge autoremove setup-odroid mc vim
+https://www.linuxquestions.org/questions/debian-26/how-do-i-get-apt-get-to-completely-uninstall-a-package-237772/
+https://chmod-calculator.com/
+
 HDPARM
           sudo apt-get install hdparm smartmontools hd-idle idle3-tools
           lsblk
@@ -150,22 +176,3 @@ check drive state with
           HD_IDLE_OPTS="-i 0 -a /dev/disk/by-uuid/DISKUUID -i 0"
 
 sudo smartctl -d sat -i /dev/sda
-
-
-
-install these later
-apt-get install ffmpeg
-sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/bin/youtube-dl
-sudo chmod 755 /usr/bin/youtube-dl
-ls -l /usr/bin/youtube-dl
-sudo rm -rf /usr/bin/youtube-dl
-
-apt-get install zsh
-sudo apt-get install zsh
-sudo nano -w /etc/passwd
-git clone https://github.com/zsh-users/zsh-autosuggestions /home/helix/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-
-aria2 attr
-sudo apt-get --purge autoremove setup-odroid mc vim
-https://www.linuxquestions.org/questions/debian-26/how-do-i-get-apt-get-to-completely-uninstall-a-package-237772/
-https://chmod-calculator.com/
