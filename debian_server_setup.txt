@@ -1,62 +1,79 @@
-          original link and direct download
-          https://forum.odroid.com/viewtopic.php?f=96&t=30552
-          https://oph.mdrjr.net/meveric/images/Stretch/Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
-          
-          download the other files as well, and run this to verify
-md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 && sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512 && gpg --verify Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
-lsblk
-          to check which dev is the sd card, then run 
-sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
-          to zero out the sd card
-          then to write out the file to the sd card, cd into the file directory and run
-sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdX oflag=sync status=progress
-          i didn't modify the write size, so the disk has less chance of getting errors, though for larger disk images this can become a pain
-          or just install etcher and do it, because gparrted shows unknown disk label and i dont know why
+LINKS
+original link and direct download
+https://forum.odroid.com/viewtopic.php?f=96&t=30552
+https://oph.mdrjr.net/meveric/images/Stretch/Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
 
-          wait for system to boot, and then reboot
-          then use ipscan on the workstation to find the server's ip address, then ssh in with the correct username such as
-ssh root@ipadress
+INSTALLING
+download the other files as well, and run this to verify
+          md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 && sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512 && gpg --verify Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
+          lsblk
+to check which dev is the sd card, then run 
+          sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
+to zero out the sd card
+then to write out the file to the sd card, cd into the file directory and run
+          sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdX oflag=sync status=progress
+i didn't modify the write size, so the disk has less chance of getting errors, though for larger disk images this can become a pain
+or just install etcher and do it, because gparrted shows unknown disk label and i dont know why
+
+FIRST BOOT
+wait for system to boot, and then reboot
+then use ipscan on the workstation to find the server's ip address, then ssh in with the correct username such as
+          ssh root@ipadress
+          
           defaults: user:root
                     password: odroid
 
-apt-get update && apt-get upgrade && apt-get dist-upgrade
-apt-get install console-setup keyboard-configuration
-dpkg-reconfigure locales
-dpkg-reconfigure keyboard-configuration
-          i dont know why this ^ does nothing
-dpkg-reconfigure tzdata
-          i would want 'US/Pacific-New'
-passwd
-apt-get install rxvt-unicode-256color
-          so i can use nano, and also have a familiar terminal
-nano -w /etc/hostname
-          i liked "odroid-server"
-reboot
+          apt-get update && apt-get upgrade && apt-get dist-upgrade
+          apt-get install console-setup keyboard-configuration
+          dpkg-reconfigure locales
+          dpkg-reconfigure keyboard-configuration
+i dont know why this ^ does nothing
+          dpkg-reconfigure tzdata
+i would want 'US/Pacific-New'
+          passwd
+          apt-get install rxvt-unicode-256color
+so i can use nano, and also have a familiar terminal
+          nano -w /etc/hostname
+i liked "odroid-server"
+          reboot
 
-apt-get install ranger neofetch sudo git-core curl
-
-adduser helix
+CREATING USER
+          apt-get install sudo
+          adduser helix
 nano -w /etc/sudoers
-          helix  ALL=(ALL:ALL) ALL
+helix  ALL=(ALL:ALL) ALL
+          exit
+so you can disconnect and then log back in as user and not root
 
-exit
-          so you can disconnect and then log back in as user and not root
+RANGER
+apt-get install ranger
+ranger fix hidden files
+          ranger --copy-config=all
+          nano -w /home/helix/.config/ranger/rc.conf
+change set show_hidden to true
 
-          ranger fix hidden files
-ranger --copy-config=all
-nano -w /home/helix/.config/ranger/rc.conf
-          change set show_hidden to true
-
+NEOFETCH
+apt-get install neofetch
 nano -w ~/.bashrc
 add
 # Custom commands
 neofetch
 to the bottom
 
+TMUX
 apt-get install tmux
           from now on, you can connect to this server by
 ssh user@ipaddress -t tmux a -t sessionname
 
+GOTOP
+          apt-get install git-core
+          git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
+          /tmp/gotop/scripts/download.sh
+          sudo mv ~/gotop /usr/local/bin
+          sudo rm -rf /tmp/gotop
+
+LOG2RAM
+apt-get install curl
 curl -Lo log2ram.tar.gz https://github.com/azlux/log2ram/archive/master.tar.gz
 tar xf log2ram.tar.gz
 cd log2ram-master
@@ -69,30 +86,23 @@ sudo reboot now
 df -h
 mount
 
-git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
-/tmp/gotop/scripts/download.sh
-sudo mv ~/gotop /usr/local/bin
-sudo rm -rf /tmp/gotop
+FORMATTING DISK
+          lsblk
+          sudo parted -a optimal /dev/sda
+          rm 1
+          mklabel gpt
+          mkpart data ext4 0% 100%
+          align-check opt 1
 
-install these later
-hdparm smartmontools aria2 attr youtube-dl
-sudo apt-get --purge autoremove setup-odroid mc vim
-
-lsblk
-sudo parted -a optimal /dev/sda
-rm 1
-mklabel gpt
-mkpart data ext4 0% 100%
-align-check opt 1
-
-lsblk
-sudo mkfs.ext4 -m 0 /dev/sda1
-
-edit fstab
+          lsblk
+          sudo mkfs.ext4 -m 0 /dev/sda1
+          
+MOUNTING DISK
 sudo blkid
-          copy and paste uuid
+          copy and paste uuid of your drive and paste in in fstab like so
 sudo nano -w /etc/fstab
 UUID      /server    /ext4         /rw,noatime           0         0
+
 
 sudo apt-get install samba
 sudo apt-get install smbclient
@@ -125,4 +135,6 @@ sudo mkdir /server
 sudo chown -R voltamage:server /server
 sudo chmod -R 750 /server
 
-sudo nano -w /etc/fstab
+install these later
+hdparm smartmontools aria2 attr youtube-dl
+sudo apt-get --purge autoremove setup-odroid mc vim
