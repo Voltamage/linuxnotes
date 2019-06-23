@@ -126,7 +126,7 @@ sudo smbpasswd -a
 sudo pdbedit -w -L
 
 sudo mkdir /server
-sudo chown -R voltamage:server /server
+sudo chown -R helix:server /server
 sudo chmod -R 750 /server
 
 install these later
