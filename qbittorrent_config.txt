@@ -11,6 +11,7 @@ settings>downloads>pre-allocate disk space for all files = enable
 settings>downloads>set all four different save paths
 
 settings>bittorrent>enable local peer discovery to find more peers = disable
+settings>bittorrent>enable anonymous mode = enable
 settings>bittorrent>encryption mode = require encryption
 settings>bittorrent>queueing max = make everything 999
 settings>bittorrent>seed torrents until their ratio reaches = 0.00
