@@ -16,3 +16,5 @@ settings>bittorrent>queueing max = make everything 999
 settings>bittorrent>seed torrents until their ratio reaches = 0.00
 
 torrent dialogue pop up = expand metadata
+
+settings>advanced>disk cache = -1
