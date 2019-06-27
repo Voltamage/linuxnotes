@@ -8,6 +8,14 @@ settings>downloads>do not start the download automatically = enable
 settings>downloads>pre-allocate disk space for all files = enable
 settings>downloads>set all four different save paths
 
+
+settings>connection>proxy server
+  type:SOCKS5
+  host:proxy-nl.privateinternetaccess.com
+  port:1080
+  disable connections not supported by proxies: enable
+  authentication: enable and fill
+
 settings>bittorrent>enable local peer discovery to find more peers = disable
 settings>bittorrent>enable anonymous mode = enable
 settings>bittorrent>encryption mode = require encryption
