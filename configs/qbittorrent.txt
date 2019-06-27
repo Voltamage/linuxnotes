@@ -32,8 +32,8 @@ settings>advanced>enable os cache = disable
 
 TRANSMISSION
 settings>alternative speed limits
-  upload: 1536
-  download: 8192
+  upload: 1500
+  download: 8000
 
 settings>downloading>adding>start added torrents: disable
 settings>downloading>adding>save to location> /home/helix/archive/torrents/
