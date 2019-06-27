@@ -1,0 +1,17 @@
+settings>alternative speed limits
+  upload: 1500
+  download: 8000
+
+settings>downloading>adding>start added torrents: disable
+settings>downloading>adding>save to location> /home/helix/archive/torrents/
+settings>downloading>download queue>maximum active downloads>256
+settings>downloading>incomplete>append ".part" to incomplete files' names: disable
+settings>downloading>incomplete>keep incomplete torrents in> /home/helix/archive/torrents/.downloading/
+
+settings>seeding>limits>stop seeding at ratio: 0.00
+
+settings>privacy>privacy>encryption mode: require encryption
+
+settings>network>peer limits>maximum peers overall: 500
+
+settings>desktop>notification>play a sound when torrents finish: disable
