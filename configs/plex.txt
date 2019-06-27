@@ -20,3 +20,5 @@ settings>library>transcoder: prefer higher speed encoding
 settings>library>background transcoding x264 preset: ultra fast
 settings>dlna>enable the dlna server: disable
 settings>include cinema trailers from movies in my library: disable
+
+television library>advanced>seasons>hide for single season series
