@@ -10,6 +10,8 @@ web client>quality>internet streaming>video quality: maximum
 web client>quality>home streaming>use recommended settings: disable
 web client>quality>home streaming>video quality: maximum
 
+status>dashboard>show details
+
 server>general>send crash reports to plex: disable
 
 settings>general>send crash reports to plex: disable
