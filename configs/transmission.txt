@@ -17,3 +17,4 @@ settings>network>peer limits>maximum peers overall: 500
 settings>desktop>notification>play a sound when torrents finish: disable
 
 main>bottom right>statistics: session transfer
+main>view>compact mode: enable
