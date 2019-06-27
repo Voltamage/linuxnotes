@@ -187,3 +187,4 @@ sudo apt-get install plexmediaserver
           yes install the package maintainer version
 sudo systemctl enable --now plexmediaserver.service
           i think this is right, though i don't know tbh
+http://serverip:32400/web/
