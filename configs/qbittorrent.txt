@@ -1,1 +1,20 @@
+view>log>show = enable
+close sidebar
 
+settings>behavior>hide zero and infinity values = always
+settings>behavior>show qbittorrent in the notification area = deselect all child options and parent option
+
+settings>downloads>do not start the download automatically = enable
+settings>downloads>pre-allocate disk space for all files = enable
+settings>downloads>set all four different save paths
+
+settings>bittorrent>enable local peer discovery to find more peers = disable
+settings>bittorrent>enable anonymous mode = enable
+settings>bittorrent>encryption mode = require encryption
+settings>bittorrent>queueing max = make everything 999
+settings>bittorrent>seed torrents until their ratio reaches = 0.00
+
+torrent dialogue pop up = expand metadata
+
+settings>advanced>disk cache = 1024
+settings>advanced>enable os cache = disable
