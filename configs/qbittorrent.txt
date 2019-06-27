@@ -6,8 +6,11 @@ settings>behavior>show qbittorrent in the notification area = deselect all child
 
 settings>downloads>do not start the download automatically = enable
 settings>downloads>pre-allocate disk space for all files = enable
-settings>downloads>set all four different save paths
-
+settings>downloads>
+  default save path: /home/helix/archive/torrents/
+  keep incomplete torrents in: /home/helix/archive/torrents/.downloading/
+  copy .torrent files to:
+  copy .torrent files for finished downloads to: /home/helix/archive/torrents/.files
 
 settings>connection>proxy server
   type:SOCKS5
