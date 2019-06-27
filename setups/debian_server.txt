@@ -188,7 +188,3 @@ sudo apt-get install plexmediaserver
 sudo systemctl enable --now plexmediaserver.service
           i think this is right, though i don't know tbh
 http://serverip:32400/web/
-          name the server odroid
-          dont allow me to access my media outside my home
-          skip adding media
-          skip getting apps
