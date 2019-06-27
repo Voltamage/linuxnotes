@@ -29,3 +29,20 @@ torrent dialogue pop up = expand metadata
 
 settings>advanced>disk cache = 4096
 settings>advanced>enable os cache = disable
+
+TRANSMISSION
+settings>alternative speed limits
+  upload: 1536
+  download: 8192
+
+settings>downloading>adding>start added torrents: disable
+settings>downloading>adding>save to location> /home/helix/archive/torrents/
+settings>downloading>download queue>maximum active downloads>256
+settings>downloading>incomplete>append ".part" to incomplete files' names: disable
+settings>downloading>incomplete>keep incomplete torrents in> /home/helix/archive/torrents/.downloading/
+
+settings>seeding>limits>stop seeding at ratio: 0.00
+
+settings>privacy>privacy>encryption mode: require encryption
+
+settings>desktop>notification>play a sound when torrents finish: disable
