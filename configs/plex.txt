@@ -3,5 +3,22 @@ dont allow me to access my media outside my home
 skip adding media
 skip getting apps
 
->online media sources>disable all of them
+account>online media sources>disable all of them
+account>authorized devices>revoke all old ones
 
+web client>quality>internet streaming>video quality: maximum
+web client>quality>home streaming>use recommended settings: disable
+web client>quality>home streaming>video quality: maximum
+
+server>general>send crash reports to plex: disable
+
+settings>general>send crash reports to plex: disable
+settings>library>scan my library automatically: enabled
+settings>library>run a partial scan when changes are detected: enabled
+settings>library>allow media deletion: disabled
+settings>library>generate chapter thumbnails: never
+settings>library>analyze audio tracks for loudness: never
+settings>library>transcoder: prefer higher speed encoding
+settings>library>background transcoding x264 preset: ultra fast
+settings>dlna>enable the dlna server: disable
+settings>include cinema trailers from movies in my library: disable
