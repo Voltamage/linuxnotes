@@ -1,2 +1,2 @@
 # notes
-just personal notes and stuff while i learn gentoo linux
+just personal notes and stuff while i learn linux
