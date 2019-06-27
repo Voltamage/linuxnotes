@@ -185,3 +185,5 @@ sudo apt-get update
 sudo apt-get install plexmediaserver
           plexmediaserver.list
           yes install the package maintainer version
+sudo systemctl enable --now plexmediaserver.service
+          i think this is right, though i don't know tbh
