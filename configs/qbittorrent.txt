@@ -24,5 +24,5 @@ settings>bittorrent>seed torrents until their ratio reaches = 0.00
 
 torrent dialogue pop up = expand metadata
 
-settings>advanced>disk cache = 2048
+settings>advanced>disk cache = 4096
 settings>advanced>enable os cache = disable
