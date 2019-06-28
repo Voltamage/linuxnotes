@@ -12,6 +12,7 @@ settings>seeding>limits>stop seeding at ratio: 0.00
 
 settings>privacy>privacy>encryption mode: require encryption
 
+settings>network>peer limits>maximum peers per torrent: 100
 settings>network>peer limits>maximum peers overall: 500
 
 settings>desktop>notification>play a sound when torrents finish: disable
