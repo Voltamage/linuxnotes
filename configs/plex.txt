@@ -1,8 +1,11 @@
+SETUP
 name the server odroid
 dont allow me to access my media outside my home
 skip adding media
 skip getting apps
 
+
+SERVER
 account>online media sources>disable all of them
 account>authorized devices>revoke all old ones
 
@@ -25,5 +28,16 @@ settings>include cinema trailers from movies in my library: disable
 
 television library>advanced>seasons>hide for single season series
 
+
+ROKU
 roku client>video>local quality: original
 roku client>experience>high contrast mode: enable
+
+
+TELEVISION
+add library>select type>select your library type: tv shows
+add library>select type>name your library and choose language>name: Television
+
+add folders>add folders to your library: /server/media/television
+
+advanced>seasons: hide for single-season series
