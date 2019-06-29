@@ -29,9 +29,13 @@ settings>include cinema trailers from movies in my library: disable
 television library>advanced>seasons>hide for single season series
 
 
+DATABASE MAINTENANCE
+manage>troubleshooting>optimize database: yes
+manage>troubleshooting>clean bundles: yes
+
+
 ROKU
 roku client>video>local quality: original
-roku client>experience>high contrast mode: enable
 
 
 TELEVISION
