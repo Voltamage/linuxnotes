@@ -2,6 +2,7 @@ settings>alternative speed limits
   upload: 1500
   download: 8000
 
+settings>downloading>adding>show the torrent options dialog: disable
 settings>downloading>adding>save to location> /home/helix/archive/torrents/
 settings>downloading>download queue>maximum active downloads>256
 settings>downloading>incomplete>append ".part" to incomplete files' names: disable
