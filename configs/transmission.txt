@@ -19,3 +19,5 @@ settings>desktop>notification>play a sound when torrents finish: disable
 
 main>bottom right>statistics: session transfer
 main>view: sort by time left
+
+torrent>properties>trackers>show more details: enable
