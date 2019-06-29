@@ -42,3 +42,18 @@ add library>advanced>use red band (restricted audiences) trailers when available
 
 APP
 settings>account>sign in automatically: enable
+
+/server/media
+  /film
+  /television
+    /Showname.2011
+      /Season.02
+        /Showname.s02e17.Optional_Info
+          /filename.Optional_Info.ext
+        /Showname.2015.11.15.Optional_Info
+          /filename.Optional_Info.ext
+      /Season.00
+        /Showname.s00e17.Optional_Info
+          /filename.Optional_Info.ext
+        /Showname.s00e99.Optional_Info
+          /filename.Optional_Info.ext
