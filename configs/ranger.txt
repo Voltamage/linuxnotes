@@ -5,3 +5,8 @@ set hidden_filter \.(?:pyc|pyo|bak|swp)$|^lost\+found$|^__(py)?cache__$
 set confirm_on_delete always
 set preview_images true
 set draw_borders both
+set line_numbers relative
+
+map gs cd /home/helix/server
+map gm cd /home/helix/server/media
+map gt cd /home/helix/server/archive/torrents
