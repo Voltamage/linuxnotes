@@ -6,6 +6,8 @@ skip getting apps
 
 
 SERVER
+show advanced
+
 account>online media sources>disable all of them
 account>authorized devices>revoke all old ones
 
