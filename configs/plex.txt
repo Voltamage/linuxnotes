@@ -17,7 +17,7 @@ status>dashboard>show details
 server>general>send crash reports to plex: disable
 settings>general>send crash reports to plex: disable
 settings>library>allow media deletion: disabled
-settings>library>generate chapter thumbnails: never
+settings>library>generate chapter thumbnails: as scheduled task and when media is added
 settings>library>analyze audio tracks for loudness: never
 settings>library>transcoder: prefer higher speed encoding
 settings>library>background transcoding x264 preset: ultra fast
