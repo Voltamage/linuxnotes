@@ -4,3 +4,4 @@ rc.conf
 set hidden_filter \.(?:pyc|pyo|bak|swp)$|^lost\+found$|^__(py)?cache__$
 set confirm_on_delete always
 set preview_images true
+set draw_borders both
