@@ -1,1 +1,1 @@
-
+ranger --copy-config=all
