@@ -41,3 +41,6 @@ add library>select type>name your library and choose language>name: Television
 add folders>add folders to your library: /server/media/television
 
 advanced>seasons: hide for single-season series
+
+APP
+settings>account>sign in automatically: enable
