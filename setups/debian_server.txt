@@ -192,3 +192,6 @@ sudo usermod -a -G server plex
 sudo chown -R helix:server /server/media
 sudo chmod -R 750 /server/media
 sudo systemctl restart plexmediaserver.service
+
+FILEBOT
+bash -xu <<< "$(curl -fsSL https://raw.githubusercontent.com/filebot/plugins/master/installer/deb.sh)"
