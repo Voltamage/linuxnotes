@@ -1,1 +1,6 @@
 sudo apt-get install deluged deluge-console deluge-webui
+sudo groupadd deluge
+sudo adduser deluge --system --home /var/lib/deluge --ingroup deluge
+sudo chown -R deluge:deluge /var/lib/deluge
+
+sudo apt-get --purge autoremove deluged deluge-console deluge-webui
