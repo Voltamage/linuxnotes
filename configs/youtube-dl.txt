@@ -1,39 +1,42 @@
 #OPTIONS
 --ignore-errors
 --no-mark-watched
-
 #GEO RESTRICTION
 --geo-bypass
 
 #VIDEO SELECTION
 --no-playlist
---download-archive "/server/archive/configs/youtube-dl/archives/youtube_channels_url.txt"
+#--download-archive "/server/.config/youtube-dl/archives/youtube_channels_archive.txt"
 
 #FILESYSTEM OPTIONS
---batch-file "/server/archive/configs/youtube-dl/lists/youtube_channels.txt"
--o "/server/archive/Video/youtube/channels/%(uploader)s/%(upload_date)s %(title)s %(height)sx%(fps)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s.%(ext)s"
+--batch-file "/server/.config/youtube-dl/lists/youtube_channels_list.txt"
+--output "/server/media/YouTube/channels/%(uploader)s %(channel_id)s/%(upload_date)s %(title)s %(id)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s %(id)s.%(ext)s"
 
+--restrict-filenames
 --no-overwrites
 --continue
+--no-part
 --write-description
---restrict-filenames
+--write-info-json
 
 #THUMBNAIL IMAGES
---write-thumbnail
+--write-all-thumbnails
 
 #VERBOSITY / SIMULATION OPTIONS
---console-title
 --no-call-home
 
 #VIDEO FORMAT
 --format bestvideo+bestaudio/best
+--merge-output-format mkv
 
 #SUBTITLE OPTIONS
 --write-sub
 --sub-lang en
 
 #POST PROCESSING OPTIONS
+--recode-video mkv
+--embed-subs
 --add-metadata
+--xattrs
 --fixup detect_or_warn
---prefer-ffmpeg
 --convert-subs vtt
