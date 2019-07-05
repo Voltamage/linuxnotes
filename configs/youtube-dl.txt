@@ -7,11 +7,11 @@
 
 #VIDEO SELECTION
 --no-playlist
-#--download-archive "/server/.config/youtube-dl/archives/youtube_channels_archive.txt"
+--download-archive "/server/.config/youtube-dl/archives/youtube_channels_archive.txt"
 
 #FILESYSTEM OPTIONS
 --batch-file "/server/.config/youtube-dl/lists/youtube_channels_list.txt"
---output "/server/media/YouTube/channels/%(uploader)s %(channel_id)s/%(upload_date)s %(title)s %(id)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s %(id)s.%(ext)s"
+--output "/server/media/YouTube/Channels/%(uploader)s %(channel_id)s/%(upload_date)s %(title)s %(id)s/%(upload_date)s %(title)s %(height)sx%(fps)s %(uploader)s %(id)s.%(ext)s"
 
 --restrict-filenames
 --no-overwrites
