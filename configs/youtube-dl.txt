@@ -35,7 +35,6 @@
 --sub-lang en
 
 #POST PROCESSING OPTIONS
---recode-video mkv
 --embed-subs
 --add-metadata
 --xattrs
