@@ -151,7 +151,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions /home/helix/.oh-my-zs
 
 
 install these later
-aria2 attr xattr
+aria2 attr xattr iftop
 sudo apt-get --purge autoremove setup-odroid mc vim
 https://www.linuxquestions.org/questions/debian-26/how-do-i-get-apt-get-to-completely-uninstall-a-package-237772/
 https://chmod-calculator.com/
