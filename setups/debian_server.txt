@@ -130,7 +130,7 @@ sudo chown -R helix:server /server
 sudo chmod -R 750 /server
 
 install these later
-apt-get install ffmpeg
+apt-get install ffmpeg ncdu
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/bin/youtube-dl
 sudo chown -R helix /usr/bin/youtube-dl
 sudo chmod -R 700 /usr/bin/youtube-dl
