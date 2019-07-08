@@ -21,7 +21,6 @@
 --restrict-filenames
 --no-overwrites
 --no-continue
---no-part
 --write-description
 --write-info-json
 
