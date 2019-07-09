@@ -1,0 +1,32 @@
+#OPTIONS
+--ignore-errors
+
+#VIDEO SELECTION
+--download-archive "/server/.config/youtube-dl/archives/soundgasm_channels_archive.txt"
+
+#DOWNLOAD OPTIONS
+--fragment-retries 1
+--playlist-reverse
+--external-downloader aria2c
+--external-downloader-args "--file-allocation=none --min-split-size=1M --split=16 --max-connection-per-server=16"
+
+#FILESYSTEM OPTIONS
+--batch-file "/server/.config/youtube-dl/lists/soundgasm_channels_list.txt"
+--output "/server/xxx/Soundgasm/%(uploader)s/%(playlist_index)05d.%(title)s.%(id)s/%(playlist_index)05d.%(title)s.%(uploader)s.%(id)s.%(ext)s"
+
+--restrict-filenames
+--no-overwrites
+--no-continue
+--write-description
+--write-info-json
+
+#VERBOSITY / SIMULATION OPTIONS
+--no-call-home
+
+#VIDEO FORMAT
+--format bestaudio/best
+
+#POST PROCESSING OPTIONS
+--add-metadata
+--xattrs
+--fixup detect_or_warn
