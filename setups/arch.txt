@@ -26,3 +26,9 @@ grub-mkconfig -o /boot/grub/grub.cfg
 exit
 umount -R /mnt
 reboot
+
+
+auto caps lock
+gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
+md5sum -c archlinux-2019.08.01-x86_64.iso.md5
+sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
