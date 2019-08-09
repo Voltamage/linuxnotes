@@ -38,18 +38,37 @@ destroy tables
 partition with cfdisk
     cfdisk /dev/sda
 select gpt table
-new partition, 512M size, EFI System type
-make that 550 just to be safe?
+new partition, 512M size, EFI System
+new partition, 16G size, Linux swap
+new partition, 32G size, Linux filesystem
+new partition, ooG size, Linux filesystem
 
-sudo parted -a optimal /dev/sda
-rm 1
-mklabel gpt
-mkpart fat32 0% 512 MiB
-    550?
-align-check opt 1
+check alignment
+    parted -a optimal /dev/sda
+    align-check opt 1
+    align-check opt 2
+    align-check opt 3
+    align-check opt 4
 
-          lsblk
-          sudo mkfs.ext4 -m 0 /dev/sda1
+format filesystem
+    lsblk
+    mkfs.fat -F32 /dev/sda1
+    mkswap /dev/sda2
+    mkfs.ext4 /dev/sda3
+    mkfs.ext4 /dev/sda4
+    
+check partitions
+    lsblk
+    lsblk -f
+    
+mount filesystem
+    swapon /dev/sda2
+    mount  /dev/sda3 /mnt
+    mkdir /mnt/boot
+    mkdir /mnt/home
+    mount  /dev/sda1 /mnt/boot
+    mount  /dev/sda4 /mnt/home
+    
 nano -w /etc/pacman.d/mirrorlist
     (comment everything but a few american mirrors)
 pacstrap /mnt base base-devel
@@ -76,12 +95,9 @@ umount -R /mnt
 reboot
 
 LVM
-512M /boot/efi
-16 - 32 /swap
+
 24 /
-8  /var
-64 - oo /home
-oo - 00 /games
+oo /home
 
 auto caps lock
 netboot?
