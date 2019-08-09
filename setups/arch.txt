@@ -16,11 +16,8 @@ you can read the install guide with
 check uefi mode
     ls /sys/firmware/efi/efivars
     
-list drives and partitions
-    lsblk
-    
 check network interfaces and connect
-    ip link
+    ifconfig
     dhcpcd
     
 test internet connection
@@ -30,6 +27,25 @@ sync and check system time
     timedatectl set-ntp true
     timedatectl status
     
+list drives and partitions
+    lsblk
+    
+destroy tables
+    gdisk
+    x
+    z
+
+partition with cfdisk
+select gpt table
+
+sudo parted -a optimal /dev/sda
+rm 1
+mklabel gpt
+mkpart fat32 0% 512 MiB
+align-check opt 1
+
+          lsblk
+          sudo mkfs.ext4 -m 0 /dev/sda1
 nano -w /etc/pacman.d/mirrorlist
     (comment everything but a few american mirrors)
 pacstrap /mnt base base-devel
@@ -56,8 +72,8 @@ umount -R /mnt
 reboot
 
 LVM
-/boot/efi
 /
+/boot/efialign
 /home
 /games
 /var/cache
