@@ -1,4 +1,16 @@
-ls /sys/firmware/efi/efivars
+download arch iso from here, use the magnet link
+    https://www.archlinux.org/download/
+    
+verify your file with these commands, replace filename with current arch version
+    gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
+    md5sum -c archlinux-2019.08.01-x86_64.iso.md5
+    sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
+    
+burn usb with etcher, as it seems to handle uefi successfully
+boot into uefi mode
+check uefi mode
+    ls /sys/firmware/efi/efivarsls /sys/firmware/efi/efivars
+    
 ping www.archlinux.org -c 3
 timedatectl set-ntp true
     (check with timedatectl status)
@@ -30,29 +42,3 @@ reboot
 
 auto caps lock
 netboot?
-download arch iso from here, use the magnet link
-
-    https://www.archlinux.org/download/
-
-    
-
-verify your file with these commands, replace filename with current arch version
-
-    gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
-
-    md5sum -c archlinux-2019.08.01-x86_64.iso.md5
-
-    sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
-
-    
-
-burn usb with etcher, as it seems to handle uefi successfully
-
-boot into uefi mode
-
-check uefi mode
-
-    ls /sys/firmware/efi/efivars
-
-
-    
