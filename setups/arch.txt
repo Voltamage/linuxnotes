@@ -36,12 +36,16 @@ destroy tables
     z
 
 partition with cfdisk
+    cfdisk /dev/sda
 select gpt table
+new partition, 512M size, EFI System type
+make that 550 just to be safe?
 
 sudo parted -a optimal /dev/sda
 rm 1
 mklabel gpt
 mkpart fat32 0% 512 MiB
+    550?
 align-check opt 1
 
           lsblk
@@ -72,11 +76,12 @@ umount -R /mnt
 reboot
 
 LVM
-/
-/boot/efialign
-/home
-/games
-/var/cache
+512M /boot/efi
+16 - 32 /swap
+15 - 20 /
+8  - 12 /var
+64 - oo /home
+oo - 00 /games
 
 auto caps lock
 netboot?
