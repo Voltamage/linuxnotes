@@ -14,7 +14,10 @@ you can read the install guide with
     nano -w install.txt
     
 check uefi mode
-    ls /sys/firmware/efi/efivarsls /sys/firmware/efi/efivars
+    ls /sys/firmware/efi/efivars
+    
+list drives and partitions
+    lsblk
     
 test internet connection
     ping www.archlinux.org -c 3
@@ -46,6 +49,11 @@ exit
 umount -R /mnt
 reboot
 
+/boot/efi
+/
+/home
+/games
+/var
 
 auto caps lock
 netboot?
