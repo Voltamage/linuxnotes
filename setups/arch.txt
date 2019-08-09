@@ -19,11 +19,17 @@ check uefi mode
 list drives and partitions
     lsblk
     
+check network interfaces and connect
+    ip link
+    dhcpcd
+    
 test internet connection
     ping www.archlinux.org -c 3
     
-timedatectl set-ntp true
-    (check with timedatectl status)
+sync and check system time
+    timedatectl set-ntp true
+    timedatectl status
+    
 nano -w /etc/pacman.d/mirrorlist
     (comment everything but a few american mirrors)
 pacstrap /mnt base base-devel
