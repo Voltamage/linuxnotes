@@ -78,8 +78,8 @@ reboot
 LVM
 512M /boot/efi
 16 - 32 /swap
-15 - 20 /
-8  - 12 /var
+24 /
+8  /var
 64 - oo /home
 oo - 00 /games
 
