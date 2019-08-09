@@ -8,10 +8,15 @@ verify your file with these commands, replace filename with current arch version
     
 burn usb with etcher, as it seems to handle uefi successfully
 boot into uefi mode
+you can read the install guide with
+    nano -w install.txt
+    
 check uefi mode
     ls /sys/firmware/efi/efivarsls /sys/firmware/efi/efivars
     
-ping www.archlinux.org -c 3
+test internet connection
+    ping www.archlinux.org -c 3
+    
 timedatectl set-ntp true
     (check with timedatectl status)
 nano -w /etc/pacman.d/mirrorlist
