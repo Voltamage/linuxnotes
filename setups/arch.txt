@@ -49,11 +49,12 @@ exit
 umount -R /mnt
 reboot
 
+LVM
 /boot/efi
 /
 /home
 /games
-/var
+/var/cache
 
 auto caps lock
 netboot?
