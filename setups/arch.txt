@@ -1,10 +1,11 @@
 PRE-INSTALLATION
-download arch iso from here, use the magnet link
+download arch iso from here, use the magnet link and torrent if you can
     https://www.archlinux.org/download/
     
 VERIFY SIGNATURE
 verify your file with these commands, replace filename with current arch version
-make the signature files by copy pasting the signature and then a space and then the filename
+make the checksum files by copy pasting the checksum and then a space and then the filename
+you can double check the pgp output with the pgp key of the developer at https://www.archlinux.org/people/developers/
     gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
     md5sum -c archlinux-2019.08.01-x86_64.iso.md5
     sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
@@ -13,7 +14,7 @@ WRITE INSTALLATION MEDIA
 burn usb with etcher, as it seems to handle uefi successfully
 
 BOOT THE LIVE ENVIRONMENT
-boot into uefi mode
+boot into uefi mode, making sure to select the UEFI mount option in your BIOS
 
 you can read the install guide with
     nano -w install.txt
@@ -30,6 +31,8 @@ test internet connection
     
 UPDATE THE SYSTEM CLOCK
     timedatectl set-ntp true
+    
+check time
     timedatectl status
     
 PARTITION THE DISKS
