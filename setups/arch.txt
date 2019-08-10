@@ -178,6 +178,18 @@ deleting a folder
 deleting a file
     rm
     
+YAY
+    pacman -S git
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+installs go as well, keep that in mind
+    sudo nano -w /etc/pacman.conf
+uncomment these things
+        Color
+        [multilib]
+        Include = /etc/pacman.d/mirrorlist
+        
 NETBOOT?
 LVM?
 NETWORK MANAGER REPLACE DHCPCD?
