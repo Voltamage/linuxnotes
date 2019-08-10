@@ -184,6 +184,7 @@ login as volt
 
 OH-MY-ZSH
 do this before literally anything else
+there is an AUR version as well
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 YAY
@@ -210,12 +211,10 @@ compton
 display orientation
 nvidia
 kernels
-yay and aur repos, color on yay
 pulseaudio and/or alternatives
 grub optional dependencies
 orphan files
 customize grub
-oh-my-zsh
 auto detect drives and automount externals
 list of installed programs from manjaro
 firefox configs
