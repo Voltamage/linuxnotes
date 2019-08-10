@@ -182,6 +182,7 @@ deleting a file
     rm
     
 YAY
+try not to run as root
     pacman -S git
     git clone https://aur.archlinux.org/yay.git
     cd yay
