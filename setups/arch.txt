@@ -135,6 +135,9 @@ SELECT THE MIRRORS
         [Install]
         RequiredBy=multi-user.target
         
+start the service with
+    systemctl enable reflector.service
+    
 BOOT LOADER
     pacman -S efibootmgr grub intel-ucode os-prober
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
