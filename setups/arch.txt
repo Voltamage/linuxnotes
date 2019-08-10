@@ -17,7 +17,7 @@ check uefi mode
     ls /sys/firmware/efi/efivars
     
 check network interfaces and connect
-    ifconfig
+    ip link
     dhcpcd
     
 test internet connection
