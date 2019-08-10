@@ -200,6 +200,13 @@ uncomment these things
         [multilib]
         Include = /etc/pacman.d/mirrorlist
         
+XORG
+    yay -S xorg-server xorg-xinit
+    
+BSPWM
+    yay -S bspwm sxhkd
+    cp /etc/X11/xinit/xinitrc ~/.xinitrc
+        
 NETBOOT?
 LVM?
 NETWORK MANAGER REPLACE DHCPCD?
