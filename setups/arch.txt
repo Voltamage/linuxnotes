@@ -48,8 +48,8 @@ partition with cfdisk
     cfdisk /dev/sda
 select gpt table
 new partition, 512M size, EFI System
-new partition, 16G size, Linux swap
-new partition, 32G size, Linux filesystem
+new partition, 20G size, Linux swap
+new partition, 30G size, Linux filesystem
 new partition, ooG size, Linux filesystem
 
 check alignment
