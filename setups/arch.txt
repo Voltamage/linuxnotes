@@ -169,7 +169,11 @@ chroot back into the system by mounting the files and arch-chroot
     mount   /dev/sda4   /mnt/home
     arch-chroot /mnt
 
+deleting a folder
+    rm -r
 
+deleting a file
+    rm
 NETBOOT?
 LVM?
 NETWORK MANAGER REPLACE DHCPCD?
