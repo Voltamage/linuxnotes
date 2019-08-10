@@ -136,16 +136,19 @@ user
         ## User privilege specification
         volt ALL=(ALL) ALL
         
-systemctl enable dhcpcd
-timedatectl set-ntp true
-exit
-umount -R /mnt
-reboot
+autostart
+    systemctl enable dhcpcd
+    timedatectl set-ntp true
+    
+finalize
+    exit
+    umount -R /mnt
+    reboot
 
+NETBOOT?
 LVM?
+NETWORK MANAGER REPLACE DHCPCD?
 auto num lock
-netboot?
-sync clock and dhcpcd on start, NETWORK MANAGER REPLACE DHCPCD?
 auto sign in user
 firejail
 compton
