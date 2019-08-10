@@ -74,8 +74,9 @@ MOUNT THE FILE SYSTEMS
     swapon  /dev/sda2
     mount   /dev/sda3   /mnt
     mkdir   /mnt/boot
+    mkdir   /mnt/boot/efi
     mkdir   /mnt/home
-    mount   /dev/sda1   /mnt/boot
+    mount   /dev/sda1   /mnt/boot/efi
     mount   /dev/sda4   /mnt/home
     
 INSTALL THE BASE PACKAGES
@@ -136,7 +137,6 @@ SELECT THE MIRRORS
         
 BOOT LOADER
     pacman -S efibootmgr grub intel-ucode os-prober
-    mkdir /boot/efi
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
     grub-mkconfig -o /boot/grub/grub.cfg
     
@@ -165,7 +165,7 @@ TROUBLESHOOTING
 chroot back into the system by mounting the files and arch-chroot
     swapon  /dev/sda2
     mount   /dev/sda3   /mnt
-    mount   /dev/sda1   /mnt/boot
+    mount   /dev/sda1   /mnt/boot/efi
     mount   /dev/sda4   /mnt/home
     arch-chroot /mnt
 
@@ -174,6 +174,7 @@ deleting a folder
 
 deleting a file
     rm
+    
 NETBOOT?
 LVM?
 NETWORK MANAGER REPLACE DHCPCD?
