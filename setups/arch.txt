@@ -155,11 +155,12 @@ compton
 display orientation
 nvidia
 kernels
-intel-ucode
 yay and aur repos, color on yay
 pulseaudio and/or alternatives
 grub optional dependencies
 orphan files
 customize grub
-zsh and oh-my-zsh
+oh-my-zsh
 auto detect drives and automount externals
+list of installed programs from manjaro
+firefox configs
