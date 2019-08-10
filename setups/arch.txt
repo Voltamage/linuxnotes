@@ -104,10 +104,6 @@ rebuild initramfs just in case
 set root password
     passwd
     
-efi, grub, and bootloader
-    pacman -S efibootmgr grub os-prober
-    mkdir /boot/efi
-    
 mirrors
     pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
@@ -126,11 +122,17 @@ mirrors
         [Install]
         RequiredBy=multi-user.target
         
+efi, grub, and bootloader
+    pacman -S efibootmgr grub intel-ucode os-prober
+    mkdir /boot/efi
+    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
+    grub-mkconfig -o /boot/grub/grub.cfg
+    
+user
+    pacman -S zsh
+    useradd -m -G users,wheel -s /usr/bin/zsh volt
 systemctl enable dhcpcd
 timedatectl set-ntp true
-pacman -S grub os-prober intel-ucode
-grub-install --recheck --target=i386-pc /dev/sdX
-grub-mkconfig -o /boot/grub/grub.cfg
 exit
 umount -R /mnt
 reboot
@@ -150,4 +152,5 @@ yay and aur repos, color on yay
 pulseaudio and/or alternatives
 grub optional dependencies
 orphan files
-reflector over rankmirrors
+customize grub
+zsh and oh-my-zsh
