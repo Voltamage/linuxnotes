@@ -150,7 +150,7 @@ add this to the file as well
         ## Keeps wheel users from needing to reinsert passwords in different terminals
         Defaults !tty_tickets
 groups volt
-less passwd
+less /etc/passwd
         
 CONFIGURE NETWORK DYNAMICALLY
     systemctl enable dhcpcd
