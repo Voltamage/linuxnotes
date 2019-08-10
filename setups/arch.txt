@@ -78,49 +78,52 @@ MOUNT THE FILE SYSTEMS
     mount   /dev/sda1   /mnt/boot
     mount   /dev/sda4   /mnt/home
     
-INSTALLATION
+INSTALL THE BASE PACKAGES
     pacstrap /mnt base base-devel
     
+FSTAB
 generate fstab and check it
     genfstab -U /mnt >> /mnt/etc/fstab
     nano -w /mnt/etc/fstab
 
-enter arch
+CHROOT
     arch-chroot /mnt
     
-list and set timezone
+TIMEZONE
     ls usr/share/zoneinfo
     ls usr/share/zoneinfo/America
     ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
     hwclock --systohc
     
-localization, uncomment en_US.UTF-8 UTF-8
+LOCALIZATION
+uncomment en_US.UTF-8 UTF-8
     nano -w /etc/locale.gen
     locale-gen
     echo LANG=en_US.UTF-8 > /etc/locale.conf
     nano -w /etc/locale.conf
     
-hosts
+NETWORK CONFIGURATION
     echo arch > /etc/hostname
     nano -w /etc/hosts
         127.0.0.1	localhost
         ::1         localhost
         127.0.1.1	arch.localdomain	arch
         
-rebuild initramfs just in case
+INITRAMFS
+just in case
     mkinitcpio -p linux
     
-set root password
+ROOT PASSWORD
     passwd
     
-mirrors
+SELECT THE MIRRORS
     pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
     reflector --latest 32 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     nano -w /etc/pacman.d/mirrorlist
     nano -w /etc/systemd/system/reflector.service
         [Unit]
-        Description=mirrorlist update
+        Description=pacman mirrorlist update
         Wants=network-online.target
         After=network-online.target
         
