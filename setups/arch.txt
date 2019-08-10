@@ -85,10 +85,12 @@ list and set timezone
     ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
     hwclock --systohc
     
-nano -w /etc/locale.gen
-    (uncomment en_US.UTF-8 UTF-8)
-locale-gen
-echo LANG=en_US.UTF-8 > /etc/locale.conf
+localization, uncomment en_US.UTF-8 UTF-8
+    nano -w /etc/locale.gen
+    locale-gen
+    echo LANG=en_US.UTF-8 > /etc/locale.conf
+    nano -w /etc/locale.conf
+    
 echo arch > /etc/hostname
 nano -w /etc/hosts
     (127.0.0.1	localhost
@@ -106,7 +108,7 @@ reboot
 LVM?
 auto num lock
 netboot?
-sync clock and dhcpcd on start
+sync clock and dhcpcd on start, NETWORK MANAGER REPLACE DHCPCD?
 auto sign in user
 firejail
 compton
