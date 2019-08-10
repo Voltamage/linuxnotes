@@ -134,13 +134,13 @@ SELECT THE MIRRORS
         [Install]
         RequiredBy=multi-user.target
         
-efi, grub, and bootloader
+BOOT LOADER
     pacman -S efibootmgr grub intel-ucode os-prober
     mkdir /boot/efi
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
     grub-mkconfig -o /boot/grub/grub.cfg
     
-user
+USERS AND GROUPS
     pacman -S zsh
     useradd -m -G users,wheel -s /usr/bin/zsh volt
     passwd volt
@@ -148,11 +148,11 @@ user
         ## User privilege specification
         volt ALL=(ALL) ALL
         
-autostart
+CONFIGURE NETWORK DYNAMICALLY
     systemctl enable dhcpcd
     timedatectl set-ntp true
     
-finalize
+REBOOT
     exit
     umount -R /mnt
     reboot
