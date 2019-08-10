@@ -131,6 +131,11 @@ efi, grub, and bootloader
 user
     pacman -S zsh
     useradd -m -G users,wheel -s /usr/bin/zsh volt
+    passwd volt
+    nano -w /etc/sudoers
+        ## User privilege specification
+        volt ALL=(ALL) ALL
+        
 systemctl enable dhcpcd
 timedatectl set-ntp true
 exit
@@ -154,3 +159,4 @@ grub optional dependencies
 orphan files
 customize grub
 zsh and oh-my-zsh
+auto detect drives and automount externals
