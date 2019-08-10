@@ -91,11 +91,27 @@ localization, uncomment en_US.UTF-8 UTF-8
     echo LANG=en_US.UTF-8 > /etc/locale.conf
     nano -w /etc/locale.conf
     
-echo arch > /etc/hostname
-nano -w /etc/hosts
-    (127.0.0.1	localhost
-     ::1		localhost
-     127.0.1.1	arch.localdomain	arch)
+hosts
+    echo arch > /etc/hostname
+    nano -w /etc/hosts
+        127.0.0.1	localhost
+        ::1 		localhost
+        127.0.1.1	arch.localdomain	arch
+        
+rebuild initramfs just in case
+    mkinitcpio -p linux
+    
+set root password
+    passwd
+    
+efi, grub, and bootloader
+    pacman -S efibootmgr grub os-prober
+    mkdir /boot/efi
+    
+mirrors
+    pacman -S reflector
+    cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+    reflector --verbose --latest 32 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 systemctl enable dhcpcd
 timedatectl set-ntp true
 pacman -S grub os-prober intel-ucode
@@ -118,3 +134,6 @@ kernels
 intel-ucode
 yay and aur repos, color on yay
 pulseaudio and/or alternatives
+grub optional dependencies
+orphan files
+reflector over rankmirrors
