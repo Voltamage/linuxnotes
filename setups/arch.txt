@@ -68,12 +68,12 @@ check partitions
     lsblk -f
     
 MOUNT THE FILE SYSTEMS
-    swapon /dev/sda2
-    mount  /dev/sda3 /mnt
-    mkdir /mnt/boot
-    mkdir /mnt/home
-    mount  /dev/sda1 /mnt/boot
-    mount  /dev/sda4 /mnt/home
+    swapon  /dev/sda2
+    mount   /dev/sda3   /mnt
+    mkdir   /mnt/boot
+    mkdir   /mnt/home
+    mount   /dev/sda1   /mnt/boot
+    mount   /dev/sda4   /mnt/home
     
 INSTALLATION
     pacstrap /mnt base base-devel
@@ -101,7 +101,7 @@ hosts
     echo arch > /etc/hostname
     nano -w /etc/hosts
         127.0.0.1	localhost
-        ::1 		    localhost
+        ::1         localhost
         127.0.1.1	arch.localdomain	arch
         
 rebuild initramfs just in case
