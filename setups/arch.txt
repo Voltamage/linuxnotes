@@ -142,11 +142,15 @@ BOOT LOADER
     
 USERS AND GROUPS
     pacman -S zsh
-    useradd -m -G users,wheel -s /usr/bin/zsh volt
+    useradd -m -G wheel -s /usr/bin/zsh volt
     passwd volt
     nano -w /etc/sudoers
-        ## User privilege specification
-        volt ALL=(ALL) ALL
+uncomment %wheel ALL=(ALL) ALL
+add this to the file as well
+        ## Keeps wheel users from needing to reinsert passwords in different terminals
+        Defaults !tty_tickets
+groups volt
+less passwd
         
 CONFIGURE NETWORK DYNAMICALLY
     systemctl enable dhcpcd
