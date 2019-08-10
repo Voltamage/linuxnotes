@@ -218,3 +218,4 @@ customize grub
 auto detect drives and automount externals
 list of installed programs from manjaro
 firefox configs
+git track dotfiles
