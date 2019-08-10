@@ -156,7 +156,7 @@ groups volt
 less /etc/passwd
 
 chown -R volt:volt /home/volt
-chmod -R 750 /home/volt
+chmod -R 755 /home/volt
         
 CONFIGURE NETWORK DYNAMICALLY
     systemctl enable dhcpcd
