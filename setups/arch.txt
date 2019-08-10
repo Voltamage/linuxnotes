@@ -67,7 +67,7 @@ FORMAT THE PARTITIONS
     mkfs.ext4 /dev/sda4
     
 check partitions
-    lsblk
+    fdisk -l
     lsblk -f
     
 MOUNT THE FILE SYSTEMS
@@ -157,6 +157,7 @@ finalize
 NETBOOT?
 LVM?
 NETWORK MANAGER REPLACE DHCPCD?
+boot partition 550 MiB for safety?
 auto num lock
 auto sign in user
 firejail
