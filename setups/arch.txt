@@ -69,13 +69,22 @@ mount filesystem
     mount  /dev/sda1 /mnt/boot
     mount  /dev/sda4 /mnt/home
     
-nano -w /etc/pacman.d/mirrorlist
-    (comment everything but a few american mirrors)
-pacstrap /mnt base base-devel
-genfstab -U /mnt >> /mnt/etc/fstab
-arch-chroot /mnt
-ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
-hwclock --systohc
+install arch
+    pacstrap /mnt base base-devel
+    
+generate fstab and check it
+    genfstab -U /mnt >> /mnt/etc/fstab
+    nano -w /mnt/etc/fstab
+
+enter arch
+    arch-chroot /mnt
+    
+list and set timezone
+    ls usr/share/zoneinfo
+    ls usr/share/zoneinfo/America
+    ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+    hwclock --systohc
+    
 nano -w /etc/locale.gen
     (uncomment en_US.UTF-8 UTF-8)
 locale-gen
@@ -94,10 +103,16 @@ exit
 umount -R /mnt
 reboot
 
-LVM
-
-24 /
-oo /home
-
-auto caps lock
+LVM?
+auto num lock
 netboot?
+sync clock and dhcpcd on start
+auto sign in user
+firejail
+compton
+display orientation
+nvidia
+kernels
+intel-ucode
+yay and aur repos, color on yay
+pulseaudio and/or alternatives
