@@ -152,12 +152,10 @@ uncomment %wheel ALL=(ALL) ALL
 add this to the file as well
         ## Keeps wheel users from needing to reinsert passwords in different terminals
         Defaults !tty_tickets
-groups volt
-less /etc/passwd
-
-chown -R volt:volt /home/volt
-chmod -R 755 /home/volt
-        
+test user
+    groups volt
+    less /etc/passwd
+    
 CONFIGURE NETWORK DYNAMICALLY
     systemctl enable dhcpcd
     timedatectl set-ntp true
@@ -166,7 +164,7 @@ REBOOT
     exit
     umount -R /mnt
     reboot
-
+    
 TROUBLESHOOTING
 chroot back into the system by mounting the files and arch-chroot
     swapon  /dev/sda2
@@ -174,13 +172,20 @@ chroot back into the system by mounting the files and arch-chroot
     mount   /dev/sda1   /mnt/boot/efi
     mount   /dev/sda4   /mnt/home
     arch-chroot /mnt
-
+    
 deleting a folder
     rm -r
 
 deleting a file
     rm
     
+LOGIN
+login as volt
+
+OH-MY-ZSH
+do this before literally anything else
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 YAY
 try not to run as root
     pacman -S git
