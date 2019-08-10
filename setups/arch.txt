@@ -112,6 +112,19 @@ mirrors
     pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
     reflector --verbose --latest 32 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+    nano -w /etc/systemd/system/reflector.service
+        [Unit]
+        Description=mirrorlist update
+        Wants=network-online.target
+        After=network-online.target
+        
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/bin/reflector --latest 32 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+        
+        [Install]
+        RequiredBy=multi-user.target
+        
 systemctl enable dhcpcd
 timedatectl set-ntp true
 pacman -S grub os-prober intel-ucode
