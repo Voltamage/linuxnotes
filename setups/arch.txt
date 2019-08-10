@@ -1,32 +1,38 @@
+PRE-INSTALLATION
 download arch iso from here, use the magnet link
     https://www.archlinux.org/download/
     
+VERIFY SIGNATURE
 verify your file with these commands, replace filename with current arch version
 make the signature files by copy pasting the signature and then a space and then the filename
     gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
     md5sum -c archlinux-2019.08.01-x86_64.iso.md5
     sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
     
+WRITE INSTALLATION MEDIA
 burn usb with etcher, as it seems to handle uefi successfully
+
+BOOT THE LIVE ENVIRONMENT
 boot into uefi mode
 
 you can read the install guide with
     nano -w install.txt
     
-check uefi mode
+VERIFY THE BOOT MODE
     ls /sys/firmware/efi/efivars
     
-check network interfaces and connect
+CONNECT TO THE INTERNET
     ip link
     dhcpcd
     
 test internet connection
     ping www.archlinux.org -c 3
     
-sync and check system time
+UPDATE THE SYSTEM CLOCK
     timedatectl set-ntp true
     timedatectl status
     
+PARTITION THE DISKS
 list drives and partitions
     lsblk
     
@@ -50,7 +56,7 @@ check alignment
     align-check opt 3
     align-check opt 4
 
-format filesystem
+FORMAT THE PARTITIONS
     lsblk
     mkfs.fat -F32 /dev/sda1
     mkswap /dev/sda2
@@ -61,7 +67,7 @@ check partitions
     lsblk
     lsblk -f
     
-mount filesystem
+MOUNT THE FILE SYSTEMS
     swapon /dev/sda2
     mount  /dev/sda3 /mnt
     mkdir /mnt/boot
@@ -69,7 +75,7 @@ mount filesystem
     mount  /dev/sda1 /mnt/boot
     mount  /dev/sda4 /mnt/home
     
-install arch
+INSTALLATION
     pacstrap /mnt base base-devel
     
 generate fstab and check it
