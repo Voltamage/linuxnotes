@@ -16,24 +16,22 @@ burn usb with etcher, as it seems to handle uefi successfully
 
 BOOT THE LIVE ENVIRONMENT
 boot into uefi mode, making sure to select the UEFI mount option in your BIOS
-
 you can read the install guide with
     nano -w install.txt
     
 VERIFY THE BOOT MODE
+list efi files
     ls /sys/firmware/efi/efivars
     
 CONNECT TO THE INTERNET
+find the right device, auto setup, and test internet
     ip link
     dhcpcd
-    
-test internet connection
     ping www.archlinux.org -c 3
     
 UPDATE THE SYSTEM CLOCK
+sync to UTC and double check
     timedatectl set-ntp true
-    
-check time
     timedatectl status
     
 PARTITION THE DISKS
@@ -54,33 +52,38 @@ new partition, 30G size, Linux filesystem
 new partition, inf size, Linux filesystem
 
 check alignment
-    parted -a optimal /dev/sda
+    parted -a optimal /dev/sdX
     align-check opt 1
     align-check opt 2
     align-check opt 3
     align-check opt 4
 
 FORMAT THE PARTITIONS
+check disks and format partitions
     lsblk
-    mkfs.fat -F32 /dev/sda1
-    mkswap /dev/sda2
-    mkfs.ext4 /dev/sda3
-    mkfs.ext4 /dev/sda4
+    mkfs.fat -F32 /dev/sdX1
+    mkswap /dev/sdX2
+    mkfs.ext4 /dev/sdX3
+    mkfs.ext4 /dev/sdX4
     
 check partitions
     fdisk -l
     lsblk -f
     
 MOUNT THE FILE SYSTEMS
-    swapon  /dev/sda2
+mount the root first, and create and mount the other directories
     mount   /dev/sda3   /mnt
+
     mkdir -p /mnt/boot/efi
-    mkdir   /mnt/home
     mount   /dev/sda1   /mnt/boot/efi
+    
+    swapon  /dev/sda2
+    
+    mkdir   /mnt/home
     mount   /dev/sda4   /mnt/home
     
 MIRRORLIST
-    cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+sync database, install reflector, and execute to update the mirrorlist
     pacman -Sy
     pacman -S reflector
     reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
