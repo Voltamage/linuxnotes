@@ -1,25 +1,3 @@
-download the ipxe.lkrn and coresponding pgp signature from here
-    https://www.archlinux.org/releng/netboot/
-cd into the download directory
-check the validity of the download with gpg, like this
-    gpg --verify signaturefilename downloadfilename
-rename the efi file to bootx64.efi
-    yay -S f3
-    lsblk
-    sudo f3probe /dev/sdX
-    pacman -S e2fsprogs
-    sudo badblocks -b 32768 -c 512 -wsv /dev/sdX
-    lsblk
-    sudo cfdisk /dev/sdX
-select gpt label
-new partition
-EFI System
-write and quit
-    sudo mount /dev/sdX1 /mnt
-    sudo mkdir -p /mnt/EFI/BOOT
-    sudo cp bootx64.efi /mnt/EFI/BOOT
-    sudo efibootmgr --create --disk /dev/sdX --part 1 --loader /EFI/BOOT/bootx64.efi --label "Arch Linux Netboot" --verbose
-    
 PRE-INSTALLATION
 download arch iso from here, use the magnet link and torrent if you can
     https://www.archlinux.org/download/
