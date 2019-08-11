@@ -4,7 +4,12 @@ sudo f3probe /dev/sdX
 pacman -S e2fsprogs
 sudo badblocks -b 32768 -c 512 -wsv /dev/sdX
 yay -S syslinux
-
+lsblk
+sudo cfdisk /dev/sdX
+    select dos label
+    new partition, primary, partition type b (W95 FAT32), toggle bootable on
+sudo mkfs.fat -F32 /dev/sdd1
+    partition typ
 PRE-INSTALLATION
 download arch iso from here, use the magnet link and torrent if you can
     https://www.archlinux.org/download/
