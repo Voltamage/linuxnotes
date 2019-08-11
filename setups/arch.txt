@@ -1,3 +1,9 @@
+download the ipxe.lkrn and coresponding pgp signature from here
+    https://www.archlinux.org/releng/netboot/
+cd into the download directory
+check the validity of the download with gpg, like this
+    gpg --verify signaturefilename downloadfilename
+
     yay -S f3
     lsblk
     sudo f3probe /dev/sdX
@@ -12,7 +18,8 @@ partition type b (W95 FAT32)
 toggle bootable on
 write and quit
     yay -S syslinux
-
+sudo mount /dev/sdX1 /mnt
+sudo mkdir -p /mnt/boot/syslinux
 PRE-INSTALLATION
 download arch iso from here, use the magnet link and torrent if you can
     https://www.archlinux.org/download/
