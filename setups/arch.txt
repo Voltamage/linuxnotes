@@ -5,6 +5,7 @@ download arch iso from here, use the magnet link and torrent if you can
 VERIFY SIGNATURE
 verify your file with these commands, replace filename with current arch version
 make the checksum files by copy pasting the checksum and then a space and then the filename
+everything is in the same folder, and you should cd into it
 you can double check the pgp output with the pgp key of the developer at https://www.archlinux.org/people/developers/
     gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
     md5sum -c archlinux-2019.08.01-x86_64.iso.md5
@@ -40,7 +41,7 @@ list drives and partitions
     lsblk
     
 destroy tables
-    gdisk
+    gdisk /dev/sdX
     x
     z
 
