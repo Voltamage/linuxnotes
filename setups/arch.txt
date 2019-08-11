@@ -89,6 +89,7 @@ sync database, install reflector, and execute to update the mirrorlist
     reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     
 INSTALL THE BASE PACKAGES
+base-devel has sudo and other important packes too, so you should get it
     pacstrap /mnt base base-devel
     
 FSTAB
@@ -100,12 +101,14 @@ CHROOT
     arch-chroot /mnt
     
 TIMEZONE
+check zoneinfo, copy, and set the hardware to UTC
     ls usr/share/zoneinfo
     ls usr/share/zoneinfo/America
     ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
     hwclock --systohc
     
 LOCALIZATION
+generate locale and check
 uncomment en_US.UTF-8 UTF-8
     nano -w /etc/locale.gen
     locale-gen
@@ -113,41 +116,24 @@ uncomment en_US.UTF-8 UTF-8
     nano -w /etc/locale.conf
     
 NETWORK CONFIGURATION
+edit the hostname and hosts files for network, and check them
     echo arch > /etc/hostname
+    nano -w /etc/hostname
     nano -w /etc/hosts
         127.0.0.1	localhost
         ::1         localhost
         127.0.1.1	arch.localdomain	arch
         
 INITRAMFS
-just in case
+just in case, rebuild initramfs
     mkinitcpio -p linux
     
 ROOT PASSWORD
+set root password
     passwd
     
-SELECT THE MIRRORS
-    pacman -S reflector
-    cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-    reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-    nano -w /etc/pacman.d/mirrorlist
-    nano -w /etc/systemd/system/reflector.service
-        [Unit]
-        Description=pacman mirrorlist update
-        Wants=network-online.target
-        After=network-online.target
-        
-        [Service]
-        Type=oneshot
-        ExecStart=/usr/bin/reflector --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-        
-        [Install]
-        RequiredBy=multi-user.target
-        
-start the service with
-    systemctl enable reflector.service
-    
 BOOT LOADER
+get packages, intel-ucode for the processor, install in the removable way, and generate the config to include intel-ucode
     pacman -S efibootmgr grub intel-ucode os-prober
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
     grub-mkconfig -o /boot/grub/grub.cfg
@@ -173,6 +159,27 @@ REBOOT
     exit
     umount -R /mnt
     reboot
+    
+SELECT THE MIRRORS
+    pacman -S reflector
+    cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+    reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+    nano -w /etc/pacman.d/mirrorlist
+    nano -w /etc/systemd/system/reflector.service
+        [Unit]
+        Description=pacman mirrorlist update
+        Wants=network-online.target
+        After=network-online.target
+        
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/bin/reflector --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+        
+        [Install]
+        RequiredBy=multi-user.target
+        
+start the service with
+    systemctl enable reflector.service
     
 TROUBLESHOOTING
 chroot back into the system by mounting the files and arch-chroot
