@@ -29,12 +29,6 @@ CONNECT TO THE INTERNET
 test internet connection
     ping www.archlinux.org -c 3
     
-MIRRORLIST
-    cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-    pacman -Sy
-    pacman -S reflector
-    reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-    
 UPDATE THE SYSTEM CLOCK
     timedatectl set-ntp true
     
@@ -83,6 +77,12 @@ MOUNT THE FILE SYSTEMS
     mkdir   /mnt/home
     mount   /dev/sda1   /mnt/boot/efi
     mount   /dev/sda4   /mnt/home
+    
+MIRRORLIST
+    cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+    pacman -Sy
+    pacman -S reflector
+    reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     
 INSTALL THE BASE PACKAGES
     pacstrap /mnt base base-devel
