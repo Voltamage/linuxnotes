@@ -56,7 +56,6 @@ MIRRORLIST
     pacman -Sy
     pacman -S reflector
     reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-    pacman -Syu
     
 UPDATE THE SYSTEM CLOCK
     timedatectl set-ntp true
