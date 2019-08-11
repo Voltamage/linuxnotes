@@ -141,7 +141,7 @@ ROOT PASSWORD
 SELECT THE MIRRORS
     pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-    reflector --verbose --latest 32 --protocol https --country 'United States' --sort rate --save /etc/pacman.d/mirrorlist
+    reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     nano -w /etc/pacman.d/mirrorlist
     nano -w /etc/systemd/system/reflector.service
         [Unit]
@@ -151,7 +151,7 @@ SELECT THE MIRRORS
         
         [Service]
         Type=oneshot
-        ExecStart=/usr/bin/reflector --latest 32 --protocol https --country 'United States' --sort rate --save /etc/pacman.d/mirrorlist
+        ExecStart=/usr/bin/reflector --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
         
         [Install]
         RequiredBy=multi-user.target
