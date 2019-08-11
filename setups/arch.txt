@@ -1,3 +1,10 @@
+yay -S f3
+lsblk
+sudo f3probe /dev/sdX
+pacman -S e2fsprogs
+sudo badblocks -b 32768 -c 512 -wsv /dev/sdX
+yay -S syslinux
+
 PRE-INSTALLATION
 download arch iso from here, use the magnet link and torrent if you can
     https://www.archlinux.org/download/
