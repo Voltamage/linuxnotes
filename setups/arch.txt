@@ -139,15 +139,15 @@ get packages, intel-ucode for the processor, install in the removable way, and g
     grub-mkconfig -o /boot/grub/grub.cfg
     
 USERS AND GROUPS
+install zsh, default user use zsh, give sudo perms, and remove needing to do passwords in different terminals, and check
     pacman -S zsh
     useradd -m -G wheel -s /usr/bin/zsh volt
     passwd volt
     nano -w /etc/sudoers
-uncomment %wheel ALL=(ALL) ALL
-add this to the file as well
-        ## Keeps wheel users from needing to reinsert passwords in different terminals
-        Defaults !tty_tickets
-test user
+uncomment wheel line, add the other two
+%wheel ALL=(ALL) ALL
+## Keeps wheel users from needing to reinsert passwords in different terminals
+Defaults !tty_tickets
     groups volt
     less /etc/passwd
     
@@ -201,7 +201,8 @@ login as volt
 OH-MY-ZSH
 do this before literally anything else
 there is an AUR version as well
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    pacman -S git
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 YAY
 try not to run as root
