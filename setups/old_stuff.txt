@@ -1,3 +1,6 @@
+mkdir ~/server
+sshfs helix@192.168.2.244:/server /home/volt/server
+
 alsa-utils 1.1.9-1
 aria2 1.34.0-3
 betterdiscordctl-git 1.6.0.r34.g6433a5b-1
