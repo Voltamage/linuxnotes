@@ -9,6 +9,7 @@ blender 17:2.80rc3-1
 blueman 2.1-1
 bluez-utils 5.50-6
 discord 0.0.9-3
+epdfview 0.1.8-10
 etcher 1.5.52-1
 f3 7.2-1
 ffmpegthumbnailer 2.2.0-2
@@ -28,6 +29,7 @@ jdownloader2 latest-13
 linux419-nvidia 1:430.26-12
 linux51-nvidia 1:430.26-12
 lutris 0.5.2.2-1
+lxappearance 0.6.3-2
 maim 5.5.3-1
 maltego 4.2.4.12374-1
 megatools 1.10.2-1
