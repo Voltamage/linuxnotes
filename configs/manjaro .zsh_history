@@ -1,0 +1,3014 @@
+: 1559197684:0;exit
+: 1559197684:0;yay  -Ss firefox
+: 1559197684:0;yay -S firefox
+: 1559197684:0;ranger
+: 1559197684:0;reboot
+: 1559197684:0;yay -Ss ripcord
+: 1559197684:0;yay -S ripcord
+: 1559197684:0;shutdown
+: 1559197684:0;sudo shutdown
+: 1559197684:0;shutdown -c
+: 1559197684:0;shutdown now
+: 1559197684:0;sudo reboot
+: 1559197684:0;reboot
+: 1559197684:0;yay -Ss neofetch
+: 1559197684:0;yay -S neofetch
+: 1559197684:0;neofetch
+: 1559197684:0;reboot
+: 1559197684:0;ranger
+: 1559197684:0;yay  -Ss pcmanfm
+: 1559197684:0;ranger
+: 1559197684:0;yay -Ss gotop
+: 1559197684:0;yay -S gotop
+: 1559197684:0;shutdown now
+: 1559197684:0;gotop
+: 1559197684:0;yay -Syu
+: 1559197684:0;reboot
+: 1559197684:0;yay -Rsn firefox
+: 1559197684:0;htop
+: 1559197684:0;reboot
+: 1559197684:0;yay -Ss firefox
+: 1559197684:0;yay -S firefox
+: 1559197684:0;yay -Ss mpv
+: 1559197684:0;yay -S mpv
+: 1559197684:0;yay -Ss youtube-dl
+: 1559197684:0;yay -S youtube-dl
+: 1559197684:0;xdg-settings
+: 1559197684:0;chmod u+x open_with_linux.py
+: 1559197684:0;./open_with_linux.py install
+: 1559197684:0;neofetch
+: 1559197684:0;yay -S lutris
+: 1559197684:0;yay -Ss lutris
+: 1559197684:0;yay -S lutris
+: 1559197684:0;yay -S vulkan-icd-loader lib32-vulkan-icd-loader
+: 1559197684:0;yay -Syu
+: 1559197684:0;yay -Sy 
+: 1559197684:0;yay -S wine-staging winetricks
+: 1559197684:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1559197684:0;neofetch
+: 1559197684:0;sudo pcmanfm
+: 1559197684:0;reboot
+: 1559197684:0;yay -Syu
+: 1559197684:0;neofetch
+: 1559197684:0;yay -Ss wine-mono
+: 1559197684:0;yay -S wine-mono
+: 1559197684:0;yay -Ss wine gecko
+: 1559197684:0;yay -S wine_gecko
+: 1559197684:0;ranger
+: 1559197684:0;gotop
+: 1559197684:0;yay -S wine-mono
+: 1559197684:0;yay -S wine_gecko
+: 1559197684:0;yay -Ss file roller
+: 1559197684:0;yay -S file-roller
+: 1559197684:0;yay -S steam-manjaro
+: 1559197684:0;yay -S steam-native
+: 1559197684:0;yay -Ss steam
+: 1559197684:0;neofetch
+: 1559197684:0;reboot
+: 1559197684:0;ranger
+: 1559197684:0;yay -Syu
+: 1559197684:0;yay -S ttf-dejavu
+: 1559197684:0;yay -Ss spotify
+: 1559197684:0;yay -S spotify
+: 1559197684:0;yay -Ss discord
+: 1559197684:0;yay -S discord
+: 1559197684:0;yay -Ss maltego
+: 1559197684:0;yay -S maltego
+: 1559197684:0;yay -Syu
+: 1559197684:0;yay -Ss torrent
+: 1559197684:0;yay -S deluge
+: 1559197684:0;yay -S python-gobject2 
+: 1559197684:0;yay -Ss pygtk 
+: 1559197684:0;yay -S pygtk 
+: 1559197684:0;yay -Ss python-gobject2 
+: 1559197684:0;deluge
+: 1559197684:0;yay -Ss fsearch
+: 1559197684:0;yay -S fsearch-git
+: 1559197684:0;yay -Rsn palemoon-bin
+: 1559197684:0;yay -Ss sumatra
+: 1559197684:0;gotop
+: 1559197684:0;reboot
+: 1559197684:0;shutdown now
+: 1559197684:0;gotop
+: 1559197684:0;hwclock --systohc
+: 1559197684:0;timedatectl set-timezone UTC
+: 1559197684:0;sudo timedatectl set-timezone UTC
+: 1559197684:0;timedatectl status
+: 1559197684:0;reboot
+: 1559197684:0;timedatectl status
+: 1559197684:0;gotop
+: 1559197684:0;yay -Syu
+: 1559197684:0;reboot
+: 1559197684:0;yay -Ss minecraft
+: 1559197684:0;gotop
+: 1559197684:0;shutdown now
+: 1559197684:0;yay -Syu
+: 1559197684:0;steam
+: 1559197684:0;reboot
+: 1559197684:0;shutdown now
+: 1559197684:0;yay -Syu
+: 1559197684:0;yay -Ss netflix
+: 1559197684:0;yay -Syu
+: 1559197684:0;shutdown now
+: 1559197684:0;gotop
+: 1559197684:0;neofetch
+: 1559197684:0;timedatectl set-ntp true
+: 1559197684:0;sudo timedatectl set-ntp true
+: 1559197684:0;timedatectl set-timezone America/Los_Angeles
+: 1559197684:0;sudo timedatectl set-timezone America/Los_Angeles
+: 1559197684:0;timedatectl status
+: 1559197684:0;reboot
+: 1559197684:0;timedatectl status
+: 1559197684:0;reboot
+: 1559197684:0;shutdown now
+: 1559197684:0;yay -Syu
+: 1559197684:0;yay -Ss spotify
+: 1559197684:0;reboot
+: 1559197684:0;shutdown now
+: 1559197684:0;pacman -Q
+: 1559197684:0;zsh --version
+: 1559197684:0;sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+: 1559197684:0;gotop
+: 1558285607:0;yay -Syu
+: 1558285753:0;neofetch
+: 1558286132:0;gotop
+: 1558287280:0;zsh --version
+: 1558292101:0;ranger
+: 1558292286:0;yay -Ss powerline
+: 1558292318:0;yay -Ss powerline fonts
+: 1558292365:0;yay -S powerline-fonts
+: 1558292475:0;neofetch
+: 1558292481:0;gotop
+: 1558292495:0;cd /home
+: 1558292506:0;cd /Games
+: 1558292511:0;cd /home/Games
+: 1558292520:0;cd /helix
+: 1558292526:0;cd /home/helix
+: 1558292532:0;cd /home/helix/Games
+: 1558292546:0;cd /home/helix/Games/star-citizen
+: 1558292949:0;upgrade_oh_my_zsh
+: 1558292983:0;zshconfig
+: 1558293023:0;upgrade_oh_my_zsh
+: 1558293029:0;zshconfig
+: 1558293110:0;ohmyzsh
+: 1558293165:0;alias
+: 1558293798:0;yay -Syu
+: 1558311848:0;yay -Ss tmux
+: 1558311932:0;yay -S tmux
+: 1558312323:0;reboot
+: 1558313625:0;tmux
+: 1558313872:0;ssh 192.168.2.245@voltamage
+: 1558313877:0;ssh 192.168.2.245
+: 1558313908:0;tmux
+: 1558313914:0;ssh voltamage@192.168.2.245
+: 1558314275:0;tmux
+: 1558314328:0;ssh voltamage@192.168.2.245
+: 1558314452:0;ssh 192.168.2.245
+: 1558314645:0;reboot
+: 1558316515:0;timedatectl status
+: 1558318114:0;yay -Ss plata-noir
+: 1558318671:0;shutdown now
+: 1558379707:0;yay -Ss feh
+: 1558379723:0;yay -S feh
+: 1558379871:0;ranger
+: 1558382610:0;feh --big-fill /home/helix/wallpapers/Abandoned.png
+: 1558382620:0;feh --bg-fill /home/helix/wallpapers/Abandoned.png
+: 1558383035:0;feh --bg-fill /home/helix/wallpapers/Abandoned.png feh --bg-fill /home/helix/wallpapers/TheWizardsTower.png
+: 1558383127:0;reboot
+: 1558383164:0;feh --bg-fill /home/helix/wallpapers/Abandoned.png feh --bg-fill /home/helix/wallpapers/TheWizardsTower.png
+: 1558383718:0;reboot
+: 1558383785:0;feh --bg-fill /home/helix/wallpapers/Abandoned.png feh --bg-fill /home/helix/wallpapers/TheWizardsTower.png
+: 1558383792:0;feh --bg-fill /home/helix/wallpapers/Abandoned.png --bg-fill /home/helix/wallpapers/TheWizardsTower.png
+: 1558383946:0;reboot
+: 1558384004:0;/feh.bg
+: 1558384022:0;~/feh.bg
+: 1558384034:0;/.fehbg
+: 1558384037:0;~/.fehbg
+: 1558386662:0;reboot
+: 1558387181:0;~/.fehbg
+: 1558404432:0;reboot
+: 1558404537:0;startx
+: 1558404544:0;reboot
+: 1558405360:0;~/.fehbg
+: 1558406903:0;reboot
+: 1558407008:0;cd ~/
+: 1558407021:0;./.fehbg
+: 1558407407:0;reboot
+: 1558407610:0;feh --no-fehbg --bg-fill '/home/helix/wallpapers/Abandoned.png' '/home/helix/wallpapers/TheWizardsTower.png'
+: 1558412171:0;shutdown now
+: 1558450872:0;feh --no-fehbg --bg-fill '/home/helix/wallpapers/Abandoned.png' '/home/helix/wallpapers/TheWizardsTower.png'
+: 1558453582:0;screenfetch
+: 1558457159:0;yay -Rsn screenfetch
+: 1558457245:0;neofetch
+: 1558474863:0;yay -Rsn go
+: 1558474880:0;yay -Rsn libimagequant
+: 1558474893:0;yay -Rsn intltool
+: 1558474909:0;yay -Rsn autoconf-archive
+: 1558474927:0;yay -Qdt
+: 1558475427:0;pacman -Qdt
+: 1558493738:0;yay -Q
+: 1558493815:0;yay -Qe
+: 1558493832:0;yay -Qet
+: 1558493863:0;yay -Ss blender
+: 1558495433:0;yay -Q manjaro
+: 1558495441:0;yay -Qet
+: 1558495589:0;yay -Ss manjaro i3 settings
+: 1558495642:0;yay -Syu
+: 1558501604:0;shutdown now
+: 1558576469:0;sranrdrd autorandr --change --default
+: 1558576495:0;reboot
+: 1558577823:0;yay -Ss srandrd
+: 1558577883:0;yay -Ss ripcord
+: 1558578220:0;reboot
+: 1558578279:0;autorandr --load triplemoncustom
+: 1558578291:0;sudo autorandr --load triplemoncustom
+: 1558578307:0;yay -Ss autorandr
+: 1558578345:0;yay -S autorandr
+: 1558578355:0;autorandr --load triplemoncustom
+: 1558578652:0;yay -Ss arandr
+: 1558579200:0;feh --no-fehbg --bg-fill '/home/helix/wallpapers/Abandoned.png' '/home/helix/wallpapers/TheWizardsTower.png'
+: 1558579325:0;feh --no-fehbg --bg-fill '/home/helix/wallpapers/Abandoned.png' '/home/helix/wallpapers/TheWizardsTower.png' '/home/helix/wallpapers/Test.png'
+: 1558579367:0;feh --no-fehbg --bg-fill '/home/helix/wallpapers/TheWizardsTower.png' '/home/helix/wallpapers/Abandonded.png' '/home/helix/wallpapers/Test.png'
+: 1558579403:0;feh --no-fehbg --bg-fill '/home/helix/wallpapers/TheWizardsTower.png' '/home/helix/wallpapers/Abandoned.png' '/home/helix/wallpapers/Test.png'
+: 1558579610:0;bash /home/helix/.screenlayout/customtriple.sh
+: 1558579615:0;bash /home/helix/.screenlayout/customtripl.sh
+: 1558579617:0;bash /home/helix/.screenlayout/customtriple.sh
+: 1558579705:0;feh --no-fehbg --bg-fill '/home/helix/wallpapers/TheWizardsTower.png' '/home/helix/wallpapers/Abandoned.png' '/home/helix/wallpapers/Test.png'\
+
+: 1558579712:0;reboot
+: 1558579774:0;feh --no-fehbg --bg-fill '/home/helix/wallpapers/TheWizardsTower.png' '/home/helix/wallpapers/Abandoned.png' '/home/helix/wallpapers/Test.png'\
+
+: 1558580852:0;reboot
+: 1558581892:0;yay -Ss gimp
+: 1558581990:0;yay -Rsn nitrogen
+: 1558582057:0;reboot
+: 1558582571:0;yay -Ss gparted
+: 1558582584:0;yay -S gparted
+: 1558582686:0;yay -Ss timeshift
+: 1558582699:0;yay -S timeshift
+: 1558583801:0;shutdown now
+: 1558584849:0;reboot
+: 1558585308:0;ranger
+: 1558585514:0;reboot
+: 1558587910:0;gotop
+: 1558590397:0;shutdown now
+: 1558593545:0;reboot
+: 1558593828:0;ranger
+: 1558593858:0;yay -Syu
+: 1558593931:0;gotop
+: 1558594284:0;sudo nano -w /etc/fstab
+: 1558594312:0;reboot
+: 1558595671:0;gotop
+: 1558596761:0;ranger
+: 1558597479:0;pgrep -l compton
+: 1558597670:0;pkill compton && compton
+: 1558598108:0;yay -Rsn deluge
+: 1558598664:0;pkill compton && compton
+: 1558598669:0;pgrep -l compton
+: 1558598679:0;compton
+: 1558598941:0;pkill compton && compton
+: 1558598944:0;compton
+: 1558599440:0;pkill compton && compton
+: 1558599448:0;compton
+: 1558599584:0;pkill compton && compton
+: 1558599594:0;reboot
+: 1558599789:0;htop
+: 1558599956:0;reboot
+: 1558600381:0;gotop
+: 1558603356:0;htop
+: 1558603582:0;yay -Rsn steam-native
+: 1558603615:0;steam-runtime
+: 1558603636:0;steam-manjaro
+: 1558603775:0;yay -R steam-native
+: 1558603794:0;yay -Rn steam-native
+: 1558604166:0;compton
+: 1558604176:0;reboot
+: 1558605328:0;htop
+: 1558625837:0;gotop
+: 1558629078:0;ranger
+: 1558629892:0;yay -Ss iftop
+: 1558629904:0;yay -S iftop
+: 1558629914:0;iftop
+: 1558629921:0;sudo iftop
+: 1558630748:0;htop
+: 1558631969:0;ranger
+: 1558632500:0;yay -Rsn lutris
+: 1558632625:0;reboot
+: 1558632706:0;lutris
+: 1558632951:0;yay -Sy
+: 1558632967:0;yay -S wine-staging winetricks
+: 1558632986:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox\
+
+: 1558633026:0;yay -Ss lutris
+: 1558633032:0;yay -S lutris
+: 1558633295:0;compton
+: 1558633756:0;htop
+: 1558634054:0;iftop
+: 1558634058:0;sudo iftop
+: 1558634462:0;gotop
+: 1558635663:0;ranger
+: 1558641894:0;htop
+: 1558652823:0;shutdown now
+: 1558711428:0;pkill compton
+: 1558711871:0;compton
+: 1558711890:0;reboot
+: 1558715734:0;shutdown now
+: 1558761977:0;sudo iftop
+: 1558762022:0;gotop
+: 1558762932:0;compton
+: 1558764485:0;reboot
+: 1558764614:0;gotop
+: 1558764623:0;sudo iftop
+: 1558808241:0;htop
+: 1558809683:0;reboot
+: 1558811824:0;htop
+: 1558819677:0;gotop
+: 1558819747:0;htop
+: 1558823748:0;shutdown now
+: 1558838075:0;ssh bandit.labs.overthewire.org:2220
+: 1558838086:0;ssh 2220:bandit.labs.overthewire.org
+: 1558838110:0;ssh bandit.labs.overthewire.org
+: 1558838231:0;ssh bandit0@bandit.labs.overthewire.org
+: 1558838318:0;ssh bandit0@bandit.labs.overthewire.org -p 2220
+: 1558838992:0;ssh bandit1@bandit.labs.overthewire.org -p 2220
+: 1558839076:0;ssh bandit2@bandit.labs.overthewire.org -p 2220
+: 1558839381:0;ssh bandit3@bandit.labs.overthewire.org -p 2220
+: 1558839429:0;ssh bandit4@bandit.labs.overthewire.org -p 2220
+: 1558839858:0;ssh bandit5@bandit.labs.overthewire.org -p 2220
+: 1558839933:0;ssh bandit4@bandit.labs.overthewire.org -p 2220
+: 1558840360:0;ssh bandit5@bandit.labs.overthewire.org -p 2220
+: 1558841144:0;ssh bandit6@bandit.labs.overthewire.org -p 2220
+: 1558844245:0;ssh bandit7@bandit.labs.overthewire.org -p 2220
+: 1558844358:0;ssh bandit8@bandit.labs.overthewire.org -p 2220
+: 1558845079:0;ssh bandit9@bandit.labs.overthewire.org -p 2220
+: 1558845153:0;ssh bandit0@bandit.labs.overthewire.org -p 2220
+: 1558845248:0;ssh bandit1@bandit.labs.overthewire.org -p 2220
+: 1558845298:0;ssh bandit2@bandit.labs.overthewire.org -p 2220
+: 1558845477:0;ssh bandit3@bandit.labs.overthewire.org -p 2220
+: 1558845555:0;ssh bandit4@bandit.labs.overthewire.org -p 2220
+: 1558845702:0;ssh bandit5@bandit.labs.overthewire.org -p 2220
+: 1558845914:0;ssh bandit6@bandit.labs.overthewire.org -p 2220
+: 1558846138:0;ssh bandit7@bandit.labs.overthewire.org -p 2220
+: 1558846227:0;find
+: 1558846240:0;ssh bandit8@bandit.labs.overthewire.org -p 2220
+: 1558846275:0;ssh bandit9@bandit.labs.overthewire.org -p 2220
+: 1558847390:0;find .Xresources
+: 1558847403:0;mousepad .Xresources
+: 1558847467:0;mousepad compton.conf
+: 1558847476:0;find compton.conf
+: 1558848047:0;compton
+: 1558848380:0;reboot
+: 1558849828:0;gotop
+: 1558849837:0;htop
+: 1558850064:0;yay -Ss nvidia-settings
+: 1558850072:0;nvidia-settings
+: 1558850096:0;watch -n0.1 "nvidia-settings -q GPUUtilization -q useddedicatedgpumemory"
+: 1558850144:0;yay -Ss nvidia-smi
+: 1558850152:0;nvidia-smi
+: 1558850174:0;watch -d -n 0.5 nvidia-smi
+: 1558850213:0;watch -n 0.5 nvidia-smi
+: 1558851732:0;reboot
+: 1558851780:0;gotop
+: 1558851783:0;watch -n 0.5 nvidia-smi
+: 1558852572:0;shutdown now
+: 1558897754:0;yay -Syu
+: 1558898470:0;reboot
+: 1558899015:0;htop
+: 1558901337:0;ssh bandit9@bandit.labs.overthewire.org -p 2220
+: 1558907434:0;ssh bandit10@bandit.labs.overthewire.org -p 2220
+: 1558909661:0;reboot
+: 1558912908:0;iftop
+: 1558912911:0;sudo iftop
+: 1558913262:0;find warframe
+: 1558913269:0;find xresources
+: 1558913950:0;reboot
+: 1558914510:0;sudo iftop
+: 1558914524:0;yay -Ss wireshark
+: 1558914629:0;yay -S wireshark-qt
+: 1558914705:0;yay -Ss wireshark
+: 1558914902:0;sudo wireshark
+: 1558915097:0;reboot
+: 1558915853:0;shutdown now
+: 1558923431:0;yay -Ss pavucontrol
+: 1558923448:0;yay -S pavucontrol
+: 1558923668:0;yay -Ss blueman
+: 1558923674:0;yay -S blueman
+: 1558923811:0;reboot
+: 1558925152:0;yay -Rsn lutris
+: 1558926050:0;yay -Ss xboxdrv
+: 1558926187:0;yay -S xboxdrv
+: 1558926266:0;gotop
+: 1558926525:0;\
+sudo systemctl daemon-reload
+: 1558926531:0;sudo systemctl enable --now xboxdrv
+: 1558926595:0;systemctl | grep running
+: 1558926606:0;reboot
+: 1558926752:0;systemctl | grep running
+: 1558926812:0;gotop
+: 1558927258:0;systemctl | grep running
+: 1558933161:0;yay -Ss manjaro-ranger
+: 1558933173:0;yay -Rsn manjaro-ranger-settings
+: 1558933222:0;ranger
+: 1558933267:0;yay -Rsn ranger
+: 1558933411:0;sudo pcmanfm
+: 1558933495:0;yay -Ss ranger
+: 1558933518:0;yay -S ranger
+: 1558933526:0;ranger
+: 1558933639:0;ranger --copy-config=all
+: 1558933689:0;ranger
+: 1558934248:0;yay -Ss pixbuf
+: 1558934293:0;ranger
+: 1558934314:0;yay -Ss pixbuf
+: 1558934336:0;yay -Ss rxvt-unicode-pixbuf
+: 1558934341:0;yay -S rxvt-unicode-pixbuf
+: 1558934431:0;ranger
+: 1558934455:0;yay -Ss rxvt
+: 1558934465:0;yay -Ss rxvt-unicode
+: 1558934471:0;yay -S rxvt-unicode
+: 1558934497:0;ranger
+: 1558934513:0;yay -Ss rxvt-unicode
+: 1558934778:0;ranger
+: 1558938265:0;yay -Ss tui
+: 1558938282:0;yay -Ss mhwd
+: 1558938433:0;yay -Ss lutris
+: 1558938441:0;yay -S lutris
+: 1558938646:0;yay -Qdt
+: 1558938718:0;yay -Rsn glew1.10 lib32-freeglut lib32-gconf lib32-glew1.10 lib32-libappindicator-gtk2 lib32-libcaca
+: 1558938732:0;yay -Qdt
+: 1558938875:0;yay -Rsn lib32-libcurl-compat lib32-libcurl-gnutls lib32-libgcrypt15 lib32-libjpeg6-turbo lib32-libnm-glib lib32-libpng12 lib32-librtmp0 lib32-libtheora lib32-libtiff4 lib32-libudev0-shim lib32-libva1 lib32-libvdpau lib32-libvpx1.3 lib32-libwrap lib32-openssl-1.0 lib32-sdl2_image lib32-sdl2_mixer lib32-sdl2_ttf lib32-sdl_image lib32-sdl_mixer lib32-sdl_ttf libgcrypt15 libjpeg6-turbo libpng12 librtmp0 libtiff4 libvpx1.3 sdl2_ttf
+: 1558938892:0;yay -Qdt
+: 1558938957:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1558940351:0;ranger
+: 1558940477:0;cd "/home/helix/.games/steam/steamapps/common/Divinity Original Sin 2"
+: 1558940486:0;mv ./bin ./bin.bak && ln -s DefEd/bin bin && cd bin && mv ./SupportTool.exe ./SupportTool.bak && ln -s EoCApp.exe SupportTool.exe
+: 1558940622:0;cd "/home/helix/.games/steam/steamapps/common/Divinity Original Sin 2"
+: 1558940624:0;mv ./bin ./bin.bak && ln -s DefEd/bin bin && cd bin && mv ./SupportTool.exe ./SupportTool.bak && ln -s EoCApp.exe SupportTool.exe
+: 1558941713:0;ranger
+: 1558941754:0;ping -c 3 www.manjaro.org
+: 1558941760:0;ranger
+: 1558941862:0;zshconfig
+: 1558942523:0;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+: 1558942534:0;zshocnfig
+: 1558942539:0;zshconfig
+: 1558944743:0;find warframe
+: 1558944754:0;find -a warframe
+: 1558944765:0;find ./ -a warframe
+: 1558944769:0;find ./ warframe
+: 1558944775:0;find ./
+: 1558945101:0;reboot
+: 1558950845:0;shutdown now
+: 1558951583:0;pamac install virtualbox $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-virtualbox-host-modules"}' ORS=' ') 
+: 1558951773:0;sudo vboxreload
+: 1558951786:0;pamac install virtualbox-ext-oracle
+: 1558951798:0;yay -Ss virtualbox
+: 1558951855:0;yay -Ss virtualbox-ext-oracle
+: 1558951873:0;yay -S virtualbox-ext-oracle
+: 1558951919:0;sudo gpasswd -a helix vboxusers
+: 1558951930:0;reboot
+: 1558952485:0;systemctl | grep running
+: 1558952611:0;systemctl | grep running | sort
+: 1558953275:0;htop
+: 1558953715:0;yay -Ss deluge
+: 1558953721:0;yay -S deluge
+: 1558954169:0;htop
+: 1558955278:0;shutdown now
+: 1558987913:0;gotop
+: 1558989681:0;sudo if
+: 1558989689:0;sudo iftop
+: 1558992474:0;gotop
+: 1558993532:0;yay -Ss multimc5
+: 1558993545:0;yay -S multimc5
+: 1558996661:0;shutdown now
+: 1559022438:0;yay -Rsn lutris
+: 1559023750:0;blueman
+: 1559024042:0;yay -Rsn pavucontrol blueman
+: 1559024165:0;gotop
+: 1559027859:0;sudo iftop
+: 1559031188:0;htop
+: 1559032421:0;ranger
+: 1559034030:0;watch -n 0.5 nvidia-smi
+: 1559037063:0;gotop
+: 1559037764:0;htop
+: 1559082239:0;ranger
+: 1559084117:0;watch -n 0.5 nvidia-smi
+: 1559084124:0;gotop
+: 1559085556:0;ranger
+: 1559085683:0;gotop
+: 1559085690:0;sudo iftop
+: 1559100232:0;ranger
+: 1559101681:0;yay -Ss nvidia
+: 1559111083:0;scrot
+: 1559118917:0;gotop
+: 1559118937:0;watch -n 0.5 nvidia-smi
+: 1559119031:0;watch -n 0.2 nvidia-smi
+: 1559119044:0;watch -n 0.1 nvidia-smi
+: 1559119062:0;watch -n 0.2 nvidia-smi
+: 1559157315:0;gotop
+: 1559157319:0;watch -n 0.2 nvidia-smi
+: 1559196364:0;yay -Ss lightzone
+: 1559196377:0;yay -S lightzone
+: 1559196534:0;yay -Rsn ant
+: 1559196612:0;scrot
+: 1559196885:0;yay -Ss sharex
+: 1559197046:0;yay -Rsn lightzone
+: 1559197262:0;yay -Rsn scrot
+: 1559197277:0;yay -Rsn i3-scrot
+: 1559197297:0;yay -Rsn manjaro-i3-settings
+: 1559197326:0;yay -Ss maim
+: 1559197334:0;yay -S maim
+: 1559197401:0;yay -Rsn maim
+: 1559197435:0;maim -s | xclip -selection clipboard -t image/png
+: 1559197467:0;yay -Rsn maim
+: 1559197478:0;yay -S maim
+: 1559197505:0;yay -Ss xclip
+: 1559197514:0;yay -S xclip
+: 1559197534:0;maim -s | xclip -selection clipboard -t image/png
+: 1559197654:0;sshot
+: 1559197684:0;exec zsh
+: 1559197689:0;sshot
+: 1559198167:0;reset
+: 1559198202:0;sshot
+: 1559199848:0;exec zsh
+: 1559199852:0;sshot
+: 1559199886:0;exec zsh
+: 1559199891:0;sshot
+: 1559199930:0;exec zsh
+: 1559199932:0;sshot
+: 1559199946:0;exec zsh
+: 1559199948:0;sshot
+: 1559200354:0;maim -Rsn
+: 1559200363:0;yay maim -Rsn
+: 1559200423:0;sshot
+: 1559200986:0;watch -n 0.2 nvidia-smi
+: 1559200991:0;gotop
+: 1559201549:0;yay -Ss twitch
+: 1559201614:0;sshot
+: 1559201751:0;yay -Ss discord
+: 1559202067:0;yay -Rsn wireshark
+: 1559202097:0;wireshark
+: 1559202116:0;yay -Rsn wireshark-qt
+: 1559202864:0;sshot
+: 1559242293:0;reboot
+: 1559246240:0;sshot
+: 1559256830:0;shutdown now
+: 1559287775:0;yay -Ss lolcat
+: 1559287831:0;yay -S lolcat
+: 1559287864:0;neofetch | lolcat
+: 1559287892:0;lolcat -h
+: 1559287909:0;neofetch | lolcat -a
+: 1559288009:0;neofetch | lolcat -a -d 1
+: 1559288021:0;neofetch | lolcat -a -d 1 -s 0.1
+: 1559288035:0;neofetch | lolcat -a -d 1 -s 100.00
+: 1559288060:0;lolcat -h
+: 1559288092:0;exec zsh
+: 1559288174:0;yay -Rsn lolcat
+: 1559288189:0;pip install lolcat
+: 1559288194:0;yay -Ss pip
+: 1559288238:0;cal
+: 1559288253:0;cal | date
+: 1559288264:0;ps
+: 1559288303:0;yay -Ss figlet
+: 1559292196:0;cal
+: 1559292203:0;cal | lolcat
+: 1559324278:0;sshot
+: 1559351805:0;lutris
+: 1559352102:0;sudo rfkill list
+: 1559352119:0;sudo systemctl status bluetooth
+: 1559352221:0;yay -S bluez bluez-utils
+: 1559352263:0;sudo systemctl status bluetooth
+: 1559352275:0;sudo systemctl start bluetooth
+: 1559352279:0;sudo systemctl status bluetooth
+: 1559352378:0;yay -Rsn bluez-libs
+: 1559352427:0;sudo systemctl enable bluetooth.service
+: 1559352431:0;reboot
+: 1559352515:0;sudo systemctl status bluetooth
+: 1559352644:0;yay -S pulseaudio-bluetooth
+: 1559352713:0;cat /etc/pulse/system.pa
+: 1559352992:0;yay -Ss blueman
+: 1559353002:0;yay -S blueman
+: 1559353031:0;blueman-applet
+: 1559353046:0;htop
+: 1559353299:0;reboot
+: 1559353393:0;htop
+: 1559353436:0;blueman-manager
+: 1559353446:0;pkill blueman-manager
+: 1559353726:0;yay -Ss pulseaudio-modules
+: 1559353735:0;yay -Ss pulseaudio-modules-bt-git
+: 1559353741:0;yay -S pulseaudio-modules-bt-git
+: 1559353868:0;reboot
+: 1559353954:0;pkill blueman-manager
+: 1559354264:0;sudo nano -w /etc/bluetooth/main.conf
+: 1559355028:0;blueman-applet
+: 1559355088:0;exec --no-startup-id blueman-applet
+: 1559355100:0;exec --no-startup-id bash /home/helix/.screenlayout/customtriple.sh
+: 1559355109:0;blueman-applet
+: 1559355149:0;reboot
+: 1559355438:0;man bluetoothctl
+: 1559355444:0;bluetoothctl --help
+: 1559357091:0;reboot
+: 1559365748:0;sshot
+: 1559376641:0;sh pia-linux-1.2-02681.run
+: 1559376651:0;cd /home/helix/Downloads
+: 1559376653:0;sh pia-linux-1.2-02681.run
+: 1559376847:0;reboot
+: 1559377032:0;yay -Ss pia
+: 1559377068:0;pia
+: 1559377070:0;private
+: 1559377087:0;htop
+: 1559377105:0;piavpn
+: 1559377265:0;/opt/piavpn/bin/pia-client
+: 1559377278:0;./opt/piavpn/bin/pia-client
+: 1559377355:0;exec /opt/piavpn/bin/pia-client
+: 1559377408:0;exec --no-startup-id /opt/piavpn/bin/pia-client
+: 1559377428:0;reboot
+: 1559377621:0;yay -Ss deluge
+: 1559377636:0;yay -S deluge
+: 1559378079:0;reboot
+: 1559379145:0;sudo iftop
+: 1559381517:0;htop
+: 1559381571:0;ranger
+: 1559381577:0;pkill pcmanfm
+: 1559381583:0;pcmanfm
+: 1559381588:0;ranger
+: 1559381602:0;reboot
+: 1559381899:0;gotop
+: 1559381999:0;ranger
+: 1559382516:0;yay -Ss multimc5
+: 1559382522:0;yay -Ss multimc
+: 1559382531:0;yay -Ss multimc5
+: 1559382535:0;yay -S multimc5
+: 1559382842:0;yay -Rsn jdk-openjdk
+: 1559382857:0;yay -Ss cmake
+: 1559382865:0;yay -Rsn cmake
+: 1559382978:0;yay -S multimc5
+: 1559383075:0;cmake
+: 1559383530:0;yay -Rsn multimc5
+: 1559383556:0;yay -Rsn cmake jdk-openjdk
+: 1559383664:0;yay -S multimc-git
+: 1559383764:0;yay -Rsn cmake jdk-openjdk lib32-libgusb lib32-libnl libatasmart qt5-tools
+: 1559383781:0;yay -Rsn cmake jdk-openjdk
+: 1559383795:0;yay -Rsn lib32-libgusb lib32-libnl libatasmart qt5-tools
+: 1559383813:0;yay -Rsn qt5-tools
+: 1559383928:0;yay -S hmcl
+: 1559384079:0;yay -S minecraft-launcher
+: 1559384165:0;yay -Rsn gcab jdk8-openjdk
+: 1559384178:0;yay -Rsn jdk8-openjdk
+: 1559384231:0;yay -Rsn minecraft-launcher
+: 1559384261:0;yay -S minecraft 
+: 1559384299:0;minecraft
+: 1559384361:0;yay -Rsn minecraf
+: 1559384368:0;yay -Rsn minecraft
+: 1559384610:0;yay -S minecraft 
+: 1559384640:0;minecraft
+: 1559384689:0;yay -Rsn minecraft
+: 1559384911:0;yay -S multimc5
+: 1559384958:0;cmake-gui
+: 1559385117:0;yay -Syu
+: 1559385150:0;yay -Rsn cmake jdk-openjdk
+: 1559385167:0;cmake
+: 1559385198:0;yay -S multimc5
+: 1559385870:0;multimc5
+: 1559385873:0;minecraft
+: 1559385899:0;multimc
+: 1559386593:0;watch -n 0.2 nvidia-smi
+: 1559390873:0;shutdown now
+: 1559443006:0;gotop
+: 1559443912:0;cp /home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]/chernobyl.s01e01.internal.1080p.web.h264-memento.mkv /run/media/helix/5D96-D242/
+: 1559443935:0;cp ~/home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]/chernobyl.s01e01.internal.1080p.web.h264-memento.mkv ~/run/media/helix/5D96-D242/
+: 1559443947:0;cd /home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]
+: 1559443990:0;cd "/home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]"
+: 1559444016:0;cp "/home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]/chernobyl.s01e01.internal.1080p.web.h264-memento.mkv" "/run/media/helix/5D96-D242/"
+: 1559444079:0;cp -v "/home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]/chernobyl.s01e01.internal.1080p.web.h264-memento.mkv" "/run/media/helix/5D96-D242/"
+: 1559444143:0;cp "/home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]/chernobyl.s01e01.internal.1080p.web.h264-memento.mkv" "/run/media/helix/5D96-D242/"
+: 1559444235:0;yay -Ss iotop
+: 1559444240:0;yay -S iotop
+: 1559444253:0;iotop
+: 1559444262:0;sudo iotop
+: 1559445550:0;cp "/home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]/chernobyl.s01e01.internal.1080p.web.h264-memento.mkv" "/run/media/helix/44F9678B28EF8CDB/"
+: 1559446137:0;reboot
+: 1559446221:0;shutdown now
+: 1559446545:0;sudo iotop
+: 1559446692:0;reboot
+: 1559480345:0;yay -Syu
+: 1559480693:0;yay -Ss mkvtoolnix
+: 1559480713:0;yay -S mkvtoolnix-gui
+: 1559482000:0;cp "/home/helix/Torrents/Chernobyl.S01E01.iNTERNAL.1080p.WEB.H264-MEMENTO[rarbg]/chernobyl.s01e01.internal.1080p.web.h264-memento.mkv" "/run/media/helix/D646575D46573D85/"
+: 1559482009:0;iotop
+: 1559482013:0;sudo iotop
+: 1559483005:0;yay -Ss converter
+: 1559484993:0;ranger
+: 1559486820:0;watch -n 0.2 nvidia-smi
+: 1559486823:0;gotop
+: 1559491379:0;sshot
+: 1559491432:0;shutdown now
+: 1559530145:0;reboot
+: 1559530590:0;gotop
+: 1559530593:0;watch -n 0.2 nvidia-smi
+: 1559549467:0;yay -Ss dwarf
+: 1559549487:0;yay -Ss reddit
+: 1559550965:0;shutdown now
+: 1559612936:0;cal
+: 1559633571:0;shutdown now
+: 1559672263:0;yay -Syu
+: 1559672356:0;yay -Ss spotify
+: 1559677882:0;yay -Ss discord
+: 1559679378:0;yay -Rsn discord
+: 1559679471:0;yay -Ss betterdiscord
+: 1559679718:0;yay -Ss git
+: 1559679739:0;yay -Ss betterdiscord
+: 1559679784:0;yay -Ss betterdiscord git
+: 1559679795:0;yay -Ss betterdiscord git rau
+: 1559679812:0;yay -Ss betterdiscord git rau ctl
+: 1559679818:0;yay -Ss betterdiscord
+: 1559679875:0;yay -Ss betterdiscordctl
+: 1559679881:0;yay -S betterdiscordctl
+: 1559679916:0;yay -S git
+: 1559680318:0;sudo betterdiscordctl upgrade
+: 1559680360:0;betterdiscordctl
+: 1559680370:0;yay -Ss discord
+: 1559680394:0;yay -S discord
+: 1559680463:0;gotop
+: 1559681023:0;betterdiscordctl
+: 1559681052:0;betterdiscordctl --help
+: 1559681089:0;betterdiscordctl -V
+: 1559681099:0;betterdiscordctl
+: 1559681103:0;betterdiscordctl install
+: 1559681108:0;betterdiscordctl
+: 1559684213:0;yay -Ss networkmanager
+: 1559686496:0;yay -Syu
+: 1559686631:0;gotop
+: 1559686649:0;sudo iotop
+: 1559688262:0;yay -Ss lutris
+: 1559688268:0;yay -S lutris
+: 1559688377:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1559690204:0;iftop
+: 1559690208:0;sudo iftop
+: 1559690219:0;gotop
+: 1559690415:0;sshot
+: 1559692246:0;gotop
+: 1559693871:0;yay -S xrandr
+: 1559693884:0;yay -S ffmpeg
+: 1559693897:0;yay -Ss ffmpeg
+: 1559693936:0;yay -Ss v4l2loopback
+: 1559693950:0;yay -S v4l2loopback-dkms
+: 1559694217:0;chmod +x Mon2Cam.sh
+: 1559694240:0;./Mon2Cam.sh
+: 1559694429:0;modprobe v4l2loopback
+: 1559694438:0;sudo modprobe v4l2loopback
+: 1559694472:0;yay -Ss v4l2loopback
+: 1559694710:0;gotop
+: 1559696562:0;htop
+: 1559696699:0;gotop
+: 1559696711:0;htop
+: 1559697385:0;shutdown now
+: 1559740670:0;ranger
+: 1559742559:0;curl wttr.in
+: 1559742719:0;curl wttr.in/Rescue
+: 1559742776:0;curl wttr.in/Rescue+California
+: 1559742843:0;curl wttr.in/Rescue.png
+: 1559742849:0;curl wttr.in/Rescu
+: 1559742852:0;curl wttr.in/Rescue
+: 1559742994:0;weather
+: 1559743112:0;curl wttr.in/~Rescue+California
+: 1559743178:0;curl wttr.in/~Rescue+California?u
+: 1559743187:0;curl wttr.in/~Rescue+California ?u
+: 1559743190:0;curl wttr.in/~Rescue+California
+: 1559743211:0;curl wttr.in/~Rescue+California_?u
+: 1559743215:0;curl wttr.in/~Rescue+California
+: 1559743374:0;curl wttr.in/~Rescue+California?format=3
+: 1559743388:0;curl wttr.in/~Rescue+California
+: 1559743413:0;weather
+: 1559743456:0;curl wttr.in/95672
+: 1559743492:0;curl wttr.in/95672?format=3
+: 1559743578:0;weather
+: 1559745793:0;zshconfig
+: 1559745795:0;weather
+: 1559748000:0;yay -Ss flat plat
+: 1559748120:0;yay -Ss adapta
+: 1559748503:0;ranger
+: 1559748771:0;gotop
+: 1559754663:0;ranger
+: 1559756343:0;gotop
+: 1559756367:0;weather
+: 1559757366:0;sshot
+: 1559758156:0;yay -Ss rtv
+: 1559758304:0;yay -S rtv
+: 1559758320:0;rtv
+: 1559759381:0;yay -Ss mailcap
+: 1559759395:0;mailcap
+: 1559759655:0;htop
+: 1559759898:0;rtv --copy-mailcap
+: 1559759925:0;rtv --copy-config
+: 1559759976:0;rtv
+: 1559760215:0;alias
+: 1559760222:0;aliases
+: 1559760257:0;reddit
+: 1559760444:0;find rtv.cfg
+: 1559760447:0;find ./ rtv.cfg
+: 1559760607:0;reddit
+: 1559760770:0;feh
+: 1559760984:0;reddit
+: 1559763058:0;man feh
+: 1559763181:0;reddit
+: 1559763355:0;man feh
+: 1559763370:0;https://i.redd.it/7u60dqpkfe231.png
+: 1559763375:0;https://i.redd.it/7u60dqpkfe231.png feh
+: 1559763379:0;feh https://i.redd.it/7u60dqpkfe231.png
+: 1559763425:0;feh -d https://i.redd.it/7u60dqpkfe231.png
+: 1559763471:0;feh --scale-down
+: 1559763474:0;feh --scale-down https://i.redd.it/7u60dqpkfe231.png
+: 1559763629:0;reddit
+: 1559763778:0;nano -w /.mailcap
+: 1559763784:0;nano -w ~/.mailcap
+: 1559763810:0;reddit
+: 1559768082:0;htop
+: 1559768129:0;reddit
+: 1559768983:0;yay -Ss video download helper
+: 1559769000:0;yay -Ss vdhcoapp
+: 1559769004:0;yay -S vdhcoapp
+: 1559769976:0;firefox -safe-mode
+: 1559770620:0;gotop
+: 1559772067:0;xdg-open
+: 1559772080:0;man xdg-open
+: 1559772090:0;xdg-settings
+: 1559772095:0;xdg-settings --help
+: 1559772727:0;yay -Ss rtv
+: 1559772987:0;feh.desktop
+: 1559772992:0;xdg-mime
+: 1559773001:0;xdg-mime default
+: 1559773010:0;xdg-mime .png
+: 1559773016:0;xdg-mime query .png
+: 1559773021:0;xdg-mime query png
+: 1559773025:0;xdg-mime quer
+: 1559773027:0;xdg-mime query
+: 1559773048:0;xdg-mime query default image/jpeg
+: 1559773055:0;xdg-mime query default image
+: 1559773063:0;xdg-mime query default image/png
+: 1559773067:0;xdg-mime query default image/gif
+: 1559773072:0;xdg-mime query default image/png
+: 1559773094:0;xdg-mime query default image/png feh.desktop
+: 1559773119:0;xdg-mime default feh.desktop image/jpeg
+: 1559773122:0;xdg-mime default feh.desktop image/png
+: 1559773212:0;xdg-mime default feh.desktop image/jpeg
+: 1559773218:0;xdg-mime query default image/png
+: 1559773222:0;xdg-mime query default image/jpeg
+: 1559773250:0;xdg-mime default viewnior.desktop image/png
+: 1559773254:0;xdg-mime default viewnior.desktop image/jpeg
+: 1559773263:0;xdg-mime query default image/gif
+: 1559773268:0;xdg-mime query default image/jpeg
+: 1559773274:0;xdg-mime query default image/png
+: 1559773312:0;yay -Ss perl-file-mimeinfo
+: 1559773328:0;reddit
+: 1559774047:0;sshot
+: 1559774077:0;reddit
+: 1559774090:0;sshot
+: 1559774138:0;weather
+: 1559774142:0;sshot
+: 1559774678:0;reddit
+: 1559774872:0;yay -Ss wikipedia
+: 1559774888:0;curses
+: 1559774898:0;yay -S wikicurses
+: 1559774909:0;wikicurses
+: 1559774945:0;yay -Rsn wikicurses
+: 1559776135:0;feh man
+: 1559776137:0;man feh
+: 1559777992:0;reddit
+: 1559778174:0;shutdown now
+: 1559784229:0;reddit
+: 1559784991:0;echo $PATH
+: 1559785034:0;yay -Ss rtv
+: 1559785271:0;w3mimgdisplay
+: 1559785275:0;w3m
+: 1559785289:0;w3m http://i.imgur.com/dimvCEA.jpg
+: 1559785307:0;rtv
+: 1559785816:0;yay -Ss netflix
+: 1559786176:0;yay -Ss netflix-qdesktop
+: 1559786180:0;yay -S netflix-qdesktop
+: 1559786214:0;yay -Ss netflix
+: 1559786233:0;yay -Ss qtwebflix
+: 1559786237:0;yay -Ss qtwebflix-git
+: 1559786242:0;yay -S qtwebflix-git
+: 1559786280:0;yay -S netflix-qdesktop
+: 1559786295:0;yay -S qtwebflix-git
+: 1559786937:0;sudo iftop
+: 1559787756:0;mailtype
+: 1559787766:0;xdg-mime query default audio/soundgasm
+: 1559787771:0;xdg-mime query default audio/mp3
+: 1559787791:0;xdg-mime query default audio/m4a
+: 1559787810:0;xdg-mime query default hmtl
+: 1559788534:0;shutdown now
+: 1559799786:0;reboot
+: 1559802544:0;editalias
+: 1559802579:0;netflix
+: 1559802584:0;editalias
+: 1559802595:0;qtwebflix
+: 1559802633:0;netflix
+: 1559802773:0;ss 
+: 1559802785:0;reddit
+: 1559810160:0;shutdown now
+: 1559829767:0;reddit
+: 1559852099:0;yay -Ss youtube
+: 1559854781:0;shutdown now
+: 1559857483:0;sshot
+: 1559857701:0;yay -Ss weechat
+: 1559857901:0;yay -S weechat
+: 1559857913:0;weechat
+: 1559858056:0;wc
+: 1559858149:0;weechat
+: 1559865571:0;sshot
+: 1559869251:0;weechat
+: 1559870251:0;sshot
+: 1559871130:0;weechat
+: 1559872156:0;sshot
+: 1559872370:0;yay -Ss weechat discord
+: 1559878062:0;yay -Ss bitlbee
+: 1559878283:0;yay -S bitlbee
+: 1559888655:0;yay -Ss bitlbee
+: 1559888764:0;sudo nano -w /etc/bitlbee/bitlbee.conf
+: 1559888917:0;chown -R bitlbee:bitlbee /var/lib/bitlbee
+: 1559888923:0;sudo chown -R bitlbee:bitlbee /var/lib/bitlbee
+: 1559888970:0;systemctl enable --now bitlbee
+: 1559888982:0;sudo systemctl enable --now bitlbee
+: 1559888995:0;systemctl status
+: 1559889018:0;systemctl | grep running | sort
+: 1559889088:0;weechat
+: 1559889394:0;yay -Ss purple-discord
+: 1559889569:0;weechat
+: 1559890046:0;yay -Ss ruby
+: 1559890071:0;yay -S ruby
+: 1559890085:0;yay -S lua
+: 1559890096:0;yay -S aspell
+: 1559890107:0;yay -S tcl
+: 1559890123:0;yay -S ruby lua aspell tcl
+: 1559890140:0;weechat
+: 1559890156:0;yay -Ss libguile
+: 1559890161:0;yay -Ss guile
+: 1559890236:0;yay -S guile2.0
+: 1559890249:0;weechat
+: 1559890264:0;irc
+: 1559890369:0;yay -Ss bitlbee
+: 1559890842:0;yay -Ss purple-discord
+: 1559890887:0;yay -S purple-discord-git
+: 1559890972:0;purple-discord
+: 1559890975:0;purple discord
+: 1559890977:0;purplediscord
+: 1559890997:0;yay -Ss bitlbee
+: 1559891008:0;yay -Ss bitlbee-libpurple
+: 1559891015:0;yay -S bitlbee-libpurple
+: 1559891080:0;reboot
+: 1559891299:0;systemctl | grep running | sort
+: 1559891308:0;irc
+: 1559891406:0;sudo nano -w /etc/bitlbee/bitlbee.conf
+: 1559891572:0;sudo pcmanfm
+: 1559891612:0;reboot
+: 1559891672:0;systemctl | grep running | sort
+: 1559891677:0;irc
+: 1559893849:0;reboot
+: 1559893982:0;irc
+: 1559896325:0;weechat -a
+: 1559896655:0;irc
+: 1559897380:0;sshot
+: 1559897479:0;aliases
+: 1559897820:0;reddit
+: 1559898505:0;yay -S lib32-gnutls lib32-libldap lib32-libgpg-error lib32-sqlite lib32-libpulse
+: 1559898988:0;lutris
+: 1559899650:0;yay -Ss mopidy
+: 1559900906:0;gotop
+: 1559901490:0;watch -n 0.2 nvidia-smi
+: 1559901575:0;gotop
+: 1559902712:0;watch -n 0.2 nvidia-smi
+: 1559902718:0;gotop
+: 1559904716:0;sshot
+: 1559908636:0;lutris
+: 1559908811:0;ranger
+: 1559925334:0;reddit
+: 1559933514:0;shutdown now
+: 1559978335:0;irc
+: 1559979850:0;htop
+: 1559980373:0;reboot
+: 1559982462:0;iotop
+: 1559982466:0;sudo iotop
+: 1559982974:0;reboot
+: 1560248444:0;yay -Syu
+: 1560272514:0;yay -Ss twitch
+: 1560273677:0;yay -Syu
+: 1560273843:0;yay -S streamlink-twitch-gui
+: 1560274112:0;streamlink-twitch-gui
+: 1560274424:0;yay -Ss streamlink
+: 1560274447:0;editalias
+: 1560274476:0;twitch
+: 1560296893:0;cal
+: 1560296931:0;yay -Syu
+: 1560297141:0;manjaro-i3-settings
+: 1560297594:0;mhwd-kernel -li
+: 1560297867:0;sudo mhwd-kernel -i linux51
+: 1560298004:0;mhwd-kernel -li
+: 1560298007:0;reboot
+: 1560298098:0;mhwd-kernel -li
+: 1560298140:0;sudo pacman -R linux50 linux50-headers linux50-extramodules
+: 1560298161:0;sudo pacman -R linux50 linux50-extramodules
+: 1560298178:0;sudo pacman -Rsn linux50 linux50-headers linux50-extramodules
+: 1560298183:0;sudo pacman -Rsn linux50 linux50-extramodules
+: 1560298221:0;mhwd-kernel -li\
+
+: 1560298313:0;lsmod | less
+: 1560298347:0;systemctl | grep running | sort
+: 1560298668:0;yay -Syu
+: 1560298732:0;ranger
+: 1560298770:0;sudo pacman-mirrors --fasttrack && sudo pacman -Syyu
+: 1560300861:0;yay -Ss eve online
+: 1560303847:0;mhwd -l -d
+: 1560303893:0;mhwd  -li
+: 1560303970:0;yay -Ss rofi
+: 1560304086:0;yay -S rofi
+: 1560304156:0;rofi -show run
+: 1560304185:0;rofi -show window
+: 1560304192:0;rofi -show ssh
+: 1560304211:0;yay -Ss dmenu
+: 1560304310:0;yay -Rsn dmenu-manjaro
+: 1560304354:0;yay -Ss rofi-dmenu
+: 1560304359:0;yay -S rofi-dmenu
+: 1560304406:0;yay -Rsn manjaro-i3-settings
+: 1560304445:0;yay -Rn manjaro-i3-settings
+: 1560304477:0;yay -S rofi-dmenu
+: 1560304501:0;reboot
+: 1560304657:0;firefox
+: 1560304710:0;pcmanfm
+: 1560304748:0;yay -Rsn rofi-dmenu
+: 1560304764:0;yay -Rsn dmenu
+: 1560304830:0;yay -Rsn morc_menu rofi-dmenu
+: 1560305664:0;reboot
+: 1560306338:0;yay -Rsn gcolor2
+: 1560306392:0;yay -Rsn manjaro-zsh-config
+: 1560306498:0;yay -Rsn bluez-libs
+: 1560306580:0;yay -Rsn viewnior
+: 1560306639:0;yay -Rsn srandrd
+: 1560306694:0;yay -Rsn speedtest-cli
+: 1560306772:0;yay -Rsn mesa-demos
+: 1560306887:0;yay -Rsn i3-scrot
+: 1560306925:0;yay -Rsn conky-i3
+: 1560306940:0;irc
+: 1560306989:0;yay -S lua
+: 1560306994:0;irc
+: 1560307013:0;reboot
+: 1560307548:0;watch -n 0.2 nvidia-smi
+: 1560326166:0;rofi-theme-selector
+: 1560326320:0;weather
+: 1560329359:0;sshot
+: 1560329407:0;shutdown now
+: 1560457943:0;yay -Syu
+: 1560461148:0;gotop
+: 1560462581:0;yay -Ss scroll
+: 1560462940:0;betterdiscordctl
+: 1560462945:0;betterdiscordctl --help
+: 1560464291:0;xfce4-settings
+: 1560465382:0;yay -Sy 
+: 1560465611:0;ranger
+: 1560465766:0;yay -Ss tumbler
+: 1560465773:0;yay -S tumbler
+: 1560465808:0;yay -Ss ffmpegtumbnailer
+: 1560465813:0;yay -Ss ffmpegthumbnailer
+: 1560465923:0;yay -S ffmpegthumbnailer
+: 1560465949:0;yay -Rsn tumbler
+: 1560466166:0;curl
+: 1560466169:0;curl --help
+: 1560467289:0;import requests URL=https://discordapp.com/api/v6/guilds/552606129906253855/emojis
+: 1560467375:0;import requests\
+\
+r = requests.get("https://discordapp.com/api/v6/guilds/552606129906253855/emojis")\
+print(r.text)
+: 1560467447:0;ranger
+: 1560467506:0;./home/helix/Hacking/discord/emote.py
+: 1560467511:0;.~/home/helix/Hacking/discord/emote.py
+: 1560467525:0;.~/Hacking/discord/emote.py
+: 1560467548:0;.~/emote.py
+: 1560467551:0;./emote.py
+: 1560467582:0;python emote.py
+: 1560467941:0;ranger
+: 1560468006:0;python emote.py
+: 1560469667:0;ranger
+: 1560469670:0;python emote.py
+: 1560471414:0;python emote.py 2
+: 1560482478:0;python emote.py
+: 1560485093:0;sshot
+: 1560485808:0;python emote.py
+: 1560486513:0;yay -Ss color picker
+: 1560486528:0;yay -S colorgrab
+: 1560486585:0;colorgrab
+: 1560487213:0;python emote.py
+: 1560531846:0;i3config
+: 1560532831:0;yay -Ss twitter
+: 1560533100:0;sudo nano -w /etc/pacman.conf
+: 1560533125:0;yay -Ss twitter
+: 1560533186:0;yay -Syu
+: 1560533527:0;sudo nano -w /etc/pacman.conf
+: 1560533770:0;w3m
+: 1560533802:0;w3m https://boards.4chan.org/b/
+: 1560536041:0;w3m www.reddit.com
+: 1560536434:0;yay -Syu
+: 1560536784:0;i3config
+: 1560537177:0;reboot
+: 1560551733:0;sshot
+: 1560551866:0;gotop
+: 1560552160:0;htop
+: 1560552959:0;sshot
+: 1560554705:0;w3m www.google.com
+: 1560554752:0;w3m --help
+: 1560554872:0;w3m www.reddit.com/r/irlgirls
+: 1560554930:0;w3m www.pornhub.com
+: 1560555037:0;w3m www.4chan.org/b/
+: 1560555786:0;sshot
+: 1560560723:0;w3m www.fbi.gov
+: 1560560763:0;sshot
+: 1560561115:0;shutdown now
+: 1560577627:0;weather
+: 1560589192:0;shutdown now
+: 1560775295:0;sshot
+: 1560798186:0;htop
+: 1560800083:0;sshot
+: 1560805842:0;cd "/home/helix/Downloads/Stretch/"
+: 1560805889:0;md5sum Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz 
+: 1560806338:0;echo "Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5" 
+: 1560806367:0;echo "Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5" | md5sum Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz -c -
+: 1560806392:0;echo "Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz" | md5sum Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 -c -
+: 1560806420:0;echo "Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz" | sha512sum Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512 -c -
+: 1560806464:0;sha512sum Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz 
+: 1560806761:0;yay -Ss checksum
+: 1560806836:0;sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512
+: 1560806857:0;md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5
+: 1560806918:0;md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 && sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512
+: 1560807218:0;gpg --verify message_detached.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig
+: 1560807240:0;gpg --verify Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz
+: 1560807264:0;md5sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.md5 && sha512sum --check Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sha512 && gpg --verify Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz.sig Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz\
+
+: 1560807621:0;sudo gparted
+: 1560807705:0;lsdisk
+: 1560807714:0;lsblk
+: 1560807798:0;sudo dd if=/dev/zero of=/dev/sdd bs=8192 status=progress
+: 1560807832:0;sudo iotop
+: 1560808382:0;yay -Rsn maltego
+: 1560808500:0;n
+: 1560810087:0;sudo gparted
+: 1560810345:0;cd "/home/helix/Downloads/Stretch/"
+: 1560811135:0;sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdd oflag=sync status=progress
+: 1560811316:0;htop
+: 1560811593:0;sudo gparted
+: 1560811658:0;umount /dev/sdd
+: 1560811822:0;sudo gparted
+: 1560812014:0;cd "/home/helix/Downloads/Stretch/"
+: 1560812021:0;sudo dd bs=4M if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdd oflag=sync status=progress 
+: 1560812371:0;lsblk
+: 1560812379:0;sudo dd if=Debian-Stretch-1.0~RC2-20180403-XU3-XU4.img.xz of=/dev/sdd oflag=sync status=progress 
+: 1560812635:0;htop
+: 1560813343:0;yay -Ss etcher
+: 1560813375:0;yay -S etcher
+: 1560813510:0;lsblk
+: 1560814487:0;ssh 192.168.2.245
+: 1560814603:0;wireshark
+: 1560814740:0;yay -Ss ip
+: 1560814828:0;yay -Ss ipscan
+: 1560814835:0;yay -S ipscan
+: 1560814847:0;man ipscan
+: 1560814851:0;ipscan
+: 1560815028:0;ssh 192.168.2.221
+: 1560815041:0;ssh 192.168.2.244
+: 1560815081:0;ssh root@192.168.2.244
+: 1560816960:0;ssh helix@192.168.2.244
+: 1560818689:0;yay -Ss tmux
+: 1560818728:0;ssh helix@192.168.2.244 -t tmux
+: 1560818801:0;ssh helix@192.168.2.244 -t tmux 0
+: 1560818845:0;ssh helix@192.168.2.244 -t tmux attach-session
+: 1560818916:0;ssh helix@192.168.2.244 -t a -t 0
+: 1560818926:0;ssh helix@192.168.2.244 -t 0
+: 1560818952:0;ssh helix@192.168.2.244 tmux a
+: 1560818970:0;ssh helix@192.168.2.244 -t tmux a
+: 1560819009:0;ssh helix@192.168.2.244
+: 1560819166:0;ssh helix@192.168.2.244 tmux a -t 0
+: 1560819260:0;ssh helix@192.168.2.244 -t tmux a -t 0
+: 1560819408:0;odroid-server
+: 1560820475:0;ssh helix@192.168.2.244
+: 1560820501:0;odroid-server
+: 1560821024:0;ssh helix@192.168.2.244
+: 1560821051:0;odroid-server
+: 1560821678:0;ssh helix@192.168.2.244
+: 1560821689:0;odroid-server
+: 1560825836:0;ssh helix@192.168.2.244
+: 1560825852:0;odroid-server
+: 1560827468:0;ssh helix@192.168.2.244
+: 1560827552:0;odroid-server
+: 1560828431:0;ssh helix@192.168.2.244
+: 1560828444:0;odroid-server
+: 1560829164:0;ssh helix@192.168.2.244
+: 1560829171:0;odroid-server
+: 1560830300:0;w3m https://raw.githubusercontent.com/voltamage/notes/master/debian_server_setup.txt
+: 1560837434:0;ssh helix@192.168.2.244
+: 1560837450:0;odroid-server
+: 1560839232:0;ssh helix@192.168.2.244
+: 1560839240:0;odroid-server
+: 1560839621:0;ssh helix@192.168.2.244
+: 1560839631:0;odroid-server
+: 1560840121:0;ssh helix@192.168.2.244
+: 1560840131:0;odroid-server
+: 1560847662:0;exit
+: 1560847665:0;ssh helix@192.168.2.244
+: 1560848467:0;tmux
+: 1560848470:0;odroid-server
+: 1560848481:0;ssh helix@192.168.2.244
+: 1560848492:0;odroid-server
+: 1560851086:0;ranger
+: 1560851213:0;yay -Ss samba
+: 1560851241:0;yay -Ss smbclient
+: 1560851268:0;sudo ranger
+: 1560851308:0;ranger /home
+: 1560851315:0;ranger /etc
+: 1560852542:0;ranger
+: 1560853366:0;ssh helix@192.168.2.244
+: 1560853557:0;ranger
+: 1560854058:0;ssh helix@192.168.2.244
+: 1560881979:0;htop
+: 1560884127:0;sshot
+: 1560904496:0;upgrade_oh_my_zsh\
+
+: 1560909146:0;ranger
+: 1560915823:0;sshot
+: 1560923001:0;shutdown now
+: 1560998843:0;yay -Syu
+: 1561000528:0;yay -S ffmpegthumbnailer
+: 1561000705:0;ranger
+: 1561001326:0;ranger --copy-config=scope
+: 1561001377:0;ranger --copy-config
+: 1561001414:0;ranger --copy-config=scope
+: 1561001420:0;ranger --copy-config=rc
+: 1561001423:0;ranger --copy-config=rifle
+: 1561001503:0;ranger
+: 1561009610:0;yay -Syu 
+: 1561048465:0;yay -Syu
+: 1561048990:0;gotop
+: 1561053448:0;sshot
+: 1561054853:0;ranger
+: 1561071006:0;yay -Syu
+: 1561072035:0;firefox
+: 1561073175:0;shutdown now
+: 1561177943:0;htop
+: 1561224380:0;ping -c 3 https://www.nasa.gov/
+: 1561224388:0;ping -c 3 www.nasa.gov
+: 1561224401:0;sshot
+: 1561224775:0;ranger
+: 1561225184:0;yay -Ss sftp
+: 1561225423:0;yay -Ss sshfs
+: 1561225439:0;yay -S sshfs
+: 1561225534:0;ping -c 3 odroid-server
+: 1561225571:0;ranger
+: 1561225584:0;sshfs helix@odroid-server:/server /home/helix/server
+: 1561225649:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1561225867:0;gotop
+: 1561225927:0;sudo iotop
+: 1561226313:0;ranger
+: 1561227055:0;fusermount3 -u /home/helix/server
+: 1561227073:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1561228125:0;ranger
+: 1561228655:0;gotop
+: 1561236502:0;odroid-server
+: 1561236641:0;ssh helix@192.168.2.244
+: 1561236891:0;ranger
+: 1561238968:0;sudo iotop
+: 1561245921:0;gotop
+: 1561250144:0;sudo iotop
+: 1561250163:0;iftop
+: 1561250167:0;sudo iftop
+: 1561251998:0;ranger
+: 1561252147:0;ssh helix@192.168.2.244
+: 1561255639:0;htop
+: 1561255773:0;odroid-server
+: 1561256102:0;htop
+: 1561256273:0;ssh helix@192.168.2.244
+: 1561264433:0;sshot
+: 1561265020:0;htop
+: 1561266693:0;git clone https://github.com/addy-dclxvi/gtk-theme-collections ~/.themes
+: 1561267121:0;yay -Ss arc icon
+: 1561267213:0;yay -Ss arc dark
+: 1561267292:0;yay -Ss arc icon
+: 1561267303:0;yay -S arc-icon-theme
+: 1561267555:0;yay -Rsn papirus-maia-icon-theme 
+: 1561267613:0;yay -S papirus-icon-theme 
+: 1561267691:0;yay -Rsn adapta-maia-theme 
+: 1561267713:0;yay -Rsn adwaita-icon-theme
+: 1561267735:0;yay -Rsn faba-icon-theme
+: 1561267745:0;yay -Rsn moka-icon-theme
+: 1561267780:0;yay -Rsn arc-icon-theme
+: 1561268848:0;cal
+: 1561271378:0;ranger
+: 1561277319:0;cal
+: 1561315238:0;odroid-server
+: 1561315419:0;sshfs helix@192.168.2.244:/home/ /home/helix/odroid
+: 1561317032:0;ranger
+: 1561318145:0;sshfs helix@192.168.2.244:/home/archive/Video /home/helix/Videos
+: 1561318160:0;sshfs helix@192.168.2.244:/server/archive/Video /home/helix/Videos
+: 1561318389:0;range /home/helix/Videos/youtube/channels/clockner UC5f-ChLiA0WiFnyx78miTOw/20171208 Doom_-_Kadingir_Sanctum_Nightmare_no_HUD_4k_60Fps 72S2aAxtZOs
+: 1561318393:0;ranger /home/helix/Videos/youtube/channels/clockner UC5f-ChLiA0WiFnyx78miTOw/20171208 Doom_-_Kadingir_Sanctum_Nightmare_no_HUD_4k_60Fps 72S2aAxtZOs
+: 1561318398:0;ranger
+: 1561318762:0;fusermount3 -u /home/helix/Videos
+: 1561318772:0;fusermount3 -u /home/helix/odroid
+: 1561319977:0;ranger
+: 1561330316:0;ssh helix@192.168.2.244
+: 1561339627:0;ranger
+: 1561348101:0;ssh helix@192.168.2.244
+: 1561353049:0;ranger
+: 1561355288:0;yay -Ss qbitorrent
+: 1561355292:0;yay -Ss qbittorrent
+: 1561355315:0;yay -S qbittorrent
+: 1561355522:0;yay -Rsn qbittorrent
+: 1561355676:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/64x64/qbittorrent_qbittorrent.png
+: 1561355692:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/128x128/qbittorrent_qbittorrent.png
+: 1561355707:0;sudo rm /var/cache/pacman/pkg/qbittorrent-4.1.6-1-x86_64.pkg.tar.xz
+: 1561355763:0;yay -Ss qbittorrent
+: 1561355835:0;yay -S qbittorrent
+: 1561356162:0;yay -Rsn qbittorrent
+: 1561356169:0;sudo rm /var/cache/pacman/pkg/qbittorrent-4.1.6-1-x86_64.pkg.tar.xz
+: 1561356173:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/128x128/qbittorrent_qbittorrent.png
+: 1561356180:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/64x64/qbittorrent_qbittorrent.png
+: 1561356231:0;yay -S qbittorrent
+: 1561356633:0;fusermount3 -u /home/helix/torrents
+: 1561356680:0;fusermount3 -u /home/helix/archive/torrents
+: 1561356701:0;fusermount3 -u /home/helix/torrents
+: 1561356768:0;fusermount3 -u /home/helix/yes
+: 1561356778:0;ranger
+: 1561361325:0;htop
+: 1561362363:0;ranger
+: 1561363789:0;sudo iftop
+: 1561363872:0;gotop
+: 1561363878:0;ranger
+: 1561364180:0;sshot
+: 1561367006:0;yay -Ss qbittorrent
+: 1561421952:0;yay -Ss deluge
+: 1561421958:0;deluge
+: 1561421973:0;yay -Rsn deluge
+: 1561422033:0;sudo rm /var/cache/pacman/pkg/deluge-1.3.15+18+ge050905b2-1-any.pkg.tar.xz
+: 1561422050:0;sudo rm /usr/share/app-info/icons/archlinux-arch-extra/128x128/deluge_deluge.png
+: 1561422058:0;sudo rm /usr/share/app-info/icons/archlinux-arch-extra/64x64/deluge_deluge.png
+: 1561422585:0;clear && exec zsh
+: 1561503677:0;yay -Syu
+: 1561507330:0;ranger
+: 1561508527:0;ranger /home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear - USA
+: 1561508535:0;ranger "/home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear - USA"
+: 1561509122:0;yay -Ss transmission
+: 1561509649:0;qbittorrent
+: 1561509670:0;reboot
+: 1561509826:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1561510004:0;reboot
+: 1561510087:0;ranger
+: 1561510155:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1561513104:0;ranger /home/helix/archive/torrents/.downloading
+: 1561516950:0;sudo rm -rf /home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1
+: 1561516969:0;rm -rf /home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1
+: 1561516986:0;sudo rm -rf /home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1
+: 1561518200:0;htop
+: 1561519697:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1561519755:0;odroid-server
+: 1561525507:0;yay -Rsn qbittorrent
+: 1561525626:0;sudo rm /var/cache/pacman/pkg/qbittorrent-4.1.6-1-x86_64.pkg.tar.xz
+: 1561525637:0;yay -Ss qbittorrent
+: 1561525648:0;yay -S qbittorrent
+: 1561525714:0;htop
+: 1561525752:0;sudo fsearch
+: 1561525844:0;fsearch
+: 1561525865:0;yay -Rsn qbittorrent
+: 1561525910:0;sudo rm /var/cache/pacman/pkg/qbittorrent-4.1.6-1-x86_64.pkg.tar.xz
+: 1561525922:0;reboot
+: 1561526098:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1561526214:0;yay -S qbittorrent
+: 1561527135:0;odroid-server
+: 1561528094:0;yay -Ss transmission
+: 1561528107:0;yay -S transmission-gtk
+: 1561528560:0;odroid-server
+: 1561528823:0;reboot
+: 1561529038:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1561529617:0;yay -Ss transmission
+: 1561529635:0;yay -Ss transmission web
+: 1561531407:0;netstat -tunaepc
+: 1561531437:0;netstat -tunaepc | grep transmission
+: 1561532691:0;ranger
+: 1561567386:0;watch -n 0.2 nvidia-smi
+: 1561569057:0;yay -Rsn qbittorrent
+: 1561569125:0;sudo rm /var/cache/pacman/pkg/qbittorrent-4.1.6-1-x86_64.pkg.tar.xz
+: 1561569150:0;yay -S qbittorrent
+: 1561569319:0;ranger
+: 1561569816:0;yay -Rsn transmission-gtk
+: 1561569887:0;sudo rm /var/cache/pacman/pkg/transmission-gtk-2.94-1-x86_64.pkg.tar.xz
+: 1561569893:0;sudo rm
+: 1561569903:0;sudo rm /usr/share/app-info/icons/archlinux-arch-extra/128x128/transmission-gtk_transmission.png
+: 1561569910:0;sudo rm /usr/share/app-info/icons/archlinux-arch-extra/64x64/transmission-gtk_transmission.png
+: 1561569914:0;sudo rm /usr/share/app-info/icons/archlinux-arch-extra/64x64/transmission-qt_transmission-qt.png
+: 1561569921:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/128x128/transmission-remote-gtk_transmission-remote-gtk.png
+: 1561569927:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/64x64/transmission-remote-gtk_transmission-remote-gtk.png
+: 1561570001:0;ranger
+: 1561570279:0;yay -Rsn qbittorrent
+: 1561570322:0;sudo rm /var/cache/pacman/pkg/qbittorrent-4.1.6-1-x86_64.pkg.tar.xz
+: 1561570404:0;yay -S qbittorrent
+: 1561571827:0;odroid-server
+: 1561572035:0;ranger
+: 1561572828:0;htop
+: 1561575302:0;netstat -tunaepc
+: 1561575322:0;netstat -tunaepc | grep vdhcoapp
+: 1561575355:0;gotop
+: 1561577733:0;netstat -tunaepc | grep qbittorrent
+: 1561578206:0;ssh helix@192.168.2.244
+: 1561578275:0;ranger /home/helix/archive/torrents/.downloading
+: 1561579123:0;find -type d -name .unwanted -exec rmdir rmdir {} \;
+: 1561579174:0;find -type d -name .unwanted -exec rmdir {} \;
+: 1561579420:0;yay -Syu 
+: 1561580372:0;ssh helix@192.168.2.244
+: 1561580751:0;ranger
+: 1561585158:0;htop
+: 1561585164:0;gotop
+: 1561585874:0;ssh helix@192.168.2.244
+: 1561586656:0;sshot
+: 1561590232:0;yay -Ss rtorrent
+: 1561590260:0;yay -S rtorrent
+: 1561590278:0;rtorrennt
+: 1561590282:0;rtorrent
+: 1561593057:0;users | wc -w
+: 1561593343:0;htop
+: 1561598025:0;ranger
+: 1561601331:0;sudo iftop
+: 1561601349:0;netstat -tunaepc | grep discord
+: 1561601357:0;netstat -tunaepc
+: 1561601370:0;netstat -tunaepc | grep Discord
+: 1561601433:0;sudo netstat -tunaepc | grep Discord
+: 1561601579:0;ssh helix@192.168.2.244
+: 1561601755:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1561601984:0;ssh helix@192.168.2.244
+: 1561604172:0;ranger /home/helix/archive/torrents
+: 1561604317:0;htop
+: 1561607984:0;ranger /home/helix/archive/torrents
+: 1561613003:0;sshot
+: 1561613708:0;man binwalk
+: 1561613716:0;yay -Ss binwalk
+: 1561616662:0;yay -Ss python3
+: 1561621715:0;ssh helix@192.168.2.244
+: 1561622032:0;odroid-server
+: 1561627831:0;ssh helix@192.168.2.244
+: 1561628303:0;ranger
+: 1561628349:0;odroid-server
+: 1561629780:0;ranger
+: 1561629951:0;htop
+: 1561634535:0;ssh helix@192.168.2.244
+: 1561635207:0;yay -Syu
+: 1561638542:0;htop
+: 1561639374:0;odroid-server
+: 1561651533:0;yay -Ss plex
+: 1561652635:0;reboot
+: 1561652706:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1561654193:0;ranger
+: 1561654215:0;ranger /home/helix/archive/torrents/.files
+: 1561655759:0;htop
+: 1561655842:0;qbittorrent
+: 1561655994:0;yay -S transmission-gtk
+: 1561658011:0;yay -Rsn transmission-gtk
+: 1561658066:0;sudo rm /var/cache/pacman/pkg/transmission-gtk-2.94-1-x86_64.pkg.tar.xz
+: 1561658080:0;yay -S transmission-gtk
+: 1561658572:0;htop
+: 1561658990:0;yay -Rsn qbittorrent
+: 1561659040:0;sudo rm /var/cache/pacman/pkg/qbittorrent-4.1.6-1-x86_64.pkg.tar.xz
+: 1561663107:0;ssh helix@192.168.2.244
+: 1561769925:0;odroid-server
+: 1561769996:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1561777702:0;ssh helix@192.168.2.244
+: 1561785408:0;ranger
+: 1561788943:0;yay -Ss ranger
+: 1561788995:0;yay -Rsn ranger
+: 1561789165:0;yay -Ss ranger
+: 1561789176:0;rm /usr/share/app-info/icons/archlinux-arch-community/64x64/ranger_utilities-terminal.png
+: 1561789187:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/64x64/ranger_utilities-terminal.png
+: 1561789199:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/128x128/ranger_utilities-terminal.png
+: 1561789211:0;sudo rm /var/cache/pacman/pkg/ranger-1.9.2.212.g5ae67755-1-any.pkg.tar.xz
+: 1561789216:0;sudo rm /var/cache/pacman/pkg/ranger-1.9.2-1-any.pkg.tar.xz
+: 1561789247:0;sudo rm -rf /root/.local/share/ranger
+: 1561789259:0;sudo rm -rf /root/.config/ranger
+: 1561789346:0;find /home/lost+found -type f -print0|xargs -0
+: 1561789367:0;suod rm -rf /home/lost+found/.config/ranger
+: 1561789379:0;sudo rm -rf /home/lost+found/.config/ranger
+: 1561789447:0;yay -Sc
+: 1561789492:0;yay -Ss pdfarranger
+: 1561789511:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/64x64/pdfarranger_pdfarranger.png
+: 1561789518:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/128x128/pdfarranger_pdfarranger.png
+: 1561789533:0;yay -S ranger
+: 1561789616:0;ranger
+: 1561789643:0;ranger --copy-config=all
+: 1561789780:0;ranger
+: 1561789945:0;nano -w /home/.config/ranger/rc.conf
+: 1561789959:0;nano -w /.config/ranger/rc.conf
+: 1561789966:0;nano -w .config/ranger/rc.conf
+: 1561790051:0;ranger
+: 1561791190:0;nano -w .config/ranger/rc.conf
+: 1561791235:0;nano -w /usr/share/doc/ranger/config/rc.conf
+: 1561791670:0;ranger
+: 1561791883:0;ranger /usr/share/doc/ranger/config
+: 1561792032:0;ranger
+: 1561792705:0;ssh helix@192.168.2.244
+: 1561794361:0;yay -Ss filebot
+: 1561794371:0;yay -Ss sickbeard
+: 1561794549:0;yay -Ss filebot
+: 1561794562:0;yay -S filebot
+: 1561794837:0;ranger
+: 1561795346:0;yay -Ss therenamer
+: 1561795351:0;yay -Ss renamer
+: 1561795886:0;cd /home/helix/server/media/downloaded
+: 1561795903:0;yay -Ss filebot
+: 1561795964:0;filebot -rename "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]" --db TheTVDB
+: 1561796024:0;filebot -rename "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]" --db TheTVDB -list
+: 1561796037:0;cd /home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]
+: 1561796049:0;cd "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"
+: 1561796068:0;filebot -rename --db TheTVDB
+: 1561796144:0;filebot -list "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]" --db TheTVDB
+: 1561796151:0;filebot -list "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"
+: 1561796211:0;filebot -list ---db TheTVDB /home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"\
+\
+\
+
+: 1561796219:0;filebot -list --db TheTVDB /home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"\
+\
+\
+
+: 1561796368:0;filebot -list  /ome/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"\
+\
+\
+
+: 1561796388:0;filebot "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]" --db TheTVDB"
+: 1561796405:0;filebot -"rename /home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]" --db TheTVDB"
+: 1561796422:0;filebot -"list/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]
+: 1561796439:0;filebot -list /home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]
+: 1561796448:0;filebot -rename /home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]
+: 1561796462:0;filebot -rename "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"
+: 1561796507:0;filebot -rename -non-strict "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"
+: 1561797775:0;filebot -rename -non-strict "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]" --db TheTVDB --format "{plex}"
+: 1561798126:0;ssh 
+: 1561798133:0;ssh helix@192.168.2.244
+: 1561798624:0;filebot -get-subtitles "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]
+: 1561798629:0;filebot -get-subtitles "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"
+: 1561798876:0;filebot -get-subtitles "/home/helix/server/media/TV Shows/The Grand Tour (2016)/Season 01"
+: 1561799044:0;filebot -script fn:configure
+: 1561799519:0;ranger
+: 1561800190:0;filebot -rename -non-strict --action test"/home/helix/server/media/downloaded/The.Grand.Tour.2016.S02.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561800204:0;filebot -rename -non-strict --action test "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S02.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561800423:0;filebot -rename -non-strict --action test "/home/helix/server/media/test" --db TheTVDB --format "{plex}"
+: 1561800438:0;filebot -rename -non-strict -r --action test "/home/helix/server/media/test" --db TheTVDB --format "{plex}"
+: 1561800641:0;filebot -rename -non-strict --action test "/home/helix/server/media/test" --db TheTVDB --format "{plex}"
+: 1561800662:0;filebot -rename -non-strict "/home/helix/server/media/test" --db TheTVDB --format "{plex}"
+: 1561800829:0;filebot -rename -non-strict "--db TheTVDB --format "{plex}"
+: 1561800838:0;filebot -rename -non-strict --db TheTVDB --format "{plex}"
+: 1561800871:0;filebot -rename -non-strict --db TheTVDB --format "{plex}" /home/helix/server/media/downloaded/Chernobyl.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]
+: 1561800881:0;filebot -rename -non-strict --db TheTVDB --format "{plex}" "/home/helix/server/media/downloaded/Chernobyl.S01.1080p.AMZN.WEBRip.DDP5.1.x264-NTb[rartv]"
+: 1561802190:0;filebot -rename -non-strict --action test "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S02.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561802202:0;filebot -rename -non-strict --action "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S02.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561802210:0;filebot -rename -non-strict --action test "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S02.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561802222:0;filebot -rename -non-strict --action "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S02.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561802236:0;filebot -rename -non-strict "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S02.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561802331:0;yay -Ss xattr
+: 1561802459:0;filebot -rename -non-strict "The.Grand.Tour.2016.S03.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561802485:0;filebot -rename -non-strict "/home/helix/server/media/downloaded/The.Grand.Tour.2016.S03.1080p.AMZN.WEBRip.DDP5.1.x264-QOQ[rartv]" --db TheTVDB --format "{plex}"
+: 1561802829:0;ranger
+: 1561803646:0;odroid-server
+: 1561804321:0;filebot -rename -non-strict --action test "/home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear/Season 03" --db TheTVDB --format "{plex}"
+: 1561804421:0;filebot -rename -non-strict --action test "/home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear" --db TheTVDB --format "{plex}"
+: 1561804548:0;filebot -rename -non-strict --action test "/home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear/1989" --db TheTVDB --format "{plex}"
+: 1561804584:0;filebot -rename -non-strict --action test --db TheTVDB --format "{plex}"
+: 1561804589:0;filebot -rename -non-strict --action test --db TheTVDB --format "{plex}" "/home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear/Jeremy Clarkson's Motorworld/Series 2"
+: 1561804706:0;filebot -rename -non-strict --action test --db TheTVDB --format "{plex}"
+: 1561804711:0;filebot -rename -non-strict --action test --db TheTVDB --format "{plex}" "/home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear/Season 22 HD"
+: 1561805213:0;filebot -rename -non-strict --action test --db TheTVDB --format "{plex}" "/home/helix/server/media/TV Shows" -r
+: 1561805328:0;filebot -rename -non-strict --action test --db TheTVDB --format "{plex}" "/home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear/Season 16 HD"
+: 1561805418:0;filebot -rename -non-strict --action test --db TheTVDB --format "{plex}" "/home/helix/archive/torrents/.downloading/Ultimate Top Gear Pack V.3.1/Top Gear/Season 15 HD"
+: 1561806696:0;ssh helix@192.168.2.244
+: 1561806911:0;ranger
+: 1561807082:0;yay -Ss transmission
+: 1561807110:0;yay -S transmission-cli
+: 1561807136:0;ranger
+: 1561807993:0;yay -Ss transmission
+: 1561869081:0;sshot
+: 1561871302:0;yay -Ss radarr
+: 1561871308:0;yay -S radarr
+: 1561871647:0;radarr
+: 1561872092:0;yay -S radarr
+: 1561872535:0;systemctl enable --now radarr.service
+: 1561872543:0;sudo systemctl enable --now radarr.service
+: 1561872559:0;radarr
+: 1561873565:0;odroid-server
+: 1561875308:0;yay -S deluge
+: 1561875378:0;sshot
+: 1561877426:0;deluge-console
+: 1561878066:0;ip addr show | grep 192.168
+: 1561880495:0;ssh helix@192.168.2.244 ranger
+: 1561881733:0;yay -S deluge-web
+: 1561881742:0;yay -Ss deluge
+: 1561881772:0;sudo systemctl start deluge-web
+: 1561883517:0;yay -Syu
+: 1561929902:0;cal
+: 1561938879:0;yay -Ss git
+: 1561939644:0;yay -Ss vim
+: 1561939683:0;clear && exec zsh
+: 1561939819:0;rtv
+: 1561940118:0;yay -Ss virtualbox
+: 1561940194:0;yay Qi virtualbox
+: 1561940201:0;yay Qi vim
+: 1561940216:0;yay -Qi virtualbox
+: 1561940239:0;yay -Qii virtualbox
+: 1561952534:0;yay -Syu
+: 1561953256:0;cal
+: 1561953378:0;yay -Ss virtualbox
+: 1561953397:0;yay -Rsn virtualbox
+: 1561953420:0;yay -Rsn virtualbox-ext-oracle
+: 1561953428:0;yay -Rsn virtualbox
+: 1561953438:0;yay -Ss virtualbox
+: 1561953473:0;yay -Rsn linux419-virtualbox-host-modules
+: 1561953494:0;yay -Rsn linux51-virtualbox-host-modules
+: 1561953593:0;sudo rm -rf /root/.config/VirtualBox
+: 1561953605:0;sudo rm -rf
+: 1561953610:0;sudo rm -rf /home/helix/.config/VirtualBox
+: 1561953649:0;sudo rm -rf /usr/share/app-info/icons/archlinux-arch-community/128x128/virtualbox_virtualbox.png
+: 1561953661:0;sudo rm -rf /usr/share/app-info/icons/archlinux-arch-community/64x64/virtualbox_virtualbox.png
+: 1561953671:0;sudo rm -rf /var/cache/pacman/pkg/linux51-virtualbox-host-modules-6.0.8-7-x86_64.pkg.tar.xz
+: 1561953683:0;sudo rm -rf /var/cache/pacman/pkg/linux419-virtualbox-host-modules-6.0.8-6-x86_64.pkg.tar.xz
+: 1561953689:0;sudo rm -rf /var/cache/pacman/pkg/virtualbox-6.0.8-2-x86_64.pkg.tar.xz
+: 1561953979:0;yay -S virtualbox
+: 1561954033:0;uname -r
+: 1561954070:0;uname -a
+: 1561954098:0;uname -v
+: 1561954144:0;mhwd-kernel -li
+: 1561954377:0;systemctl enable --now systemd-modules-load.service
+: 1561954385:0;sudo systemctl enable --now systemd-modules-load.service
+: 1561954579:0;yay -Ss minecraft
+: 1562007348:0;ssh helix@192.168.2.244 ranger
+: 1562007370:0;ssh helix@192.168.2.244
+: 1562012958:0;w3m https://cdimage.debian.org/images/weekly-builds/amd64/iso-cd/
+: 1562016478:0;sshot
+: 1562021176:0;reboot
+: 1562051270:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1562051289:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562053671:0;yay -Rsn virtualbox
+: 1562053733:0;yay -S virtualbox $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-virtualbox-host-modules"}' ORS=' ')
+: 1562053838:0;sudo vboxreload
+: 1562053884:0;yay -S virtualbox-ext
+: 1562053891:0;yay -Ss virtualbox-ext
+: 1562053907:0;yay -S virtualbox-ext-oracle
+: 1562053966:0;sudo gpasswd -a helix vboxusers
+: 1562054040:0;reboot
+: 1562054138:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562054148:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1562054249:0;top
+: 1562054324:0;systemctl | grep running | sort
+: 1562054557:0;ranger
+: 1562103189:0;yay -Rsn lutris
+: 1562103304:0;sudo rm /var/cache/pacman/pkg/lutris-0.5.2.1-2-any.pkg.tar.xz
+: 1562103318:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/128x128/lutris_lutris.png
+: 1562103325:0;sudo rm /usr/share/app-info/icons/archlinux-arch-community/64x64/lutris_lutris.png
+: 1562103332:0;sudo rm /home/helix/.local/share/icons/hicolor/128x128/apps/lutris_star-citizen.png
+: 1562103338:0;sudo rm /home/helix/.local/share/icons/hicolor/128x128/apps/lutris_world-of-warcraft.png
+: 1562103535:0;yay -S lutris
+: 1562103571:0;sudo rm /var/cache/pacman/pkg/bubblewrap-0.3.3-1-x86_64.pkg.tar.xz
+: 1562103590:0;sudo rm /var/cache/pacman/pkg/gnome-desktop-1:3.32.2-1-x86_64.pkg.tar.xz
+: 1562103605:0;sudo rm /var/cache/pacman/pkg/libimagequant-2.12.3-1-x86_64.pkg.tar.xz
+: 1562103622:0;sudo rm /var/cache/pacman/pkg/python-evdev-1.2.0-1-x86_64.pkg.tar.xz
+: 1562103639:0;sudo rm /var/cache/pacman/pkg/python-pillow-6.0.0-1-x86_64.pkg.tar.xz
+: 1562103649:0;sudo rm /var/cache/pacman/pkg/python-yaml-5.1-1-x86_64.pkg.tar.xz
+: 1562103658:0;yay -S lutris
+: 1562103736:0;sudo yay -Sy
+: 1562103744:0;yay -Sy
+: 1562103761:0;yay -S wine-staging winetricks
+: 1562103777:0;yay -S -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1562103783:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1562105267:0;htop
+: 1562105286:0;reboot
+: 1562128614:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1562128622:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562130864:0;git gui
+: 1562130871:0;yay -Ss git gui
+: 1562131006:0;yay -Ss smartgit
+: 1562131077:0;yay -S smartgit
+: 1562132929:0;sshot
+: 1562133001:0;mousepad ~/.config/smartgit/18.2/smartgit.properties
+: 1562133574:0;git commit
+: 1562133586:0;git commit /home/helix/notes
+: 1562133660:0;cd /home/helix/notes
+: 1562133667:0;git commit
+: 1562133751:0;git pull
+: 1562133771:0;git push
+: 1562133784:0;git commit
+: 1562133822:0;git pull
+: 1562133844:0;git push
+: 1562133979:0;cd /home/helix/notes
+: 1562134681:0;cal
+: 1562134843:0;mpv https://www.youtube.com/watch\?v\=DJNcPUW7kW8
+: 1562135777:0;yay -Syu
+: 1562137016:0;reboot
+: 1562168047:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562168108:0;reboot
+: 1562168244:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562168253:0;sshfs helix@192.168.2.244:/server/archive /home/helix/archive
+: 1562169636:0;htop
+: 1562169705:0;homelab
+: 1562173743:0;watch -n 0.2 nvidia-smi
+: 1562206721:0;sshot 
+: 1562221152:0;sshot
+: 1562224674:0;reboot
+: 1562248676:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562273893:0;odroid-server
+: 1562273978:0;yay -Syu
+: 1562274080:0;odroid-server
+: 1562274090:0;ssh helix@192.168.2.244
+: 1562274100:0;odroid-server
+: 1562274214:0;sshfs helix@192.168.2.244:/home/helix /home/helix/serverhome
+: 1562274387:0;ssh helix@192.168.2.244
+: 1562274398:0;odroid-server
+: 1562274986:0;ranger
+: 1562278394:0;yay -Ss mediainfo
+: 1562278407:0;yay -S mediainfo
+: 1562278448:0;yay -S mediainfo-gui
+: 1562278856:0;ranger /home/helix/server/media/Youtube
+: 1562278860:0;ranger /home/helix/server/media/YouTube
+: 1562279001:0;yay -Rsn mediainfo mediainfo-gui
+: 1562279011:0;ranger /home/helix/server/media/YouTube
+: 1562279028:0;yay -S mediainfo
+: 1562279045:0;ranger
+: 1562279049:0;ranger /home/helix/server/media/YouTube
+: 1562284275:0;ranger
+: 1562284570:0;ranger /home/helix/server/media/YouTube
+: 1562286041:0;ssh helix@192.168.2.244
+: 1562286315:0;server
+: 1562286322:0;server-yt-dl
+: 1562286377:0;ranger /home/helix/server/media/YouTube
+: 1562286586:0;server-youtube-dl
+: 1562286596:0;ssh helix@192.168.2.244
+: 1562286660:0;server-general
+: 1562286667:0;server-youtube-dl
+: 1562286677:0;server-general
+: 1562286696:0;ranger /home/helix/server/media/YouTube
+: 1562287628:0;fusermount3 -u /home/helix/serverhome
+: 1562287721:0;ssh helix@192.168.2.244
+: 1562288805:0;sshot
+: 1562289619:0;ranger /home/helix/server/media/YouTube
+: 1562290361:0;sshfs helix@192.168.2.244:/server/media/Youtube /home/helix/servertempmount
+: 1562290382:0;sshfs helix@192.168.2.244:/server/media/YouTube/Channels /home/helix/servertempmount
+: 1562290446:0;fusermount3 -u /home/helix/servertempmount
+: 1562290466:0;sshfs helix@192.168.2.244:/server/media/YouTube/Channels /home/helix/youtube
+: 1562290579:0;fusermount3 -u /home/helix/youtube
+: 1562290734:0;sshot
+: 1562296747:0;ranger /home/helix/server/media/YouTube
+: 1562302711:0;yay -Ss youtube-dl
+: 1562302717:0;yay -Ss aria2
+: 1562302769:0;yay -S aria2
+: 1562302941:0;phubtest
+: 1562302969:0;yay -Rsn youtube-dl
+: 1562303018:0;phubtest
+: 1562303065:0;yay -Ss ffmpeg
+: 1562303079:0;sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/bin/youtube-dl
+: 1562303103:0;sudo chown -R helix /usr/bin/youtube-dl
+: 1562303115:0;sudo chmod -R 700 /usr/bin/youtube-dl
+: 1562303119:0;ls -l /usr/bin/youtube-dl
+: 1562303125:0;phubtest
+: 1562303275:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5c345c1dcdb6d
+: 1562303490:0;aria2
+: 1562303492:0;aria2c
+: 1562303603:0;ranger
+: 1562303994:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5c345c1dcdb6d
+: 1562304223:0;phubtest https://www.xvideos.com/video36740119/curly_hair_brunette_getting_hard_sex_and_deep_throat_watch_them_live_www.cams-69.com
+: 1562304296:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=1358579493
+: 1562304363:0;ranger
+: 1562304383:0;phubtest
+: 1562304426:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5c3f331966951
+: 1562304619:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=547313245
+: 1562304783:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph597a3bef8d006
+: 1562304958:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph59f7ec1a04f5f
+: 1562305251:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5b8253f657449
+: 1562305636:0;phubtest https://spankbang.com/2nuc9/video/ava+taylor
+: 1562306782:0;youtube-dl bestvideo+bestaudio/best --recode-video mkv "https://www.youtube.com/watch\?v\=VppjX4to9s4"
+: 1562306806:0;youtube-dl --format bestvideo+bestaudio/best --recode-video mkv "https://www.youtube.com/watch\?v\=VppjX4to9s4"
+: 1562306831:0;youtube-dl --format bestvideo+bestaudio/best --recode-video mkv
+: 1562306841:0;youtube-dl "https://www.youtube.com/watch\?v\=VppjX4to9s4" --format bestvideo+bestaudio/best --recode-video mkv
+: 1562306897:0;youtube-dl "https://www.youtube.com/watch?v=VppjX4to9s4" --format bestvideo+bestaudio/best --recode-video mkv
+: 1562306987:0;ranger
+: 1562307570:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562307586:0;youtube
+: 1562308790:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562309685:0;youtube-dl "https://www.youtube.com/watch?v=VppjX4to9s4" --format bestvideo+bestaudio/best
+: 1562309877:0;youtube-dl "https://www.youtube.com/watch?v=VppjX4to9s4" --format bestvideo+bestaudio/best --merge-output-format mkv
+: 1562310260:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562310516:0;sshfs helix@192.168.2.244:/home/helix /home/helix/serverhome
+: 1562310629:0;fusermount3 -u /home/helix/serverhome
+: 1562310749:0;ranger
+: 1562310964:0;odroid-general
+: 1562310982:0;server-general
+: 1562311207:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562313326:0;sshfs helix@192.168.2.244:/home/helix /home/helix/serverhome
+: 1562313519:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5938c7e905a0b
+: 1562313898:0;phubtest https://www.xvideos.com/video36511087/sucking_and_fucking_on_cam
+: 1562314013:0;phubtest https://www.pornhub.com/model/petite-alexis
+: 1562314229:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5cd2206b57cb4
+: 1562314491:0;phubtest https://www.xvideos.com/video24718515/girl_on_sybian_-_multiple_orgasms...bestfreesexcams101.com
+: 1562314586:0;ranger
+: 1562314602:0;phubtest https://www.xvideos.com/video24718515/girl_on_sybian_-_multiple_orgasms...bestfreesexcams101.com
+: 1562314685:0;phubtest https://www.xvideos.com/video28090667/sexy_teen_fucked_hard_on_cam_-_watch_more_at_www.foxycams.online
+: 1562314887:0;phubtest https://www.xvideos.com/prof-video-click/model/maddie-springs/17893715/petite_blonde_babe_sucks_and_fucks_on_cam
+: 1562315070:0;phubtest https://spankbang.com/2qy0d/video/bbc+cam+couple+need+names
+: 1562315208:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5cea0eac6bd79
+: 1562315511:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=737013227
+: 1562315634:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph56940e86a653a
+: 1562315767:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph56940f8f9a7b5
+: 1562315932:0;ranger
+: 1562316989:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562319052:0;server-general
+: 1562346081:0;yay -Syu
+: 1562348969:0;sshot
+: 1562349775:0;ranger
+: 1562353912:0;sshot
+: 1562356319:0;server-youtube-dl
+: 1562356335:0;shutdown now
+: 1562370969:0;server-youtube-dl
+: 1562383229:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562383258:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562383295:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562393122:0;reboot
+: 1562398241:0;server-youtube-dl
+: 1562398279:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562398288:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562401469:0;ranger
+: 1562401515:0;cd notes
+: 1562401518:0;git pull
+: 1562401523:0;git sync
+: 1562402920:0;ranger
+: 1562403523:0;sshot
+: 1562403647:0;htop
+: 1562406544:0;youtube-dl https://www.youtube.com/user/LanaDelRey/videos
+: 1562407054:0;ranger
+: 1562407652:0;phubtesthttps://www.youtube.com/watch\?v\=Af9ZL3_aH0A 
+: 1562407658:0;phubtest https://www.youtube.com/watch\?v\=Af9ZL3_aH0A 
+: 1562409115:0;ranger
+: 1562413467:0;phubtest https://spankbang.com/2nuc9/video/ava+taylor
+: 1562413888:0;phubtest https://spankbang.com/3bcbg/video/ava+taylor
+: 1562414162:0;phubtest https://xhamster.com/videos/hot-cam-couple-7609810
+: 1562414372:0;aria2c --file-allocation=none --min-split-size=1M --split=16 --max-connection-per-server=16 https://www.xvideos.com/video28922109/24/sexy_kitty_camgirl_masturbate_live_1
+: 1562414522:0;phubtest https://www.xvideos.com/video28922109/24/sexy_kitty_camgirl_masturbate_live_1
+: 1562414752:0;phubtest https://anon-v.com/videos/194240/junipur-video-diary-ifeelmyself-com2-84db6e72b952fe46/
+: 1562414980:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5cf24cd070c63
+: 1562415116:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5cbe761bbe202
+: 1562415237:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5a4962cbab2ac
+: 1562415372:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5ce9b9da6aace
+: 1562415672:0;phubtest https://www.redtube.com/1150546
+: 1562415733:0;phubtest http://www.camwhoreshd.com/videos/323187/akgingersnaps-just-some-random-1-vs-3-fucking-3dea52210ff46bef/
+: 1562415749:0;phubtest http://www.camwhores.tv/embed/2317917
+: 1562415939:0;phubtest https://www.pornhub.com/view_video.php\?viewkey\=ph5c3f331966951
+: 1562434768:0;shutdown now
+: 1562438293:0;server-youtube-dl
+: 1562440991:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562440998:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562441006:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562443098:0;server-general
+: 1562444188:0;iftop
+: 1562444193:0;sudo iftop
+: 1562445530:0;yay -Syu
+: 1562445682:0;ranger
+: 1562446849:0;phubtest https://camchickscaps.com/76474/skylarthekitty2000-chaturbate-teen-blowjob-video/
+: 1562447863:0;find -iname "discord"\
+
+: 1562447961:0;find -iname "package.zip"\
+
+: 1562448883:0;shutdown now
+: 1562452014:0;reboot
+: 1562452050:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562452058:0;server-youtube-dl
+: 1562452070:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562453289:0;phubtest https://www.youtube.com/watch\?v\=NtjrcRl2pEU\&list\=PLz6JvLvS16vfEQsYxsrqCgA-WcaTYvFBx
+: 1562453403:0;ranger
+: 1562454136:0;yay -Rsn deluge
+: 1562456746:0;ranger
+: 1562457737:0;cal
+: 1562459680:0;phubest https://www.xvideos.com/video9143343/cute_blonde_teen_sucks_and_fucks_boyfriend_on_cam
+: 1562459688:0;phubtest https://www.xvideos.com/video9143343/cute_blonde_teen_sucks_and_fucks_boyfriend_on_cam
+: 1562460036:0;ranger
+: 1562461149:0;phubtest https://www.xvideos.com/video9143343/cute_blonde_teen_sucks_and_fucks_boyfriend_on_cam
+: 1562461160:0;phubtest https://www.aznude.com/mrskin/petrasilander/darkweb/darkweb-silander-hd-01-hd.html
+: 1562461399:0;phubtest https://soundgasm.net/u/LovelyLittleThing3/Theres-a-first-time-for-everything
+: 1562466984:0;ranger
+: 1562467672:0;sshot
+: 1562468323:0;ranger
+: 1562469922:0;htop
+: 1562471428:0;shutdown now
+: 1562477114:0;server-youtube-dl
+: 1562522213:0;reboot
+: 1562522285:0;server-youtube-dl
+: 1562522320:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562522425:0;sshot
+: 1562523333:0;phubtest https://www.youtube.com/watch\?v\=CggHZkFdTNM
+: 1562523497:0;gotop
+: 1562525639:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562528938:0;yay -Ss jdownloader
+: 1562528948:0;yay -S jdownloader2
+: 1562529685:0;ranger
+: 1562530131:0;ranger downloads
+: 1562530135:0;ranger Downloads
+: 1562530882:0;sshfs helix@192.168.2.244:/home/helix /home/helix/serverhome
+: 1562543234:0;ranger
+: 1562553245:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562553339:0;ranger
+: 1562554510:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562566003:0;server-general
+: 1562566541:0;yay -Ss ncdu
+: 1562566549:0;ncdu
+: 1562567592:0;sshot
+: 1562568139:0;htop
+: 1562570047:0;clear
+: 1562570053:0;clear && exec zsh
+: 1562570054:0;ranger
+: 1562570097:0;server-general
+: 1562570948:0;ssh helix@192.168.2.244
+: 1562571100:0;ranger
+: 1562571149:0;server-ncdu
+: 1562571324:0;ssh helix@192.168.2.244
+: 1562571495:0;ranger
+: 1562571521:0;server-files
+: 1562572285:0;ssh helix@192.168.2.244
+: 1562573016:0;ranger
+: 1562573496:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562579634:0;server-files
+: 1562579894:0;sshfs helix@192.168.2.244:/home/helix /home/helix/serverhome
+: 1562580414:0;ranger /home/helix/server
+: 1562582344:0;sshot
+: 1562583842:0;yay -Ss youtube
+: 1562583856:0;yay -Ss youtube-viewer
+: 1562583866:0;yay -S youtube-viewer
+: 1562583923:0;youtube-viewer
+: 1562584716:0;ranger
+: 1562584739:0;server-files
+: 1562585410:0;sshot
+: 1562599575:0;ranger /home/helix/server
+: 1562599904:0;ssh helix@192.168.2.244
+: 1562600578:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562617212:0;ssh helix@192.168.2.244
+: 1562617627:0;server-files
+: 1562617820:0;ssh helix@192.168.2.244
+: 1562618193:0;ytdl --simulate
+: 1562618199:0;ssh helix@192.168.2.244
+: 1562618589:0;ranger /home/helix/server/media/YouTube/Channels
+: 1562623510:0;server-files
+: 1562623877:0;yay -Ss nnn
+: 1562623884:0;yay -S nnn
+: 1562623898:0;nnn
+: 1562624246:0;nnn -S
+: 1562624269:0;cd /home
+: 1562624274:0;nnn -S
+: 1562624361:0;nnn
+: 1562624726:0;server-files
+: 1562625162:0;ranger
+: 1562625310:0;soundgasm https://soundgasm.net/u/glimmerandgold/greedy-girl-cant-get-enough
+: 1562625354:0;soundgasm https://soundgasm.net/u/pixel/The-Ultimate-100-1
+: 1562625385:0;ranger
+: 1562625647:0;soundgasm https://soundgasm.net/u/glimmerandgold/greedy-girl-cant-get-enough
+: 1562626794:0;ranger
+: 1562627001:0;ssh helix@192.168.2.244
+: 1562627040:0;ranger
+: 1562629239:0;soundgasm https://soundgasm.net/u/glimmerandgold/greedy-girl-cant-get-enough
+: 1562629346:0;ranger
+: 1562629568:0;server-youtube-dl
+: 1562629608:0;sshfs helix@192.168.2.244:/home/helix /home/helix/serverhome
+: 1562629615:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562629630:0;server-soundgasm
+: 1562629652:0;ranger
+: 1562632808:0;server-youtube-dl
+: 1562632830:0;server-files
+: 1562634107:0;ranger
+: 1562634172:0;server-files
+: 1562634455:0;ranger
+: 1562635771:0;ranger /home/helix/server/media/xxx/Soundgasm
+: 1562635779:0;ranger /home/helix/server/xxx/Soundgasm
+: 1562636742:0;gotop
+: 1562636752:0;nload
+: 1562636757:0;sudo nload
+: 1562636770:0;yay -Ss nload
+: 1562636784:0;yay -S nload
+: 1562636790:0;nload
+: 1562638213:0;ranger /home/helix/server/xxx/Soundgasm
+: 1562638260:0;nnn
+: 1562638559:0;yay -Rsn nnn
+: 1562638728:0;yay -S nnn
+: 1562639092:0;nnn
+: 1562639119:0;nnn -v
+: 1562639138:0;nnn
+: 1562639351:0;nnn -e
+: 1562639666:0;nnn
+: 1562639764:0;nnn -i
+: 1562639894:0;nn
+: 1562639896:0;n
+: 1562639899:0;f
+: 1562639939:0;ff
+: 1562640028:0;yt
+: 1562640053:0;ranger
+: 1562640080:0;yt
+: 1562640092:0;zshconfig
+: 1562640132:0;yt
+: 1562640797:0;watch -n 0.2 nvidia-smi
+: 1562640936:0;yay -S nnn
+: 1562641139:0;sshot
+: 1562641215:0;yt
+: 1562642496:0;server-files
+: 1562642680:0;sshot
+: 1562643389:0;yt
+: 1562645563:0;reboot
+: 1562645619:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562645626:0;server-files
+: 1562645630:0;server-youtube-dl
+: 1562645643:0;server-soundgasm
+: 1562645653:0;yt
+: 1562645854:0;reboot
+: 1562661023:0;server-soundgasm
+: 1562661047:0;server-youtube-dl
+: 1562661084:0;server-files
+: 1562662609:0;nnn
+: 1562662622:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562662629:0;nnn
+: 1562662638:0;yt
+: 1562662772:0;server-files
+: 1562686037:0;server-soundgasm
+: 1562687067:0;nnn
+: 1562689946:0;yay -S notepad
+: 1562689952:0;yay -Ss notepad
+: 1562689979:0;yay -S notepadqq
+: 1562690042:0;yay -Ss qt5-sensors
+: 1562690050:0;yay -S qt5-sensors
+: 1562690065:0;yay -Syu
+: 1562690952:0;yay -S notepadqq
+: 1562691153:0;yay -Rsn mousepad
+: 1562700522:0;nnn
+: 1562700999:0;files
+: 1562701002:0;server-files
+: 1562702619:0;sort soundgasm_channels_archive.txt
+: 1562702667:0;sort /home/helix/server/.config/youtube-dl/lists/soundgasm_channels_list.txt
+: 1562702738:0;sort /home/helix/server/.config/youtube-dl/lists/soundgasm_channels_list.txt -n
+: 1562702743:0;sort /home/helix/server/.config/youtube-dl/lists/soundgasm_channels_list.txt
+: 1562702766:0;sort /home/helix/server/.config/youtube-dl/lists/soundgasm_channels_list.txt -k
+: 1562702776:0;sort --help
+: 1562702807:0;sort /home/helix/server/.config/youtube-dl/lists/soundgasm_channels_list.txt -i
+: 1562705017:0;ranger
+: 1562705659:0;server-youtube-dl
+: 1562705774:0;yt
+: 1562706855:0;server-files
+: 1562707022:0;nnn
+: 1562707425:0;reboot
+: 1562797320:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562797343:0;ranger
+: 1562797385:0;reboot
+: 1562797439:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562797449:0;ranger
+: 1562797484:0;nnn
+: 1562797604:0;yay -Syu
+: 1562797693:0;reboot
+: 1562801247:0;server-youtube-dl
+: 1562808343:0;ssh root@192.168.2.85
+: 1562808399:0;ssh voltamage@192.168.2.85
+: 1562810868:0;sshot
+: 1562811491:0;ssh voltamage@192.168.2.85
+: 1562812029:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562812044:0;nnn
+: 1562812227:0;tmux
+: 1562812336:0;nnn
+: 1562812561:0;yt
+: 1562812651:0;yay -Ss mpc
+: 1562812665:0;yay -Ss mpc-be
+: 1562812847:0;mpv
+: 1562813070:0;yay -Ss mpc-hc
+: 1562813083:0;yay -Ss madvr
+: 1562813289:0;mpv --force-window=yes
+: 1562813360:0;mpv /home/helix/server/media/YouTube/Channels/Digital_Foundry.UC9PBzalIcEQCsiIkq36PyUA/20190522.4K_HDR_Red_Dead_Redemption_2_HDR_Fix_Tested_Plus_Graphics_Downgrade_Analysis.Rs3WFXtqmcc/20190522.4K_HDR_Red_Dead_Redemption_2_HDR_Fix_Tested_Plus_Graphics_Downgrade_Analysis.2160x60.Digital_Foundry.Rs3WFXtqmcc.mkv
+: 1562813582:0;yt
+: 1562817243:0;reboot
+: 1562830427:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562830440:0;nnn
+: 1562830448:0;ranger
+: 1562830496:0;blueman-applet
+: 1562830544:0;yay -Syu
+: 1562830768:0;server-soundgasm
+: 1562831273:0;phubtest https://motherless.com/66598EF
+: 1562831435:0;phubtest https://imgur.com/a/QMd7gVr
+: 1562831530:0;youtube-dl https://imgur.com/a/QMd7gVr
+: 1562832326:0;phubtest https://anon-v.com/videos/97098/ashemaree-bates-f222c28638fd510f/
+: 1562832454:0;ranger
+: 1562832500:0;phubtest https://anon-v.com/videos/97098/ashemaree-bates-f222c28638fd510f/
+: 1562833878:0;phubtest http://www.cwtvembeds.com/embed/4725872
+: 1562834073:0;phubtest https://openload.co/embed/QEuKcpX-hCQ/Ashe_Maree_free_webcam_show_2017-07-02_043834.mp4
+: 1562834776:0;phubtest http://www.camwhores.tv/videos/1596797/ashe-maree-caressing-her-body-with-dildo-in-free-webcam-show-2017-07-02-064307-7ece8e65/
+: 1562835481:0;clear && exec zsh
+: 1562835498:0;sort soundgasm_channels_list.txt
+: 1562835514:0;sort -o soundgasm_channels_list.txt
+: 1562835570:0;sort soundgasm_channels_list.txt
+: 1562835594:0;sudo sort -o soundgasm_channels_list.txt
+: 1562835620:0;ssh helix@192.168.2.244
+: 1562835983:0;server-files
+: 1562836671:0;nnn
+: 1562836771:0;ranger
+: 1562837975:0;htop
+: 1562838109:0;ranger
+: 1562838118:0;htop
+: 1562838156:0;ranger
+: 1562841200:0;youtube-dl https://vsco.co/mackenziedean/images/
+: 1562841399:0;yay -Ss ripme
+: 1562841408:0;yay -S ripme-git
+: 1562841570:0;ripme
+: 1562841752:0;ranger
+: 1562841838:0;nnn
+: 1562841903:0;htop
+: 1562842310:0;ranger
+: 1562842496:0;ssh helix@192.168.2.244
+: 1562844372:0;ranger /server/xxx
+: 1562844386:0;ranger /home/helix/server/xxx/downloads
+: 1562845403:0;yay -Ss jdownloader
+: 1562845410:0;yay -Rsn jdownloader2
+: 1562845454:0;ssh helix@192.168.2.244
+: 1562846844:0;ranger
+: 1562848570:0;server-youtube-dl
+: 1562848778:0;ranger /home/helix/server/xxx/Soundgasm
+: 1562869199:0;ripme
+: 1562869299:0;/usr/bin/java -jar /usr/share/java/ripme-git-1.7.85.r11.g8d0a9446.jar
+: 1562869351:0;ripme
+: 1562869374:0;yay -S jdownloader2
+: 1562869459:0;/usr/bin/java -jar /usr/share/java/ripme-git-1.7.85.r11.g8d0a9446.jar
+: 1562871068:0;youtube-dl --list-extractors
+: 1562871204:0;phubtest
+: 1562871219:0;phubtest https://www.xvideos.com/videos-i-like\#12
+: 1562871248:0;youtube-dl https://www.xvideos.com/video17983849/video_2016-01-18_22004852
+: 1562871261:0;ranger
+: 1562871321:0;touch $HOME/.netrc
+: 1562871327:0;chmod a-rwx,u+rw $HOME/.netrc
+: 1562871550:0;phubtest https://www.xvideos.com/video17983849/video_2016-01-18_22004852
+: 1562872061:0;phubtest https://www.xvideos.com/profiles/maicolacuna
+: 1562873038:0;nnn
+: 1562873635:0;yay -Syu
+: 1562883280:0;ssh helix@192.168.2.244
+: 1562883349:0;nnn
+: 1562883375:0;ranger
+: 1562883639:0;/usr/bin/java -jar /usr/share/java/ripme-git-1.7.85.r11.g8d0a9446.jar
+: 1562884010:0;yt
+: 1562884068:0;ranger
+: 1562884705:0;yay -Syu
+: 1562884751:0;yt
+: 1562894415:0;reboot
+: 1562903329:0;yt
+: 1562903339:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562903345:0;yt
+: 1562904550:0;server-youtube-dl
+: 1562905842:0;zshconfig
+: 1562905851:0;ranger
+: 1562905994:0;zshconifg
+: 1562905999:0;zshconfig
+: 1562906025:0;server-downloads
+: 1562907564:0;yay -Ss dirstat
+: 1562907574:0;yay -Ss qdirstat
+: 1562907579:0;yay -S qdirstat
+: 1562908113:0;yay -Rsn qdirstat
+: 1562908199:0;yay -S qdirstat
+: 1562908240:0;yay -Rsn qdirstat
+: 1562908258:0;yay -S qdirstat
+: 1562908573:0;iotop
+: 1562908578:0;sudo iotop
+: 1562908617:0;sudo iftop
+: 1562908940:0;ifconfig
+: 1562911027:0;zsh
+: 1562915697:0;yt
+: 1562951920:0;server-files
+: 1562991531:0;clear
+: 1562991536:0;yay -Syu
+: 1562991683:0;reboot
+: 1562991798:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1562991856:0;server-downloads
+: 1562992025:0;yt
+: 1562994812:0;htop
+: 1562995854:0;server-files
+: 1562995881:0;sshot
+: 1562998966:0;yt
+: 1562999623:0;ranger
+: 1563001874:0;server-files
+: 1563001952:0;yt
+: 1563044087:0;ranger
+: 1563044737:0;yt
+: 1563045124:0;ranger
+: 1563045852:0;yt
+: 1563049566:0;ranger
+: 1563050187:0;yt
+: 1563060416:0;cal
+: 1563084092:0;yay -Ss blender
+: 1563084229:0;ranger
+: 1563084263:0;range
+: 1563084266:0;ranger
+: 1563134173:0;server-files
+: 1563134572:0;ranger
+: 1563136087:0;ssh helix@192.168.2.244
+: 1563138701:0;ranger
+: 1563142979:0;yay -Syu 
+: 1563159848:0;ranger
+: 1563168037:0;nnn
+: 1563168214:0;yt
+: 1563175176:0;youtube-dl http://podcasts.joerogan.net/feed
+: 1563175458:0;phubtest http://podcasts.joerogan.net/feed
+: 1563176471:0;nnn
+: 1563176499:0;ranger
+: 1563177944:0;nnn
+: 1563178567:0;tmux
+: 1563215958:0;nnn
+: 1563218920:0;ranger
+: 1563230275:0;cal
+: 1563235152:0;calc
+: 1563235154:0;cal
+: 1563235505:0;sshot
+: 1563239392:0;ranger /home/helix/server/archive/
+: 1563250153:0;ssh helix@192.168.2.244
+: 1563255053:0;yay -Ss blender
+: 1563255204:0;yay -S blender-2.8-git
+: 1563257470:0;cal
+: 1563264002:0;yay -S blender-2.8-git
+: 1563264775:0;yay -Rsn blender-2.8-git
+: 1563264794:0;yay -Ss blender 2.8
+: 1563264804:0;cal
+: 1563264812:0;yay -S blender-2.8-bin
+: 1563264842:0;nnn
+: 1563305125:0;yay -Syu
+: 1563305566:0;ranger
+: 1563308149:0;reboot
+: 1563308241:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1563310093:0;ranger
+: 1563311983:0;ssh helix@192.168.2.244
+: 1563320574:0;server-downloads
+: 1563324461:0;sshot
+: 1563326848:0;ranger
+: 1563327096:0;server-downloads
+: 1563328041:0;gotop
+: 1563329347:0;sshot
+: 1563329484:0;gotop
+: 1563348900:0;sshot
+: 1563349082:0;reboot
+: 1563361313:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1563368949:0;ranger
+: 1563391727:0;reboot
+: 1563402105:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1563406947:0;ranger
+: 1563413315:0;reboot
+: 1563478551:0;shutdown now
+: 1563512837:0;upgrade_oh_my_zsh
+: 1563512842:0;clear
+: 1563512848:0;yay -Syu
+: 1563521444:0;sshot
+: 1563528377:0;reboot
+: 1563590477:0;yay -Syu
+: 1563591479:0;ranger
+: 1563591697:0;yay -Ss ksh93
+: 1563591820:0;fdisk -l
+: 1563591823:0;sudo fdisk -l
+: 1563591877:0;sudo fdisk
+: 1563591880:0;sudo fdisk -l
+: 1563591959:0;yay -S ksh93-git
+: 1563592095:0;yay -Ss smartctl
+: 1563592113:0;yay -Ss smartmontools
+: 1563592257:0;yay -S smartmontools
+: 1563592273:0;yay -Ss badblocks
+: 1563592301:0;yay -Ss e2fsprogs
+: 1563592343:0;yay -Ss systemtap
+: 1563592363:0;sha256sum
+: 1563592395:0;sha256sum --version
+: 1563592423:0;yay -Ss lsscsi
+: 1563592432:0;yay -S lsscsi
+: 1563592466:0;yay -Ss ksh93-git
+: 1563592475:0;yay -Ss smartmontools
+: 1563592483:0;yay -Ss e2fsprogs
+: 1563592492:0;sha256sum --version
+: 1563592498:0;yay -Ss lsscsi
+: 1563592507:0;yay -Ss mktemp
+: 1563592517:0;yay -Ss grep
+: 1563592525:0;yay -Ss awk
+: 1563592533:0;yay -Ss find
+: 1563592541:0;yay -Ss tail
+: 1563592553:0;yay -Ss mailx
+: 1563592571:0;yay -S mailutiles
+: 1563592575:0;yay -S mailutils
+: 1563592604:0;mktemp
+: 1563592615:0;grep
+: 1563592618:0;awk
+: 1563592622:0;find
+: 1563592639:0;tail
+: 1563592646:0;tail --version
+: 1563592651:0;mailx
+: 1563592674:0;htop
+: 1563592687:0;ps
+: 1563592692:0;mkdir
+: 1563592696:0;mv
+: 1563592699:0;id
+: 1563592861:0;lsscsi
+: 1563592879:0;lsblk
+: 1563593076:0;git clone https://github.com/ezonakiusagi/bht.git
+: 1563593221:0;bht
+: 1563593333:0;cd
+: 1563593455:0;iostatus
+: 1563593461:0;yay -Ss iostatus
+: 1563593474:0;iostat
+: 1563593479:0;yay -Ss iostat
+: 1563593505:0;yay -S sysstat
+: 1563593517:0;iostat
+: 1563593972:0;cd bht
+: 1563593978:0;ls -al
+: 1563593999:0;cd ..
+: 1563594003:0;cd bin
+: 1563594037:0;ranger
+: 1563594062:0;cd bht
+: 1563594077:0;ln -s /bin .
+: 1563594087:0;cd ..
+: 1563594093:0;cd bin
+: 1563594134:0;bht
+: 1563594151:0;cd /bin
+: 1563594157:0;ls -al
+: 1563594180:0;find bht
+: 1563594320:0;mkdir ~/bin
+: 1563594321:0;ranger
+: 1563594451:0;bht
+: 1563594462:0;bht --help
+: 1563594526:0;ranger
+: 1563594548:0;bht --help
+: 1563594568:0;iostat
+: 1563594613:0;lsblk
+: 1563594618:0;bht --email voltamage@gmail.com /dev/sdh
+: 1563594624:0;sudo bht --email voltamage@gmail.com /dev/sdh
+: 1563594702:0;mkdir /var/tmp/bht-data
+: 1563594706:0;cd /var/tmp/bht-data
+: 1563594710:0;sudo bht --email voltamage@gmail.com /dev/sdh
+: 1563594720:0;su bht --email voltamage@gmail.com /dev/sdh
+: 1563594724:0;su
+: 1563594961:0;badblocks /dev/sdh
+: 1563594966:0;sudo badblocks /dev/sdh
+: 1563594982:0;htop
+: 1563595003:0;iostat
+: 1563595030:0;iotop
+: 1563595034:0;sudo iotop
+: 1563595123:0;sudo bht /dev/sdh
+: 1563595216:0;smartctl
+: 1563595224:0;smartctl /dev/sdh
+: 1563595234:0;smartctl -help
+: 1563595351:0;lsscsi
+: 1563595370:0;sudo bht --email voltamage@gmail.com /dev/sdi
+: 1563595526:0;smartctl /dev/sdi
+: 1563595532:0;sudo smartctl /dev/sdi
+: 1563595542:0;sudo smartctl /dev/sdi -a
+: 1563595870:0;lsblk
+: 1563596180:0;sudo mount /dev/sdi1 /home/helix/test
+: 1563596191:0;lsblk
+: 1563596207:0;sudo bht --email voltamage@gmail.com /dev/sdi
+: 1563596245:0;sudo umount /home/helix/test
+: 1563596249:0;lsblk
+: 1563596253:0;sudo bht --email voltamage@gmail.com /dev/sdi
+: 1563596328:0;lsblk
+: 1563596341:0;sudo bht --email voltamage@gmail.com /dev/sdh
+: 1563596534:0;lsblk
+: 1563596593:0;sudo bht --email voltamage@gmail.com /dev/sdh
+: 1563596758:0;mailx
+: 1563596780:0;mail -s "test" voltamage@gmail.com
+: 1563597446:0;cd /var/tmp/bht-data
+: 1563598412:0;sudo bht /dev/sdh
+: 1563598432:0;lsblk
+: 1563598461:0;sudo bht /dev/sdh
+: 1563598469:0;lsblk
+: 1563598471:0;sudo bht /dev/sdh
+: 1563598522:0;ranger
+: 1563598547:0;bht --status
+: 1563598551:0;sudo bht --status
+: 1563598595:0;sudo bht --terminate
+: 1563598599:0;sudo bht --status
+: 1563598620:0;cd /var/tmp/bht-data
+: 1563598622:0;sudo bht --status
+: 1563598629:0;ranger
+: 1563598721:0;htop
+: 1563598729:0;sudo ranger
+: 1563598873:0;ranger
+: 1563598936:0;git clone https://github.com/ezonakiusagi/bht.git
+: 1563598942:0;bht --help
+: 1563598968:0;reboot
+: 1563599092:0;shutdown now
+: 1563601981:0;lsblk
+: 1563602033:0;mkdir /var/tmp/bht-data
+: 1563602035:0;ranger
+: 1563602129:0;lsblk
+: 1563602167:0;reboot
+: 1563602212:0;lsblk
+: 1563602222:0;ranger
+: 1563602313:0;cd /var/tmp/bht-data
+: 1563602412:0;sudo bht /dev/sdd /dev/sde /dev/sdf
+: 1563602577:0;bht --status
+: 1563602582:0;sudo bht --status
+: 1563602796:0;lsblk
+: 1563602834:0;sudo iotop
+: 1563602935:0;lsscsi
+: 1563602956:0;iostat
+: 1563602976:0;iostat --help
+: 1563603044:0;iostat -d 1
+: 1563603056:0;clear
+: 1563603060:0;exec zsh
+: 1563603066:0;clear && exec zsh
+: 1563603073:0;sudo bht --status
+: 1563603089:0;iostat -d 2
+: 1563603127:0;cd /var/tmp/bht-data
+: 1563603131:0;bht --status
+: 1563603138:0;cd /var/tmp/bht-data
+: 1563603140:0;sudo bht --status
+: 1563603388:0;htop
+: 1563603429:0;sudo bht --status
+: 1563603790:0;betterdiscordctl
+: 1563603800:0;betterdiscordctl upgrade
+: 1563603806:0;betterdiscordctl update
+: 1563603820:0;betterdiscordctl
+: 1563603871:0;sudo bht --status
+: 1563603965:0;smartctl /dev/sdd
+: 1563603971:0;sudo smartctl /dev/sdd -a
+: 1563603992:0;sudo smartctl /dev/sde -a
+: 1563603999:0;sudo smartctl /dev/sdf -a
+: 1563604088:0;sudo bht --status
+: 1563604115:0;htop
+: 1563604145:0;sudo smartctl /dev/sdf -a
+: 1563604162:0;sudo smartctl /dev/sde -a
+: 1563604166:0;sudo smartctl /dev/sdd -a
+: 1563604198:0;sudo bht --status
+: 1563604412:0;sudo smartctl /dev/sdd -a
+: 1563604417:0;sudo smartctl /dev/sde -a
+: 1563604423:0;sudo smartctl /dev/sdf -a
+: 1563604443:0;sudo bht --status
+: 1563604489:0;sudo smartctl /dev/sdd -a
+: 1563604495:0;sudo smartctl /dev/sde -a
+: 1563604498:0;sudo smartctl /dev/sdf -a
+: 1563604542:0;sudo bht --status
+: 1563604553:0;sudo smartctl /dev/sdf -a
+: 1563604557:0;sudo smartctl /dev/sde -a
+: 1563604562:0;sudo smartctl /dev/sdd -a
+: 1563604606:0;sudo smartctl /dev/sde -a
+: 1563604613:0;sudo smartctl /dev/sdf -a
+: 1563605170:0;sudo bht --status
+: 1563605184:0;sudo smartctl /dev/sdf -a
+: 1563605193:0;sudo smartctl /dev/sde -a
+: 1563605199:0;sudo smartctl /dev/sdd -a
+: 1563605204:0;sudo smartctl /dev/sde -a
+: 1563605207:0;sudo smartctl /dev/sdf -a
+: 1563605323:0;sudo bht --status
+: 1563605339:0;sudo smartctl /dev/sdd -a
+: 1563605345:0;sudo smartctl /dev/sde -a
+: 1563605349:0;sudo smartctl /dev/sdf -a
+: 1563605501:0;badblocks --help
+: 1563605510:0;htop
+: 1563605529:0;sudo bht --status
+: 1563605542:0;sudo smartctl /dev/sdd -a
+: 1563605546:0;sudo smartctl /dev/sde -a
+: 1563605549:0;sudo smartctl /dev/sdf -a
+: 1563605613:0;lsblk
+: 1563605662:0;badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563605667:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563605977:0;sudo bht --status
+: 1563606000:0;sudo smartctl /dev/sdd -a
+: 1563606009:0;sudo smartctl /dev/sde -a
+: 1563606012:0;sudo smartctl /dev/sdf -a
+: 1563606195:0;lsblk
+: 1563606246:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdg
+: 1563606292:0;sudo smartctl /dev/sdd -a
+: 1563606301:0;sudo smartctl /dev/sde -a
+: 1563606304:0;sudo smartctl /dev/sdf -a
+: 1563607213:0;sudo bht --status
+: 1563607589:0;yay -Ss h2testw
+: 1563607596:0;yay -Ss f3
+: 1563607708:0;yay -S f3
+: 1563607732:0;f3
+: 1563607738:0;f3probe
+: 1563607745:0;f3probe --usage
+: 1563607759:0;f3probe /dev/sdk
+: 1563607766:0;sudo f3probe /dev/sdk
+: 1563607925:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1563608332:0;ranger
+: 1563608636:0;sudo f3probe /dev/sdg
+: 1563608976:0;sudo bht --status
+: 1563609471:0;sshot
+: 1563610646:0;sudo bht --status
+: 1563610749:0;sudo smartctl /dev/sdd -a
+: 1563610756:0;sudo smartctl /dev/sde -a
+: 1563610761:0;sudo smartctl /dev/sdf -a
+: 1563610858:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdg
+: 1563610878:0;clear && exec zsh
+: 1563610880:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdg
+: 1563610888:0;clear && exec zsh
+: 1563610896:0;lsblk
+: 1563610910:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563610919:0;clear && exec zsh
+: 1563610921:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563610949:0;sudo bht --status
+: 1563611006:0;lsblk
+: 1563611056:0;iostat -d 2
+: 1563611097:0;lsblk
+: 1563611107:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563613641:0;server-downloads
+: 1563613952:0;ranger
+: 1563614109:0;sudo bht --status
+: 1563635136:0;sudo smartctl /dev/sdd -a
+: 1563635145:0;sudo smartctl /dev/sde -a
+: 1563635151:0;sudo smartctl /dev/sdf -a
+: 1563635288:0;f3probe /dev/sdk
+: 1563635295:0;sudo f3probe /dev/sdk
+: 1563635967:0;sudo bht --status
+: 1563636051:0;lsblk
+: 1563636076:0;ranger
+: 1563636371:0;yay -Rsn jdownloader2
+: 1563636448:0;yay -S jdownloader2
+: 1563636465:0;yay -Ss blender
+: 1563636567:0;lsblk
+: 1563636575:0;sudo f3probe /dev/sdk
+: 1563636608:0;yay -S blender
+: 1563637485:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563638301:0;sudo bht --status
+: 1563648150:0;sudo smartctl /dev/sdd -a
+: 1563648164:0;sudo smartctl /dev/sde -a
+: 1563648168:0;sudo smartctl /dev/sdf -a
+: 1563648284:0;lsblk
+: 1563648293:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563648407:0;server-downloads
+: 1563649693:0;ranger
+: 1563650480:0;sudo bht --status
+: 1563652858:0;server-downloads
+: 1563653639:0;sudo bht --status
+: 1563656259:0;sshot
+: 1563656952:0;lsblk
+: 1563656958:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563659670:0;sudo bht --status
+: 1563660609:0;yay -Ss blender
+: 1563660623:0;yay -Rsn blender
+: 1563660647:0;yay -Syu
+: 1563660743:0;sudo smartctl /dev/sdd -a
+: 1563660750:0;sudo smartctl /dev/sde -a
+: 1563660753:0;sudo smartctl /dev/sdf -a
+: 1563661010:0;yay -S blender
+: 1563662179:0;sudo bht --status
+: 1563662633:0;yay -Rsn blender
+: 1563662738:0;ranger
+: 1563663655:0;sudo bht --status
+: 1563665535:0;lsblk
+: 1563665541:0;sudo f3probe /dev/sdk
+: 1563666432:0;lsblk
+: 1563666517:0;sudo f3probe /dev/sdk
+: 1563666903:0;sudo bht --status
+: 1563666939:0;lsblk
+: 1563666948:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563667867:0;sudo bht --status
+: 1563670340:0;server-downloads
+: 1563670565:0;ranger
+: 1563670735:0;ranger /server/xx
+: 1563670737:0;ranger /server/xxx
+: 1563670746:0;ranger home/helix/server/xxx
+: 1563670752:0;ranger ranger
+: 1563670754:0;ranger
+: 1563670927:0;sudo bht --status
+: 1563684268:0;lsblk
+: 1563684275:0;sudo f3probe /dev/sdk
+: 1563684307:0;nnn
+: 1563684332:0;yt
+: 1563684902:0;lsblk
+: 1563684938:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdk
+: 1563686444:0;sudo bht --status
+: 1563692842:0;lsblk
+: 1563695089:0;sudo bht --status
+: 1563695463:0;sudo smartctl /dev/sdd -a
+: 1563695469:0;sudo smartctl /dev/sde -a
+: 1563695472:0;sudo smartctl /dev/sdf -a
+: 1563698388:0;sudo smartctl /dev/sdd -a
+: 1563698402:0;sudo smartctl /dev/sde -a
+: 1563698406:0;sudo smartctl /dev/sdf -a
+: 1563698961:0;sudo bht --status
+: 1563699150:0;sudo smartctl /dev/sdd -a
+: 1563699157:0;sudo smartctl /dev/sde -a
+: 1563699160:0;sudo smartctl /dev/sdf -a
+: 1563699421:0;sudo smartctl /dev/sdd -a
+: 1563699428:0;sudo smartctl /dev/sde -a
+: 1563699431:0;sudo smartctl /dev/sdd -a
+: 1563699815:0;sudo smartctl /dev/sde -a
+: 1563699818:0;sudo smartctl /dev/sdf -a
+: 1563700492:0;sudo smartctl /dev/sdd -a
+: 1563700507:0;sudo smartctl /dev/sde -a
+: 1563700511:0;sudo smartctl /dev/sdf -a
+: 1563701826:0;sudo smartctl /dev/sdd -a
+: 1563701832:0;sudo smartctl /dev/sde -a
+: 1563701837:0;sudo smartctl /dev/sdf -a
+: 1563702880:0;sudo smartctl /dev/sdd -a
+: 1563702885:0;sudo smartctl /dev/sde -a
+: 1563702888:0;sudo smartctl /dev/sdf -a
+: 1563735610:0;sudo bht --status
+: 1563735635:0;sudo smartctl /dev/sdd -a
+: 1563735642:0;sudo smartctl /dev/sde -a
+: 1563735645:0;sudo smartctl /dev/sdf -a
+: 1563735767:0;sudo bht --status
+: 1563737166:0;sudo smartctl /dev/sdd -a
+: 1563737173:0;sudo smartctl /dev/sde -a
+: 1563737177:0;sudo smartctl /dev/sdf -a
+: 1563737617:0;sudo smartctl /dev/sdd -a
+: 1563738460:0;sudo bht --status
+: 1563738603:0;yay -Ss wget
+: 1563739489:0;sudo bht --status
+: 1563740391:0;sudo smartctl /dev/sdd -a
+: 1563740412:0;sudo smartctl /dev/sde -a
+: 1563740417:0;sudo smartctl /dev/sdf -a
+: 1563741328:0;lsblk
+: 1563741525:0;sudo bht --status
+: 1563749047:0;sudo smartctl /dev/sdd -a
+: 1563749052:0;sudo smartctl /dev/sde -a
+: 1563749055:0;sudo smartctl /dev/sdf -a
+: 1563754701:0;sudo bht --status
+: 1563754741:0;sudo smartctl /dev/sdd -a
+: 1563754748:0;sudo smartctl /dev/sde -a
+: 1563754750:0;sudo smartctl /dev/sdf -a
+: 1563755292:0;yay -Ss wget2
+: 1563762981:0;sudo bht --status
+: 1563763086:0;yay -S wget2
+: 1563763343:0;wget
+: 1563763347:0;wget2
+: 1563763354:0;ranger
+: 1563763509:0;cd wget2
+: 1563763533:0;wget2 -m -np -c -w 5 -R "index.html*" "http://the-eye.eu/public/Images/Pepe/"
+: 1563763566:0;ranger
+: 1563764450:0;sudo bht --status
+: 1563768831:0;server-downloads
+: 1563769539:0;wget2 https://www.wonderplugin.com/wp-content/uploads/2013/12/Evening_1024.jpg
+: 1563769569:0;ranger
+: 1563773571:0;wget2 https://www.youtube.com/watch\?v\=awwnBUPA_og
+: 1563774909:0;wget "index.html*" "http://the-eye.eu/public/Images/"
+: 1563774945:0;sudo bht --status
+: 1563774979:0;wget -help
+: 1563777992:0;sudo bht --status
+: 1563783015:0;yay -Syu
+: 1563783053:0;sudo bht --status
+: 1563784721:0;ranger
+: 1563784726:0;yt
+: 1563784873:0;sudo bht --status
+: 1563785069:0;sudo smartctl /dev/sdd -a
+: 1563785086:0;sudo smartctl /dev/sde -a
+: 1563785089:0;sudo smartctl /dev/sdf -a
+: 1563787303:0;sudo bht --status
+: 1563824902:0;ranger
+: 1563827852:0;sudo bht --status
+: 1563831032:0;sudo smartctl /dev/sdd -a
+: 1563831037:0;sudo smartctl /dev/sde -a
+: 1563831039:0;sudo smartctl /dev/sdf -a
+: 1563838610:0;sudo bht --status
+: 1563840027:0;sudo smartctl /dev/sdd -a
+: 1563840033:0;sudo smartctl /dev/sde -a
+: 1563840036:0;sudo smartctl /dev/sdf -a
+: 1563842036:0;sudo bht --status
+: 1563857659:0;yt
+: 1563857714:0;server-downloads
+: 1563857852:0;ranger
+: 1563858459:0;yt
+: 1563861624:0;sudo bht --status
+: 1563865005:0;yay -Syu
+: 1563865377:0;ranger
+: 1563865887:0;ssh helix@192.168.2.244
+: 1563866900:0;sudo bht --status
+: 1563912202:0;server-downloads
+: 1563912630:0;yt
+: 1563921113:0;sudo bht --status
+: 1563942920:0;ranger
+: 1563942965:0;sudo bht --status
+: 1563942974:0;cd /var/tmp/bht-data
+: 1563942978:0;sudo bht --status
+: 1563963483:0;cd /home/helix/Downloads
+: 1563963529:0;sha512sum --check debian-10.0.0-amd64-netinst.iso
+: 1563963637:0;cd /home/helix/Downloads/deb
+: 1563963639:0;sha512sum --check debian-10.0.0-amd64-netinst.iso
+: 1563963652:0;sha512sum debian-10.0.0-amd64-netinst.iso
+: 1563964052:0;sha512sum -c SHA512SUMS
+: 1563964084:0;sha256sum -c SHA256SUMS
+: 1563964098:0;sha1sum -c SHA1SUMS
+: 1563964115:0;md5sum -c MD5SUMS
+: 1563964147:0;sudo bht --status
+: 1563965576:0;htop
+: 1563969176:0;sudo bht --status
+: 1564000589:0;sudo smartctl /dev/sdd -a
+: 1564000622:0;sudo smartctl /dev/sde -a
+: 1564000625:0;sudo smartctl /dev/sdf -a
+: 1564000630:0;sudo smartctl /dev/sdf -p showall
+: 1564000645:0;sudo smartctl /dev/sdf -P showall
+: 1564000684:0;sudo smartctl /dev/sdf
+: 1564000694:0;sudo smartctl /dev/sdf -x
+: 1564000713:0;sudo bht --status
+: 1564000868:0;lshw
+: 1564000934:0;hdparm
+: 1564000951:0;hdparm -I /dev/
+: 1564000972:0;hdparm -I /dev/sdd
+: 1564000977:0;sudo hdparm -I /dev/sdd
+: 1564000994:0;sudo bht --status
+: 1564001023:0;sudo hdparm -I /dev/sde
+: 1564001033:0;sudo hdparm -I /dev/sdf
+: 1564001054:0;sudo bht --status
+: 1564001390:0;smartctl
+: 1564001397:0;smartctl /dev/sdd
+: 1564001401:0;sudo smartctl /dev/sdd
+: 1564001413:0;sudo smartctl /dev/sdd -a
+: 1564001788:0;server-downloads
+: 1564002437:0;ranger
+: 1564003123:0;sudo bht --status
+: 1564003903:0;sshot
+: 1564006502:0;server-downloads
+: 1564006560:0;ranger
+: 1564006675:0;sudo bht --status
+: 1564009015:0;yay -Syu
+: 1564014392:0;sudo bht --status
+: 1564016303:0;server-downloads
+: 1564016359:0;sudo bht --status
+: 1564020291:0;yt
+: 1564021283:0;sudo bht --status
+: 1564022211:0;ranger
+: 1564022612:0;server-downloads
+: 1564022726:0;sudo bht --status
+: 1564083611:0;betterdiscordctl
+: 1564083621:0;betterdiscordctl -help
+: 1564083628:0;betterdiscordctl -h
+: 1564083643:0;betterdiscordctl update
+: 1564095269:0;sudo bht --status
+: 1564195551:0;yt
+: 1564207561:0;sudo bht --status
+: 1564207582:0;yt
+: 1564209974:0;sudo bht --status
+: 1564262728:0;yay -Syu mega
+: 1564262739:0;yay -Ss mega
+: 1564262822:0;yay -Syu
+: 1564263104:0;sudo bht --status
+: 1564263514:0;yay -Ss megatools
+: 1564263519:0;yay -S megatools
+: 1564263556:0;megatools
+: 1564263599:0;ranger
+: 1564264040:0;megatools-dl
+: 1564264125:0;man megatools
+: 1564264748:0;sudo bht --status
+: 1564270715:0;ssh helix@192.168.2.244
+: 1564270995:0;megadf
+: 1564271000:0;megadf --version
+: 1564271226:0;ranger
+: 1564272019:0;ssh helix@192.168.2.244
+: 1564272782:0;yay -Ss mega 
+: 1564272811:0;yay -S megasync
+: 1564272921:0;sudo bht --status
+: 1564273076:0;gotop
+: 1564274914:0;ranger
+: 1564278265:0;sshot
+: 1564278422:0;sudo bht --status
+: 1564278761:0;yay -Ss firefox-esr
+: 1564278771:0;yay -S firefox-esr
+: 1564278843:0;yay -Ss firefox
+: 1564278878:0;yay -Ss firefox esr
+: 1564278909:0;yay -S firefox-esr-bin
+: 1564279348:0;sshot
+: 1564299394:0;ranger
+: 1564300073:0;sudo bht --status
+: 1564300086:0;ssh helix@192.168.2.244
+: 1564302220:0;ranger
+: 1564305201:0;sudo bht --status
+: 1564305721:0;ranger
+: 1564306223:0;sudo bht --status
+: 1564345818:0;sudo smartctl /dev/sdd -x
+: 1564345901:0;sudo smartctl /dev/sde -x
+: 1564345909:0;sudo smartctl /dev/sdf -x
+: 1564357275:0;sudo bht --status
+: 1564422961:0;ranger
+: 1564426879:0;sudo bht --status
+: 1564443969:0;lsblk
+: 1564445351:0;ssh helix@192.168.2.244
+: 1564445644:0;sshot
+: 1564445712:0;shutdown now
+: 1564447255:0;ssh voltamage@192.168.2.85
+: 1564447938:0;shutdown now
+: 1564802928:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1564803139:0;iostat -d 2
+: 1564803184:0;iotop
+: 1564803190:0;sudo iotop
+: 1564805056:0;shutdown now
+: 1565228547:0;yay -Syu
+: 1565249208:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1565249214:0;nnn
+: 1565249235:0;yay -Ss nnn
+: 1565249243:0;yay -S nnn
+: 1565298348:0;yay -Ss nzb
+: 1565298613:0;reboot
+: 1565301041:0;yay -Syu
+: 1565307402:0;yay -Ss nzbd
+: 1565307475:0;yay -S nzb
+: 1565307480:0;yay -Ss nzb
+: 1565307539:0;yay -S nzbget
+: 1565307612:0;cp /usr/share/nzbget/nzbget.conf /var/lib/nzbget/.nzbget
+: 1565307619:0;nzbget
+: 1565307628:0;nzbget -V
+: 1565307651:0;sudo cp /usr/share/nzbget/nzbget.conf /var/lib/nzbget/.nzbget
+: 1565307670:0;nnn
+: 1565307702:0;sudo cp /usr/share/nzbget/nzbget.conf /usr/local/etc/nzbget.conf
+: 1565307710:0;cp /usr/share/nzbget/nzbget.conf /usr/local/etc/nzbget.conf
+: 1565307853:0;ip addr show | grep 192.168
+: 1565307948:0;nzbget -c /var/lib/nzbget/.nzbget -D
+: 1565307953:0;sudo nzbget -c /var/lib/nzbget/.nzbget -D
+: 1565307990:0;sudo nzbget -c /usr/local/etc/nzbget.conf -D
+: 1565310060:0;sshfs helix@192.168.2.244:/server /home/helix/server
+: 1565310096:0;nnn
+: 1565310713:0;rankmirrors
+: 1565363677:0;yay -Syu
+: 1565363754:0;nnn
+: 1565364465:0;md5sum -c MD5SUMS
+: 1565364480:0;md5sum -c archlinux-2019.08.01-x86_64.iso
+: 1565364537:0;md5sum -c MD5SUMS
+: 1565364684:0;sha1sum
+: 1565364778:0;sha1sum "archlinux-2019.08.01-x86_64.iso"
+: 1565364798:0;sha1sum "archlinux-2019.08.01-x86_64.iso" 4dae830315df4684b4351348f1a0fc49b5c08aa7
+: 1565364852:0;sha1sum "archlinux-2019.08.01-x86_64.iso"
+: 1565365745:0;lsblk
+: 1565365805:0;sudo VBoxManage convertfromraw /dev/sdh ARCH_201908.vdi --format VDI
+: 1565366398:0;sudo pcmanfm
+: 1565366423:0;htop
+: 1565366556:0;reboot
+: 1565369966:0;ip link
+: 1565370793:0;ranger
+: 1565371894:0;server
+: 1565371897:0;ranger
+: 1565372319:0;htop
+: 1565373330:0;reboot
+: 1565379014:0;gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
+: 1565379160:0;md5sum archlinux-2019.08.01-x86_64.iso > md5
+: 1565379263:0;md5sum -c archlinux-2019.08.01-x86_64.iso.md5
+: 1565379344:0;sha1sum -c archlinux-2019.08.01-x86_64.iso.md5
+: 1565379351:0;sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
+: 1565379551:0;gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
+: 1565379571:0;md5sum -c archlinux-2019.08.01-x86_64.iso.md5
+: 1565379576:0;sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
+: 1565381622:0;ip link
+: 1565383728:0;ranger
+: 1565392983:0;lsblk
+: 1565393147:0;nnn /boot
+: 1565393260:0;ranger
+: 1565395591:0;nano -w /etc/fstab
+: 1565396426:0;nano -w /etc/pacman.d/mirrorlist
+: 1565397913:0;nano -w /hosts
+: 1565397923:0;nano -w /etc/hosts
+: 1565405953:0;ranger
+: 1565406790:0;nano -w /etc/pacman.d/mirrorlist
+: 1565407947:0;iotop
+: 1565407952:0;iftop
+: 1565407957:0;sudo iftop
+: 1565408755:0;ranger
+: 1565411422:0;less /etc/passwd
+: 1565411516:0;groups helix
+: 1565411920:0;less /etc/passwd
+: 1565412567:0;yay -Ss networkmanager
+: 1565413884:0;cd /home/helix/arch
+: 1565413889:0;gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
+: 1565425084:0;ranger
+: 1565461327:0;shutdown now
+: 1565502422:0;ranger
+: 1565502559:0;yay -Ss syslinux
+: 1565502625:0;yay -S syslinux
+: 1565502690:0;lsblk
+: 1565502702:0;f3probe /dev/sdd
+: 1565502707:0;sudo f3probe /dev/sdd
+: 1565503025:0;sudo iotop
+: 1565503347:0;htop
+: 1565503600:0;yay -Ss f3probe
+: 1565503609:0;yay -Ss f3
+: 1565503701:0;badblocks help
+: 1565503705:0;badblocks --help
+: 1565503720:0;man badblocks
+: 1565503783:0;yay -Ss badblocks
+: 1565503858:0;badblocks -b 32768 -c 512 -wsv /dev/sdd
+: 1565503863:0;sudo badblocks -b 32768 -c 512 -wsv /dev/sdd
+: 1565503988:0;cfdisk
+: 1565503993:0;sudo cfdisk
+: 1565504005:0;lsblk
+: 1565504016:0;sudo cfdisk /dev/sdb
+: 1565504960:0;sudo cfdisk /dev/sdd
+: 1565505826:0;cfdisk
+: 1565505832:0;sudo cfdisk
+: 1565506432:0;cfdisk
+: 1565506435:0;sudo cfdisk
+: 1565506445:0;sudo cfdisk /dev/sdd
+: 1565506690:0;lsblk
+: 1565506731:0;mkfs.fat -F32 /dev/sdd1
+: 1565506736:0;sudo mkfs.fat -F32 /dev/sdd1
+: 1565506766:0;sudo cfdisk /dev/sdd
+: 1565506840:0;sudo gdisk
+: 1565507004:0;cfdisk
+: 1565507008:0;sudo cfdisk /dev/sdd
+: 1565507039:0;sudo mkfs.fat -F32 /dev/sdd1
+: 1565507053:0;sudo cfdisk /dev/sdd
+: 1565507297:0;sudo gdisk /dev/sdd
+: 1565507344:0;sudo cfdisk /dev/sdd
+: 1565507530:0;sudo gdisk /dev/sdd
+: 1565507556:0;sudo cfdisk /dev/sdd
+: 1565507926:0;sudo gdisk /dev/sdd
+: 1565507955:0;sudo parted
+: 1565508013:0;sudo parted /dev/sdd
+: 1565508076:0;sudo mkfs.fat -F32 /dev/sdd1
+: 1565508089:0;sudo gdisk /dev/sdd
+: 1565508168:0;sudo cfdisk /dev/sdd
+: 1565508937:0;sudo gdisk /dev/sdd
+: 1565508951:0;sudo cfdisk /dev/sdd
+: 1565509073:0;ranger
+: 1565509093:0;yay -S syslinux
+: 1565509175:0;mount /dev/sdd /mnt
+: 1565509203:0;sudo mount /dev/sdd /mnt
+: 1565509591:0;sudo mount /dev/sdd1 /mnt
+: 1565509684:0;sudo umount /dev/sdd1 /mnt
+: 1565509686:0;ranger
+: 1565509709:0;sudo gdisk /dev/sdd
+: 1565509728:0;sudo cfdisk /dev/sdd
+: 1565509756:0;lsblk
+: 1565509767:0;sudo mount /dev/sdd1 /mnt
+: 1565509770:0;lsblk
+: 1565509772:0;ranger
+: 1565509862:0;mkdir -p /mnt/boot/syslinux
+: 1565509867:0;sudo mkdir -p /mnt/boot/syslinux
+: 1565509883:0;ranger
+: 1565510511:0;cd ~/archnetboot
+: 1565510538:0;gpg --verify ipxe.lkrn.031e210a114d.sig ipxe.08268867b45a.lkrn
+: 1565510555:0;cal
+: 1565510738:0;cp ipxe.lkrn /mnt/boot
+: 1565510765:0;cp ipxe.08268867b45a.lkrn /mnt/boot
+: 1565510771:0;sudo cp ipxe.08268867b45a.lkrn /mnt/boot
+: 1565511062:0;cd ~/archnetboot
+: 1565511100:0;touch /mnt/boot/syslinux/syslinux.cfg
+: 1565511118:0;sudo touch /mnt/boot/syslinux/syslinux.cfg
+: 1565511179:0;sudo nano -w /mnt/boot/syslinux/syslinux.cfg
+: 1565511414:0;sudo ranger
+: 1565511475:0;sudo pcmanfm
+: 1565511501:0;ranger
+: 1565511597:0;sudo nano -w /mnt/boot/syslinux/syslinux.cfg
+: 1565511675:0;ranger
+: 1565511705:0;umount /mnt
+: 1565511709:0;sudo umount /mnt
+: 1565511751:0;dd bs=440 count=1 conv=notrunc if=/usr/lib/syslinux/bios/mbr.bin of=/dev/sdd
+: 1565511757:0;sudo dd bs=440 count=1 conv=notrunc if=/usr/lib/syslinux/bios/mbr.bin of=/dev/sdd
+: 1565511779:0;syslinux --directory /boot/syslinux/ --install /dev/sdd1
+: 1565511783:0;sudo syslinux --directory /boot/syslinux/ --install /dev/sdd1
+: 1565511865:0;sudo dd bs=440 count=1 conv=notrunc if=/usr/lib/syslinux/bios/mbr.bin of=/dev/sdd1
+: 1565511874:0;sudo syslinux --directory /boot/syslinux/ --install /dev/sdd1
+: 1565511959:0;sudo syslinux --directory /boot/syslinux/ --install /dev/sdd
+: 1565512224:0;sudo gdisk /dev/sdd
+: 1565513238:0;sudo cfdisk /dev/sdd
+: 1565513284:0;sudo gdisk /dev/sdd
+: 1565513302:0;sudo cfdisk /dev/sdd
+: 1565513389:0;sudo gdisk /dev/sdd
+: 1565513398:0;sudo cfdisk /dev/sdd
+: 1565513722:0;sudo mkfs.fat -F32 /dev/sdd1
+: 1565513802:0;yay -Ss efibootmgr
+: 1565513810:0;yay -S efibootmgr
+: 1565513842:0;cd ~/archnetboot
+: 1565513883:0;gpg --verify ipxe.efi.4b66ccaa07a4.sig ipxe.d63edd60ae06.efi
+: 1565513893:0;gpg --verify ipxe.efi.4b66ccaa07a4.sig
+: 1565513898:0;gpg ipxe.efi.4b66ccaa07a4.sig
+: 1565513910:0;gpg --verify ipxe.efi.4b66ccaa07a4.sig ipxe.d63edd60ae06.efi
+: 1565514126:0;ranger
+: 1565514189:0;sudo mount /dev/sdd1 /mnt
+: 1565514258:0;sudo mkdir /mnt/EFI/BOOT
+: 1565514263:0;sudo mkdir -p /mnt/EFI/BOOT
+: 1565514290:0;sudo ranger
+: 1565514328:0;cd ~/archnetboot
+: 1565514364:0;cp bootx64.efi /mnt/EFI/BOOT
+: 1565514373:0;sudo cp bootx64.efi /mnt/EFI/BOOT
+: 1565514627:0;efibootmgr --create --disk /dev/sdd --part 1 --loader /EFI/BOOT/bootx64.efi --label "Arch Linux Netboot" --verbose
+: 1565514631:0;sudo efibootmgr --create --disk /dev/sdd --part 1 --loader /EFI/BOOT/bootx64.efi --label "Arch Linux Netboot" --verbose
+: 1565514675:0;shutdown now
+: 1565553688:0;lsblk
+: 1565553699:0;sudo gdisk /dev/sdh
+: 1565562461:0;uf
+: 1565562464:0;yay -Ss uf
+: 1565562473:0;yay -Ss blender
+: 1565562480:0;yay -S blender
+: 1565562854:0;pacman -Q
+: 1565562864:0;pacman -Qe
+: 1565562880:0;pacman -Qet
+: 1565562933:0;yay -Si blender
+: 1565562966:0;yay -Qdt
+: 1565562973:0;yay -Qet
+: 1565562994:0;pactree
+: 1565563007:0;yay -Ss pacman-contrib
+: 1565563017:0;yay -S pacman-contrib-git
+: 1565567856:0;nano -w /etc/pacman.d/mirrorlist
+: 1565569698:0;sudo ranger
+: 1565569935:0;lsblk
+: 1565569945:0;sudo gdisk /dev/sdi
+: 1565569964:0;lsblk
+: 1565569974:0;sudo gdisk /dev/sdh
+: 1565570458:0;gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
+: 1565570513:0;gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig && md5sum -c archlinux-2019.08.01-x86_64.iso.md5 && sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
+: 1565570844:0;reboot
+: 1565605592:0;yay -Qet
+: 1565606249:0;ls 
+: 1565606253:0;ls -la
+: 1565606281:0;grep 'yay -S ' ~/.zsh_history
+: 1565606354:0;yay -Qet
+: 1565606456:0;grep 'yay -S ' ~/.zsh_history
+: 1565606565:0;ranger
+: 1565606681:0;sudo cp
+: 1565606711:0;sudo cp /home "/run/media/helix/server back/manjaro home folder"
+: 1565606744:0;cp --help
+: 1565606760:0;sudo cp --recursive /home "/run/media/helix/server back/manjaro home folder"
+: 1565606779:0;ranger
+: 1565606958:0;sudo iotop
+: 1565607056:0;gotop
+: 1565607067:0;gotop -f
+: 1565607336:0;nnn
+: 1565607341:0;nnn -d
