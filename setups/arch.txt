@@ -44,7 +44,7 @@ destroy tables
     z
 
 partition with cfdisk
-    cfdisk /dev/sda
+    cfdisk /dev/sdX
 select gpt table
 new partition, 512M size, EFI System
 new partition, 20G size, Linux swap
@@ -72,15 +72,15 @@ check partitions
     
 MOUNT THE FILE SYSTEMS
 mount the root first, and create and mount the other directories
-    mount   /dev/sda3   /mnt
+    mount   /dev/sdX3   /mnt
 
     mkdir -p /mnt/boot/efi
-    mount   /dev/sda1   /mnt/boot/efi
+    mount   /dev/sdX1   /mnt/boot/efi
     
-    swapon  /dev/sda2
+    swapon  /dev/sdX2
     
     mkdir   /mnt/home
-    mount   /dev/sda4   /mnt/home
+    mount   /dev/sdX4   /mnt/home
     
 MIRRORLIST
 sync database, install reflector, and execute to update the mirrorlist
