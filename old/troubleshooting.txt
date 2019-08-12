@@ -1,0 +1,4 @@
+timedatectl force sync
+fastboot
+windows time fucking everything up
+fsck angry inodes
