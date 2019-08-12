@@ -247,3 +247,4 @@ list of installed programs from manjaro
 firefox configs
 git track dotfiles
 kitty terminal?
+check other pacman config options
