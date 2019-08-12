@@ -1,3 +1,7 @@
+sshfs helix@192.168.2.244:/server /home/volt/Server
+
+https://cdn.discordapp.com/attachments/342253676129157132/610602983327006720/unknown.png
+
 acpi 1.7-2
 acpid 2.0.31-1
 alsa-firmware 1.0.29-2
