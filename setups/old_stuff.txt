@@ -1,48 +1,110 @@
-mkdir ~/server
-sshfs helix@192.168.2.244:/server /home/volt/server
-
+acpi 1.7-2
+acpid 2.0.31-1
+alsa-firmware 1.0.29-2
 alsa-utils 1.1.9-1
+amd-ucode 20190726.dff98c6-1
+arandr 0.1.10-3
 aria2 1.34.0-3
+autoconf 2.69-5
+automake 1.16.1-1
+autorandr 1.8.1-1
+b43-fwcutter 019-2
 betterdiscordctl-git 1.6.0.r34.g6433a5b-1
+bison 3.3.2-1
 bitlbee-libpurple 3.6-1
 blender 17:2.80rc3-1
 blueman 2.1-1
 bluez-utils 5.50-6
+bmenu 0.5-3
+clipit 1:1.4.3-2
+colorgrab 0.3-1
+cpupower 5.2-1
+dfc 3.1.1-1
 discord 0.0.9-3
+ecryptfs-utils 111-3
 epdfview 0.1.8-10
 etcher 1.5.52-1
 f3 7.2-1
+fakeroot 1.23-1
 ffmpegthumbnailer 2.2.0-2
 file-roller 3.32.1-1
 filebot 4.8.5-3
 firefox 68.0.1-2
 firefox-esr-bin 60.8.0-1
+flex 2.6.4-2
 fsearch-git r447.d3a0eb2-1
+gksu-polkit 0.0.3-1
 gotop 3.0.0-3
 gparted 1.0.0-1
+grub-theme-manjaro 18.1-1
 htop 2.2.0-2
+i3-default-artwork 20180428-1
 iftop 1.0pre4-3
 intel-ucode 20190618-1
 iotop 0.6-6
 ipscan 3.5.5-1
+iputils 20180629.f6aac8d-4
+ipw2100-fw 1.3-9
+ipw2200-fw 3.1-7
 jdownloader2 latest-13
+ksh93-git r3076.caf2ade2-1
+kvantum-manjaro 0.13.5-1
+licenses 20181104-1
+lightdm-slick-greeter 1.2.6-1
 linux419-nvidia 1:430.26-12
 linux51-nvidia 1:430.26-12
+lsscsi 0.30-1
 lutris 0.5.2.2-1
 lxappearance 0.6.3-2
+lxinput 0.3.5-2
+maia-console 1.2-6
+mailutils 3.7-1
 maim 5.5.3-1
 maltego 4.2.4.12374-1
+man-db 2.8.5-2
+man-pages 5.01-1
+manjaro-browser-settings 20181222-1
+manjaro-firmware 20160419-1
+manjaro-hotfixes 2018.08-6
+manjaro-release 18.0.4-1
+manjaro-system 20190429-1
+markdown_previewer 0.r6.64ad4d7-1
+megasync 4.2.0-1
 megatools 1.10.2-1
+memtest86+ 5.01-3
+mkinitcpio-openswap 0.1.0-2
 mkvtoolnix-gui 35.0.0-1
+mlocate 0.26.git.20170220-1
+moc 1:2.5.2-2
 multimc5 0.6.7-1
+nano 4.3-1
 ncdu 1.14-1
 neofetch 6.0.0-1
+netctl 1.20-1
+network-manager-applet 1.8.22-1.1
+networkmanager-openconnect 1.2.5dev+110+g524a2e0-2
+networkmanager-openvpn 1.8.10-1
+networkmanager-pptp 1.2.9dev+10+gb41b0d0-1
+networkmanager-vpnc 1.2.7dev+20+gdca3aea-1
+nfs-utils 2.4.1-1
 nload 0.7.4-5
 nnn 2.5-1
 notepadqq 1.4.8-2
+ntp 4.2.8.p13-2
+open-fuse-iso 1.1-1
 pamac-gtk 8.0.3-5
+papirus-icon-theme 20190720-1
+patchutils 0.3.4-3
+pkgconf 1.6.3-1
+polkit-gnome 0.105-4
+powerline-fonts 2.7-3
+powertop 2.10-1
+preload 0.6.4-1
 purple-discord-git v0.0.r537.22de4c6-1
+python-gobject2 2.28.7-2
 qdirstat 1.6-1
+qt5-styleplugins 5.0.0.20170311-15
+qt5ct 0.39-2
 qtwebflix-git 0.1.r173.ga50ef71-1
 radarr 0.2.0.1358-1
 ranger 1.9.2.212.g5ae67755-1
@@ -50,19 +112,231 @@ ripcord 0.4.12-1
 ripme-git 1.7.85.r11.g8d0a9446-1
 rofi 1.5.4-1
 rtv 1.26.0-1
+sbxkb 0.7.6-3
 smartgit 19.1.0-1
 spectre-meltdown-checker 0.42-1
 spotify 1:1.1.10.546-1
 sshfs 3.5.2-1
 steam-manjaro 1.0.0.61-2
 streamlink-twitch-gui 1.8.1-1
+syslinux 6.04.pre2.r11.gbf6db5b4-1
+syslog-ng 3.22.1-1
+sysstat 12.1.5-1
+systemd-fsck-silent 239-1
+terminus-font 4.47-2
 timeshift 19.01-1
+tlp 1.2.2-1.1
+ufw 0.36-1
 v4l2loopback-dkms 0.12.2-1
 vdhcoapp 1.3.0-1
+vi 1:070224-3
 virtualbox-ext-oracle 6.0.10-1
+volumeicon 0.5.1-4
 weechat 2.5-1
 wget2-git 1.99.1.r416.g97731f06-1
+which 2.21-3
+wine-mono 4.9.0-1
+wine_gecko 2.47-2
+winetricks 20190615-1
+wmutils 1:1.4-1
+xautolock 2.2-5
 xboxdrv 0.8.8-4
+xclip 0.13-2
+xdg-su 1.2.3-1
+xdg-user-dirs 0.17-2
+xf86-input-elographics 1.4.2-1
+xf86-input-evdev 2.10.6-1
+xf86-input-keyboard 1.9.0-3
+xf86-input-mouse 1.9.3-1
+xf86-input-void 1.4.1-4
+xfce4-power-manager 1.6.4-1
+xorg-xhost 1.0.8-1
 xorg-xinit 1.4.1-1
 xorg-xkill 1.0.5-1
 youtube-viewer 1:3.5.4-1
+
+: 1559197684:0;yay -S firefox
+: 1559197684:0;yay -S ripcord
+: 1559197684:0;yay -S neofetch
+: 1559197684:0;yay -S gotop
+: 1559197684:0;yay -S firefox
+: 1559197684:0;yay -S mpv
+: 1559197684:0;yay -S youtube-dl
+: 1559197684:0;yay -S lutris
+: 1559197684:0;yay -S lutris
+: 1559197684:0;yay -S vulkan-icd-loader lib32-vulkan-icd-loader
+: 1559197684:0;yay -S wine-staging winetricks
+: 1559197684:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1559197684:0;yay -S wine-mono
+: 1559197684:0;yay -S wine_gecko
+: 1559197684:0;yay -S wine-mono
+: 1559197684:0;yay -S wine_gecko
+: 1559197684:0;yay -S file-roller
+: 1559197684:0;yay -S steam-manjaro
+: 1559197684:0;yay -S steam-native
+: 1559197684:0;yay -S ttf-dejavu
+: 1559197684:0;yay -S spotify
+: 1559197684:0;yay -S discord
+: 1559197684:0;yay -S maltego
+: 1559197684:0;yay -S deluge
+: 1559197684:0;yay -S python-gobject2 
+: 1559197684:0;yay -S pygtk 
+: 1559197684:0;yay -S fsearch-git
+: 1558292365:0;yay -S powerline-fonts
+: 1558311932:0;yay -S tmux
+: 1558379723:0;yay -S feh
+: 1558578345:0;yay -S autorandr
+: 1558582584:0;yay -S gparted
+: 1558582699:0;yay -S timeshift
+: 1558629904:0;yay -S iftop
+: 1558632967:0;yay -S wine-staging winetricks
+: 1558632986:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox\
+: 1558633032:0;yay -S lutris
+: 1558914629:0;yay -S wireshark-qt
+: 1558923448:0;yay -S pavucontrol
+: 1558923674:0;yay -S blueman
+: 1558926187:0;yay -S xboxdrv
+: 1558933518:0;yay -S ranger
+: 1558934341:0;yay -S rxvt-unicode-pixbuf
+: 1558934471:0;yay -S rxvt-unicode
+: 1558938441:0;yay -S lutris
+: 1558938957:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1558951873:0;yay -S virtualbox-ext-oracle
+: 1558953721:0;yay -S deluge
+: 1558993545:0;yay -S multimc5
+: 1559196377:0;yay -S lightzone
+: 1559197334:0;yay -S maim
+: 1559197478:0;yay -S maim
+: 1559197514:0;yay -S xclip
+: 1559287831:0;yay -S lolcat
+: 1559352221:0;yay -S bluez bluez-utils
+: 1559352644:0;yay -S pulseaudio-bluetooth
+: 1559353002:0;yay -S blueman
+: 1559353741:0;yay -S pulseaudio-modules-bt-git
+: 1559377636:0;yay -S deluge
+: 1559382535:0;yay -S multimc5
+: 1559382978:0;yay -S multimc5
+: 1559383664:0;yay -S multimc-git
+: 1559383928:0;yay -S hmcl
+: 1559384079:0;yay -S minecraft-launcher
+: 1559384261:0;yay -S minecraft 
+: 1559384610:0;yay -S minecraft 
+: 1559384911:0;yay -S multimc5
+: 1559385198:0;yay -S multimc5
+: 1559444240:0;yay -S iotop
+: 1559480713:0;yay -S mkvtoolnix-gui
+: 1559679881:0;yay -S betterdiscordctl
+: 1559679916:0;yay -S git
+: 1559680394:0;yay -S discord
+: 1559688268:0;yay -S lutris
+: 1559688377:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1559693871:0;yay -S xrandr
+: 1559693884:0;yay -S ffmpeg
+: 1559693950:0;yay -S v4l2loopback-dkms
+: 1559758304:0;yay -S rtv
+: 1559769004:0;yay -S vdhcoapp
+: 1559774898:0;yay -S wikicurses
+: 1559786180:0;yay -S netflix-qdesktop
+: 1559786242:0;yay -S qtwebflix-git
+: 1559786280:0;yay -S netflix-qdesktop
+: 1559786295:0;yay -S qtwebflix-git
+: 1559857901:0;yay -S weechat
+: 1559878283:0;yay -S bitlbee
+: 1559890071:0;yay -S ruby
+: 1559890085:0;yay -S lua
+: 1559890096:0;yay -S aspell
+: 1559890107:0;yay -S tcl
+: 1559890123:0;yay -S ruby lua aspell tcl
+: 1559890236:0;yay -S guile2.0
+: 1559890887:0;yay -S purple-discord-git
+: 1559891015:0;yay -S bitlbee-libpurple
+: 1559898505:0;yay -S lib32-gnutls lib32-libldap lib32-libgpg-error lib32-sqlite lib32-libpulse
+: 1560273843:0;yay -S streamlink-twitch-gui
+: 1560304086:0;yay -S rofi
+: 1560304359:0;yay -S rofi-dmenu
+: 1560304477:0;yay -S rofi-dmenu
+: 1560306989:0;yay -S lua
+: 1560465773:0;yay -S tumbler
+: 1560465923:0;yay -S ffmpegthumbnailer
+: 1560486528:0;yay -S colorgrab
+: 1560813375:0;yay -S etcher
+: 1560814835:0;yay -S ipscan
+: 1561000528:0;yay -S ffmpegthumbnailer
+: 1561225439:0;yay -S sshfs
+: 1561267303:0;yay -S arc-icon-theme
+: 1561267613:0;yay -S papirus-icon-theme 
+: 1561355315:0;yay -S qbittorrent
+: 1561355835:0;yay -S qbittorrent
+: 1561356231:0;yay -S qbittorrent
+: 1561525648:0;yay -S qbittorrent
+: 1561526214:0;yay -S qbittorrent
+: 1561528107:0;yay -S transmission-gtk
+: 1561569150:0;yay -S qbittorrent
+: 1561570404:0;yay -S qbittorrent
+: 1561590260:0;yay -S rtorrent
+: 1561655994:0;yay -S transmission-gtk
+: 1561658080:0;yay -S transmission-gtk
+: 1561789533:0;yay -S ranger
+: 1561794562:0;yay -S filebot
+: 1561807110:0;yay -S transmission-cli
+: 1561871308:0;yay -S radarr
+: 1561872092:0;yay -S radarr
+: 1561875308:0;yay -S deluge
+: 1561881733:0;yay -S deluge-web
+: 1561953979:0;yay -S virtualbox
+: 1562053733:0;yay -S virtualbox $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-virtualbox-host-modules"}' ORS=' ')
+: 1562053884:0;yay -S virtualbox-ext
+: 1562053907:0;yay -S virtualbox-ext-oracle
+: 1562103535:0;yay -S lutris
+: 1562103658:0;yay -S lutris
+: 1562103761:0;yay -S wine-staging winetricks
+: 1562103777:0;yay -S -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1562103783:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1562131077:0;yay -S smartgit
+: 1562278407:0;yay -S mediainfo
+: 1562278448:0;yay -S mediainfo-gui
+: 1562279028:0;yay -S mediainfo
+: 1562302769:0;yay -S aria2
+: 1562528948:0;yay -S jdownloader2
+: 1562583866:0;yay -S youtube-viewer
+: 1562623884:0;yay -S nnn
+: 1562636784:0;yay -S nload
+: 1562638728:0;yay -S nnn
+: 1562640936:0;yay -S nnn
+: 1562689946:0;yay -S notepad
+: 1562689979:0;yay -S notepadqq
+: 1562690050:0;yay -S qt5-sensors
+: 1562690952:0;yay -S notepadqq
+: 1562841408:0;yay -S ripme-git
+: 1562869374:0;yay -S jdownloader2
+: 1562907579:0;yay -S qdirstat
+: 1562908199:0;yay -S qdirstat
+: 1562908258:0;yay -S qdirstat
+: 1563255204:0;yay -S blender-2.8-git
+: 1563264002:0;yay -S blender-2.8-git
+: 1563264812:0;yay -S blender-2.8-bin
+: 1563591959:0;yay -S ksh93-git
+: 1563592257:0;yay -S smartmontools
+: 1563592432:0;yay -S lsscsi
+: 1563592571:0;yay -S mailutiles
+: 1563592575:0;yay -S mailutils
+: 1563593505:0;yay -S sysstat
+: 1563607708:0;yay -S f3
+: 1563636448:0;yay -S jdownloader2
+: 1563636608:0;yay -S blender
+: 1563661010:0;yay -S blender
+: 1563763086:0;yay -S wget2
+: 1564263519:0;yay -S megatools
+: 1564272811:0;yay -S megasync
+: 1564278771:0;yay -S firefox-esr
+: 1564278909:0;yay -S firefox-esr-bin
+: 1565249243:0;yay -S nnn
+: 1565307475:0;yay -S nzb
+: 1565307539:0;yay -S nzbget
+: 1565502625:0;yay -S syslinux
+: 1565509093:0;yay -S syslinux
+: 1565513810:0;yay -S efibootmgr
+: 1565562480:0;yay -S blender
+: 1565563017:0;yay -S pacman-contrib-git
+: 1565606281:0;grep 'yay -S ' ~/.zsh_history
+: 1565606456:0;grep 'yay -S ' ~/.zsh_history
