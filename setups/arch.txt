@@ -152,14 +152,38 @@ Defaults !tty_tickets
     less /etc/passwd
     
 CONFIGURE NETWORK DYNAMICALLY
+set up basic system services and syncs
     systemctl enable dhcpcd
     timedatectl set-ntp true
     
 REBOOT
+clean umount and reboot
     exit
     umount -R /mnt
     reboot
     
+LOGIN
+login as volt
+
+OH-MY-ZSH
+do this before literally anything else, skip zsh config, this adds history
+    pacman -S git
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+YAY
+install git, build yay, go is a dependency, remove the folders afterwards, add color and multilib capabilities to yay
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    cd
+    rm -rf /home/volt/.cache
+    rm -rf /home/volt/yay
+    sudo nano -w /etc/pacman.conf
+uncomment these things
+        Color
+        [multilib]
+        Include = /etc/pacman.d/mirrorlist
+        
 SELECT THE MIRRORS
     pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
@@ -195,28 +219,7 @@ deleting a folder
 deleting a file
     rm
     
-LOGIN
-login as volt
-
-OH-MY-ZSH
-do this before literally anything else
-there is an AUR version as well
-    pacman -S git
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-YAY
-try not to run as root
-    pacman -S git
-    git clone https://aur.archlinux.org/yay.git
-    cd yay
-    makepkg -si
-installs go as well, keep that in mind
-    sudo nano -w /etc/pacman.conf
-uncomment these things
-        Color
-        [multilib]
-        Include = /etc/pacman.d/mirrorlist
-        
+ 
 XORG
     yay -S xorg-server xorg-xinit
     
