@@ -4,3 +4,4 @@ windows time fucking everything up
 fsck angry inodes
 mobo beep
 speaker pop on shutdown
+docker instead of firejail?
