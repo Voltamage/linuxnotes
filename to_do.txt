@@ -13,6 +13,8 @@ vim
 google auth
 terminal blur
 lockscreen
+maim + scrot screenshots
+terminal transparency and blur
 
 sc
 wow
