@@ -1,6 +1,0 @@
-compton
-wallpaper
-pywall
-menu theming
-windows vm
-vim
