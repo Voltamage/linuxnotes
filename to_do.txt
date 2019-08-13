@@ -5,3 +5,8 @@ fsck angry inodes
 mobo beep
 speaker pop on shutdown
 docker instead of firejail?
+wallpaper
+pywall
+menu theming
+windows vm
+vim
