@@ -1,6 +1,0 @@
-stack research
-
-https://blog.monstermuffin.org
-
-grafana
-pfsense
