@@ -10,3 +10,12 @@ pywall
 menu theming
 windows vm
 vim
+google auth
+terminal blur
+lockscreen
+
+sc
+wow
+a creed
+doom
+raytraced minecraft
