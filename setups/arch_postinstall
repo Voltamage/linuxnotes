@@ -1,7 +1,19 @@
 XORG
     yay -S xorg-server xorg-xinit
     
-BSPWM
+NVIDIA
+check what driver is running
+    lspci -k | grep -A 2 -E "(VGA|3D)"
+    
+lib32 stuff is for steam
+    yay -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings
+    reboot
+    
+double check that it worked
+    lspci -k | grep -A 2 -E "(VGA|3D)"
+
+WM SETUP
+
     yay -S bspwm sxhkd
     mkdir -p ~/.config/bspwm
     mkdir ~/.config/sxhkd
@@ -20,6 +32,9 @@ XINITRC
         sxhkd &
         exec bspwm
          
+ENTER THE SYSTEM
+    startx
+    
 SELECT THE MIRRORS
     pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
