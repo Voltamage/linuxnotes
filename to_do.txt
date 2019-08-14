@@ -46,6 +46,11 @@ firefox configs
 git track dotfiles
 kitty terminal?
 check other pacman config options
+gotop
+htop
+iftop
+iotop
+remove old boot options from BIOS
 
 --loop-playlist=inf
 
