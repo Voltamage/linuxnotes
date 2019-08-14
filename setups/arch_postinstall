@@ -21,6 +21,16 @@ WM SETUP
     cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
     cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
     
+switch out emulator and launcher
+    nano -w ~/.config/sxhkdrc
+        # terminal emulator
+        super + Return
+            termite
+        
+        # program launcher
+        super + @space
+            rofi -show run
+            
 FONTS
     yay -S noto-fonts noto-fonts-emoji noto-fonts-cjk
     
