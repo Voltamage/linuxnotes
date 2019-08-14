@@ -40,7 +40,10 @@ XORG
 BSPWM
     yay -S bspwm sxhkd
     cp /etc/X11/xinit/xinitrc ~/.xinitrc
-        
+
+FONTS
+yay -S noto-fonts noto-fonts-emoji noto-fonts-cjk
+
 NETBOOT?
 LVM?
 NETWORK MANAGER REPLACE DHCPCD?
