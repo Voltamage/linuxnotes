@@ -3,3 +3,7 @@
 
 start discord
 remove the suggestions on the top of the screen
+
+Mon2Cam
+select the monitor you want after running this command, also it must stay open
+  Mon2Cam
