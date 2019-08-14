@@ -15,9 +15,34 @@ terminal blur
 lockscreen
 maim + scrot screenshots
 terminal transparency and blur
+alsa correct output
+compton fork?
 
 sc
 wow
 a creed
 doom
 raytraced minecraft
+
+
+NETBOOT?
+LVM?
+NETWORK MANAGER REPLACE DHCPCD?
+boot partition 550 MiB for safety?
+auto num lock
+auto sign in user
+firejail
+compton
+display orientation
+nvidia
+kernels
+pulseaudio and/or alternatives
+grub optional dependencies
+orphan files
+customize grub
+auto detect drives and automount externals
+list of installed programs from manjaro
+firefox configs
+git track dotfiles
+kitty terminal?
+check other pacman config options
