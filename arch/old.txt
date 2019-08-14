@@ -1,7 +1,12 @@
+MANJARO
+
+SERVER CONNECT
 sshfs helix@192.168.2.244:/server /home/volt/Server
 
+FIREFOX ADDONS
 https://cdn.discordapp.com/attachments/342253676129157132/610602983327006720/unknown.png
 
+INSTALL COMMANDS
 : 1559197684:0;yay -S firefox
 : 1559197684:0;yay -S ripcord
 : 1559197684:0;yay -S neofetch
@@ -188,6 +193,7 @@ https://cdn.discordapp.com/attachments/342253676129157132/610602983327006720/unk
 : 1565606281:0;grep 'yay -S ' ~/.zsh_history
 : 1565606456:0;grep 'yay -S ' ~/.zsh_history
 
+YAY -QE
 accountsservice 0.6.55-1
 acpi 1.7-2
 acpid 2.0.31-1
