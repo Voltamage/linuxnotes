@@ -1,2 +1,5 @@
-yay -S discord
-yay -S mon2cam-git
+  yay -S discord
+  yay -S mon2cam-git
+
+start discord
+remove the suggestions on the top of the screen
