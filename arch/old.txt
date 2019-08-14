@@ -5,7 +5,7 @@ https://cdn.discordapp.com/attachments/342253676129157132/610614043929215006/unk
 MANJARO
 
 server connect
-sshfs helix@192.168.2.244:/server /home/volt/Server
+sshfs helix@192.168.2.244:/server ~/Server
 
 firefox addons
 https://cdn.discordapp.com/attachments/342253676129157132/610602983327006720/unknown.png
