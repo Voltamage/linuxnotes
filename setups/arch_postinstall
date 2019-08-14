@@ -11,27 +11,26 @@ lib32 stuff is for steam
     
 double check that it worked
     lspci -k | grep -A 2 -E "(VGA|3D)"
-
+    
 WM SETUP
-
+    yay -S termite
+    yay -S rofi
     yay -S bspwm sxhkd
     mkdir -p ~/.config/bspwm
     mkdir ~/.config/sxhkd
     cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
     cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
     
-    yay -S termite
-    yay -S rofi
-
 FONTS
     yay -S noto-fonts noto-fonts-emoji noto-fonts-cjk
-
+    
 XINITRC
+extra stuff for compton if you decided to install the compton-tryone-git instead of the community version
     nano -w ~/.xinitrc
         compton --backend glx --blur-method kawase  --blur-background --blur-strength 8 &
         sxhkd &
         exec bspwm
-         
+        
 ENTER THE SYSTEM
     startx
     
