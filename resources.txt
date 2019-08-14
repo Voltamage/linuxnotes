@@ -4,3 +4,17 @@ https://raw.githubusercontent.com/midfingr/youtube_notes/master/bsp_wm
 https://pcgamingwiki.com/wiki/Home
 https://www.protondb.com/
 https://www.youtube.com/channel/UCv1Kcz-CuGM6mxzL3B1_Eiw (The Linux Gamer)
+
+TROUBLESHOOTING
+chroot back into the system by mounting the files and arch-chroot
+    swapon  /dev/sda2
+    mount   /dev/sda3   /mnt
+    mount   /dev/sda1   /mnt/boot/efi
+    mount   /dev/sda4   /mnt/home
+    arch-chroot /mnt
+    
+deleting a folder
+    rm -r
+
+deleting a file
+    rm
