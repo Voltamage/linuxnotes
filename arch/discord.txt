@@ -1,0 +1,2 @@
+yay -S discord
+yay -S mon2cam-git
