@@ -35,10 +35,14 @@ XINITRC
 ENTER THE SYSTEM
     startx
     
+CONFIGURE DISPLAY
+use nvidia-settings, change monitor configuration, save configuration as xorg.conf
+    sudo mv ~/xorg.conf /etc/X11/xorg.conf.d/xorg.conf
+    
 SELECT THE MIRRORS
     pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-    reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+    sudo reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     nano -w /etc/pacman.d/mirrorlist
     nano -w /etc/systemd/system/reflector.service
         [Unit]
