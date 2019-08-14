@@ -512,3 +512,234 @@ xterm 348-1
 yay 9.2.1-1.0
 youtube-viewer 1:3.5.4-1
 zsh 5.7.1-1
+
+ARCH
+
+install commands
+: 1565573331:0;yay -S ranger
+: 1565573495:0;yay -S xorg-server xorg-xinit
+: 1565573539:0;yay -S neofetch
+: 1565573777:0;yay -S nvidia nvidia-utils
+: 1565574043:0;yay -S bspwm sxhkd
+: 1565574771:0;yay -S i3-gaps
+: 1565574802:0;yay -S i3-gaps rxvt-unicode dmenu
+: 1565578211:0;yay -S noto-fonts
+: 1565578415:0;yay -S firefox
+: 1565580679:0;yay -S dmenu
+: 1565580731:0;yay -S bspwm sxhkd
+: 1565581462:0;yay -S lutris
+: 1565581626:0;yay -S kitty
+: 1565581637:0;yay -S kitty
+: 1565581683:0;yay -S kitty
+: 1565581756:0;yay -S lutris
+: 1565581804:0;yay -S wine-staging winetricks
+: 1565581879:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1565582144:0;yay -S wine-mono
+: 1565582429:0;yay -S wine_gecko
+: 1565582533:0;yay -S wine_gecko wine-mono
+: 1565582545:0;yay -S lutris
+: 1565582565:0;yay -S fsearch-git
+: 1565583526:0;yay -S wine-mono
+: 1565584392:0;yay -S lutris
+: 1565584418:0;yay -S wine-staging winetricks
+: 1565584432:0;yay -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+: 1565586779:0;yay -S i3
+: 1565586914:0;yay -S gotop
+: 1565587859:0;yay -S discord
+: 1565588309:0;yay -S termite
+: 1565588494:0;yay -S alsa-utils
+: 1565588778:0;yay -S blender
+: 1565588929:0;yay -S noto-fonts-emoji
+: 1565589123:0;yay -S ttf-joypixels
+: 1565589211:0;yay -S noto-fonts-emoji
+: 1565589442:0;yay -S termite
+: 1565590729:0;yay -S gotop
+: 1565591706:0;yay -S termite
+: 1565592251:0;yay -S rofi
+: 1565592646:0;yay -S steam
+: 1565592734:0;yay -S lib32-nvidia-utils
+: 1565593012:0;yay -S steam
+: 1565593064:0;yay -S dmenu
+: 1565595052:0;yay -S lib32-nvidia-utils
+: 1565595120:0;yay -S opencl-nvidia
+: 1565599446:0;yay -S noto-fonts-emoji
+: 1565600292:0;yay -S nvidia-settings
+: 1565602068:0;yay -S gparted
+: 1565602153:0;yay -S polkit
+: 1565602224:0;yay -S lxqt-policykit
+: 1565602235:0;yay -S lxsession
+: 1565602252:0;yay -S mate-polkit
+: 1565602279:0;yay -S polkit-efl-git
+: 1565602306:0;yay -S polkit-gnome
+: 1565602325:0;yay -S polkit-kde-agent
+: 1565602336:0;yay -S ts-polkitagent
+: 1565602358:0;yay -S xfce-polkit-git
+: 1565602370:0;yay -S polkit-gnome
+: 1565602574:0;yay -S ntfs-3g
+: 1565603155:0;yay -S lostfiles
+: 1565603260:0;yay -S pamac-aur
+: 1565605044:0;yay -S udiskie
+: 1565625847:0;grep 'yay -S ' ~/.zsh_history
+: 1565640187:0;yay -S firejail
+: 1565640919:0;yay -S firetools
+: 1565642097:0;yay -S compton
+: 1565644427:0;yay -S rofi
+: 1565656738:0;yay -S mpv
+: 1565657262:0;yay -S youtube-dl
+: 1565731368:0;yay -S htop-temperature
+: 1565731456:0;yay -S noto-fonts-cjk
+: 1565732414:0;yay -S dos2unix
+: 1565735005:0;yay -S compton-tryone-git
+: 1565735630:0;yay -S compton-conf
+: 1565736030:0;yay -S compton-tryone-git
+: 1565740896:0;yay -S noto-fonts noto-fonts-emoji noto-fonts-cjk
+: 1565742568:0;yay -S dwm
+: 1565742653:0;yay -S st
+: 1565743851:0;yay -S termite
+: 1565748561:0;yay -S reflector
+: 1565763119:0;yay -S transmission-gtk
+: 1565763702:0;yay -S pcmanfm
+: 1565763712:0;yay -S pcmanfm-gtk3
+: 1565763720:0;yay -S pcmanfm-qt
+: 1565766665:0;yay -S balena-etcher
+: 1565767691:0;yay -S etcher-bin
+: 1565768037:0;yay -S balena-etcher
+: 1565768994:0;grep yay -S ~/.zsh_history
+: 1565769021:0;grep 'yay -S ' ~/.zsh_history
+: 1565769034:0;grep 'yay -S ' ~/.zsh_history
+
+yay -Qet
+alsa-plugins 1.1.9-2
+alsa-utils 1.1.9-1
+autoconf 2.69-5
+automake 1.16.1-1
+balena-etcher 1:1.5.53-2
+bash 5.0.007-1
+binutils 2.32-2
+bison 3.4-1
+bspwm 0.9.8-1
+bzip2 1.0.8-2
+compton-conf 0.14.1-1
+compton-tryone-git 0.1_beta2.95.g241bbc5-1
+coreutils 8.31-1
+cryptsetup 2.1.0-1
+cups 2.2.11-2
+device-mapper 2.02.185-1
+dhcpcd 7.2.2-1
+diffutils 3.7-1
+discord 0.0.9-4
+dos2unix 7.4.0-1
+dosbox 0.74.3-1
+e2fsprogs 1.45.3-1
+efibootmgr 16-1
+fakeroot 1.23-1
+file 5.37-2
+filesystem 2019.05-2
+findutils 4.6.0-4
+firefox 68.0.1-2
+firejail 0.9.60-1
+firetools 0.9.58-1
+flex 2.6.4-2
+fsearch-git r457.fcf10b8-1
+gawk 4.2.1-2
+gcc 9.1.0-2
+gcc-libs 9.1.0-2
+gettext 0.19.8.1-3
+git 2.22.0-1
+glibc 2.29-4
+gotop 3.0.0-3
+gparted 1.0.0-1
+grep 3.3-1
+groff 1.22.4-1
+grub 2:2.04-2
+gzip 1.10-1
+htop-temperature 2.2.0-3
+inetutils 1.9.4-7
+iproute2 5.2.0-1
+iputils 20180629.f6aac8d-4
+jfsutils 1.1.15-6
+less 551-1
+lib32-alsa-lib 1.1.9-1
+lib32-alsa-plugins 1.1.9-1
+lib32-giflib 5.2.1-1
+lib32-gnutls 3.6.9-1
+lib32-gst-plugins-base-libs 1.14.4-1
+lib32-gtk3 3.24.10-1
+lib32-libldap 2.4.47-1
+lib32-libpulse 12.2-1
+lib32-libva 2.4.0-1
+lib32-libxcomposite 0.4.5-1
+lib32-libxinerama 1.1.4-1
+lib32-libxslt 1.1.33-1
+lib32-mpg123 1.25.11-1
+lib32-nvidia-utils 430.40-1
+lib32-ocl-icd 2.2.12-2
+lib32-openal 1.19.1-1
+lib32-v4l-utils 1.16.2-1
+lib32-vulkan-icd-loader 1.1.115-1
+libtool 2.4.6+42+gb88cebd5-5
+licenses 20181104-1
+linux 5.2.8.arch1-1
+linux-firmware 20190717.bf13a71-1
+logrotate 3.15.0-1
+lutris 0.5.2.2-1
+lvm2 2.02.185-1
+m4 1.4.18-2
+make 4.2.1-3
+man-db 2.8.6.1-1
+man-pages 5.02-1
+mdadm 4.1-1
+mpg123 1.25.11-1
+mpv 1:0.29.1-8
+nano 4.3-1
+neofetch 6.0.0-1
+netctl 1.20-1
+noto-fonts 20190111-2
+noto-fonts-cjk 20190409-1
+noto-fonts-emoji 20180810-2
+ntfs-3g 2017.3.23-3
+nvidia 430.40-4
+nvidia-settings 430.40-3
+nvidia-utils 430.40-2
+ocl-icd 2.2.12-3
+openal 1.19.1-2
+pacman 5.1.3-1
+pamac-aur 8.0.3-1
+patch 2.7.6-7
+pciutils 3.6.2-1
+pcmanfm-qt 0.14.1-1
+perl 5.30.0-3
+pkgconf 1.6.3-1
+polkit-gnome 0.105-4
+procps-ng 3.3.15-1
+psmisc 23.2-1
+ranger 1.9.2-1
+reflector 2019.3-1
+reiserfsprogs 3.6.27-2
+rofi 1.5.4-1
+s-nail 14.9.14-1
+samba 4.10.6-1
+sed 4.7-1
+shadow 4.7-2
+steam 1.0.0.61-1
+sudo 1.8.27-1
+sxhkd 0.6.1-1
+sysfsutils 2.1.0-10
+systemd 242.84-1
+systemd-sysvcompat 242.84-1
+tar 1.32-1
+termite 15-1
+texinfo 6.6-1
+transmission-gtk 2.94-2
+udiskie 1.7.7-1
+usbutils 010-1
+util-linux 2.34-3
+vi 1:070224-3
+which 2.21-3
+wine-staging 4.13-1
+winetricks 20190615-1
+xfsprogs 4.20.0-2
+xorg-server 1.20.5-2
+xorg-xinit 1.4.1-1
+yay 9.2.1-1
+youtube-dl 2019.08.02-1
