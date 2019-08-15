@@ -1,3 +1,6 @@
+set up git for dotfiles and shit
+get direct links for firefox addons
+
 timedatectl force sync
 fastboot
 windows time fucking everything up
