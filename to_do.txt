@@ -76,5 +76,12 @@ figure out w3m with bspwm and a terminal emulator
 --no-border
 
 
-prevBuildsDir="~/builds/prev/${PWD##/}"
-find -maxdepth 0 -type f -exec vimdiff {} "$prevBuildsDir"/{} \;
+#!/bin/bash
+
+## ##
+## Run a diff on every file found in the current working directory
+## ##
+
+prevBuildsDir="~/builds/prev/${PWD##*/}"
+
+find * -maxdepth 0 -type f -exec emacs -diff {} "$prevBuildsDir"/{} \;
