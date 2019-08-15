@@ -1,6 +1,7 @@
 set up git for dotfiles and shit
 get direct links for firefox addons
 firefox configuration down pat pls
+find
 
 timedatectl force sync
 fastboot
