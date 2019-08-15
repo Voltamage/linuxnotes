@@ -51,6 +51,8 @@ htop
 iftop
 iotop
 remove old boot options from BIOS
+rofi alias support
+figure out w3m with bspwm and a terminal emulator
 
 --loop-playlist=inf
 
