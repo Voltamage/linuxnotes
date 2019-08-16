@@ -1,6 +1,31 @@
 subscribe to arch announce
+double check on the forums if you are updating kernel, xorg, systemd, or glibc
+
 numlock on bootup
 
 network manager, fail2ban, iptables, nftables, uncomplicated firewall (maybe firewalld), openvpn
 
-firejail, app armor
+dotfiles
+  etckeeper, git, filtering confidential info
+
+to list installed packages
+  pacman -Qqe > pkglist.txt
+  
+to view changed backup files
+  pacman -Qii | awk '/^MODIFIED/ {print $2}'
+  
+pacreport from pacutils
+and from the AUR we have aconfmgr
+
+remove AUR packages you aren't using
+
+places where there are config files
+    ~/.config/ -- where apps stores their configuration
+    ~/.cache/ -- cache of some programs may grow in size
+    ~/.local/share/ -- old files may be lying there
+    
+rmlint and rmshit.py clean up junk files
+
+if you wanted a fallback kernel, you can also install linux-lts and update the bootloader config
+  sudo pacman -S linux-lts
+  sudo grub-mkconfig -o /boot/grub/grub.cfg
