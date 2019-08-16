@@ -17,7 +17,7 @@ burn usb with etcher, as it seems to handle uefi successfully
 BOOT THE LIVE ENVIRONMENT
 boot into uefi mode, making sure to select the UEFI mount option in your BIOS
 you can read the install guide with
-    nano -w install.txt
+    nano install.txt
     
 VERIFY THE BOOT MODE
 list efi files
@@ -95,7 +95,7 @@ base-devel has sudo and other important packes too, so you should get it
 FSTAB
 generate fstab and check it
     genfstab -U /mnt >> /mnt/etc/fstab
-    nano -w /mnt/etc/fstab
+    nano /mnt/etc/fstab
 
 CHROOT
     arch-chroot /mnt
@@ -110,16 +110,16 @@ check zoneinfo, copy, and set the hardware to UTC
 LOCALIZATION
 generate locale and check
 uncomment en_US.UTF-8 UTF-8
-    nano -w /etc/locale.gen
+    nano /etc/locale.gen
     locale-gen
     echo LANG=en_US.UTF-8 > /etc/locale.conf
-    nano -w /etc/locale.conf
+    nano /etc/locale.conf
     
 NETWORK CONFIGURATION
 edit the hostname and hosts files for network, and check them
     echo arch > /etc/hostname
-    nano -w /etc/hostname
-    nano -w /etc/hosts
+    nano /etc/hostname
+    nano /etc/hosts
         127.0.0.1	localhost
         ::1         localhost
         127.0.1.1	arch.localdomain	arch
@@ -173,7 +173,7 @@ do this before literally anything else, skip zsh config, this adds history
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 PACMAN.CONF
-    sudo nano -w /etc/pacman.conf
+    sudo nano /etc/pacman.conf
 uncomment these things
         Color
         [multilib]
