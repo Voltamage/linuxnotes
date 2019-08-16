@@ -2,6 +2,8 @@ set up git for dotfiles and shit
 get direct links for firefox addons
 firefox configuration down pat pls
 find
+fix install instructions
+ntfs-3g for os-prober
 
 timedatectl force sync
 fastboot
