@@ -52,7 +52,8 @@ SELECT THE MIRRORS
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
     sudo reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     nano /etc/pacman.d/mirrorlist
-    nano /etc/systemd/system/reflector.service
+    
+    sudo nano /etc/systemd/system/reflector.service
         [Unit]
         Description=pacman mirrorlist update
         Wants=network-online.target
