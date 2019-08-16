@@ -38,3 +38,5 @@ user lockout on password fail
 password retry time
 
 rootless xorg
+can only use startx after this
+sudo echo needs_root_rights = no > /etc/X11/Xwrapper.config
