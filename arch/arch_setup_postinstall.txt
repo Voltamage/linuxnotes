@@ -1,12 +1,12 @@
 XORG
     sudo pacman -S xorg-server xorg-xinit
     
-NVIDIA
+NVIDIA AND COMPOSITOR
 check what driver is running
     lspci -k | grep -A 2 -E "(VGA|3D)"
     
 lib32 stuff is for steam
-    sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings
+    sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings compton
     reboot
     
 double check that it worked
