@@ -134,7 +134,8 @@ set root password
     
 BOOT LOADER
 get packages, intel-ucode for the processor, install in the removable way, and generate the config to include intel-ucode
-    pacman -S efibootmgr grub intel-ucode os-prober
+ntfs-3g is so you can find windows
+    pacman -S efibootmgr grub intel-ucode ntfs-3g os-prober
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
     grub-mkconfig -o /boot/grub/grub.cfg
     
