@@ -38,8 +38,6 @@ change default chmod
 user lockout on password fail
 password retry time
 
-lock root
-
 prevent ssh root login
   nano /etc/ssh/sshd_config
     PermitRootLogin no
