@@ -1,5 +1,5 @@
-  yay -S discord
-  yay -S mon2cam-git
+  sudo pacman -S discord
+  install mon2cam-git from the aur
 
 start discord
 remove the suggestions on the top of the screen
