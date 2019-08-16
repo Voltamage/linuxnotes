@@ -48,3 +48,5 @@ after the sudoers file is set up
 hardended kernel
 
 replace sudoedit default with rvim
+
+https://superuser.com/questions/626606/how-to-make-alsa-pick-a-preferred-sound-device-automatically#630048
