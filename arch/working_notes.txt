@@ -26,6 +26,7 @@ places where there are config files
     
 rmlint and rmshit.py clean up junk files
 
+DONT DO FALLBACK, IT HATES IT
 if you wanted a fallback kernel, you can also install linux-lts and update the bootloader config
   sudo pacman -S linux-lts
   sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -36,6 +37,12 @@ change default chmod
 
 user lockout on password fail
 password retry time
+
+lock root
+
+prevent ssh root login
+  nano /etc/ssh/sshd_config
+    PermitRootLogin no
 
 rootless xorg
 can only use startx after this
