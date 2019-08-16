@@ -1,1 +1,6 @@
+subscribe to arch announce
+numlock on bootup
 
+network manager, fail2ban, iptables, nftables, uncomplicated firewall (maybe firewalld), openvpn
+
+firejail, app armor
