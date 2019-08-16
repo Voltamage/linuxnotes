@@ -7,6 +7,8 @@ https://www.youtube.com/channel/UCv1Kcz-CuGM6mxzL3B1_Eiw (The Linux Gamer)
 
 https://wiki.archlinux.org/index.php/DeveloperWiki:Building_in_a_clean_chroot
 
+https://static.thegeekstuff.com/wp-content/uploads/2010/11/filesystem-structure.png
+
 TROUBLESHOOTING
 chroot back into the system by mounting the files and arch-chroot
     swapon  /dev/sda2
