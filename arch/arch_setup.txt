@@ -140,14 +140,15 @@ get packages, intel-ucode for the processor, install in the removable way, and g
     
 USERS AND GROUPS
 install zsh, default user use zsh, give sudo perms, and remove needing to do passwords in different terminals, and check
+useradd you must capitalize G otherwise you will be specifying guid
     pacman -S zsh
     useradd -m -G wheel -s /usr/bin/zsh volt
     passwd volt
     nano -w /etc/sudoers
-uncomment wheel line, add the other two
-%wheel ALL=(ALL) ALL
-## Keeps wheel users from needing to reinsert passwords in different terminals
-Defaults !tty_tickets
+uncomment wheel line
+        %wheel ALL=(ALL) ALL
+
+double check users
     groups volt
     less /etc/passwd
     
@@ -167,17 +168,10 @@ login as volt
 
 OH-MY-ZSH
 do this before literally anything else, skip zsh config, this adds history
-    pacman -S git
+    sudo pacman -S git
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-YAY
-install git, build yay, go is a dependency, remove the folders afterwards, add color and multilib capabilities to yay
-    git clone https://aur.archlinux.org/yay.git
-    cd yay
-    makepkg -si
-    cd
-    rm -rf /home/volt/.cache
-    rm -rf /home/volt/yay
+PACMAN.CONF
     sudo nano -w /etc/pacman.conf
 uncomment these things
         Color
