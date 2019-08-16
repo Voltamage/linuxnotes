@@ -32,7 +32,6 @@ lvm
 network manager
 auto num lock
 auto sign in user
-firejail
 kernels
 pulseaudio and/or alternatives
 orphan files
