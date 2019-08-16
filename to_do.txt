@@ -4,6 +4,7 @@ firefox configuration down pat pls
 find
 fix install instructions
 ntfs-3g for os-prober
+wttr.in
 
 timedatectl force sync
 fastboot
