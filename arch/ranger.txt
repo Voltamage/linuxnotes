@@ -1,2 +1,2 @@
-yay -S ranger
-yay -S mediainfo
+sudo pacman -S ranger
+sudo pacman -S mediainfo
