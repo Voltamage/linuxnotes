@@ -1,21 +1,21 @@
 XORG
-    yay -S xorg-server xorg-xinit
+    sudo pacman -S xorg-server xorg-xinit
     
 NVIDIA
 check what driver is running
     lspci -k | grep -A 2 -E "(VGA|3D)"
     
 lib32 stuff is for steam
-    yay -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings
+    sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings
     reboot
     
 double check that it worked
     lspci -k | grep -A 2 -E "(VGA|3D)"
     
 WM SETUP
-    yay -S termite
-    yay -S rofi
-    yay -S bspwm sxhkd
+    sudo pacman -S termite
+    sudo pacman -S rofi
+    sudo pacman -S bspwm sxhkd
     mkdir -p ~/.config/bspwm
     mkdir ~/.config/sxhkd
     cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
@@ -32,12 +32,11 @@ switch out emulator and launcher
             rofi -show run
             
 FONTS
-    yay -S noto-fonts noto-fonts-emoji noto-fonts-cjk
+    sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk
     
 XINITRC
-extra stuff for compton if you decided to install the compton-tryone-git instead of the community version
     nano -w ~/.xinitrc
-        compton --backend glx --blur-method kawase  --blur-background --blur-strength 8 &
+        compton &
         sxhkd &
         exec bspwm
         
@@ -49,7 +48,7 @@ use nvidia-settings, change monitor configuration, save configuration as xorg.co
     sudo mv ~/xorg.conf /etc/X11/xorg.conf.d/xorg.conf
     
 SELECT THE MIRRORS
-    pacman -S reflector
+    sudo pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
     sudo reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     nano -w /etc/pacman.d/mirrorlist
@@ -67,5 +66,5 @@ SELECT THE MIRRORS
         RequiredBy=multi-user.target
         
 start the service with
-    systemctl enable reflector.service
+    sudo systemctl enable reflector.service
     
