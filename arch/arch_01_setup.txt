@@ -178,3 +178,5 @@ uncomment these things
         Color
         [multilib]
         Include = /etc/pacman.d/mirrorlist
+        
+    sudo pacman -Sy
