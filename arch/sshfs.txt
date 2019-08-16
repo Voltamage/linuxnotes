@@ -1,1 +1,1 @@
-sudo pacman -S sshfs
+  sudo pacman -S sshfs
