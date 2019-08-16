@@ -25,7 +25,9 @@ maim + scrot screenshots
 terminal transparency and blur
 alsa correct output
 compton fork?
-
+Add a a script folder to PATH, check out bashrc stuff
+Files i fucked with
+font config? since nvidia-settings seems to come with that.
 sc
 wow
 a creed
