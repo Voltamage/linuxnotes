@@ -22,7 +22,7 @@ WM SETUP
     cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
     
 switch out emulator and launcher
-    nano -w ~/.config/sxhkdrc
+    nano ~/.config/sxhkdrc
         # terminal emulator
         super + Return
             termite
@@ -35,7 +35,7 @@ FONTS
     sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk
     
 XINITRC
-    nano -w ~/.xinitrc
+    nano ~/.xinitrc
         compton &
         sxhkd &
         exec bspwm
@@ -51,8 +51,8 @@ SELECT THE MIRRORS
     sudo pacman -S reflector
     cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
     sudo reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-    nano -w /etc/pacman.d/mirrorlist
-    nano -w /etc/systemd/system/reflector.service
+    nano /etc/pacman.d/mirrorlist
+    nano /etc/systemd/system/reflector.service
         [Unit]
         Description=pacman mirrorlist update
         Wants=network-online.target
