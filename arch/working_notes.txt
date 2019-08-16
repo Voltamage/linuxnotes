@@ -32,7 +32,7 @@ if you wanted a fallback kernel, you can also install linux-lts and update the b
   sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 fs.protected_hardlinks and fs.protected_symlinks to protect against hardlinks
-filesystem quaots for when var and tmp fill up so services dont get killed
+filesystem quotas for when var and tmp fill up so services dont get killed
 change default chmod
 
 user lockout on password fail
@@ -49,3 +49,5 @@ can only use startx after this
 
 after the sudoers file is set up
   passwd --lock root
+  
+hardended kernel
