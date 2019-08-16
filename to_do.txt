@@ -6,7 +6,7 @@ fix install instructions
 ntfs-3g for os-prober
 wttr.in
 
-timedatectl force sync
+timedatectl force sync, might already be working tbh
 fastboot
 windows time fucking everything up
 fsck angry inodes
