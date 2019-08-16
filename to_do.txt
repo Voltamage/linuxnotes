@@ -1,18 +1,18 @@
-set up git for dotfiles and shit
+CRITICAL BEFORE REINSTALL
+git track dotfiles
 get direct links for firefox addons
-firefox configuration down pat pls
-find
-fix install instructions
-ntfs-3g for os-prober
-wttr.in
+firefox configs
+bios options and reflash
+track files from install that aren't in the home folder
+security
 
+NON CRITICAL
 timedatectl force sync, might already be working tbh
 fastboot
 windows time fucking everything up
 fsck angry inodes
 mobo beep
 speaker pop on shutdown
-docker instead of firejail?
 wallpaper
 pywall
 menu theming
@@ -24,37 +24,20 @@ lockscreen
 maim + scrot screenshots
 terminal transparency and blur
 alsa correct output
-compton fork?
 Add a a script folder to PATH, check out bashrc stuff
-Files i fucked with
 font config? since nvidia-settings seems to come with that.
-
-sc
-wow
-a creed
-doom
-raytraced minecraft
-
-
-NETBOOT?
-LVM?
-NETWORK MANAGER REPLACE DHCPCD?
-boot partition 550 MiB for safety?
+wttr.in
+netboot
+lvm
+network manager
 auto num lock
 auto sign in user
 firejail
-compton
-display orientation
-nvidia
 kernels
 pulseaudio and/or alternatives
-grub optional dependencies
 orphan files
 customize grub
 auto detect drives and automount externals
-list of installed programs from manjaro
-firefox configs
-git track dotfiles
 kitty terminal?
 check other pacman config options
 gotop
@@ -65,6 +48,14 @@ remove old boot options from BIOS
 rofi alias support
 figure out w3m with bspwm and a terminal emulator
 
+GAMES TO TEST
+sc
+wow
+a creed
+doom
+raytraced minecraft
+
+COOL CONFIGS
 --loop-playlist=inf
 
 --screenshot-directory=A:\Images\mpv\
