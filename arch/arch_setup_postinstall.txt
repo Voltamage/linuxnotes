@@ -66,5 +66,5 @@ SELECT THE MIRRORS
         RequiredBy=multi-user.target
         
 start the service with
-    sudo systemctl enable reflector.service
+    sudo systemctl enable reflector
     
