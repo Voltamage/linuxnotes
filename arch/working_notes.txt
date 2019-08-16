@@ -29,3 +29,12 @@ rmlint and rmshit.py clean up junk files
 if you wanted a fallback kernel, you can also install linux-lts and update the bootloader config
   sudo pacman -S linux-lts
   sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+fs.protected_hardlinks and fs.protected_symlinks to protect against hardlinks
+filesystem quaots for when var and tmp fill up so services dont get killed
+change default chmod
+
+user lockout on password fail
+password retry time
+
+rootless xorg
