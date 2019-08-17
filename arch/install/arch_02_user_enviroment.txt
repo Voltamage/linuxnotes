@@ -33,7 +33,6 @@ use nvidia-settings, change monitor configuration, save configuration as xorg.co
     
 SELECT THE MIRRORS
     sudo pacman -S reflector
-    cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
     sudo reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     nano /etc/pacman.d/mirrorlist
     
@@ -52,4 +51,8 @@ SELECT THE MIRRORS
         
 start the service with
     sudo systemctl enable reflector
+    
+SCRIPTS
+    mkdir ~/Scripts
+    nano .zshrc
     
