@@ -143,7 +143,7 @@ useradd you must capitalize G otherwise you will be specifying guid
     pacman -S zsh
     useradd -m -G wheel -s /usr/bin/zsh volt
     passwd volt
-    visudo /etc/sudoers
+    visudo
 uncomment wheel line, :x to save and exit
         %wheel ALL=(ALL) ALL
 
