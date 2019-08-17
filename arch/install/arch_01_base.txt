@@ -88,7 +88,7 @@ sync database, install reflector, and execute to update the mirrorlist
     
 INSTALL THE BASE PACKAGES
 base-devel has sudo and other important packes too, so you should get it
-    pacstrap /mnt base base-devel
+    pacstrap /mnt base base-devel vim
     
 FSTAB
 generate fstab and check it
@@ -171,7 +171,7 @@ do this before literally anything else, skip zsh config, this adds history
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 PACMAN.CONF
-    sudo nano /etc/pacman.conf
+    sudo  /etc/pacman.conf
 uncomment these things
         Color
         [multilib]
