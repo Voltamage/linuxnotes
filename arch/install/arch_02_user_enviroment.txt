@@ -73,6 +73,7 @@ NM-APPLET
     chmod +x ~/.scripts/netman
     
 SCREENSHOTS
+    sudo pacman -S maim xclip
     nano ~/.scripts/sshot
         #!/bin/sh
         maim -s -u -m 10 | xclip -selection clipboard -t image/png
