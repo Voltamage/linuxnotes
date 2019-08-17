@@ -127,6 +127,8 @@ edit the hostname and hosts files for network, and check them
 INITRAMFS
 just in case, rebuild initramfs
     mkinitcpio -p linux
+and/or
+    mkinitcpio -p linux-hardened
     
 ROOT PASSWORD
 set root password
