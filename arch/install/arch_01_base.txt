@@ -16,8 +16,6 @@ burn usb with etcher, as it seems to handle uefi successfully
 
 BOOT THE LIVE ENVIRONMENT
 boot into uefi mode, making sure to select the UEFI mount option in your BIOS
-you can read the install guide with
-    nano install.txt
     
 VERIFY THE BOOT MODE
 list efi files
