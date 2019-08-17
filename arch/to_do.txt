@@ -4,7 +4,6 @@ get direct links for firefox addons
 firefox configs
 bios options and reflash
 track files from install that aren't in the home folder
-reburn usb with install media
 security
 rss feed of manual interventions from arch
 
