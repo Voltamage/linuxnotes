@@ -88,6 +88,7 @@ sync database, install reflector, and execute to update the mirrorlist
     
 INSTALL THE BASE PACKAGES
 base-devel has sudo and other important packes too, so you should get it
+hardened is for security, and the headers are necessary for the nvidia drivers later on
     pacstrap /mnt base base-devel linux-hardened linxux-hardened-headers vim
     
 FSTAB
@@ -100,10 +101,9 @@ CHROOT
     
 REMOVE DEFAULT KERNEL
     pacman -Rns linux linux-headers
+    
 TIMEZONE
 check zoneinfo, copy, and set the hardware to UTC
-    ls usr/share/zoneinfo
-    ls usr/share/zoneinfo/America
     ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
     hwclock --systohc
     
