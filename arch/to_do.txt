@@ -20,14 +20,13 @@ wallpaper
 pywall
 menu theming
 windows vm
-vim
 google auth
 terminal blur
 lockscreen
 maim + scrot screenshots
 terminal transparency and blur
 alsa correct output
-Add a a script folder to PATH, check out bashrc stuff
+chekc out bashrc stuff
 font config? since nvidia-settings seems to come with that.
 wttr.in
 netboot
