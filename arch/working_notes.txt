@@ -26,11 +26,6 @@ places where there are config files
     
 rmlint and rmshit.py clean up junk files
 
-DONT DO FALLBACK, IT HATES IT
-if you wanted a fallback kernel, you can also install linux-lts and update the bootloader config
-  sudo pacman -S linux-lts
-  sudo grub-mkconfig -o /boot/grub/grub.cfg
-
 fs.protected_hardlinks and fs.protected_symlinks to protect against hardlinks
 filesystem quotas for when var and tmp fill up so services dont get killed
 change default chmod
@@ -44,8 +39,6 @@ prevent ssh root login
 
 after the sudoers file is set up
   passwd --lock root
-  
-hardended kernel
 
 replace sudoedit default with rvim
 
