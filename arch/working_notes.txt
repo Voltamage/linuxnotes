@@ -43,3 +43,11 @@ after the sudoers file is set up
 replace sudoedit default with rvim
 
 https://superuser.com/questions/626606/how-to-make-alsa-pick-a-preferred-sound-device-automatically#630048
+
+# Empty iptables rule file
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+COMMIT
+
