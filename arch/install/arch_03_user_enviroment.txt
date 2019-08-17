@@ -15,22 +15,18 @@ XORG AND COMPOSITOR
     
 WM SETUP
     sudo pacman -S termite
-    sudo pacman -S rofi
+    sudo pacman -S dmenu
     sudo pacman -S bspwm sxhkd
     mkdir -p ~/.config/bspwm
     mkdir ~/.config/sxhkd
     cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
     cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
     
-switch out emulator and launcher
+switch out terminal
     nano ~/.config/sxhkdrc
         # terminal emulator
         super + Return
             termite
-        
-        # program launcher
-        super + @space
-            rofi -show run
             
 FONTS
     sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk
