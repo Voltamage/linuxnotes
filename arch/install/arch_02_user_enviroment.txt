@@ -83,3 +83,5 @@ SCREENSHOTS
 PRIVATE INTERNET ACCESS
     nano /etc/default/grub
         GRUB_CMDLINE_LINUX="ipv6.disable=1"
+
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
