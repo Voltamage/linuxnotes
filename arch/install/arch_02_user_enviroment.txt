@@ -59,3 +59,12 @@ uncomment and change line to
         export PATH=$HOME/.scripts:$PATH
         
     source ~/.zshrc
+
+NM-APPLET
+    sudo pacman -S network-manager-applet
+    sudo pacman -S trayer
+    
+        #!/bin/sh
+        nm-applet    2>&1 > /dev/null &
+        trayer  2>&1 > /dev/null
+        killall nm-applet
