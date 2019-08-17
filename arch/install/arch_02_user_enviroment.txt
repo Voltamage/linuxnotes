@@ -85,3 +85,11 @@ PRIVATE INTERNET ACCESS
         GRUB_CMDLINE_LINUX="ipv6.disable=1"
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
+    
+LASTPASS
+    sudo pacman -S lastpass-cli pinentry xclip
+    lpass login $EMAILHERE
+    lpass ls
+    lpass show --password --clip $ENTRYNAME
+and/or
+    lpass show --username --clip $ENTRYNAME
