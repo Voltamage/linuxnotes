@@ -88,7 +88,7 @@ sync database, install reflector, and execute to update the mirrorlist
     
 INSTALL THE BASE PACKAGES
 base-devel has sudo and other important packes too, so you should get it
-    pacstrap /mnt base base-devel vim
+    pacstrap /mnt base base-devel linux-hardened linxux-hardened-headers vim
     
 FSTAB
 generate fstab and check it
@@ -98,6 +98,8 @@ generate fstab and check it
 CHROOT
     arch-chroot /mnt
     
+REMOVE DEFAULT KERNEL
+    pacman -Rns linux linux-headers
 TIMEZONE
 check zoneinfo, copy, and set the hardware to UTC
     ls usr/share/zoneinfo
