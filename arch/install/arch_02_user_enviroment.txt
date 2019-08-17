@@ -53,6 +53,9 @@ start the service with
     sudo systemctl enable reflector
     
 SCRIPTS
-    mkdir ~/Scripts
+    mkdir ~/.scripts
     nano .zshrc
-    
+uncomment and change line to
+        export PATH=$HOME/.scripts:$PATH
+        
+    source ~/.zshrc
