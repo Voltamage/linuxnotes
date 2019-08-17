@@ -51,3 +51,4 @@ https://superuser.com/questions/626606/how-to-make-alsa-pick-a-preferred-sound-d
 :OUTPUT ACCEPT [0:0]
 COMMIT
 
+sudo find / -iname '$SEARCH*'
