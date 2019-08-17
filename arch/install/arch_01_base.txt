@@ -137,10 +137,35 @@ set root password
 BOOT LOADER
 get packages, intel-ucode for the processor, install in the removable way, and generate the config to include intel-ucode
 ntfs-3g is so you can find windows
+    pacman -Syu
     pacman -S efibootmgr grub intel-ucode ntfs-3g os-prober
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
     grub-mkconfig -o /boot/grub/grub.cfg
     
+APPARMOR AND FIREJAIL
+    pacman -S apparmor firejail
+    nano /etc/default/grub
+        GRUB_CMDLINE_LINUX="apparmor=1 security=apparmor audit=1"
+    systemctl enable apparmor
+    systemctl enable auditd
+    
+    mkdir /etc/pacman.d/hooks/
+    nano /etc/pacman.d/hooks/firejail.hook
+        [Trigger]
+        Type = File
+        Operation = Install
+        Operation = Upgrade
+        Operation = Remove
+        Target = usr/bin/*
+        Target = usr/local/bin/*
+        Target = usr/share/applications/*.desktop
+
+        [Action]
+        Description = Configure symlinks in /usr/local/bin based on firecfg.config...
+        When = PostTransaction
+        Depends = firejail
+        Exec = /bin/sh -c 'firecfg &>/dev/null'
+        
 USERS AND GROUPS
 install zsh, default user use zsh, give sudo perms, and remove needing to do passwords in different terminals, and check
 useradd you must capitalize G otherwise you will be specifying guid
