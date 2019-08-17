@@ -3,11 +3,16 @@ lib32 stuff is for steam
     sudo pacman -S dkms nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings
     sudo reboot
     
-check what driver is running
+check that the driver is nvidia and not nouveau
     lspci -k | grep -A 2 -E "(VGA|3D)"
 
 XORG AND COMPOSITOR
     sudo pacman -S xorg-server xorg-xinit compton
+    
+rootless xorg hardening
+can only use startx after this
+    sudo echo needs_root_rights = no > /etc/X11/Xwrapper.config
+    nano /etc/X11/Xwrapper.config
     
 WM SETUP
     sudo pacman -S termite
@@ -39,6 +44,8 @@ ENTER THE SYSTEM
 CONFIGURE DISPLAY
 use nvidia-settings, change monitor configuration, save configuration as xorg.conf
     sudo mv ~/xorg.conf /etc/X11/xorg.conf.d/xorg.conf
+    
+    reboot
     
 SELECT THE MIRRORS
     sudo pacman -S reflector
