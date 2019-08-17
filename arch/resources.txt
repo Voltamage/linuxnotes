@@ -22,3 +22,7 @@ deleting a folder
 
 deleting a file
     rm
+
+https://wiki.archlinux.org/index.php/General_recommendations
+https://wiki.archlinux.org/index.php/Security
+https://www.reddit.com/r/archlinux/comments/9gaixv/creating_a_hardened_arch_linux_installation_with/
