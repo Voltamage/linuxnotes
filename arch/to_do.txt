@@ -13,6 +13,7 @@ timedatectl force sync, might already be working tbh
 firefox scroll speed
 fastboot
 windows time fucking everything up
+hardened malloc
 fsck angry inodes
 mobo beep
 speaker pop on shutdown
