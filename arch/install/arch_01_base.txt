@@ -190,7 +190,8 @@ double check users
     
 CONFIGURE NETWORK DYNAMICALLY
 set up basic system services and syncs
-    systemctl enable dhcpcd
+    pacman -S networkmanager
+    systemctl enable NetworkManager
     timedatectl set-ntp true
     
 REBOOT
