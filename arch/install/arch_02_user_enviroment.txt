@@ -64,10 +64,17 @@ NM-APPLET
     sudo pacman -S network-manager-applet
     sudo pacman -S trayer
     
-    nano ~/.scripts/networkmanager
+    nano ~/.scripts/netman
         #!/bin/sh
         nm-applet    2>&1 > /dev/null &
         trayer  2>&1 > /dev/null
         killall nm-applet
         
-    chmod +x ~/.scripts/networkmanager
+    chmod +x ~/.scripts/netman
+    
+SCREENSHOTS
+    nano ~/.scripts/sshot
+        #!/bin/sh
+        maim -s -u -m 10 | xclip -selection clipboard -t image/png
+
+    chmod +x ~/.scripts/sshot
