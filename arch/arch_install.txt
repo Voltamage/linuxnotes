@@ -317,7 +317,11 @@ PRIVATE INTERNET ACCESS
 LASTPASS
     sudo pacman -S lastpass-cli pinentry xclip
     lpass login $EMAILHERE
+    
     lpass ls
+or
+    lpass show -G $SEARCH
+    
     lpass show --password --clip $ENTRYNAME
 and/or
     lpass show --username --clip $ENTRYNAME
