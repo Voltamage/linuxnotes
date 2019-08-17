@@ -10,6 +10,7 @@ rss feed of manual interventions from arch
 
 NON CRITICAL
 timedatectl force sync, might already be working tbh
+firefox scroll speed
 fastboot
 windows time fucking everything up
 fsck angry inodes
