@@ -226,3 +226,98 @@ can only use startx after this
     sudo echo needs_root_rights = no > /etc/X11/Xwrapper.config
     nano /etc/X11/Xwrapper.config
    
+WM SETUP
+    sudo pacman -S termite
+    sudo pacman -S dmenu
+    sudo pacman -S bspwm sxhkd
+    mkdir -p ~/.config/bspwm
+    mkdir ~/.config/sxhkd
+    cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
+    cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
+    
+switch out terminal
+    nano ~/.config/sxhkdrc
+        # terminal emulator
+        super + Return
+            termite
+            
+FONTS
+    sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk
+    
+XINITRC
+    nano ~/.xinitrc
+        compton &
+        sxhkd &
+        exec bspwm
+        
+ENTER THE SYSTEM
+    startx
+    
+CONFIGURE DISPLAY
+use nvidia-settings, change monitor configuration, save configuration as xorg.conf
+    sudo mv ~/xorg.conf /etc/X11/xorg.conf.d/xorg.conf
+    
+    reboot
+    
+SELECT THE MIRRORS
+    sudo pacman -S reflector
+    sudo reflector --verbose --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+    nano /etc/pacman.d/mirrorlist
+    
+    sudo nano /etc/systemd/system/reflector.service
+        [Unit]
+        Description=pacman mirrorlist update
+        Wants=network-online.target
+        After=network-online.target
+        
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/bin/reflector --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+        
+        [Install]
+        RequiredBy=multi-user.target
+        
+start the service with
+    sudo systemctl enable reflector
+    
+SCRIPTS
+    mkdir ~/.scripts
+    nano .zshrc
+uncomment and change line to
+        export PATH=$HOME/.scripts:$PATH
+        
+    source ~/.zshrc
+
+NM-APPLET
+    sudo pacman -S network-manager-applet
+    sudo pacman -S trayer
+    
+    nano ~/.scripts/netman
+        #!/bin/sh
+        nm-applet    2>&1 > /dev/null &
+        trayer  2>&1 > /dev/null
+        killall nm-applet
+        
+    chmod +x ~/.scripts/netman
+    
+SCREENSHOTS
+    sudo pacman -S maim xclip
+    nano ~/.scripts/sshot
+        #!/bin/sh
+        maim -s -u -m 10 | xclip -selection clipboard -t image/png
+
+    chmod +x ~/.scripts/sshot
+    
+PRIVATE INTERNET ACCESS
+    nano /etc/default/grub
+        GRUB_CMDLINE_LINUX="ipv6.disable=1"
+
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
+    
+LASTPASS
+    sudo pacman -S lastpass-cli pinentry xclip
+    lpass login $EMAILHERE
+    lpass ls
+    lpass show --password --clip $ENTRYNAME
+and/or
+    lpass show --username --clip $ENTRYNAME
