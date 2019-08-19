@@ -7,6 +7,11 @@ track files from install that aren't in the home folder
 security
 rss feed of manual interventions from arch
 
+USB
+macrium
+systemrescuecd
+clonezilla
+
 NON CRITICAL
 timedatectl force sync, might already be working tbh
 firefox scroll speed
