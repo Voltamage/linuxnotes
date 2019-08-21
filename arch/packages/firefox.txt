@@ -1,3 +1,5 @@
+https://12bytes.org/articles/tech/firefox/firefoxgecko-configuration-guide-for-privacy-and-performance-buffs    
+
     sudo pacman -S firefox
     
 https://addons.mozilla.org/en-US/firefox/addon/noscript/
@@ -5,3 +7,4 @@ general > disable restrictions globally
 appearance > List full addresses in the permissions popup (https://www.noscript.net)
 
 https://addons.mozilla.org/en-US/firefox/addon/umatrix/
+https://addons.mozilla.org/en-US/firefox/addon/clearurls/
