@@ -9,4 +9,5 @@ appearance > List full addresses in the permissions popup (https://www.noscript.
 https://addons.mozilla.org/en-US/firefox/addon/umatrix/
 https://addons.mozilla.org/en-US/firefox/addon/clearurls/
 
+mousewheel.acceleration.factor 5
 mousewheel.acceleration.start 1
