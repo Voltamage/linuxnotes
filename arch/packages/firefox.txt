@@ -1,4 +1,4 @@
-https://12bytes.org/articles/tech/firefox/firefoxgecko-configuration-guide-for-privacy-and-performance-buffs    
+https://12bytes.org/7750
 
     sudo pacman -S firefox
     
