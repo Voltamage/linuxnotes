@@ -1,1 +1,5 @@
-
+    sudo pacman -S firefox
+    
+https://addons.mozilla.org/en-US/firefox/addon/noscript/
+general > disable restrictions globally
+appearance > List full addresses in the permissions popup (https://www.noscript.net)
