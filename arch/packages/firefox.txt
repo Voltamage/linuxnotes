@@ -90,7 +90,7 @@ https://addons.mozilla.org/en-US/firefox/addon/site-bleacher/
 No settings except for whitelist
 
 https://addons.mozilla.org/en-US/firefox/addon/skip-redirect/
-Defaults are fine.You can copy the last skipped URL and add to the blacklist.
+Notifications>	Enable Popup: disabled
 
 https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 Settings>	Hide placeholders of blocked elements: enabled
