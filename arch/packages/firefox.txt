@@ -151,7 +151,7 @@ My rules>       copy the rules from the url into the temporary rules section, sa
                 https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions
 Assets>         Disable all host file lists, apply changes, update now, purge all caches, and update now
                 Ruleset recipes for English websites: enabled
-Popup panel>	Global filters: CSS, images, 1st-part cookies, forib web workers, and block frames
+Popup panel>	Global filters: CSS, images, forbid web workers, and block frames and cookies
 		maybe allow 1st-party media
 		remember to make global changes for sites such as youtube
 		shift click while refreshing to bypass the browser cache
