@@ -1,0 +1,149 @@
+https-strict: behind-the-scene false
+matrix-off: about-scheme true
+matrix-off: behind-the-scene true
+matrix-off: chrome-extension-scheme true
+matrix-off: chrome-scheme true
+matrix-off: moz-extension-scheme true
+matrix-off: opera-scheme true
+matrix-off: vivaldi-scheme true
+matrix-off: wyciwyg-scheme true
+no-workers: * true
+no-workers: twitch.tv false
+no-workers: xvideos.com false
+noscript-spoof: * true
+referrer-spoof: * true
+referrer-spoof: behind-the-scene false
+* * * block
+* * cookie block
+* * css allow
+* * frame block
+* * image allow
+* ajax.aspnetcdn.com * allow
+* ajax.googleapis.com * allow
+* ajax.microsoft.com * allow
+* ajax.proxy.ustclug.org * allow
+* apps.bdimg.com * allow
+* cdn.bootcss.com * allow
+* cdn.jsdelivr.net * allow
+* cdnjs.cloudflare.com * allow
+* code.jquery.com * allow
+* lib.sinaapp.com * allow
+* libs.baidu.com * allow
+* sdn.geekzu.org * allow
+* upcdn.b0.upaiyun.com * allow
+* yandex.st * allow
+* yastatic.net * allow
+12bytes.org 12bytes.org script allow
+1337x.to 1337x.to script allow
+addons.mozilla.org addons.mozilla.org xhr allow
+addons.mozilla.org mozilla.net * allow
+archive.org archive.org script allow
+bing.com www.bing.com frame allow
+bing.com www.bing.com script allow
+bing.com www.bing.com xhr allow
+bitwarden.com vault.bitwarden.com script allow
+bitwarden.com vault.bitwarden.com xhr allow
+cyberpunk.net cdn-l-cyberpunk.cdprojektred.com media allow
+cyberpunk.net s.ytimg.com script allow
+cyberpunk.net www.cyberpunk.net script allow
+cyberpunk.net www.cyberpunk.net xhr allow
+cyberpunk.net www.youtube.com frame allow
+cyberpunk.net www.youtube.com script allow
+cyberpunk.net www.youtube.com xhr allow
+dolphin-emu.org forums.dolphin-emu.org script allow
+drive.google.com apis.google.com script allow
+drive.google.com clients6.google.com xhr allow
+drive.google.com drive.google.com script allow
+drive.google.com www.gstatic.com script allow
+duckduckgo.com duckduckgo.com cookie allow
+duckduckgo.com duckduckgo.com script allow
+duckduckgo.com duckduckgo.com xhr allow
+duckduckgo.com improving.duckduckgo.com * block
+duckduckgo.com proxy.duckduckgo.com * block
+duckduckgo.com proxy.duckduckgo.com image allow
+ecotechi.com ecotechi.com script allow
+ecotechi.com ecotechi.com xhr allow
+ecotechi.com www.google.com frame allow
+ecotechi.com www.google.com script allow
+ecotechi.com www.google.com xhr allow
+ecotechi.com www.gstatic.com script allow
+fitgirl-repacks.site fitgirl-repacks.site script allow
+github.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com xhr allow
+github.com github.com cookie allow
+github.com github.com xhr allow
+github.com github.githubassets.com script allow
+github.com live.github.com xhr block
+gitlab.com assets.gitlab-static.net script allow
+gitlab.com gitlab.com script allow
+gitlab.com gitlab.com xhr allow
+imgur.com imgur.com media allow
+imgur.com imgur.com script allow
+imgur.com imgur.com xhr allow
+instagram.com cdninstagram.com media allow
+instagram.com www.instagram.com script allow
+instagram.com www.instagram.com xhr allow
+ipleak.net ipleak.net frame allow
+ipleak.net ipleak.net script allow
+ipleak.net ipleak.net xhr allow
+ipleak.net maps.google.com frame allow
+ipleak.net maps.googleapis.com script allow
+ipleak.net maps.gstatic.com script allow
+ipleak.net www.google.com frame allow
+ipleak.net www.google.com script allow
+paypal.com www.paypal.com script allow
+paypal.com www.paypal.com xhr allow
+paypal.com www.paypalobjects.com script allow
+pornhub.com etahub.com * allow
+pornhub.com phncdn.com media allow
+pornhub.com phncdn.com script allow
+pornhub.com www.pornhub.com script allow
+protondb.com www.protondb.com script allow
+rarbg.to dyncdn.me script allow
+rarbg.to www.rarbg.to script allow
+rarbg.to www.rarbg.to xhr allow
+reddit.com gfycat.com script inherit
+reddit.com reddit.com cookie allow
+reddit.com v.redd.it media allow
+reddit.com www.reddit.com script allow
+reddit.com www.reddit.com xhr allow
+reddit.com www.redditstatic.com script allow
+soundgasm.net soundgasm.net media allow
+soundgasm.net soundgasm.net script allow
+tineye.com www.google.com frame allow
+tineye.com www.google.com script allow
+tineye.com www.google.com xhr allow
+tineye.com www.gstatic.com script allow
+tineye.com www.tineye.com script allow
+tineye.com www.tineye.com xhr allow
+twitch.tv api.github.com xhr allow
+twitch.tv api.twitch.tv xhr allow
+twitch.tv frankerfacez.com * allow
+twitch.tv gql.twitch.tv xhr allow
+twitch.tv irc-ws.chat.twitch.tv xhr allow
+twitch.tv static.twitchcdn.net script allow
+twitch.tv ttvnw.net xhr allow
+twitch.tv twitch.tv cookie allow
+twitch.tv vod-metro.twitch.tv xhr allow
+twitch.tv www.twitch.tv script allow
+twitter.com abs.twimg.com script allow
+twitter.com analytics.twitter.com xhr block
+twitter.com twitter.com cookie block
+twitter.com twitter.com script allow
+twitter.com twitter.com xhr allow
+twitter.com video.twimg.com media allow
+twitter.com video.twimg.com xhr allow
+userstyles.org facebook.com * block
+userstyles.org facebook.net * block
+userstyles.org google-analytics.com * block
+userstyles.org googlesyndication.com * block
+userstyles.org pinterest.com * block
+userstyles.org twitter.com * block
+xvideos.com static-ss.xvideos-cdn.com script allow
+xvideos.com www.xvideos.com script allow
+xvideos.com www.xvideos.com xhr allow
+xvideos.com xvideos-cdn.com media allow
+xvideos.com xvideos-cdn.com xhr allow
+xvideos.com xvideos.com cookie allow
+youtube.com googlevideo.com xhr allow
+youtube.com www.youtube.com script allow
+youtube.com www.youtube.com xhr allow
