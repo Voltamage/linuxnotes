@@ -226,8 +226,9 @@ https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/
 General>	Reload current tab after switching on/off a script from menu: enabled
 		Notify script updates: enabled
 Scripts can be synced with say, google drive
-maybe test with this script
+maybe test with these scripts
 		https://www.4chan-x.net/builds/4chan-X.user.js
+		https://cdn.frankerfacez.com/script/ffz_injector.user.js
 
 Don't enable automatic add-on updates
 
