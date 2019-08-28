@@ -1,0 +1,17 @@
+yay -S dolphin-emu-git
+no authorize reports
+configuration>interface download game covers from gametdb.com for use in grid mode: on
+configuration>interface pause on focus loss: on
+confugration>paths      add rom folder
+configuration>paths     search subfolders?
+graphics>general        backend: opengl
+graphics>general        show fps: on
+graphics>enhancements   internal resolution: 3x
+graphics>enhancements   anti-aliasing: 4x SSAA
+graphics>ehancements    anisotropic filtering: 16x
+graphics>enhancements   force texture filtering: on (new super mario bro.s wii)
+graphics>enhancements   scaled ebf copy: off
+graphics>hacks          store efb copies to texture only: off
+graphics>advanced       load custom textures: on
+graphics>advanced       prefetch custom textures: on
+view>                   grid view: on
