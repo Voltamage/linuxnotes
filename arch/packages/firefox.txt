@@ -287,8 +287,7 @@ mullvad account get
 mullvad relay list
 mullvad relay set location $COUNTRYCODE $CITYCODE
 mullvad relay set location us sfo
-mullvad auto-connect set on
 mullvad block-when-disconnected set on
-mullvad connect
-
+mullvad auto-connect set on
 mullvad lan set allow
+mullvad connect
