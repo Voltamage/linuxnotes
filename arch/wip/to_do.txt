@@ -26,6 +26,15 @@ compile notes on github
 blender doesn't work
 fix tty screen
 mozl4edit
+30 fps mario games
+vim copy paste
+manually building aur
+ranger image preview terminals
+kitty font
+less bloated font
+font config
+tty on proper screen
+steam firejail
 
 timedatectl force sync, might already be working tbh
 firefox scroll speed
