@@ -13,6 +13,20 @@ systemrescuecd
 clonezilla
 
 NON CRITICAL
+xboxdrv
+pywal and oomox
+firefox bitwarden swap
+security
+backing up stuff
+fonts
+no alt kernels
+make flash drive
+add github wgets for links
+compile notes on github
+blender doesn't work
+fix tty screen
+mozl4edit
+
 timedatectl force sync, might already be working tbh
 firefox scroll speed
 fastboot
