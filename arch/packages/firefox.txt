@@ -1,0 +1,293 @@
+https://12bytes.org/7750
+
+sudo pacman -S firefox
+
+Firefox profile in RAM
+https://wiki.archlinux.org/index.php/Profile-sync-daemon
+install profile-sync-daemon from the AUR
+	psd
+	systemctl --user enable --now psd
+check status with
+	psd p
+cache goes in RAM too, with the ghacks usr.js, so don't worry about it
+
+PREREQUISITES
+https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data
+about:profiles
+create new profile called privacy or whatever you like
+switch to it and delete the other ones
+create a backup of the profile folder
+delete literally everything you dont need
+suggested folders to save are down below
+	cd ~/.mozilla/firefox
+	cp $PROFILE -r $PROFILE.bak
+bookmarkbackups
+favicons.sqlite
+formhistory.sqlite
+places.sqlite
+
+FIREFOX POST INSTALL CLEANUP	
+delete hidden system addons
+repeat this every time firefox has an update
+you can edit pacman.conf to prevent the installation of these
+	cd /usr/lib/firefox/browser/features
+	sudo rm *.xpi
+
+COME BACK TO THIS
+firefox search engines
+https://12bytes.org/9800
+https://addons.mozilla.org/en-US/firefox/addon/mozlz4-edit/
+COME BACK TO THIS
+
+REQUIRED ADD-ONS AND SETTINGS
+https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/
+setting privacy.resistFingerprinting to true is fine
+General>	Expert mode: enabled
+    		Block mode: fake
+General>	Faking
+        	Random number generator: non-persistent
+API's>		Canvas API
+	        Protected part of the canvas API: readout
+        	Protected API features: all options enabled
+API's>		Audio API
+	        Protect audio API: enabled
+	        Protected API features: all options enabled
+API's>		History API
+	        Protected API features: all options enabled
+API's>		Window API
+	        Protect window API: enabled
+	        Protected API features: all options enabled
+		Allow the recaptcha exception, don't have to mess around with tick boxes for it to work
+API's>		DOMRect API
+	        Protect DOMRect API: enabled
+	        Protected API features: all options enabled
+Misc>		Block data URL paged: disabled (CSP issue)
+
+https://addons.mozilla.org/en-US/firefox/addon/clearurls/
+Prevent tracking injection over history API: enabled
+
+https://addons.mozilla.org/en-US/firefox/addon/css-exfil-protection/
+No settings tweaks
+
+https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
+Enable all of the options with the possible exception of 'Block requests for missing resources' which will break some websites.
+https://decentraleyes.org/test
+
+https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/
+leave in toolbar for toggle in case sites break
+no settings
+
+https://addons.mozilla.org/en-US/firefox/addon/httpz/
+Default settings are fine. Disable automatic mode if you want to be prompted on https connection failure.
+
+https://addons.mozilla.org/en-US/firefox/addon/privacy-oriented-origin-policy/
+Global mode>	aggressive
+Exclusions>	Exclude root domain matches: enabled
+If you are using uMatrix:
+Other>		Spoof cross-origin Referer: disabled
+
+https://addons.mozilla.org/en-US/firefox/addon/site-bleacher/
+No settings except for whitelist
+
+https://addons.mozilla.org/en-US/firefox/addon/skip-redirect/
+Defaults are fine.You can copy the last skipped URL and add to the blacklist.
+
+https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+Settings>	Hide placeholders of blocked elements: enabled
+Settings>	Privacy
+		all options enabled
+Settings>	Default Behavior
+		Disable cosmetic filtering: disabled
+		Block remote fonts: disabled
+My Filters>	! allow 1st party fonts globally (*$font,third-party), 3rd party by domain (,domain=~this.com|~that.com)
+		*$font,third-party
+Settings>	I am an advanced user: TEMPORARILY ENABLE
+		Click on the gears next to the checkbox and set:
+		suspendTabsUntilReady true
+		I am an advanced user: disabled
+Filter lists>	Enable all of these
+		Auto-update filter lists
+		Parse and enforce cosmetic filters
+		Ignore generic cosmetic filters
+			My filters​​​​​
+		Built-in:
+			expand the uBlock options to see all lists
+			uBlock filters
+			uBlock filters – Annoyances
+			uBlock filters – Badware risks (enable if you run Windows)
+			uBlock filters – Privacy
+			uBlock filters – Resource abuse (blocks many cryptocurrency mining scripts)
+			uBlock filters – Unbreak (un-breaks some websites that may be broken by other filter lists)
+		Ads:
+			Adblock Warning Removal List (hide annoying website messages warning about using an ad-blocker)
+        		EasyList
+		Privacy:
+			enable all lists
+		Malware domains
+			enable all lists, especially if you use Windows
+		Annoyances:
+			Adguard's Annoyances
+			Fanboy's Annoyance List
+		Multipurpose:
+			Dan Pollock's hosts file
+			Peter Lowe's Ad and tracking server list
+		Custom:
+			Import – enter: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
+My rules>	copy the rules from the url below into the temporary rules section, save, and commit
+		https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions
+
+https://addons.mozilla.org/en-US/firefox/addon/umatrix/
+Settings>	Convenience:	Enable these options
+		Show the number of blocked resources on the icon
+		Hide placeholder of blacklisted elements (but not blocked elements, at least not until you become more comfortable with uM)
+		Spoof <noscript> tags when 1st-party scripts are blocked
+Settings>	Privacy:	Enable these options
+		Delete blocked cookies
+		Delete non-blocked session cookies 60 minutes after the last time they have been used
+		Delete local storage content set by blocked hostnames
+		Spoof HTTP referrer string of third-party requests
+		Block all hyperlink auditing attempts
+My rules>       copy the rules from the url into the temporary rules section, save, and commit
+                https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions
+Assets>         Disable all host file lists, apply changes, update now, purge all caches, and update now
+                Ruleset recipes for English websites: enabled
+Popup panel>	Global filters: CSS, images, 1st-part cookies, forib web workers, and block frames
+		maybe allow 1st-party media
+		remember to make global changes for sites such as youtube
+		shift click while refreshing to bypass the browser cache
+more addons
+https://12bytes.org/1089
+
+https://addons.mozilla.org/en-US/firefox/addon/about-sync/
+can be reached with about:sync
+General Options>	 Just poking around and don't want logging options changed
+Data provider options>	Anonymize data:enabled
+
+https://addons.mozilla.org/en-US/firefox/addon/crxviewer/
+default settings are fine
+
+https://addons.mozilla.org/en-US/firefox/addon/exif-viewer/
+Format>	Table
+
+https://addons.mozilla.org/en-US/firefox/addon/flagfox/
+gets redirected by Skip Redirect
+Plenty of settings but defaults are fine, check if you want to add more features
+
+https://addons.mozilla.org/en-US/firefox/addon/imagus/
+Preferences>	Advanced: enabled
+		Add hovered links to the browser history: disabled
+		Default media volume: 80
+		Cyclical scrolling in albums: enabled
+Preferences>	Caption
+		Show image/video dimensions: enabled
+		
+https://addons.mozilla.org/en-US/firefox/addon/project-insight/
+shows you addon perms, no settings
+
+https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/
+Enable night mode, disable the hints every 24 hours, im sure there are more settings
+
+https://addons.mozilla.org/en-US/firefox/addon/scrolantana/
+Use this instead of hide-scrollbars, it is also js-free
+no settings for this
+
+https://addons.mozilla.org/en-US/firefox/addon/scroll_anywhere/
+Default settings are fine
+
+https://addons.mozilla.org/en-US/firefox/addon/search_by_image/
+Search Engines>	Bing
+		TinEye
+		Karma Decay
+Miscellaneous>	Use local Google site: enabled
+
+https://addons.mozilla.org/en-US/firefox/addon/smart-rss-reader/
+Behaviour>	Always show full date: enabled
+Add an rss feed to test
+https://www.archlinux.org/feeds/news/
+(mark all as read if you are keeping this, we want to see the updates only when necessary
+
+https://addons.mozilla.org/en-US/firefox/addon/styl-us/
+Default options are fine, add a theme to test
+https://userstyles.org/styles/155701/arch-linux-dark-2018
+
+https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/
+companion app is on the AUR under vdhcoapp
+Behaviour>	Download processor: Companion Application
+		Default download directory: set to desired
+		Max filename length: 255 (may cause problems on windows)
+
+https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/
+Search Engines>	Wayback Machine
+		Google Cache
+		Bing Cache
+		Archive.is
+
+https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/
+General>	Reload current tab after switching on/off a script from menu: enabled
+		Notify script updates: enabled
+Scripts can be synced with say, google drive
+maybe test with this script
+		https://www.4chan-x.net/builds/4chan-X.user.js
+
+Don't enable automatic add-on updates
+
+FIREFOX CONFIGURATION
+Search bar in nav bar is a privacy risk but i dont want it
+
+
+
+Configuration files
+https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.3-Implementation
+
+	cd ~/.mozilla/firefox/$USERPROFILE/
+check with
+	ls -la
+then download the overrides file with
+	sudo wget -P ~/.mozilla/firefox/$USERPROFILE/ https://gitlab.com/labwrat/Firefox-user.js/raw/master/user-overrides.js
+then download the ghacks updater file, make executable, and run with
+	sudo wget -P ~/.mozilla/firefox/$USERPROFILE/ https://raw.githubusercontent.com/ghacksuserjs/ghacks-user.js/master/updater.sh
+	sudo chmod +x updater.sh
+then download the ghacks cleaner file, make executable, and run with
+	./updater.sh
+
+	sudo wget -P ~/.mozilla/firefox/$USERPROFILE/ https://raw.githubusercontent.com/ghacksuserjs/ghacks-user.js/master/prefsCleaner.sh
+	sudo chmod +x prefsCleaner.sh
+	./prefsCleaner.sh
+pw manager
+ublock element blocker
+click-jacking protection
+scroll speed
+double check to remove devices from your firefox account
+probably swap out the two-step stuff
+maybe add account recovery
+history view by last site visited
+pages to read: 	https://12bytes.org/articles/tech/firefox/the-firefox-privacy-guide-for-dummies
+		https://archive.vn/99sDW
+		https://github.com/humanetech-community/awesome-humane-tech
+		
+		https://torrentfreak.com/review/mullvad-vpn-reviews/
+		https://thatoneprivacysite.net/
+		https://wiki.archlinux.org/index.php/Mullvad
+		https://am.i.mullvad.net/
+		
+firefox delete everything in your profile
+install the config override and config update script
+make executable
+then run script
+then make a backup
+
+decentraleyes
+umatrix
+ublock origin
+
+yay -S mullvad-vpn
+mullvad account set $ACCOUNTNUMBER
+mullvad account get
+mullvad relay list
+mullvad relay set location $COUNTRYCODE $CITYCODE
+mullvad relay set location us sfo
+mullvad auto-connect set on
+mullvad block-when-disconnected set on
+mullvad connect
+
+mullvad lan set allow
