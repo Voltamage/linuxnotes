@@ -208,6 +208,9 @@ https://www.archlinux.org/feeds/news/
 https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 Default options are fine, add a theme to test
 https://userstyles.org/styles/155701/arch-linux-dark-2018
+https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-dark.user.css
+https://raw.githubusercontent.com/StylishThemes/Wikipedia-Dark/master/wikipedia-dark.user.css
+https://raw.githubusercontent.com/StylishThemes/StackOverflow-Dark/master/stackoverflow-dark.user.css
 
 https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/
 companion app is on the AUR under vdhcoapp
