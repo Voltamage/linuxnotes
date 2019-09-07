@@ -130,7 +130,7 @@ set root password
     passwd
     
 PACMAN.CONF
-    sudo  /etc/pacman.conf
+    nano /etc/pacman.conf
 uncomment these things
         Color
         [multilib]
