@@ -7,9 +7,9 @@ verify your file with these commands, replace filename with current arch version
 make the checksum files by copy pasting the checksum and then a space and then the filename
 everything is in the same folder, and you should cd into it
 you can double check the pgp output with the pgp key of the developer at https://www.archlinux.org/people/developers/
-    gpg --keyserver-options auto-key-retrieve --verify archlinux-2019.08.01-x86_64.iso.sig
-    md5sum -c archlinux-2019.08.01-x86_64.iso.md5
-    sha1sum -c archlinux-2019.08.01-x86_64.iso.sha1
+    gpg --keyserver-options auto-key-retrieve --verify archlinux-201X.0X.01-x86_64.iso.sig
+    md5sum -c archlinux-201X.0X.01-x86_64.iso.md5
+    sha1sum -c archlinux-201X.0X.01-x86_64.iso.sha1
     
 WRITE INSTALLATION MEDIA
 burn usb with etcher, as it seems to handle uefi successfully
@@ -89,7 +89,7 @@ sync database, install reflector, and execute to update the mirrorlist
 INSTALL THE BASE PACKAGES
 base-devel has sudo and other important packes too, so you should get it
 hardened is for security, and the headers are necessary for the nvidia drivers later on
-    pacstrap /mnt base base-devel linux-hardened linxux-hardened-headers vim
+    pacstrap /mnt base base-devel
     
 FSTAB
 generate fstab and check it
@@ -98,9 +98,6 @@ generate fstab and check it
 
 CHROOT
     arch-chroot /mnt
-    
-REMOVE DEFAULT KERNEL
-    pacman -Rns linux linux-headers
     
 TIMEZONE
 check zoneinfo, copy, and set the hardware to UTC
@@ -127,8 +124,6 @@ edit the hostname and hosts files for network, and check them
 INITRAMFS
 just in case, rebuild initramfs
     mkinitcpio -p linux
-and/or
-    mkinitcpio -p linux-hardened
     
 ROOT PASSWORD
 set root password
@@ -142,38 +137,13 @@ uncomment these things
         Include = /etc/pacman.d/mirrorlist
         
     sudo pacman -Sy
+    
 BOOT LOADER
 get packages, intel-ucode for the processor, install in the removable way, and generate the config to include intel-ucode
 ntfs-3g is so you can find windows
     pacman -Syu
     pacman -S efibootmgr grub intel-ucode ntfs-3g os-prober
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
-    grub-mkconfig -o /boot/grub/grub.cfg
-    
-APPARMOR AND FIREJAIL
-    pacman -S apparmor firejail
-    nano /etc/default/grub
-        GRUB_CMDLINE_LINUX="apparmor=1 security=apparmor audit=1"
-    systemctl enable apparmor
-    systemctl enable auditd
-    
-    mkdir /etc/pacman.d/hooks/
-    nano /etc/pacman.d/hooks/firejail.hook
-        [Trigger]
-        Type = File
-        Operation = Install
-        Operation = Upgrade
-        Operation = Remove
-        Target = usr/bin/*
-        Target = usr/local/bin/*
-        Target = usr/share/applications/*.desktop
-
-        [Action]
-        Description = Configure symlinks in /usr/local/bin based on firecfg.config...
-        When = PostTransaction
-        Depends = firejail
-        Exec = /bin/sh -c 'firecfg &>/dev/null'
-        
     grub-mkconfig -o /boot/grub/grub.cfg
     
 USERS AND GROUPS
@@ -192,8 +162,7 @@ double check users
     
 CONFIGURE NETWORK DYNAMICALLY
 set up basic system services and syncs
-    pacman -S networkmanager
-    systemctl enable NetworkManager
+    systemctl enable dhcpcd
     timedatectl set-ntp true
     
 REBOOT
@@ -210,9 +179,16 @@ do this before literally anything else, skip zsh config, this adds history
     sudo pacman -S git
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+YAY
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    cd
+    rm -rf yay
+    
 DISPLAY DRIVERS
 lib32 stuff is for steam
-    sudo pacman -S dkms nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings
+    sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings
     sudo reboot
     
 check that the driver is nvidia and not nouveau
@@ -227,9 +203,7 @@ can only use startx after this
     nano /etc/X11/Xwrapper.config
    
 WM SETUP
-    sudo pacman -S termite
-    sudo pacman -S dmenu
-    sudo pacman -S bspwm sxhkd
+    sudo pacman -S termite dmenu bspwm sxhkd
     mkdir -p ~/.config/bspwm
     mkdir ~/.config/sxhkd
     cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
@@ -258,6 +232,32 @@ use nvidia-settings, change monitor configuration, save configuration as xorg.co
     sudo mv ~/xorg.conf /etc/X11/xorg.conf.d/xorg.conf
     
     reboot
+    
+APPARMOR AND FIREJAIL
+    pacman -S apparmor firejail
+    nano /etc/default/grub
+        GRUB_CMDLINE_LINUX="apparmor=1 security=apparmor audit=1"
+    systemctl enable apparmor
+    systemctl enable auditd
+    
+    mkdir /etc/pacman.d/hooks/
+    nano /etc/pacman.d/hooks/firejail.hook
+        [Trigger]
+        Type = File
+        Operation = Install
+        Operation = Upgrade
+        Operation = Remove
+        Target = usr/bin/*
+        Target = usr/local/bin/*
+        Target = usr/share/applications/*.desktop
+
+        [Action]
+        Description = Configure symlinks in /usr/local/bin based on firecfg.config...
+        When = PostTransaction
+        Depends = firejail
+        Exec = /bin/sh -c 'firecfg &>/dev/null'
+        
+    grub-mkconfig -o /boot/grub/grub.cfg
     
 SELECT THE MIRRORS
     sudo pacman -S reflector
