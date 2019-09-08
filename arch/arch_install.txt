@@ -185,7 +185,19 @@ YAY
     makepkg -si
     cd
     rm -rf yay
-    
+
+MULLVAD
+    yay -S mullvad-vpn
+    mullvad account set $ACCOUNTNUMBER
+    mullvad account get
+    mullvad relay list
+    mullvad relay set location $COUNTRYCODE $CITYCODE
+    mullvad relay set location us sfo
+    mullvad block-when-disconnected set on
+    mullvad auto-connect set on
+    mullvad lan set allow
+    mullvad connect
+
 DISPLAY DRIVERS
 lib32 stuff is for steam
     sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings
