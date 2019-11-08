@@ -1,5 +1,5 @@
 SETUP
-name the server odroid
+keep name specified with docker, capitalize it
 dont allow me to access my media outside my home
 skip adding media
 skip getting apps
@@ -8,12 +8,19 @@ SETTINGS
 show advanced
 account>online media sources>disable all of them
 account>authorized devices>revoke all old ones
-web client>quality>internet streaming>video quality: maximum
+web client>general>play theme music: enable
+
+???web client>quality>internet streaming>video quality: maximum???
+
 web client>quality>home streaming>use recommended settings: disable
 web client>quality>home streaming>video quality: maximum
 
-ODROID
-status>dashboard>show details
+???web client>debug>debug level: disabled???
+
+SERVER
+
+???status>dashboard>show details???
+
 server>general>send crash reports to plex: disable
 settings>general>send crash reports to plex: disable
 settings>library>allow media deletion: disabled
