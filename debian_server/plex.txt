@@ -41,7 +41,7 @@ settings>transcoder>transcoder quality: prefer higher speed encoding
 settings>transcoder>use hardware acceleration when available: enabled
 settings>languages>automatically select audio and subtitle tracks: enabled
 settings>dlna>enable the dlna server: disable
-settings>include cinema trailers from movies in my library: disable
+settings>extras>include cinema trailers from movies in my library: disable
 
 DATABASE MAINTENANCE
 manage>troubleshooting>optimize database: yes
