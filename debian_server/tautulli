@@ -2,3 +2,6 @@ sign in with plex
 select server
 verify
 close changelog
+settings>show advanced
+general> calculate total file sizes
+homepage> activity refresh interval: 5
