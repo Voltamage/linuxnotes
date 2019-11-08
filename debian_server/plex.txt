@@ -39,8 +39,14 @@ settings>transcoder>transcoder quality: prefer higher speed encoding
 ???settings>transcoder>background transcoding x264 preset: ultra fast???
 
 settings>transcoder>use hardware acceleration when available: enabled
+settings>languages>automatically select audio and subtitle tracks: enabled
+
 settings>dlna>enable the dlna server: disable
 settings>include cinema trailers from movies in my library: disable
+
+REORDER AGENTS
+REORDER AGENTS
+REORDER AGENTS
 
 DATABASE MAINTENANCE
 manage>troubleshooting>optimize database: yes
