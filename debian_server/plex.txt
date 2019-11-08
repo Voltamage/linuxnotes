@@ -25,8 +25,8 @@ settings>general>send crash reports to plex: disable
 
 ???settings>general>push notifications???
 
-???settings>library>run a pertial scan when changes are detected: enabled???
-
+settings>agents>move local media assets to the bottom of activated agents
+settings>library>run a partial scan when changes are detected: enabled (ONLY WORKS WITH AUTOSCANNING)
 settings>library>allow media deletion: disabled
 settings>library>generate video preview thumbnails: as scheduled task and when media is added
 settings>library>generate chapter thumbnails: as scheduled task and when media is added
@@ -36,11 +36,10 @@ settings>library>analyze audio tracks for loudness: never
 
 settings>transcoder>transcoder quality: prefer higher speed encoding
 
-???settings>transcoder>background transcoding x264 preset: ultra fast???
+???settings>transcoder>background transcoding x264 preset: very fast???
 
 settings>transcoder>use hardware acceleration when available: enabled
 settings>languages>automatically select audio and subtitle tracks: enabled
-
 settings>dlna>enable the dlna server: disable
 settings>include cinema trailers from movies in my library: disable
 
