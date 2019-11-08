@@ -57,7 +57,10 @@ add library>add folders>add folders to your library: /server/media/television
 add library>advanced>seasons: hide for single-season series
 
 FILM
-add library>advanced>use red band (restricted audiences) trailers when available
+all advanced
+enable cinema trailers: disabled
+use red band (restricted audiences) trailers when available
+use collection info from THe Movie Database
 
 APP
 settings>account>sign in automatically: enable
