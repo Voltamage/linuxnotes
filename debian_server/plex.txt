@@ -51,10 +51,9 @@ ROKU
 roku client>video>local quality: original
 
 TELEVISION
-add library>select type>select your library type: tv shows
-add library>select type>name your library and choose language>name: Television
-add library>add folders>add folders to your library: /server/media/television
-add library>advanced>seasons: hide for single-season series
+all advanced
+hide items which are in collections
+hide for single-season series
 
 FILM
 all advanced
