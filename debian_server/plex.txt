@@ -58,8 +58,9 @@ hide for single-season series
 FILM
 all advanced
 enable cinema trailers: disabled
+hide items which are in collections
 use red band (restricted audiences) trailers when available
-use collection info from THe Movie Database
+use collection info from The Movie Database
 
 APP
 settings>account>sign in automatically: enable
