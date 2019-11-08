@@ -31,8 +31,14 @@ settings>library>allow media deletion: disabled
 settings>library>generate video preview thumbnails: as scheduled task and when media is added
 settings>library>generate chapter thumbnails: as scheduled task and when media is added
 settings>library>analyze audio tracks for loudness: never
-settings>library>transcoder: prefer higher speed encoding
-settings>library>background transcoding x264 preset: ultra fast
+
+???settings>network>secure connections: preferred???
+
+settings>transcoder>transcoder quality: prefer higher speed encoding
+
+???settings>transcoder>background transcoding x264 preset: ultra fast???
+
+settings>transcoder>use hardware acceleration when available: enabled
 settings>dlna>enable the dlna server: disable
 settings>include cinema trailers from movies in my library: disable
 
