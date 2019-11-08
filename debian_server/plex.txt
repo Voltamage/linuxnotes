@@ -21,9 +21,14 @@ SERVER
 
 ???status>dashboard>show details???
 
-server>general>send crash reports to plex: disable
 settings>general>send crash reports to plex: disable
+
+???settings>general>push notifications???
+
+???settings>library>run a pertial scan when changes are detected: enabled???
+
 settings>library>allow media deletion: disabled
+settings>library>generate video preview thumbnails: as scheduled task and when media is added
 settings>library>generate chapter thumbnails: as scheduled task and when media is added
 settings>library>analyze audio tracks for loudness: never
 settings>library>transcoder: prefer higher speed encoding
