@@ -58,7 +58,7 @@ hide for single-season series
 FILM
 all advanced
 enable cinema trailers: disabled
-hide items which are in collections
+collections: disabled
 use red band (restricted audiences) trailers when available
 use collection info from The Movie Database
 
