@@ -1,0 +1,32 @@
+sudo apt-get install mediainfo ncdu
+set vim.basic as editor for root as well
+in vm options, set start at boot
+
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+sudo apt-get install docker-ce docker-ce-cli
+sudo docker run hello-world
+sudo docker volume create portainer_data
+sudo docker run -d -p 9000:9000 --name portainer --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+sudo docker info
+sudo docker images
+sudo docker ps
+portainer set admin
+manage local environment
+
+sudo docker volume create plex_config
+sudo docker volume create plex_transcode
+sudo docker run -d --name plex --restart unless-stopped --network=host -e TZ=America/Los_Angeles -e PLEX_CLAIM=claim-fwBbTwWn4urdEsLpcdJn -e PLEX_UID=1000 -e PLEX_GID=1000 -v plex_config:/config -v plex_transcode:/transcode -v /mnt/oceanus/media/Plex:/data plexinc/pms-docker
+
+sudo docker volume create tautulli_config
+sudo docker run -d -p 8181:8181 --name tautulli --restart unless-stopped -e TZ=America/Los_Angeles -e PUID=1000 -e PGID=1000 -v tautulli_config:/config tautulli/tautulli
+
+sudo docker run -d --name watchtower --restart unless-stopped -e TZ=America/Los_Angeles -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --debug
+SETUP CRON SCHEDULING AND NOTIFICATIONS
+
+sudo docker volume create grafana_data
+sudo docker run -d -p 3000:3000 --name grafana --restart unless-stopped -e TZ=America/Los_Angeles -v grafana_data:/var/lib/grafana grafana/grafana
