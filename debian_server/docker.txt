@@ -31,4 +31,4 @@ SETUP CRON SCHEDULING AND NOTIFICATIONS
 sudo docker volume create grafana_data
 sudo docker run -d -p 3000:3000 --name grafana --restart unless-stopped -e TZ=America/Los_Angeles -v grafana_data:/var/lib/grafana grafana/grafana
 
-docker run -d -p 61208:61208 --name glances --restart unless-stopped -e GLANCES_OPT="-w" -v /var/run/docker.sock:/var/run/docker.sock:ro --pid host docker.io/nicolargo/glances
+sudo docker run -d -p 61208:61208 --name glances --restart unless-stopped -e GLANCES_OPT="-w" -v /var/run/docker.sock:/var/run/docker.sock:ro --pid host docker.io/nicolargo/glances
