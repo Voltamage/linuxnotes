@@ -137,3 +137,16 @@ linuxserver/jackett
 disable automatic updates to prevent crashing
 add all english public sources
 test all and remove dead sources
+
+sudo docker volume create sonarr_config
+sudo docker run -d \
+--name sonarr \
+-p 8989:8989 \
+--restart unless-stopped \
+-e TZ=America/Los_Angeles \
+-e PUID=1000 \
+-e PGID=1000 \
+-v sonarr_config:/config \
+-v "/mnt/oceanus/media/Plex/TV Shows":/tv \
+-v /mnt/oceanus/downloads/torrents/completed:/downloads \
+linuxserver/sonarr:preview
