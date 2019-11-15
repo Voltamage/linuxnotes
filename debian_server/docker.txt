@@ -32,3 +32,43 @@ sudo docker volume create grafana_data
 sudo docker run -d -p 3000:3000 --name grafana --restart unless-stopped -e TZ=America/Los_Angeles -v grafana_data:/var/lib/grafana grafana/grafana
 
 sudo docker run -d -p 61208:61208 --name glances --restart unless-stopped -e GLANCES_OPT="-w" -v /var/run/docker.sock:/var/run/docker.sock:ro --pid host docker.io/nicolargo/glances
+
+sudo docker volume create transmission_config
+
+sudo docker run --cap-add=NET_ADMIN -d \
+--name transmission \
+-v transmission_config:/config \
+-v /mnt/oceanus/downloads/torrents/:/data \
+-v /etc/localtime:/etc/localtime:ro \
+-p 9091:9091 \
+--dns 8.8.8.8 \
+--dns 8.8.4.4 \
+--sysctl net.ipv6.conf.all.disable_ipv6=0 \
+--restart always \
+--log-driver json-file \
+--log-opt max-size=10m \
+-e CREATE_TUN_DEVICE=true \
+-e OPENVPN_PROVIDER=MULLVAD \
+-e OPENVPN_CONFIG=mullvad_us-ca_udp \
+-e OPENVPN_USERNAME= \
+-e OPENVPN_PASSWORD= \
+-e OPENVPN_OPTS="--inactive 3600 --ping 10 --ping-exit 60" \
+-e WEBPROXY_ENABLED=false \
+-e LOCAL_NETWORK=192.168.2.0/24 \
+-e TRANSMISSION_HOME=/config \
+-e TRANSMISSION_WEB_UI=transmission-web-control \
+-e TRANSMISSION_ENCRYPTION=2 \
+-e TRANSMISSION_SCRAPE_PAUSED_TORRENTS_ENABLED=false \
+-e TRANSMISSION_RATIO_LIMIT_ENABLED=true \
+-e TRANSMISSION_RATIO_LIMIT=0 \
+-e TRANSMISSION_DOWNLOAD_QUEUE_ENABLED=false \
+-e TRANSMISSION_QUEUE_STALLED_ENABLED=false \
+-e TRANSMISSION_PEER_LIMIT_GLOBAL=500 \
+-e TRANSMISSION_PEER_LIMIT_PER_TORRENT=250 \
+-e TRANSMISSION_WATCH_DIR_ENABLED=false \
+-e TRANSMISSION_WATCH_DIR= \
+-e TRANSMISSION_ALT_SPEED_DOWN=8000 \
+-e TRANSMISSION_ALT_SPEED_UP=1500 \
+-e PUID=1000 \
+-e PGID=1000 \
+haugene/transmission-openvpn
