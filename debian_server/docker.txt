@@ -150,3 +150,16 @@ sudo docker run -d \
 -v "/mnt/oceanus/media/Plex/TV Shows":/tv \
 -v /mnt/oceanus/downloads/torrents/completed:/downloads \
 linuxserver/sonarr:preview
+
+sudo docker volume create radarr_config
+sudo docker run -d \
+--name radarr \
+-p 7878:7878 \
+--restart unless-stopped \
+-e TZ=America/Los_Angeles \
+-e PUID=1000 \
+-e PGID=1000 \
+-v radarr_config:/config \
+-v /mnt/oceanus/media/Plex/Movies:/movies \
+-v /mnt/oceanus/downloads/torrents/completed:/downloads \
+linuxserver/radarr
