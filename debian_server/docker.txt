@@ -121,3 +121,15 @@ haugene/transmission-openvpn
 metro theme
 refresh every 3 seconds
 remove: ratio, complete size, trackers, download dir, and user labels from the display
+
+sudo docker volume create jackett_config
+sudo docker run -d \
+--name jackett \
+-p 9117:9117 \
+--restart unless-stopped \
+-e TZ=America/Los_Angeles \
+-e PUID=1000 \
+-e PGID=1000 \
+-v jackett_config:/config \
+-v /mnt/oceanus/downloads/torrents/.blackhole:/downloads \
+linuxserver/jackett
