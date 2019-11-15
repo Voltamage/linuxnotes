@@ -133,3 +133,5 @@ sudo docker run -d \
 -v jackett_config:/config \
 -v /mnt/oceanus/downloads/torrents/.blackhole:/downloads \
 linuxserver/jackett
+
+disable automatic updates to prevent crashing
