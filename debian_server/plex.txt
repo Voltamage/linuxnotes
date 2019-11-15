@@ -62,5 +62,8 @@ collections: disabled
 use red band (restricted audiences) trailers when available
 use collection info from The Movie Database
 
+MUSIC
+defaults are fine
+
 APP
 settings>account>sign in automatically: enable
