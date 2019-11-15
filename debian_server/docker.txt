@@ -135,3 +135,5 @@ sudo docker run -d \
 linuxserver/jackett
 
 disable automatic updates to prevent crashing
+add all english public sources
+test all and remove dead sources
