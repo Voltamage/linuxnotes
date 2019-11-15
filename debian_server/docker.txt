@@ -72,3 +72,7 @@ sudo docker run --cap-add=NET_ADMIN -d \
 -e PUID=1000 \
 -e PGID=1000 \
 haugene/transmission-openvpn
+
+metro theme
+refresh every 3 seconds
+remove: ratio, complete size, trackers, download dir, and user labels from the display
