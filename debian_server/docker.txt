@@ -163,3 +163,17 @@ sudo docker run -d \
 -v /mnt/oceanus/media/Plex/Movies:/movies \
 -v /mnt/oceanus/downloads/torrents/completed:/downloads \
 linuxserver/radarr
+
+
+sudo docker volume create lidarr_config
+sudo docker run -d \
+--name lidarr \
+-p 8686:8686 \
+--restart unless-stopped \
+-e TZ=America/Los_Angeles \
+-e PUID=1000 \
+-e PGID=1000 \
+-v lidarr_config:/config \
+-v /mnt/oceanus/media/Plex/Music:/music \
+-v /mnt/oceanus/downloads/torrents/completed:/downloads \
+linuxserver/lidarr
