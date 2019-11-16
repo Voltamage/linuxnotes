@@ -9,6 +9,7 @@
 #DOWNLOAD OPTIONS
 --fragment-retries 4
 --external-downloader aria2c
+--external-downloader-args "file-allocation=falloc min-split-size=1M split=16 max-connection-per-server=16"
 
 #FILESYSTEM OPTIONS
 #--batch-file "/server/.config/youtube-dl/lists/youtube_channels_list.txt"
