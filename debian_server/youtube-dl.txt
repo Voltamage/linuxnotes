@@ -2,9 +2,6 @@
 --ignore-errors
 --no-mark-watched
 
-#GEO RESTRICTION
---geo-bypass
-
 #VIDEO SELECTION
 --no-playlist
 --download-archive "/server/.config/youtube-dl/archives/youtube_channels_archive.txt"
