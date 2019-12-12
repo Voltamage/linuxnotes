@@ -43,7 +43,7 @@ Graphics
     Graphics API: OpenGL
     Precompiled Shaders: disable
     VSync: Enabled
-    Full sync at GX2DrawDone: Disabled except for camera rune compatability
+    Full sync at GX2DrawDone: Enable unless performace is shot, camera rune won't work without it
     Upscale Filter: Bilinear
     Downscale Filter: Bilinear
     Fullscreen Scaling: Keep Aspect Ratio
@@ -77,7 +77,7 @@ Run DS4Windows, enable UDP server in settings, Run at Startup, Start Minimized, 
 Test with both
 https://files.sshnuke.net/XInputTest.exe
 https://files.sshnuke.net/PadTest_1011.zip (request data for controllers to see results)
-
+Set GamePad motion source by MAC explicitly
 
 GAMEPAD MAPPING
 Name profile: DualShock4
@@ -98,13 +98,13 @@ Mods
 	FPS++ -
 		Dynamic Gamespeed - 32 or a less value if preferred.
 		Fence Method - Performance, if buggy try Accuracy.
-		NPC Stutter Fix - If you disable GX2DrawDone() you can use this, but you will still need GX2 when using the Camera Rune.
+		NPC Stutter Fix - If you disable GX2DrawDone() you can use this to fix NPC, but you will still need GX2 when using the Camera Rune.
 		Set FPS Limit - 30FPS
 Workarounds
 	Applicable GPU Fix Packs - NVIDIA
 	Clouds
 	Kakariko Torch Shadows
-	LWZX Crash - Not necessary if you use General Settings > Full sync at GX2DrawDone(); otherwise it will prevent certain crashes
+	LWZX Crash
 
 CACHE
 NVIDIA USERS CLEAN GLCACHE ON EACH DRIVER UPDATE AT X:_/_/Cemu/shaderCache/driver/nvidia/
