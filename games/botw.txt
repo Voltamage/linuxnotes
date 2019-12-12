@@ -19,7 +19,6 @@ install cemuhook's dbghelp.dll & keystone.dll to root folder of cemu
 download shared fonts
 
 BOTW
-magnet:?xt=urn:btih:afe562cc9bd45b7cc7986d9bc6435d8eef5284be&dn=The+Legend+of+Zelda+Breath+of+the+Wild+v1.5+Incl+DLC&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969
 cut and paste the 1st base game data
 for both 2 and 3 updates, import and click on meta.xml
 
