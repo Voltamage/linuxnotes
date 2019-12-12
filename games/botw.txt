@@ -109,3 +109,7 @@ Workarounds
 CACHE
 NVIDIA USERS CLEAN GLCACHE ON EACH DRIVER UPDATE AT X:_/_/Cemu/shaderCache/driver/nvidia/
 Non-bloated cache for Breath of the Wild should be roughly 9600 shaders
+
+GAME
+Options
+	Aim with motion controls: off
