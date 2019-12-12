@@ -1,0 +1,112 @@
+CEMU.EXE
+https://aka.ms/vs/15/release/vc_redist.x64.exe
+Microsoft Visual C++ 2017 X64 Redistributable
+https://cemu.info/#download
+unpack cemu somewhere not admin related
+Compatibility:
+Change high DPI settings:
+	Use this setting to fix scaling problems for this program instead of the one in Settings
+	Override high DPI scaling behavior.
+	Scaling performed by: Application
+Disable fullscreen optimizations
+Run this program as an administrator
+Apply, then click OK
+Pin to taskbar
+
+CEMUHOOK
+https://cemuhook.sshnuke.net/
+install cemuhook's dbghelp.dll & keystone.dll to root folder of cemu
+download shared fonts
+
+BOTW
+magnet:?xt=urn:btih:afe562cc9bd45b7cc7986d9bc6435d8eef5284be&dn=The+Legend+of+Zelda+Breath+of+the+Wild+v1.5+Incl+DLC&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969
+cut and paste the 1st base game data
+for both 2 and 3 updates, import and click on meta.xml
+
+NVIDIA
+http://wiki.cemu.info/images/thumb/3/3c/Nvidia_Control_Panel_%28New%29.png/750px-Nvidia_Control_Panel_%28New%29.png
+Low Latency Mode Off
+Threaded optimization On
+Vertical Sync On
+
+CEMU
+General
+    Interface:
+    Remember Main Window Position
+    Remember Pad Window Position
+    Discord Presence
+    Fullscreen Menu Bar
+    Automatically check for updates
+    Save screenshot
+	Game Paths:
+    Set game path
+Graphics
+    Graphics API: OpenGL
+    Precompiled Shaders: disable
+    VSync: Enabled
+    Full sync at GX2DrawDone: Disabled except for camera rune compatability
+    Upscale Filter: Bilinear
+    Downscale Filter: Bilinear
+    Fullscreen Scaling: Keep Aspect Ratio
+	Overlay: Disabled, FPS
+    Notifications: Top Left, Shader compiler
+Audio
+    API: XAudio2
+    Latency: 48ms (increase if crackling)
+    TV:
+    Device: Select
+    Channels: Stereo
+    Volume: 100%
+    Gamepad:
+    Device: Select
+    Channels: Stereo
+    Volume: 100%
+Options
+	GPU Buffer Cache Accuracy: Default everything (set this by right-clicking the game in Cemu's List and opening the GameProfile, set CPU Mode and Precompiled Shader settings while you are at it)
+CPU	
+	Dual-Core Recompiler
+	Test affinity settings, probably use all logical cores
+DEBUG
+    Custom Timer: Cemu Default
+    MM Timer Accuracy: 1ms (my choice) or Highest
+    Use Cemuhook H264: Enabled
+
+PS4 AND MOTION CONTROL
+Install DotNet3.5
+Install DS4Windows
+Run DS4Windows, enable UDP server in settings, Run at Startup, Start Minimized, Close Minimizes
+Test with both
+https://files.sshnuke.net/XInputTest.exe
+https://files.sshnuke.net/PadTest_1011.zip (request data for controllers to see results)
+
+
+GAMEPAD MAPPING
+Name profile: DualShock4
+Emulate Controller: Wii U Gamepad
+Controller API: XInput
+Controller: (probably) Controller 1
+(use XInputTest to show xbox control mappings to help)
+
+GRAPHICPACKS (Download latest community graphic packs)
+Enhancements
+	Enhanced Reflections
+	LOD Bias - Higher texture detail (-2)
+Graphics
+	Anti-Aliasing - Preset: "FXAA (Nvidia)"
+	Resolution - Preset: 1440p 16x9
+	Shadows - Preset: Ultra
+Mods
+	FPS++ -
+		Dynamic Gamespeed - 32 or a less value if preferred.
+		Fence Method - Performance, if buggy try Accuracy.
+		NPC Stutter Fix - If you disable GX2DrawDone() you can use this, but you will still need GX2 when using the Camera Rune.
+		Set FPS Limit - 30FPS
+Workarounds
+	Applicable GPU Fix Packs - NVIDIA
+	Clouds
+	Kakariko Torch Shadows
+	LWZX Crash - Not necessary if you use General Settings > Full sync at GX2DrawDone(); otherwise it will prevent certain crashes
+
+CACHE
+NVIDIA USERS CLEAN GLCACHE ON EACH DRIVER UPDATE AT X:_/_/Cemu/shaderCache/driver/nvidia/
+Non-bloated cache for Breath of the Wild should be roughly 9600 shaders
