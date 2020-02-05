@@ -1,0 +1,210 @@
+poseidon
+hermes
+zeus
+apollo
+oceanus 01
+oceanus vol
+
+
+reset modem
+redo router
+redo pihole
+open port
+install proxmox, debian, docker
+test disks
+make a distributed fs cluster of 2
+move files to that cluster of 2
+test old disk
+add the old disk to make a cluster of 4
+
+server bios
+update bios
+reset to default
+set time
+advanced>cpu config> IVT and VT-d enabled
+chipset>south cluser>misc>last state
+
+install proxmox
+raid1
+setup domain and dns
+switch to community edition and update
+reboot
+
+sudo apt-get install curl git neofetch ranger vim zsh
+useradd -m -G sudo -s /usr/bin/zsh $user
+passwd $user
+exit and log back in
+
+sudo reboot
+(quit out of the zsh config)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+(navigate to /home/volt/.zshrc)
+(select vim.basic when asked for a preferred text editor)
+        ZSH_THEME="agnoster"
+exec zsh
+
+install both the css and js mods of this for dark theme
+https://github.com/Weilbyte/PVEDiscordDark
+
+wget iso and sha256 checksum, sudo ranger and cut it to /var/lib/vz/template/iso
+
+create vm
+same VM ID as local IP designation
+name same as hostname
+os should appear, use iso
+same guest os as new linux
+
+check to see if python3 is installed with python3 -V
+install python 3 on debian
+curl -L https://bit.ly/glances | /bin/bash
+
+mount backup
+
+oceanusXX
+ssh root@$IP
+passwd>1234
+(put in current password)
+(change root password)
+(create user, skip values)
+(RESTART SESSION as user)
+
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install armbian-config gdisk git glusterfs-server hdparm iotop man-db ncdu nload ranger rpcbind smartmontools tmux vim zsh
+dpkg --list | wc --lines
+
+wget https://dn.odroid.com/5422/script/odroid.shutdown
+sudo install -o root -g root -m 0755 ./odroid.shutdown /lib/systemd/system-shutdown/odroid.shutdown
+rvim /lib/systemd/system-shutdown/odroid.shutdown
+rm odroid.shutdown
+ls -la
+
+sudo chsh -s /usr/bin/zsh $USER
+sudo systemctl start glusterd
+sudo systemctl enable glusterd
+systemctl | grep running
+systemctl status glusterd
+
+sudo armbian-config
+personal>timezone>america>Los Angeles
+personal>locales>en_US.UTF-8
+personal>hostname>$NEWHOSTNAME
+network>IP>static>$NEWIP
+(RESTART SESSION with new ip)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+system>ZSH
+system>DTB>hc1>reboot
+(RESTART SESSION)
+
+lsblk
+sudo gdisk /dev/sdX
+x
+z
+lsblk
+sudo cfdisk /dev/sdX
+(make gpt and one big linux filesystem partition)
+lsblk
+sudo parted -a optimal /dev/sdX
+align-check opt 1
+quit
+sudo mkfs.xfs -i size=512 /dev/sdX1
+lsblk -f
+sudo mkdir -p /data/glusterfs/$VOLUMENAME/brick01
+lsblk -f
+sudo rvim /etc/fstab
+	UUID=$UUID /data/glusterfs/$VOLUMENAME/brick01 xfs defaults 0 0
+(REBOOT)
+df -h
+
+(SET UP OTHER NODES)
+
+(add all node ips to all your nodes)
+sudo rvim /etc/hosts
+	192.168.2.XXX $SERVERNAMEXX
+	
+sudo glusterfs --version
+sudo gluster peer probe $SERVERNAME
+sudo gluster peer status
+sudo gluster pool list
+sudo gluster volume create $VOLUMENAME replica 2 transport tcp $SERVERNAME1:/data/glusterfs/$VOLUMENAME/brick01/brick $SERVERNAME2:/data/glusterfs/$VOLUMENAME/brick01/brick
+sudo gluster volume info
+sudo gluster volume start $VOLUMENAME
+
+sudo gluster volume bitrot $VOLUMENAME enable
+sudo gluster volume bitrot $VOLUMENAME scrub-throttle lazy
+sudo gluster volume bitrot $VOLUMENAME scrub-frequency daily
+sudo gluster volume set $VOLUMENAME features.trash on
+sudo gluster volume set $VOLUMENAME features.trash-internal-op on
+
+sudo smartctl -A /dev/sda
+df -h
+
+CLIENT
+sudo modprobe fuse
+mkdir ~/server
+(In fstab)
+$SERVERNAME1:/$VOLUMENAME /home/$USER/server glusterfs defaults,_netdev 0 0
+(REBOOT)
+df -h
+
+ADDING BRICKS
+sudo gluster peer probe $NEWSERVERNAME
+sudo gluster volume add-brick $VOLUMENAME $NEWSERVERNAME1:/data/glusterfs/$VOLUMENAME/brick01/brick $NEWSERVERNAME2:/data/glusterfs/$VOLUMENAME/brick01/brick
+sudo gluster volume info
+sudo gluster volume status
+
+REBALANCING
+sudo gluster volume rebalance $VOLUMENAME start force
+
+HEALING
+sudo gluster volume heal $VOLUMENAME info
+sudo gluster volume heal $VOLUMENAME
+sudo gluster volume heal $VOLUMENAME info healed
+sudo gluster volume heal $VOLUMENAME info failed
+sudo gluster volume heal $VOLUMENAME info split-brained
+
+A rebalance operation will attempt to balance the diskusage across nodes, therefore it will skip files where the move will result in a less balanced volume. This leads to link files that are still left behind in the system and hence may cause performance issues. The behaviour can be overridden with the force argument.
+
+sudo gluster volume bitrot $VOLUMENAME scrub-throttle normal
+sudo gluster volume bitrot $VOLUMENAME scrub-frequency biweekly
+
+log sizes?
+
+sudo gluster volume create oceanus replica 2 transport tcp oceanus01:/data/glusterfs/oceanus/brick01/brick oceanus02:/data/glusterfs/oceanus/brick01/brick
+
+       -a, --archive
+              This  is equivalent to -rlptgoD. It is a quick way of saying you want recursion and want to preserve
+              almost everything (with -H being a notable omission).  The only exception to the  above  equivalence
+              is when --files-from is specified, in which case -r is not implied.
+
+              Note  that  -a does not preserve hardlinks, because finding multiply-linked files is expensive.  You
+              must separately specify -H.
+			  
+			  tmux new -s transfer
+			  
+			  tmux
+			  ssh $IP
+			  tmux ls
+			  tmux attach -t transfer
+msrsync --processes 16 --buckets ~/buckets --show --progress --stats --dry-run --rsync "--archive --xattrs" ~/old ~/server/old
+
+find ~/what/u/want/ -type f -print0 | xargs -0 mv -t ~/where/u/want
+perl-rename 's/oldshit/newshit/' **
+perl -e 'for(<*>){((stat)[9]<(unlink))}'
+
+ls -R | wc --lines
+
+192.168.2.10    zeus
+192.168.2.100   apollo
+192.168.2.101   oceanus01
+192.168.2.102   oceanus02
+192.168.2.103   oceanus03
+192.168.2.104   oceanus04
+
+tmux new -s $SESSIONNAME
+tmux attach-session $SESSIONNAME
+
+Running remove-brick with cluster.force-migration enabled can result in data corruption. It is safer to disable this option so that files that receive writes during migration are not migrated.
+Files that are not migrated can then be manually copied after the remove-brick commit operation.
+sudo gluster volume set oceanus cluster.force-migration off
+sudo gluster volume set oceanus cluster.force-migration on

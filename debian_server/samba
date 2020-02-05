@@ -1,0 +1,5 @@
+sudo apt-get install
+dont modify samba to use WINS settings
+systemctl statys smb
+sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
+name backup files with a .bak extension

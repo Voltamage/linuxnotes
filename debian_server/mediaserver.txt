@@ -1,0 +1,82 @@
+name name (apollo)
+select storage location for iso (oceanus)
+select os (make sure guest os kernel matches) (debian) (5.x)
+change hard disk size (128)
+change number of cpu cores (4)
+change memory size (12288)
+
+graphical install
+select language
+select country
+select keyboard
+set hostname
+set domain name
+set root password
+skip name on user account
+set username
+set user password
+set timezone
+manual partitioning
+manual
+choose disk
+configure logical volume manager
+create volume group
+name
+choose disk
+create logical volumes
+choose group
+name volumes
+size volumes
+finish
+select each volume
+set filesystem
+set mountpoint
+finish partitioning and write changes to disk
+- /
+- swap 4295 (4G)
+- /var/log 4295M (4G)
+- /boot 210M (200MiB)
+skip scanning other cd
+package manager
+select country
+probably select the default mirror
+skip proxy
+no participation in the popularity contest
+only install
+	SSH server
+	standard system utilities
+install grub bootloader to master boot record
+select drive
+reboot
+
+(from root)
+apt-get install curl git ranger sudo vim zsh
+usermod -a -G sudo $USER
+chsh -s /usr/bin/zsh $USER
+ip addr
+ssh in and:
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+(navigate to /home/volt/.zshrc)
+(select vim.basic when asked for a preferred text editor)
+        ZSH_THEME="agnoster"
+exec zsh
+sudo apt-get install neofetch --no-install-recommends
+
+ip link show
+sudo rvim /etc/network/interfaces
+(under whatever is already there)
+auto $INTERFACE
+iface $INTERFACE inet static
+address $STATICIP
+netmask 255.255.255.0
+gateway $ROUTERIP
+dns-nameservers $ROUTERIP
+
+mkdir ~/server
+sudo apt-get install glusterfs-client
+/etc/fstab
+
+# oceanus
+oceanus01:/oceanus				/home/volt/server	glusterfs	defaults,_netdev 0 0
+
+sudo mount -a

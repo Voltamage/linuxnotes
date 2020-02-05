@@ -1,0 +1,60 @@
+list drives and partitions
+    lsblk
+destroy tables
+    sudo gdisk /dev/sdX
+    x
+    z
+flash with balena
+put ssh file in boot folder
+ssh pi@$ipaddress
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+passwd
+sudo adduser $user
+sudo adduser $user sudo
+exit
+ssh $ipaddress
+sudo apt-get install git neofetch ranger vim zsh
+sudo chsh -s /usr/bin/zsh $user
+sudo reboot
+(quit out of the zsh config)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+(navigate to /home/volt/.zshrc)
+(select vim.basic when asked for a preferred text editor)
+	ZSH_THEME="agnoster"
+sudo reboot
+curl -sSL https://install.pi-hole.net | bash
+	choose eth0, not wlan0
+	custom upstream dns = 192.168.2.1 (dont worry about two dns)
+	deselect all blocklists
+	block both IPv4 and IPv6
+	edit static IP to your desired IP, in this case 192.168.2.2/24, with gateway as 192.168.2.1
+	install web admin interface
+	install web server
+	log queries
+	privacy mode show everything
+curl -Lo log2ram.tar.gz https://github.com/azlux/log2ram/archive/master.tar.gz
+tar xf log2ram.tar.gz
+cd log2ram-master
+chmod +x install.sh && sudo ./install.sh
+cd ..
+rm -r log2ram-master
+rm log2ram.tar.gzq
+sudo reboot
+df -h
+mount
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove && pihole -up
+sudo raspi-config
+	2
+	N1
+	(change hostname and reboot)
+	4
+	I1
+	I2
+	(configure locales en_US.UTF-8 UTF-8)
+sudo reboot
+
+pihole
+remove the second dns server
+set temp to farenheight, maynbe
+
+dhcp-option=6,192.168.2.2
