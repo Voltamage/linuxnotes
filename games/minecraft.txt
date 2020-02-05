@@ -1,0 +1,53 @@
+yay -S jdk8-openjdk multimc5
+https://github.com/MMCInstances/OptifineInstances/releases/
+https://www.curseforge.com/minecraft/modpacks/roguelike-adventures-and-dungeons/files
+
+java path
+maximum memory allocation 8192
+minimum memory allocation 2048
+
+disable analytics
+add account
+fov 100
+music off
+fancy everything
+view bobbing off
+gui scale 2
+no shaders
+fast rendering off
+no antialiasing or anisotropic filtering
+lagometer on
+debug profiler on
+show fps on
+auto jump off
+
+https://www.curseforge.com/minecraft/mc-mods/jei/files
+https://www.curseforge.com/minecraft/mc-mods/journeymap/files
+https://www.curseforge.com/minecraft/mc-mods/open-terrain-generator/files
+https://www.curseforge.com/minecraft/mc-mods/biome-bundle/files
+https://www.curseforge.com/minecraft/mc-mods/additional-structures/files
+https://www.curseforge.com/minecraft/mc-mods/roguelike-dungeons/files
+
+https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1293898-1-14-chocapic13s-shaders
+
+enhanced defaults
+https://sildurs-shaders.github.io/downloads/
+
+shaders		antialiasing		fxaa 4x
+
+colors		tonemap 		on
+		crossprocess 		on
+		gamma			2.4
+
+normal map	rp support 		parallax
+
+motionblur	motionblur		on
+		blur strength		high
+
+reflections	refractions		on
+
+sky		godrays			on
+		godrays quality		fancy
+		godrays intensity	1.0
+
+shadows		shadows resolution	very high
