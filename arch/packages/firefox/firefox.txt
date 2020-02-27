@@ -387,4 +387,5 @@ Global mode>	relaxed (websites break otherwise, hard to track down)
 Exclusions>	Exclude root domain matches: enabled
 If you are using uMatrix:
 Other>		Spoof cross-origin Referer: disabled
+ADD TO OVERFLOW
 EXCLUDE FROM PRIVATE WINDOWS
