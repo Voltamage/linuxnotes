@@ -383,7 +383,8 @@ Misc>		Block data URL paged: disabled (CSP issue)
 EXCLUDE FROM PRIVATE WINDOWS
 
 https://addons.mozilla.org/en-US/firefox/addon/privacy-oriented-origin-policy/
-Global mode>	aggressive
+Global mode>	relaxed (websites break otherwise, hard to track down)
 Exclusions>	Exclude root domain matches: enabled
 If you are using uMatrix:
 Other>		Spoof cross-origin Referer: disabled
+EXCLUDE FROM PRIVATE WINDOWS
