@@ -1,15 +1,28 @@
 https://12bytes.org/7750
+https://12bytes.org/1089
+https://12bytes.org/9800
 
-sudo pacman -S firefox
+yay -S firefox
 
-Firefox profile in RAM
+
+
+FIREFOX POST INSTALL
+delete hidden system addons
+repeat this every time firefox has an update
+	sudo rm /usr/lib/firefox/browser/features/*.xpi
+
+
+
+FIREFOX PROFILE IN  RAM
 https://wiki.archlinux.org/index.php/Profile-sync-daemon
 install profile-sync-daemon from the AUR
 	psd
 	systemctl --user enable --now psd
 check status with
 	psd p
-cache goes in RAM too, with the ghacks usr.js, so don't worry about it
+cache goes in RAM too, with the user.js, so don't worry about it
+
+
 
 PREREQUISITES
 https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data
@@ -26,20 +39,323 @@ favicons.sqlite
 formhistory.sqlite
 places.sqlite
 
-FIREFOX POST INSTALL CLEANUP	
-delete hidden system addons
-repeat this every time firefox has an update
-you can edit pacman.conf to prevent the installation of these
-	cd /usr/lib/firefox/browser/features
-	sudo rm *.xpi
+delete everything, and download these two files into the profile directory
+https://github.com/voltamage/notes/raw/master/arch/packages/firefox/search.json.mozlz4
+https://raw.githubusercontent.com/voltamage/notes/master/arch/packages/firefox/user.js
 
-COME BACK TO THIS
-firefox search engines
-https://12bytes.org/9800
+
+
+SETTINGS
+Customize Firefox
+Dark theme, compact density
+Remove everything but Back, Foward, url bar, Auto-Hidden downloads
+Remove bookmark star from url bar
+
+about:preferences
+General>Startup				Restore previous session: enabled
+Tabs					Warn you when closing multiple tabs: disable
+General>Files and Applications		Save files to: $downloadfolder
+					Always ask you where to save files: enabled
+General>Digital Rights Management	Play DRM-controlled content: enabled
+General>Browsing			Use smooth scrolling: only enable this
+Home>Firefox Home Content		Disable everything
+Search>Default Search Engine		[s] DuckDuckGo
+Search>Search Suggestions		Show search suggestions in Private Windows
+Privacy & Security>Logins and Passwords	Disable everything
+Privacy & Security>History		Use custom settings for history
+					Remember browsing and download history ONLY
+Privacy & Security>Permissions		Block new requests asking to access your location: enabled
+					Block new requests asking to access your camera: enabled
+					Block new requests asking to access your microphone: enabled
+					Block new requests asking to allow notifications: enabled
+					Autoplay: Allow Audio and Video
+					Block new requests asking to access your virtual reality devices: enabled
+					Prevent accessibility services from accessing your browser: enabled
+Privacy & Security>Data Collection	Disable everything
+Sync					Sign in
+					Sync bookmarks and History
+History					View by last visited
+New tab					Close the "Welcome to Firefox" section
+Close Firefox				Disable multiple tab close warning
+
+
+
+MAIN ADD-ONS
+https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
+Enable all of the options with the possible exception of 'Block requests for missing resources' which will break some websites.
+https://decentraleyes.org/test
+
+https://addons.mozilla.org/en-US/firefox/addon/umatrix/
+Settings>	Convenience:	Enable these options
+		Show the number of blocked resources on the icon
+		Hide placeholder of blacklisted elements (but not blocked elements, at least not until you become more comfortable with uM)
+		Spoof <noscript> tags when 1st-party scripts are blocked
+Settings>	Privacy:	Enable these options
+		Delete blocked cookies
+		MAKE SURE DISABLED Delete non-blocked session cookies 60 minutes after the last time they have been used
+		Delete local storage content set by blocked hostnames
+		Spoof HTTP referrer string of third-party requests
+		Block all hyperlink auditing attempts
+My rules>       copy the rules from the url into the temporary rules section, save, and commit
+                https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions
+Assets>         Disable all host file lists, apply changes, update now, purge all caches, and update now
+                Ruleset recipes for English websites: enabled
+Popup panel>	Global filters: 1st-party css, images, media, forbid web workers, and block frames and cookies
+		remember to make global changes for sites such as youtube
+		shift click while refreshing to bypass the browser cache
+KEEP ON TOOLBAR
+EXCLUDE FROM PRIVATE WINDOWS
+
+https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+Settings>	Hide placeholders of blocked elements: enabled
+Settings>	Privacy
+		all options enabled
+Settings>	Default Behavior
+		Disable cosmetic filtering: disabled
+		Block remote fonts: disabled
+My Filters>	! allow 1st party fonts globally (*$font,third-party), 3rd party by domain (,domain=~this.com|~that.com)
+		*$font,third-party
+Settings>	I am an advanced user: TEMPORARILY ENABLE
+		Click on the gears next to the checkbox and set:
+		suspendTabsUntilReady true
+		I am an advanced user: disabled
+Filter lists>	Enable all of these
+		Auto-update filter lists
+		Parse and enforce cosmetic filters
+		Ignore generic cosmetic filters
+			My filters
+		Built-in:
+			enable all lists
+		Ads:
+			Adblock Warning Removal List (hide annoying website messages warning about using an ad-blocker)
+        		EasyList
+		Privacy:
+			enable all lists
+		Malware domains
+			enable all lists, especially if you use Windows
+		Annoyances:
+			Adguard's Annoyances
+			Fanboy's Annoyance List
+			uBlock filters – Annoyances
+		Multipurpose:
+			Dan Pollock's hosts file
+			Peter Lowe's Ad and tracking server list
+		Custom:
+			Import – enter: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
+My rules>	copy the rules from the url below into the temporary rules section, save, and commit
+		https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions
+		https://decentraleyes.org/test
+KEEP ON TOOLBAR
+EXCLUDE FROM PRIVATE WINDOWS
+
+https://addons.mozilla.org/en-US/firefox/addon/clearurls/
+Prevent tracking injection over history API: enabled
+
+https://addons.mozilla.org/en-US/firefox/addon/css-exfil-protection/
+No settings tweaks
+
+https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/
+no settings
+ADD TO OVERFLOW
+EXCLUDE FROM PRIVATE WINDOWS
+
+https://addons.mozilla.org/en-US/firefox/addon/httpz/
+Remember insecure sites for 1 day
+
+https://addons.mozilla.org/en-US/firefox/addon/scrolantana/
+Use this instead of hide-scrollbars, it is also js-free
+no settings for this
+
+https://addons.mozilla.org/en-US/firefox/addon/scroll_anywhere/
+Default settings are fine
+
+https://addons.mozilla.org/en-US/firefox/addon/site-bleacher/
+No settings except for whitelist
+KEEP ON TOOLBAR
+EXCLUDE FROM PRIVATE WINDOWS
+
+https://addons.mozilla.org/en-US/firefox/addon/skip-redirect/
+Notifications>	Enable Popup: disabled IF YOU WANT IT
+ADD TO OVERFLOW
+EXCLUDE FROM PRIVATE WINDOWS
+
+
+
+SITE
+DuckDuckGo
+General>	Safe Search		off
+		Infinite Scroll		on
+		Open Links in a New Tab	on
+		Advertisements		off
+		Page Break		everything off
+		Install DuckDuckGo	everything off
+		Privacy Newsletter	everything off
+		Homepage Privacy Tips	off
+		Help Improve DuckDuckGo	off
+Privacy>	Video Playback		Open on third-party site
+
+
+
+EXTRA INFO ADDONS
+https://addons.mozilla.org/en-US/firefox/addon/about-sync/
+can be reached with about:sync
+General Options>	 Just poking around and don't want logging options changed
+Data provider options>	Anonymize data:enabled
+
+https://addons.mozilla.org/en-US/firefox/addon/crxviewer/
+default settings are fine
+
 https://addons.mozilla.org/en-US/firefox/addon/mozlz4-edit/
-COME BACK TO THIS
+ADD TO OVERFLOW
 
-REQUIRED ADD-ONS AND SETTINGS
+https://addons.mozilla.org/en-US/firefox/addon/project-insight/
+shows you addon perms, no settings
+ADD TO OVERFLOW
+
+
+
+ADDITIONAL FEATURE ADDONS
+https://addons.mozilla.org/en-US/firefox/addon/exif-viewer/
+Format>	Table
+
+https://addons.mozilla.org/en-US/firefox/addon/flagfox/
+gets redirected by Skip Redirect
+Plenty of settings but defaults are fine, check if you want to add more features
+
+https://addons.mozilla.org/en-US/firefox/addon/imagus/
+Preferences>	Advanced: enabled
+		Add hovered links to the browser history: disabled
+		Default media volume: 80
+		Cyclical scrolling in albums: enabled
+Preferences>	Caption
+		Show image/video dimensions: enabled
+
+https://addons.mozilla.org/en-US/firefox/addon/open-with/
+follow addon instructions, place in scripts folder
+ADD TO OVERFLOW
+
+https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/
+Enable night mode, disable the hints every 24 hours, account switcher keep logged in, add accounts
+
+https://addons.mozilla.org/en-US/firefox/addon/search_by_image/
+Search Engines>	Bing
+		TinEye
+		Karma Decay
+Context Menu>	Search all engines: disable both
+Miscellaneous>	Look above and below <img> elements: enabled
+		Use local Google site: enabled
+
+https://addons.mozilla.org/en-US/firefox/addon/styl-us/
+Default options are fine, add a theme to test
+https://userstyles.org/styles/155701/arch-linux-dark-2018
+https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-dark.user.css
+https://raw.githubusercontent.com/StylishThemes/Wikipedia-Dark/master/wikipedia-dark.user.css
+https://raw.githubusercontent.com/StylishThemes/StackOverflow-Dark/master/stackoverflow-dark.user.css
+ADD TO OVERFLOW
+
+https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/
+companion app is on the AUR under vdhcoapp
+Behaviour>	Download processor: Companion Application
+		Default download directory: set to desired
+		Max filename length: 255 (may cause problems on windows)
+KEEP ON TOOLBAR
+
+https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/
+Search Engines>	Wayback Machine
+		Google Cache
+		Bing Cache
+		Archive.is (All)
+Context Menu>	Visibility: show
+		Search all engines: disable both
+
+https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/
+General>	Reload current tab after switching on/off a script from menu: enabled
+		Notify script updates: enabled
+Scripts can be synced with say, google drive
+maybe test with these scripts
+		https://cdn.frankerfacez.com/script/ffz_injector.user.js
+		https://www.4chan-x.net/builds/4chan-X.user.js
+ADD TO OVERFLOW
+
+
+
+FFZ SCRIPT
+ADDONS		Enable all addons
+BetterTTV	GIF Emotes: Enabled (Animated GIF Emotes)
+FFZ:AP		Remove Spaces Between Emotes: enabled
+		Enable Highlight Sound: enabled, Default - Wet
+		Highlight Sound Volume: 100%
+Lirik LIVE	GIF Emotes: Enabled (Animated GIF Emotes)
+
+APPEARANCE
+Layout		Enable Portrait Mode: enabled
+		Hide Offline Channels: enabled
+		Display Reruns: Do Not Display
+		Display Online Friends: When Side Navigation is Open
+		Display Recommended / Popular Channels: Never
+		Display Recommended Friends: disabled
+		Show the Get Bits button: disabled
+		Show Twitch Prime offers: disabled
+
+CHANNEL
+Appearance	Hide the "LIVE" indicator on live channel pages: enabled
+		Allow avatar images to be rounded: disabled
+Metadata	Featured Follow: disabled
+		Host Button: disabled
+		Playback Statistics: enabled
+		Steam Uptime: enabled (with seconds)
+		Show Prime Reminder: disabled
+
+CHAT
+Appearance	Display lines with alternating background colors: enabled
+		Timestamp Format: 24 hour with seconds
+Badges		Style: Square
+Behavior	Deleted Message Style: Faded
+		Do not Clear Chat when commanded to: enabled
+		Remove deleted messages from chat: do not remove
+Bits		Display Top Cheerers: disabled
+Emote Menu	Use reduced padding: enabled
+		Display all emotes on one tab: enabled
+		Sort Emotes By: name, ascending
+Filtering	Highlight messages that mention you: enabled
+Input		Prioritize favorite emotes at the top
+Tooltips	Display potentially NSFW images: enabled
+
+DIRECTORY
+Channels	Do not show the Live indicator on channels that are live: enabled
+		Do not show reruns in the directory: enabled
+		Stream Uptime: enabled (with seconds)
+Following	Do not show `Recommended Live Channels` in the Following Directory: enabled
+		Do not show `Based on your viewing history` in the Following Directory: enabled
+
+PLAYER		
+General		Allow the player to speed up to reduce delay: disabled
+		Auto-play the next recommended video after a video finishes: disabled
+		Automatically open Theatre Mode when visiting a channel: enabled
+Compressor	Enable the audio compressor and add an `Audio Compressor` button to the player controls: disabled
+
+DATA MANAGEMENT
+Reporting	Automatically send reports when an error occurs: disabled
+		Include a settings snapshot in reports: disabled
+
+
+
+4CHAN-X SCRIPT
+Miscellaneous	Index Refresh Notifications: enabled
+		Pin Watched Threads: enable
+		Refreshed Navigation: enable
+		Open Threads in New Tab: enable
+		Catalog Links: enable
+		Index Navigation: enable
+		Reply Navigation: enable
+
+Images		Image Expansion: disable
+		Image Hover: disable
+		Image Hover in Catalog: disable
+
+
+
+PROBLEMATIC ADDONS, NOT ENABLED
 https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/
 setting privacy.resistFingerprinting to true is fine
 General>	Expert mode: enabled
@@ -63,233 +379,8 @@ API's>		DOMRect API
 	        Protected API features: all options enabled
 Misc>		Block data URL paged: disabled (CSP issue)
 
-https://addons.mozilla.org/en-US/firefox/addon/clearurls/
-Prevent tracking injection over history API: enabled
-
-https://addons.mozilla.org/en-US/firefox/addon/css-exfil-protection/
-No settings tweaks
-
-https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
-Enable all of the options with the possible exception of 'Block requests for missing resources' which will break some websites.
-https://decentraleyes.org/test
-
-https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/
-leave in toolbar for toggle in case sites break
-no settings
-
-https://addons.mozilla.org/en-US/firefox/addon/httpz/
-Default settings are fine. Disable automatic mode if you want to be prompted on https connection failure.
-
 https://addons.mozilla.org/en-US/firefox/addon/privacy-oriented-origin-policy/
 Global mode>	aggressive
 Exclusions>	Exclude root domain matches: enabled
 If you are using uMatrix:
 Other>		Spoof cross-origin Referer: disabled
-
-https://addons.mozilla.org/en-US/firefox/addon/site-bleacher/
-No settings except for whitelist
-
-https://addons.mozilla.org/en-US/firefox/addon/skip-redirect/
-Notifications>	Enable Popup: disabled
-
-https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
-Settings>	Hide placeholders of blocked elements: enabled
-Settings>	Privacy
-		all options enabled
-Settings>	Default Behavior
-		Disable cosmetic filtering: disabled
-		Block remote fonts: disabled
-My Filters>	! allow 1st party fonts globally (*$font,third-party), 3rd party by domain (,domain=~this.com|~that.com)
-		*$font,third-party
-Settings>	I am an advanced user: TEMPORARILY ENABLE
-		Click on the gears next to the checkbox and set:
-		suspendTabsUntilReady true
-		I am an advanced user: disabled
-Filter lists>	Enable all of these
-		Auto-update filter lists
-		Parse and enforce cosmetic filters
-		Ignore generic cosmetic filters
-			My filters​​​​​
-		Built-in:
-			expand the uBlock options to see all lists
-			uBlock filters
-			uBlock filters – Annoyances
-			uBlock filters – Badware risks (enable if you run Windows)
-			uBlock filters – Privacy
-			uBlock filters – Resource abuse (blocks many cryptocurrency mining scripts)
-			uBlock filters – Unbreak (un-breaks some websites that may be broken by other filter lists)
-		Ads:
-			Adblock Warning Removal List (hide annoying website messages warning about using an ad-blocker)
-        		EasyList
-		Privacy:
-			enable all lists
-		Malware domains
-			enable all lists, especially if you use Windows
-		Annoyances:
-			Adguard's Annoyances
-			Fanboy's Annoyance List
-		Multipurpose:
-			Dan Pollock's hosts file
-			Peter Lowe's Ad and tracking server list
-		Custom:
-			Import – enter: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
-My rules>	copy the rules from the url below into the temporary rules section, save, and commit
-		https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions
-
-https://addons.mozilla.org/en-US/firefox/addon/umatrix/
-Settings>	Convenience:	Enable these options
-		Show the number of blocked resources on the icon
-		Hide placeholder of blacklisted elements (but not blocked elements, at least not until you become more comfortable with uM)
-		Spoof <noscript> tags when 1st-party scripts are blocked
-Settings>	Privacy:	Enable these options
-		Delete blocked cookies
-		Delete non-blocked session cookies 60 minutes after the last time they have been used
-		Delete local storage content set by blocked hostnames
-		Spoof HTTP referrer string of third-party requests
-		Block all hyperlink auditing attempts
-My rules>       copy the rules from the url into the temporary rules section, save, and commit
-                https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions
-Assets>         Disable all host file lists, apply changes, update now, purge all caches, and update now
-                Ruleset recipes for English websites: enabled
-Popup panel>	Global filters: 1st-party css, images, media, forbid web workers, and block frames and cookies
-		remember to make global changes for sites such as youtube
-		shift click while refreshing to bypass the browser cache
-more addons
-https://12bytes.org/1089
-
-https://addons.mozilla.org/en-US/firefox/addon/about-sync/
-can be reached with about:sync
-General Options>	 Just poking around and don't want logging options changed
-Data provider options>	Anonymize data:enabled
-
-https://addons.mozilla.org/en-US/firefox/addon/crxviewer/
-default settings are fine
-
-https://addons.mozilla.org/en-US/firefox/addon/exif-viewer/
-Format>	Table
-
-https://addons.mozilla.org/en-US/firefox/addon/flagfox/
-gets redirected by Skip Redirect
-Plenty of settings but defaults are fine, check if you want to add more features
-
-https://addons.mozilla.org/en-US/firefox/addon/imagus/
-Preferences>	Advanced: enabled
-		Add hovered links to the browser history: disabled
-		Default media volume: 80
-		Cyclical scrolling in albums: enabled
-Preferences>	Caption
-		Show image/video dimensions: enabled
-		
-https://addons.mozilla.org/en-US/firefox/addon/project-insight/
-shows you addon perms, no settings
-
-https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/
-Enable night mode, disable the hints every 24 hours, im sure there are more settings
-
-https://addons.mozilla.org/en-US/firefox/addon/scrolantana/
-Use this instead of hide-scrollbars, it is also js-free
-no settings for this
-
-https://addons.mozilla.org/en-US/firefox/addon/scroll_anywhere/
-Default settings are fine
-
-https://addons.mozilla.org/en-US/firefox/addon/search_by_image/
-Search Engines>	Bing
-		TinEye
-		Karma Decay
-Miscellaneous>	Use local Google site: enabled
-
-https://addons.mozilla.org/en-US/firefox/addon/smart-rss-reader/
-Behaviour>	Always show full date: enabled
-Add an rss feed to test
-https://www.archlinux.org/feeds/news/
-(mark all as read if you are keeping this, we want to see the updates only when necessary
-
-https://addons.mozilla.org/en-US/firefox/addon/styl-us/
-Default options are fine, add a theme to test
-https://userstyles.org/styles/155701/arch-linux-dark-2018
-https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-dark.user.css
-https://raw.githubusercontent.com/StylishThemes/Wikipedia-Dark/master/wikipedia-dark.user.css
-https://raw.githubusercontent.com/StylishThemes/StackOverflow-Dark/master/stackoverflow-dark.user.css
-
-https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/
-companion app is on the AUR under vdhcoapp
-Behaviour>	Download processor: Companion Application
-		Default download directory: set to desired
-		Max filename length: 255 (may cause problems on windows)
-
-https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/
-Search Engines>	Wayback Machine
-		Google Cache
-		Bing Cache
-		Archive.is
-
-https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/
-General>	Reload current tab after switching on/off a script from menu: enabled
-		Notify script updates: enabled
-Scripts can be synced with say, google drive
-maybe test with these scripts
-		https://www.4chan-x.net/builds/4chan-X.user.js
-		https://cdn.frankerfacez.com/script/ffz_injector.user.js
-
-Don't enable automatic add-on updates
-
-FIREFOX CONFIGURATION
-Search bar in nav bar is a privacy risk but i dont want it
-
-
-
-Configuration files
-https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.3-Implementation
-
-	cd ~/.mozilla/firefox/$USERPROFILE/
-check with
-	ls -la
-then download the overrides file with
-	sudo wget -P ~/.mozilla/firefox/$USERPROFILE/ https://gitlab.com/labwrat/Firefox-user.js/raw/master/user-overrides.js
-then download the ghacks updater file, make executable, and run with
-	sudo wget -P ~/.mozilla/firefox/$USERPROFILE/ https://raw.githubusercontent.com/ghacksuserjs/ghacks-user.js/master/updater.sh
-	sudo chmod +x updater.sh
-then download the ghacks cleaner file, make executable, and run with
-	./updater.sh
-
-	sudo wget -P ~/.mozilla/firefox/$USERPROFILE/ https://raw.githubusercontent.com/ghacksuserjs/ghacks-user.js/master/prefsCleaner.sh
-	sudo chmod +x prefsCleaner.sh
-	./prefsCleaner.sh
-pw manager
-ublock element blocker
-click-jacking protection
-scroll speed
-double check to remove devices from your firefox account
-probably swap out the two-step stuff
-maybe add account recovery
-history view by last site visited
-pages to read: 	https://12bytes.org/articles/tech/firefox/the-firefox-privacy-guide-for-dummies
-		https://archive.vn/99sDW
-		https://github.com/humanetech-community/awesome-humane-tech
-		
-		https://torrentfreak.com/review/mullvad-vpn-reviews/
-		https://thatoneprivacysite.net/
-		https://wiki.archlinux.org/index.php/Mullvad
-		https://am.i.mullvad.net/
-		
-firefox delete everything in your profile
-install the config override and config update script
-make executable
-then run script
-then make a backup
-
-decentraleyes
-umatrix
-ublock origin
-
-yay -S mullvad-vpn
-mullvad account set $ACCOUNTNUMBER
-mullvad account get
-mullvad relay list
-mullvad relay set location $COUNTRYCODE $CITYCODE
-mullvad relay set location us sfo
-mullvad block-when-disconnected set on
-mullvad auto-connect set on
-mullvad lan set allow
-mullvad connect
