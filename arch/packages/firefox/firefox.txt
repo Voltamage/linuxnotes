@@ -358,10 +358,10 @@ Images		Image Expansion: disable
 PROBLEMATIC ADDONS, ENABLE AT YOUR OWN RISK
 https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/
 setting privacy.resistFingerprinting to true is fine
-Presets>	Apply Convenient settings
+Presets>		Apply Convenient settings
 		Apply reCAPTCHA exception
 General>	Expert mode: enabled
-    		Block mode: fake
+		Block mode: fake
 General>	Faking
         	Random number generator: non-persistent
 API's>		Canvas API
