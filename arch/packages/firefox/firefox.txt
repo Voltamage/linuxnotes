@@ -355,9 +355,11 @@ Images		Image Expansion: disable
 
 
 
-PROBLEMATIC ADDONS, NOT ENABLED
+PROBLEMATIC ADDONS, ENABLE AT YOUR OWN RISK
 https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/
 setting privacy.resistFingerprinting to true is fine
+Presets>	Apply Convenient settings
+		Apply reCAPTCHA exception
 General>	Expert mode: enabled
     		Block mode: fake
 General>	Faking
@@ -378,6 +380,7 @@ API's>		DOMRect API
 	        Protect DOMRect API: enabled
 	        Protected API features: all options enabled
 Misc>		Block data URL paged: disabled (CSP issue)
+EXCLUDE FROM PRIVATE WINDOWS
 
 https://addons.mozilla.org/en-US/firefox/addon/privacy-oriented-origin-policy/
 Global mode>	aggressive
