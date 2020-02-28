@@ -1,0 +1,53 @@
+#!/bin/bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+
+echo "${bold}[PRECHECKING]${normal}"
+echo "${bold}[Updating mirrorlist]${normal}"
+sudo reflector --country 'United States' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+echo "${bold}[Checking Arch Linux news]${normal}"
+yay -Pw
+read -p "Press any key to continue..." -n1 -s
+echo ""
+
+
+echo "${bold}[UPDATING]${normal}"
+echo "${bold}[Updating SYSTEM]${normal}"
+yay -Syu
+echo "${bold}[Updating PACKAGES]${normal}"
+echo "${bold}[Updating BetterDiscord]${normal}"
+betterdiscordctl update
+echo "${bold}[Updating youtube-dl]${normal}"
+sudo youtube-dl -U
+echo "${bold}[Updating SHELL EXTENSIONS]${normal}"
+echo "${bold}[Updating powerlevel10k]${normal}"
+git -C /home/volt/.oh-my-zsh/custom/themes/powerlevel10k pull
+echo "${bold}[Updating zsh-autosuggestions]${normal}"
+git -C /home/volt/.oh-my-zsh/custom/plugins/zsh-autosuggestions pull
+echo "${bold}[Updating SCRIPTS]${normal}"
+echo "${bold}[Updating msrsync]${normal}"
+curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > /home/volt/scripts/msrsync -#
+echo "${bold}[Updating rmshit.py]${normal}"
+curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > /home/volt/scripts/rmshit.py -#
+
+
+echo "${bold}[CLEANING]${normal}"
+echo "${bold}[Cleaning orphaned packages]${normal}"
+yay -Rns $(pacman -Qtdq)
+echo "${bold}[Cleaning package caches]${normal}"
+sudo paccache --remove --keep 1
+sudo paccache --remove --uninstalled --keep 0
+yes Y | yay -Sc
+echo "${bold}[Cleaning junk directories]${normal}"
+sudo rm -rf /home/volt/go
+yes y | rmshit.py
+
+
+echo "${bold}[Cleaning Firefox, which will be closed]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+killall -SIGTERM firefox
+sudo rm /usr/lib/firefox/browser/features/*.xpi
+profile-cleaner f
+echo "${bold}[DONE]${normal}"
