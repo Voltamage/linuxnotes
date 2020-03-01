@@ -20,6 +20,9 @@ echo "${bold}[Updating BetterDiscord]${normal}"
 betterdiscordctl update
 echo "${bold}[Updating youtube-dl]${normal}"
 sudo youtube-dl -U
+echo "${bold}[Updating CONFIGS]${normal}"
+echo "${bold}[Updating ranger scope.sh]${normal}"
+cp /usr/share/doc/ranger/config/scope.sh /home/volt/.config/ranger/scope.sh
 echo "${bold}[Updating SHELL EXTENSIONS]${normal}"
 echo "${bold}[Updating powerlevel10k]${normal}"
 git -C /home/volt/.oh-my-zsh/custom/themes/powerlevel10k pull
