@@ -113,8 +113,6 @@ Settings>	Privacy
 Settings>	Default Behavior
 		Disable cosmetic filtering: disabled
 		Block remote fonts: disabled
-My Filters>	! allow 1st party fonts globally (*$font,third-party), 3rd party by domain (,domain=~this.com|~that.com)
-		*$font,third-party
 Settings>	I am an advanced user: TEMPORARILY ENABLE
 		Click on the gears next to the checkbox and set:
 		suspendTabsUntilReady true
