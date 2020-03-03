@@ -33,6 +33,7 @@ echo "${bold}[Updating msrsync]${normal}"
 curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > /home/volt/scripts/msrsync -#
 echo "${bold}[Updating rmshit.py]${normal}"
 curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > /home/volt/scripts/rmshit.py -#
+sed -i '/\.nv/d' /home/volt/scripts/rmshit.py
 
 
 echo "${bold}[CLEANING]${normal}"
