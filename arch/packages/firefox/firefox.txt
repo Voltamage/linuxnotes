@@ -216,7 +216,6 @@ ADDITIONAL FEATURE ADDONS
 https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/
 Other>Options	Clear Clipboard: 1 minute
 		Disable Add Login Notification: enabled
-		Disable Context Menu Options: enabled
 		Theme: Dark
 ADD TO OVERFLOW
 EXCLUDE FROM PRIVATE WINDOWS
