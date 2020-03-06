@@ -5,11 +5,12 @@ https://www.curseforge.com/minecraft/modpacks/roguelike-adventures-and-dungeons/
 java path
 maximum memory allocation 8192
 minimum memory allocation 2048
+user interface>	icons: flat
+		colors: dark
 
 disable analytics
 add account
-fov 100
-music off
+fov quake pro
 fancy everything
 view bobbing off
 gui scale 2
