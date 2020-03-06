@@ -21,6 +21,7 @@ lagometer on
 debug profiler on
 show fps on
 auto jump off
+snooper off
 
 https://www.curseforge.com/minecraft/mc-mods/jei/files
 https://www.curseforge.com/minecraft/mc-mods/journeymap/files
