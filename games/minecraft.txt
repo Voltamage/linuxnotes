@@ -13,7 +13,7 @@ add account
 fov quake pro
 fancy everything
 view bobbing off
-gui scale 2
+gui scale normal
 no shaders
 fast rendering off
 no antialiasing or anisotropic filtering
