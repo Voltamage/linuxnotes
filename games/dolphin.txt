@@ -1,0 +1,29 @@
+do not authorize telemetry
+set game directory
+install resource packs
+view grid view
+
+CONFIGURATION
+General>	Enable Dual Core
+Interface>	Download Game Covers from GameTDB.com for Use in Grid Mode
+		Pause on Focus Loss
+		Always Hide Mouse Cursor
+Audio>		Audio Backend: Cubeb (requires cubeb-git)
+Paths>		Search Subfolders
+Wii>		Aspect Ratio: 16:9
+Advanced>	CPU Emulation Engine: JIT Recompiler
+
+GRAPHICS
+General>	Backend: Vulkan
+		V-Sync: Enabled
+		Show FPS
+		Shader Compilation: Synchronus
+		Compile Shaders Before Starting
+Enhancements>	Internal resolution: Auto
+		Anti-Aliasing: 2x SSAA
+		Anisotropic Filtering: 16x
+		Scaled EFB Copy: Disabled
+		Per-Pixel Lighting: Enabled
+Hacks>		Store EFB Copies to Texture Only: Disabled
+Advanced>	Load Custom Textures
+		Prefetch Custom Textures
