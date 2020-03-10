@@ -10,6 +10,7 @@
 # Wine 1.7.36 -> 2.22 (emergency update, because of many install issues reported from users)
 # POL_RequiredVersion "4.2.12"
 # Note (for a future update): replacing dotnet35 by dotnet40 will does the 'ptrace' issue.
+# (I grabbed both versions and kept the 'ptrace' check)
  
 [ "$PLAYONLINUX" = "" ] && exit 0
 source "$PLAYONLINUX/lib/sources"
@@ -69,20 +70,20 @@ which pulseaudio && Set_OS "win7"
 # Set graphic card information keys for wine
 POL_Wine_SetVideoDriver
  
-# Fix for this game
+# Fix for Skyrim mouse
 POL_Wine_X11Drv "GrabFullscreen" "Y"
   
 # Installing Steam
 cd "$POL_USER_ROOT/wineprefix/$PREFIX/drive_c/"
 POL_Download "http://media.steampowered.com/client/installer/SteamSetup.exe"
  
-POL_SetupWindow_wait "$(eval_gettext 'Please complete the Steam setup wizard.')" "$(eval_gettext '$TITLE - Steam Installation')"
+POL_SetupWindow_wait "$(eval_gettext 'Please complete the setup wizard and run Steam')" "$(eval_gettext '$TITLE - Steam Installation')"
 POL_Wine "SteamSetup.exe"
-POL_SetupWindow_message "$(eval_gettext 'Log into your Steam account once the update is complete.\n\nClick Next to continue.')" "$TITLE - Steam Update and Login"
+POL_SetupWindow_message "$(eval_gettext 'Log into your Steam account, and exit Steam completely after you are done.\n\nClick Next to continue.')" "$TITLE - Steam Login"
  
-# Fix for Steam
-# May not be necessary anymore?
-# POL_Wine_OverrideDLL "" "gameoverlayrenderer" # Disabled for testing
+# Fix to disable Steam overlay
+# May not be necessary anymore, but missing text is annoying, so I'm disabling it
+POL_Wine_OverrideDLL "" "gameoverlayrenderer"
  
 # Making shortcut
 POL_Shortcut "Steam.exe" "Steam"
