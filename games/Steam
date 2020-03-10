@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# This script is special, as it allows Steam installation on as many prefixes as possible
+# We want to require as few packages as possible, so the user can reinstall them at will
+# For example, it's easy to install vcrun2005, however it is much harder to uninstall
+# So gecko is the only essential package, and the rest are avoided
+
+[ "$PLAYONLINUX" = "" ] && exit 0
+source "$PLAYONLINUX/lib/sources"
+ 
+TITLE="Skyrim"
+PREFIX="Skyrim"
+WINEVERSION="5.2"
+ 
+# Starting the script
+POL_SetupWindow_Init
+POL_SetupWindow_presentation "$TITLE" "Valve" "http://www.valvesoftware.com/" "voltamage" "$PREFIX"
+ 
+# Setting prefix path
+POL_Wine_SelectPrefix "$PREFIX"
+ 
+# Downloading wine if necessary and creating prefix
+POL_System_SetArch "amd64"
+POL_Wine_PrefixCreate "$WINEVERSION"
+ 
+# Installing mandatory dependencies
+POL_Wine_InstallFonts
+POL_Call POL_Install_corefonts
+POL_Function_FontsSmoothRGB
+POL_Wine_OverrideDLL "" "dwrite"
+ 
+#Installing Steam
+cd "$POL_USER_ROOT/wineprefix/$PREFIX/drive_c/"
+POL_Download "http://media.steampowered.com/client/installer/SteamSetup.exe"
+ 
+POL_Wine_WaitBefore "$TITLE"
+POL_Wine "SteamSetup.exe"
+ 
+# Fix for Steam
+# May not be necessary anymore?
+POL_Wine_OverrideDLL "" "gameoverlayrenderer"
+ 
+# Making shortcut
+POL_Shortcut "Steam.exe" "Steam"
+ 
+POL_SetupWindow_Close
+exit 0
