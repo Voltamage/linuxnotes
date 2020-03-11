@@ -1,0 +1,67 @@
+dotnet 3.5 throws verification error 25541
+
+change window description to let user know to start steam, second window title is too long
+can you delete the desktop shortcuts
+does mod organizer need to be outside of program files
+
+dotnet45 BREAKS OS!!!
+change ur fucking xdg defaults from files to documents
+
+winecfg
+change dwrite(native,builtin)
+add libcef (native,builtin) # i believe this was for LOOT, which doesn't work
+add xaudio2_6(native,builtin)
+add d3d9.dll(native,builtin) # this also handles the d3d9_smaa.dll apparently, so you can add it
+nvapi(disabled)? performance still bad, staging and csmt? # https://github.com/wine-compholio/wine-staging/wiki/CSMT
+wine theme?
+
+steam argument: -no-dwrite -no-cef-sandbox
+
+copy SKSE stuff into directory, everything but the readme and the whatsnew, also copy the SKSE.ini
+
+start skyrim launcher once before opening MO, to complete setup and get base settings autoconfigured
+	set to windowed 1080p, no antialiasing, anisotropic filtering, or FXAA if enb, and no object fading? 
+MO doesn't handle nxm links, dracula style, custom profile local saves, transfer saves if any, delete the documents My Games folder that was leftover from the first initialization, modify the profile ini from now on
+
+TES5Edit unzip into program files, add to MO
+OLE error 80004001
+Has a newer version on github
+
+LOOT does not work yet
+
+32bit 4gb ram limit fml
+
+Dependencies
+corefonts
+d3dcompiler_43 # ENB
+d3dx10_43
+d3dx10
+d3dx11_43
+d3dx9_26
+d3dx9_28
+d3dx9_31
+d3dx9_35
+d3dx9_36 # ENB
+d3dx9_39
+d3dx9_42
+d3dx9_43 # ENB
+d3dx9
+directx9
+dotnet20sp1
+dotnet20sp2
+dotnet35 # Fix launcher issue
+dotnet40 # ENB
+dxfullsetup # Fix game crash
+gdiplus
+gdiplus_winxp
+msxml3
+msxml4
+msxml6
+tahoma
+vcrun2008 # Fix game issue
+vcrun2015
+xact_jun2010
+xact
+xinput
+
+POL_Call POL_Install_
