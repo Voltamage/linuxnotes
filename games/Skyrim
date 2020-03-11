@@ -57,8 +57,8 @@ POL_Call POL_Install_dxfullsetup # Fix game crash
 POL_Call POL_Install_d3dcompiler_43 # ENB
 POL_Call POL_Install_d3dx9_43 # ENB
 POL_Call POL_Install_d3dx9_36 # ENB
-POL_Call POL_Install_gecko # probably necessary
-POL_Call POL_Install_xact # audio fix
+# POL_Call POL_Install_gecko # Probably not necessary, gecko is an IE replacement, still doesn't fix steam rendering
+POL_Call POL_Install_xact # Audio fix
 # Missing dotnet, according to Mod Organizer
 # Missing how to add d3d9.dll to winecfg
 POL_Function_FontsSmoothRGB
