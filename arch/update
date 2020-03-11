@@ -47,6 +47,8 @@ echo "${bold}[Cleaning junk directories]${normal}"
 sudo rm -rf /home/volt/go
 yes y | rmshit.py
 
+echo "${bold}[Removing problematic steamapps files]${normal}"
+rm /home/volt/.local/share/Steam/steamapps/common/VRChat/VRChat_Data/StreamingAssets/youtube-dl.exe
 
 echo "${bold}[Cleaning Firefox, which will be closed]${normal}"
 read -p "Press any key to continue..." -n1 -s
