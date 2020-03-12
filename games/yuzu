@@ -1,0 +1,41 @@
+dont send anonymous data
+keys go in ~/.local/share/yuzu/keys/
+games and updates go directly in the folder, no subfolders, and you add the directory by clicking on the main screen
+Mods: https://github.com/yuzu-emu/yuzu/wiki/Switch-Mods
+open mod directory for game with right click on title
+mario odyssey disable resolution switching patch needed
+
+GENERAL
+General>	Limit Speed Percent: 100%
+		Pause emulation when in background: Enabled
+
+UI>		Show Add-Ons Column: Disabled???
+		Theme: Dark
+		Icon Size: Large
+		Row 2 Text: None
+
+SYSTEM
+Profiles>	You can add a user and set image, making sure to set it as the current user
+		You can also delete the old user
+
+Services>	You can probably leave Boxcat on, just remember privacy concerns with yuzu servers
+
+GRAPHICS
+Graphics>	API: Vulkan has no shader caching, but NVIDIA gpu users may get better performance out of OpenGL
+		Use disk shader cache: Enable, though it's only useful for OpenGL
+		Use asynchronous GPU emulation: Enabled, though a few games like Luigi's Mansion 3 don't work
+		Internal resolution: MAYBE 2x1440p, thought performance remains to be seen
+
+Advanced>	Use VSync (OpenGL only): Disabled???
+		Anisotropic Filering: 16x???
+
+AUDIO
+Audio>		Output Engine: cubeb???
+		Audio Device: May need to be set to controller audio???
+
+CONTROLS
+Input>		Profile: Custom
+		Configuration:
+			Player 1: Pro Controller
+			Handheld: Use Docked Mode: Enabled
+			Configuration: Set directions manually, dont use the Set Analog Stick, it will crash
