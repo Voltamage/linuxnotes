@@ -10,7 +10,7 @@ user interface>	icons: flat
 
 disable analytics
 add account
-fov quake pro
+fov 100
 fancy everything
 view bobbing off
 gui scale normal
