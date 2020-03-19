@@ -369,6 +369,8 @@ General>	Expert mode: enabled
 			Block mode: fake
 General>	Faking
         	Random number generator: non-persistent
+General>	Lists
+		Whitelist proxmox url or it wont run remote console stuff
 API's>		Canvas API
 	        Protected part of the canvas API: readout
         	Protected API features: all options enabled
