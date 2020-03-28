@@ -11,13 +11,13 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debi
 sudo apt-get install docker-ce docker-ce-cli
 sudo docker run hello-world
 
-sudo docker volume create portainer_data
+sudo docker volume create portainer_config
 sudo docker run -d \
 --name portainer \
 -p 9000:9000 \
 --restart unless-stopped \
 -v /var/run/docker.sock:/var/run/docker.sock \
--v portainer_data:/data \
+-v portainer_config:/data \
 portainer/portainer
 
 sudo docker info
