@@ -179,3 +179,15 @@ sudo docker run -d \
 linuxserver/lidarr
 
 set download client, name it itself, set ip address, and set category name to the service
+
+sudo docker volume create heimdall_config
+sudo docker run -d \
+--name=heimdall \
+-p 80:80 \
+-p 443:443 \
+--restart unless-stopped \
+-e TZ=America/Los_Angeles \
+-e PUID=1000 \
+-e PGID=1000 \
+-v heimdall_config:/config \
+linuxserver/heimdall
