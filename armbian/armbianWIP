@@ -1,0 +1,1 @@
+sed -i.bak -e '/PATH=$HOME/ a export PATH=$HOME/scripts:$PATH' -e '/ZSH_THEME="/c\ZSH_THEME="powerlevel10k/powerlevel10k"' -e '/DISABLE_UPDATE_PROMPT/c\DISABLE_UPDATE_PROMPT="true"' -e '/UPDATE_ZSH_DAYS/c\export UPDATE_ZSH_DAYS=1' -e '/plugins=/c\plugins=(git zsh-autosuggestions)' ~/.zshrc
