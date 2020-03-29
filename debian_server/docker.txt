@@ -183,7 +183,6 @@ set download client, name it itself, set ip address, and set category name to th
 sudo docker volume create heimdall_config
 sudo docker run -d \
 --name=heimdall \
--p 80:80 \
 -p 443:443 \
 --restart unless-stopped \
 -e TZ=America/Los_Angeles \
