@@ -37,4 +37,8 @@ echo "${bold}[Installing sshfs]${normal}"
 sudo apt-get install sshfs
 echo "${bold}[Installing tmux]${normal}"
 sudo apt-get install tmux
+
+echo "${bold}[POSTCHECKING]${normal}"
+echo "${bold}[Checking reboot]${normal}"
+sudo needrestart
 echo "${bold}[DONE]${normal}"
