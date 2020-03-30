@@ -7,10 +7,18 @@ echo "${bold}[Installing htop]${normal}"
 sudo apt-get install htop
 sudo rm -rf /root/.config/htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
+echo "${bold}[Installing iotop]${normal}"
+sudo apt-get install iotop
+echo "${bold}[Installing ncdu]${normal}"
+sudo apt-get install ncdu
+echo "${bold}[Installing needrestart]${normal}"
+sudo apt-get install needrestart
 echo "${bold}[Installing neofetch]${normal}"
 sudo apt-get install neofetch
 mkdir ~/.config/neofetch
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
+echo "${bold}[Installing nload]${normal}"
+sudo apt-get install nload
 echo "${bold}[Installing nmap]${normal}"
 sudo apt-get install nmap
 sed -i "1 i\alias iplist='nmap -sP 192.168.2.1/24'" ~/.oh-my-zsh/custom/aliases.zsh
