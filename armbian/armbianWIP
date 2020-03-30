@@ -1,21 +1,17 @@
-oceanusXX
 ssh root@$IP
 passwd>1234
 (put in current password)
 (change root password)
 (create user, skip values)
 (RESTART SESSION as user)
-exit
-ssh $IP
+	exit
+	ssh $IP
 
 sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get install curl git zsh && sudo chsh --shell /usr/bin/zsh volt && exit
-quit the zsh setup
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && mkdir ~/scripts && sed -i.bak -e '/PATH=$HOME/ a export PATH=$HOME/scripts:$PATH' -e '/ZSH_THEME="/c\ZSH_THEME="powerlevel10k/powerlevel10k"' -e '/DISABLE_UPDATE_PROMPT/c\DISABLE_UPDATE_PROMPT="true"' -e '/UPDATE_ZSH_DAYS/c\export UPDATE_ZSH_DAYS=1' -e '/plugins=/c\plugins=(git zsh-autosuggestions)' ~/.zshrc && exec zsh
 
-sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
-sudo apt-get install file mediainfo ranger
-echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
-sudo apt-get install vim
+(quit the zsh setup)
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && mkdir ~/scripts && sed -i.bak -e '/PATH=$HOME/ a export PATH=$HOME/scripts:$PATH' -e '/ZSH_THEME="/c\ZSH_THEME="powerlevel10k/powerlevel10k"' -e '/DISABLE_UPDATE_PROMPT/c\DISABLE_UPDATE_PROMPT="true"' -e '/UPDATE_ZSH_DAYS/c\export UPDATE_ZSH_DAYS=1' -e '/plugins=/c\plugins=(git zsh-autosuggestions)' ~/.zshrc && exec zsh
 
 powerlevel10k configuration
 does this look like a diamond:		y
@@ -30,3 +26,11 @@ icons (many):						2
 prompt flow (concise):				1
 enable transient prompt (yes):		y
 instant prompt mode (verbose):		3
+
+sudo apt-get install curl git htop zsh
+sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
+sudo apt-get install file mediainfo ranger
+echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
+sudo apt-get install vim
+
+
