@@ -1,14 +1,23 @@
 ssh root@$IP
+
 passwd>1234
+
 (put in current password)
+
 (change root password)
+
 (create user, skip values)
+
 (RESTART SESSION as user)
-	exit
-	ssh $IP
+
+exit
+
+ssh $IP
 	
+```
 sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/zsh)"
 sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/oh-my-zsh)"
+```
 
 powerlevel10k configuration
 does this look like a diamond:		y
