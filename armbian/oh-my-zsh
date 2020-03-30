@@ -15,5 +15,6 @@ sed -i '/ZSH_THEME="/c\ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
 sed -i '/DISABLE_UPDATE_PROMPT/c\DISABLE_UPDATE_PROMPT="true"' ~/.zshrc
 sed -i '/UPDATE_ZSH_DAYS/c\export UPDATE_ZSH_DAYS=1' ~/.zshrc
 sed -i '/plugins=/c\plugins=(git zsh-autosuggestions)' ~/.zshrc
+echo "alias aliases='vim /home/volt/.oh-my-zsh/custom/aliases.zsh && exec zsh'" > ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[DONE]${normal}"
 zsh
