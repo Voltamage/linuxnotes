@@ -7,6 +7,10 @@ echo "${bold}[Installing htop]${normal}"
 sudo apt-get install htop
 sudo rm -rf /root/.config/htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
+echo "${bold}[Installing neofetch]${normal}"
+sudo apt-get install neofetch
+mkdir ~/.config/neofetch
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
 echo "${bold}[Installing ranger]${normal}"
 sudo apt-get install file mediainfo ranger
 echo "${bold}[DONE]${normal}"
