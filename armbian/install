@@ -2,8 +2,13 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[Installing htop]${normal}"
 sudo apt-get install htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
+echo "${bold}[Installing ranger]${normal}"
 sudo apt-get install file mediainfo ranger
+echo "${bold}[Installing vim]${normal}"
 sudo apt-get install vim
 echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
+echo "${bold}[DONE]${normal}"
