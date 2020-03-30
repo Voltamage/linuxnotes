@@ -14,4 +14,22 @@ echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing zsh]${normal}"
 sudo apt-get install zsh
 sudo chsh --shell /usr/bin/zsh $USER
+
+echo "${bold}[Installing git]${normal}"
+sudo apt-get install git
+echo "${bold}[Installing oh-my-zsh]${normal}"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "${bold}[Installing Powerlevel10k]${normal}"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+echo "${bold}[Installing zsh-autosuggestions]${normal}"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+echo "${bold}[CONFIGURING]${normal}"
+mkdir ~/scripts
+sed -i '/PATH=$HOME/ a export PATH=$HOME/scripts:$PATH' ~/.zshrc
+sed -i '/ZSH_THEME="/c\ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
+sed -i '/DISABLE_UPDATE_PROMPT/c\DISABLE_UPDATE_PROMPT="true"' ~/.zshrc
+sed -i '/UPDATE_ZSH_DAYS/c\export UPDATE_ZSH_DAYS=1' ~/.zshrc
+sed -i '/plugins=/c\plugins=(git zsh-autosuggestions)' ~/.zshrc
+echo "${bold}[DONE]${normal}"
 zsh
