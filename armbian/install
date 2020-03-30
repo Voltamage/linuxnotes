@@ -13,6 +13,10 @@ read -p "Press any key to continue..." -n1 -s
 echo ""
 
 echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[Installing zsh]${normal}"
+sudo apt-get install zsh
+sudo chsh --shell /usr/bin/zsh $USER
+zsh
 echo "${bold}[Installing htop]${normal}"
 sudo apt-get install htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
