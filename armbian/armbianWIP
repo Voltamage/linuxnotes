@@ -14,6 +14,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
 sudo apt-get install file mediainfo ranger
+echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
+sudo apt-get install vim
 
 powerlevel10k configuration
 does this look like a diamond:		y
