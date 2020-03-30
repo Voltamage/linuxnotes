@@ -2,21 +2,9 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-echo "${bold}[PRECHECKING]${normal}"
-echo "${bold}[Updating apt-cache]${normal}"
-sudo apt-get update
-
-echo "${bold}[UPDATING]${normal}"
-echo "${bold}[Updating SYSTEM]${normal}"
-sudo apt-get dist-upgrade
-read -p "Press any key to continue..." -n1 -s
-echo ""
-
 echo "${bold}[INSTALLING]${normal}"
-echo "${bold}[Installing zsh]${normal}"
-sudo apt-get install zsh
-sudo chsh --shell /usr/bin/zsh $USER
-zsh
+echo "${bold}[Installing git]${normal}"
+sudo apt-get install git
 echo "${bold}[Installing htop]${normal}"
 sudo apt-get install htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
