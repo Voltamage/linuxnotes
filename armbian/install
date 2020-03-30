@@ -11,6 +11,9 @@ echo "${bold}[Installing neofetch]${normal}"
 sudo apt-get install neofetch
 mkdir ~/.config/neofetch
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
+echo "${bold}[Installing nmap]${normal}"
+sudo apt-get install nmap
+sed -i "1 i\alias iplist='nmap -sP 192.168.2.1/24'" ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Installing ranger]${normal}"
 sudo apt-get install file mediainfo ranger
 echo "${bold}[Installing rsync]${normal}"
