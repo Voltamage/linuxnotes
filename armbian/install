@@ -3,6 +3,9 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 echo "${bold}[INSTALLING]${normal}"
+sudo apt-get install aria2
+mkdir ~/.config/aria2
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
 echo "${bold}[Installing htop]${normal}"
 sudo apt-get install htop
 sudo rm -rf /root/.config/htop
