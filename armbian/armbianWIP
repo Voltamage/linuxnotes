@@ -1,4 +1,4 @@
-sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get install curl git needrestart zsh && sudo chsh --shell /usr/bin/zsh volt && exit
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get install curl git zsh && sudo chsh --shell /usr/bin/zsh volt && exit
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && mkdir ~/scripts && sed -i.bak -e '/PATH=$HOME/ a export PATH=$HOME/scripts:$PATH' ~/.zshrc && exec zsh
 
 powerlevel10k configuration
