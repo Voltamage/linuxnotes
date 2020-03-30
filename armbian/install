@@ -13,4 +13,14 @@ mkdir ~/.config/neofetch
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
 echo "${bold}[Installing ranger]${normal}"
 sudo apt-get install file mediainfo ranger
+echo "${bold}[Installing rsync]${normal}"
+sudo apt-get install rsync
+echo "${bold}[Installing msrsync]${normal}"
+sudo apt-get install python
+curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
+sudo chmod u+x ~/scripts/msrsync
+echo "${bold}[Installing sshfs]${normal}"
+sudo apt-get install sshfs
+echo "${bold}[Installing tmux]${normal}"
+sudo apt-get install tmux
 echo "${bold}[DONE]${normal}"
