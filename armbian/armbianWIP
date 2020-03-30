@@ -27,10 +27,4 @@ prompt flow (concise):				1
 enable transient prompt (yes):		y
 instant prompt mode (verbose):		3
 
-sudo apt-get install curl git htop zsh
-sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
-sudo apt-get install file mediainfo ranger
-echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
-sudo apt-get install vim
-
-
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/install)"
