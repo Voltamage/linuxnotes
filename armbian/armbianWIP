@@ -7,7 +7,7 @@ passwd>1234
 	exit
 	ssh $IP
 
-sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get install curl git zsh && sudo chsh --shell /usr/bin/zsh volt && exit
+sudo apt-get install curl git zsh && sudo chsh --shell /usr/bin/zsh volt && exit
 
 (quit the zsh setup)
 
@@ -27,4 +27,4 @@ prompt flow (concise):				1
 enable transient prompt (yes):		y
 instant prompt mode (verbose):		3
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/install)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/install)"
