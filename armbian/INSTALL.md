@@ -1,18 +1,11 @@
 ### Initial login
-ssh root@$IP
-
-passwd>1234
-
-(put in current password)
-
-(change root password)
-
-(create user, skip values)
-
-(RESTART SESSION as user)
-
-exit
-
+ssh root@$IP  
+passwd>1234  
+(put in current password)  
+(change root password)  
+(create user, skip values)  
+(RESTART SESSION as user)  
+exit  
 ssh $IP
 	
 ```
