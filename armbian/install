@@ -5,6 +5,7 @@ normal=$(tput sgr0)
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing htop]${normal}"
 sudo apt-get install htop
+sudo rm -rf /root/.config/htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
 echo "${bold}[Installing ranger]${normal}"
 sudo apt-get install file mediainfo ranger
