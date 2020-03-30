@@ -1,0 +1,17 @@
+#!/bin/bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+echo "${bold}[PRECHECKING]${normal}"
+echo "${bold}[Updating apt-cache]${normal}"
+sudo apt-get update
+
+echo "${bold}[UPDATING]${normal}"
+echo "${bold}[Updating SYSTEM]${normal}"
+sudo apt-get dist-upgrade
+
+echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[Installing zsh]${normal}"
+sudo apt-get install zsh
+sudo chsh --shell /usr/bin/zsh $USER
+zsh
