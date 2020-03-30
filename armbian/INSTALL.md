@@ -4,15 +4,13 @@ passwd>1234
 (put in current password)  
 (change root password)  
 (create user, skip values)  
-(RESTART SESSION as user)  
+su $USER  
 exit  
-ssh $IP
-	
+ssh $IP	
 ```
 sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/zsh)"
 sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/oh-my-zsh)"
 ```
-
 Powerlevel10k | Input
 --------------|------
 does this look like a diamond|y
@@ -27,7 +25,6 @@ icons (many)|2
 prompt flow (concise)|1
 enable transient prompt (yes)|y
 instant prompt mode (verbose)|3
-
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/install)"
 ```
