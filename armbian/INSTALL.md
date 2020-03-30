@@ -22,30 +22,18 @@ sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent
 
 Powerlevel10k | Input
 --------------|------
-
-does this look like a diamond | y
-
-does this look like a lock | y
-
-* does this look like a debian logo	y
-
-* do all these icons fit	y
-
-* character set (unicode)	1
-
-* show current time (24hr)	2
-
-* prompt height (one line)	1
-
-* promt spacing (compact)	1
-
-* icons (many)			2
-
-* prompt flow (concise)		1
-
-* enable transient prompt (yes)	y
-
-| instant prompt mode (verbose)	| 3
+does this look like a diamond|y
+does this look like a lock|y
+does this look like a debian logo|y
+do all these icons fit|y
+character set (unicode)|1
+show current time (24hr)|2
+prompt height (one line)|1
+promt spacing (compact)|1
+icons (many)|2
+prompt flow (concise)|1
+enable transient prompt (yes)|y
+instant prompt mode (verbose)|3
 
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/install)"
