@@ -1,1 +1,1 @@
-
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && sed -i.bak -e '/ZSH_THEME="/c\ZSH_THEME="powerlevel10k/powerlevel10k"' -e '/DISABLE_UPDATE_PROMPT/c\DISABLE_UPDATE_PROMPT="true"' -e '/UPDATE_ZSH_DAYS/c\export UPDATE_ZSH_DAYS=1' -e '/plugins=/c\plugins=(git zsh-autosuggestions)' ~/.zshrc && exec zsh
