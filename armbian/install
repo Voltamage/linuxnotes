@@ -65,3 +65,4 @@ echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking reboot]${normal}"
 sudo needrestart
 echo "${bold}[DONE]${normal}"
+exec zsh
