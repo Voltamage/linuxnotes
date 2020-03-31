@@ -7,7 +7,7 @@ passwd>1234
 exit  
 ssh $IP  
 ```
-sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/oh-my-zsh_install)"
+sudo apt-get -y install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/oh-my-zsh_install)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/oh-my-zsh_configure)"
 ```
