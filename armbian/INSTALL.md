@@ -25,6 +25,7 @@ icons (many)|2
 prompt flow (concise)|1
 enable transient prompt (yes)|y
 instant prompt mode (verbose)|3
+apply changes to .zshrc|y
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/install)"
 ```
