@@ -5,7 +5,7 @@ normal=$(tput sgr0)
 sudo mkdir /mnt/oceanus
 sudo cp /etc/fstab /etc/fstab.bak
 cp /etc/fstab /tmp/fstab
-cat <(lsblk -f | grep sda1 | awk '{$1=$2=""; print $0}' | sed -r 's/\s+//g') > /tmp/uuid
+cat <(lsblk -f | grep sda1 | awk '{$1=$2=$4=$5=$6=""; print $0}' | sed -r 's/\s+//g') > /tmp/uuid
 awk '{print "UUID="$0}' /tmp/uuid > /tmp/uuidtmp
 awk '{print $0" /mnt/oceanus xfs defaults 0 2"}' /tmp/uuidtmp > /tmp/uuid
 cat /tmp/uuid >> /tmp/fstab
