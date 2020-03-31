@@ -56,6 +56,7 @@ curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/ms
 sudo chmod u+x ~/scripts/msrsync
 echo "${bold}[Installing smartmontools (smartctl)]${normal}"
 sudo apt-get install smartmontools
+sed -i "1 a alias diskhealth='sudo smartctl -i /dev/sda && sudo smartctl -A /dev/sda'" ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Installing sshfs]${normal}"
 sudo apt-get install sshfs
 echo "${bold}[Installing tmux]${normal}"
