@@ -7,6 +7,8 @@ echo "${bold}[Installing aria2]${normal}"
 sudo apt-get install aria2
 mkdir ~/.config/aria2
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
+echo "${bold}[Installing armbian-config]${normal}"
+sudo apt-get install armbian-config
 echo "${bold}[Installing docker]${normal}"
 sudo apt-get install apt-transport-https ca-certificates gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
@@ -15,6 +17,9 @@ sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/debi
 sudo sed -i '/deb-src/d' /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli docker-compose
+echo "${bold}[Installing glusterfs-server]${normal}"
+sudo apt-get install glusterfs-server rpcbind
+sudo systemctl enable --now glusterd
 echo "${bold}[Installing hdparm (HDD park fix)]${normal}"
 sudo apt-get install hdparm
 curl https://dn.odroid.com/5422/script/odroid.shutdown > /tmp/odroid.shutdown -#
