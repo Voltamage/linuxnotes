@@ -33,6 +33,10 @@ echo "${bold}[Installing iotop]${normal}"
 sudo apt-get install iotop
 echo "${bold}[Installing man-db]${normal}"
 sudo apt-get install man-db
+echo "${bold}[Installing msrsync / rsync]${normal}"
+sudo apt-get install python rsync
+curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
+sudo chmod u+x ~/scripts/msrsync
 echo "${bold}[Installing ncdu]${normal}"
 sudo apt-get install ncdu
 echo "${bold}[Installing needrestart]${normal}"
@@ -48,12 +52,6 @@ sudo apt-get install nmap
 sed -i "1 i\alias iplist='nmap -sP 192.168.2.1/24'" ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Installing ranger]${normal}"
 sudo apt-get install file mediainfo ranger
-echo "${bold}[Installing rsync]${normal}"
-sudo apt-get install rsync
-echo "${bold}[Installing msrsync]${normal}"
-sudo apt-get install python
-curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
-sudo chmod u+x ~/scripts/msrsync
 echo "${bold}[Installing smartmontools (smartctl)]${normal}"
 sudo apt-get install smartmontools
 sed -i "1 a alias diskhealth='sudo smartctl -i /dev/sda && sudo smartctl -A /dev/sda'" ~/.oh-my-zsh/custom/aliases.zsh
