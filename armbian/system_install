@@ -45,12 +45,12 @@ echo "${bold}[Installing nload]${normal}"
 sudo apt-get -y install nload
 echo "${bold}[Installing nmap]${normal}"
 sudo apt-get -y install nmap
-sed -i "1 i\alias iplist='nmap -sP 192.168.2.1/24'" ~/.oh-my-zsh/custom/aliases.zsh
+sed -i "\$a alias iplist='nmap -sP 192.168.2.1/24'" ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Installing ranger]${normal}"
 sudo apt-get -y install file mediainfo ranger
 echo "${bold}[Installing smartmontools (smartctl)]${normal}"
 sudo apt-get -y install smartmontools
-sed -i "1 a alias diskhealth='sudo smartctl -i /dev/sda && sudo smartctl -A /dev/sda'" ~/.oh-my-zsh/custom/aliases.zsh
+sed -i "\$a alias diskhealth='sudo smartctl -i /dev/sda && sudo smartctl -A /dev/sda'" ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Installing sshfs]${normal}"
 sudo apt-get -y install sshfs
 echo "${bold}[Installing tmux]${normal}"
