@@ -4,16 +4,15 @@ normal=$(tput sgr0)
 
 sudo apt-get install lvm2
 dd if=/dev/zero of=/dev/sda bs=512 count=1
-sudo pvcreate --dataalignment 128K /dev/sda
+sudo pvcreate /dev/sda
+sudo vgcreate vg_glusterfs /dev/sda
+
+mkfs.xfs -f -i size=512 -n size=8192 DEVICE
 
 sudo mkdir /mnt/oceanus
 sudo cp /etc/fstab /etc/fstab.bak
 cp /etc/fstab /tmp/fstab
-cat <(lsblk -f | grep sda1 | awk '{$1=$2=$4=$5=$6=""; print $0}' | sed -r 's/\s+//g') > /tmp/uuid
-awk '{print "UUID="$0}' /tmp/uuid > /tmp/uuidtmp
-awk '{print $0" /mnt/oceanus xfs defaults 0 2"}' /tmp/uuidtmp > /tmp/uuid
-cat /tmp/uuid >> /tmp/fstab
+
+echo "/dev/vg_glusterfs/LV /mnt/oceanus xfs rw,inode64,noatime,nouuid 1 2" >> /tmp/fstab
 sudo mv /tmp/fstab /etc/fstab
-rm /tmp/uuid
-rm /tmp/uuidtmp
 sudo mount -av
