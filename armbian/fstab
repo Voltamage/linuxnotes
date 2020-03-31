@@ -17,4 +17,3 @@ echo "/dev/vg_glusterfs/oceanus_brick /mnt/oceanus xfs rw,inode64,noatime,nouuid
 sudo mv /tmp/fstab /etc/fstab
 
 sudo mount -av
-sudo mkdir /mnt/oceanus/brick
