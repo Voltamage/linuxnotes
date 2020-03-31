@@ -49,6 +49,8 @@ echo "${bold}[Installing msrsync]${normal}"
 sudo apt-get install python
 curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
 sudo chmod u+x ~/scripts/msrsync
+echo "${bold}[Installing smartmontools (smartctl)]${normal}"
+sudo apt-get install smartmontools
 echo "${bold}[Installing sshfs]${normal}"
 sudo apt-get install sshfs
 echo "${bold}[Installing tmux]${normal}"
