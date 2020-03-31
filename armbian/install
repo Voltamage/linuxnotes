@@ -3,6 +3,9 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[Installing man-db]${normal}"
+sudo apt-get install man-db
+echo "${bold}[Installing aria2]${normal}"
 sudo apt-get install aria2
 mkdir ~/.config/aria2
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
