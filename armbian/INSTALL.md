@@ -8,8 +8,8 @@ su $USER
 exit  
 ssh $IP	
 ```
-sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/zsh)"
-sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/oh-my-zsh)"
+sudo apt-get install curl && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/oh-my-zsh_install)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/oh-my-zsh_configure)"
 ```
 Powerlevel10k | Input
 --------------|------
