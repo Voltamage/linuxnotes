@@ -2,6 +2,7 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+sudo mkdir /mnt/oceanus
 sudo cp /etc/fstab /etc/fstab.bak
 cp /etc/fstab /tmp/fstab
 cat <(lsblk -f | grep sda1 | awk '{$1=$2=""; print $0}' | sed -r 's/\s+//g') > /tmp/uuid
