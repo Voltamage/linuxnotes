@@ -8,18 +8,17 @@ sudo apt-get update
 
 echo "${bold}[UPDATING]${normal}"
 echo "${bold}[Updating SYSTEM]${normal}"
-sudo apt-get dist-upgrade
+sudo apt-get -y dist-upgrade
 
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing git]${normal}"
-sudo apt-get install git
+sudo apt-get -y install git
 echo "${bold}[Installing vim]${normal}"
-sudo apt-get install vim
+sudo apt-get -y install vim
 echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
 sudo cp ~/.selected_editor /root
 echo "${bold}[Installing zsh]${normal}"
-sudo apt-get install zsh
-sudo chsh --shell /usr/bin/zsh $USER
+sudo apt-get -y install zsh
 
 echo "${bold}[Installing oh-my-zsh]${normal}"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
