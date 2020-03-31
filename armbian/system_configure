@@ -6,5 +6,9 @@ curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/ma
 sudo chmod u+x ~/scripts/maintain
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
 sudo chmod u+x ~/scripts/update
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
+sudo chmod u+x ~/scripts/fnd
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/gfnd > ~/scripts/gfnd -#
+sudo chmod u+x ~/scripts/gfnd
 curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
 sudo chmod u+x ~/scripts/rmshit.py
