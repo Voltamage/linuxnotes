@@ -11,9 +11,6 @@ echo "${bold}[Updating SYSTEM]${normal}"
 sudo apt-get dist-upgrade
 read -p "Press any key to continue..." -n1 -s
 echo ""
-echo "${bold}[Updating PACKAGES]${normal}"
-echo "${bold}[Updating youtube-dl]${normal}"
-sudo youtube-dl -U
 echo "${bold}[Updating SHELL EXTENSIONS]${normal}"
 echo "${bold}[Updating powerlevel10k]${normal}"
 git -C ~/.oh-my-zsh/custom/themes/powerlevel10k pull
