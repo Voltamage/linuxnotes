@@ -31,6 +31,8 @@ sudo rm -rf /root/.config/htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
 echo "${bold}[Installing iotop]${normal}"
 sudo apt-get -y install iotop
+echo "${bold}[Installing lvm2]${normal}"
+sudo apt-get -y install lvm2
 echo "${bold}[Installing msrsync / rsync]${normal}"
 sudo apt-get -y install python rsync
 curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
