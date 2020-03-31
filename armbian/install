@@ -64,6 +64,9 @@ echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking updates]${normal}"
 sudo apt-get update
 sudo apt-get -y dist-upgrade
+echo "${bold}[Sorting aliases]${normal}"
+sort -n ~/.oh-my-zsh/custom/aliases.zsh > /tmp/aliases.zsh
+mv /tmp/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Checking reboot]${normal}"
 sudo needrestart
 read -p "Press any key to continue..." -n1 -s
