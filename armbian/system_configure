@@ -10,5 +10,7 @@ curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fn
 sudo chmod u+x ~/scripts/fnd
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/mfnd > ~/scripts/mfnd -#
 sudo chmod u+x ~/scripts/mfnd
+curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
+sudo chmod u+x ~/scripts/msrsync
 curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
 sudo chmod u+x ~/scripts/rmshit.py
