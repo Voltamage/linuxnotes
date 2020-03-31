@@ -19,8 +19,8 @@ echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
 sudo cp ~/.selected_editor /root
 echo "${bold}[Installing zsh]${normal}"
 sudo apt-get -y install zsh
-sudo chsh --shell /usr/bin/zsh $USER
 
 echo "${bold}[Installing oh-my-zsh]${normal}"
 yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo chsh --shell /usr/bin/zsh $USER
 zsh
