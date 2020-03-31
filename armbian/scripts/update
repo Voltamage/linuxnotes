@@ -18,10 +18,10 @@ echo "${bold}[Updating zsh-autosuggestions]${normal}"
 git -C ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions pull
 echo "${bold}[Updating SCRIPTS]${normal}"
 echo "${bold}[Updating msrsync]${normal}"
-curl -# https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync
+curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
 sudo chmod u+x ~/scripts/msrsync
 echo "${bold}[Updating rmshit.py]${normal}"
-curl -# https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py
+curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
 sudo chmod u+x ~/scripts/rmshit.py
 sed -i '/.viminfo/d' ~/scripts/rmshit.py
 
