@@ -13,7 +13,7 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 sudo sed -i '/deb-src/d' /etc/apt/sources.list
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli
+sudo apt-get install docker-ce docker-ce-cli docker-compose
 echo "${bold}[Installing htop]${normal}"
 sudo apt-get install htop
 sudo rm -rf /root/.config/htop
