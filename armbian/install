@@ -31,16 +31,12 @@ sudo rm -rf /root/.config/htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
 echo "${bold}[Installing iotop]${normal}"
 sudo apt-get -y install iotop
-echo "${bold}[Installing man-db]${normal}"
-sudo apt-get -y install man-db
 echo "${bold}[Installing msrsync / rsync]${normal}"
 sudo apt-get -y install python rsync
 curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
 sudo chmod u+x ~/scripts/msrsync
 echo "${bold}[Installing ncdu]${normal}"
 sudo apt-get -y install ncdu
-echo "${bold}[Installing needrestart]${normal}"
-sudo apt-get -y install needrestart
 echo "${bold}[Installing neofetch]${normal}"
 sudo apt-get -y install neofetch
 mkdir ~/.config/neofetch
@@ -67,7 +63,10 @@ sudo apt-get -y dist-upgrade
 echo "${bold}[Sorting aliases]${normal}"
 sort -n ~/.oh-my-zsh/custom/aliases.zsh > /tmp/aliases.zsh
 mv /tmp/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
-echo "${bold}[Checking reboot]${normal}"
+echo "${bold}[Installing man-db]${normal}"
+sudo apt-get -y install man-db
+echo "${bold}[Installing needrestart / reboot check]${normal}"
+sudo apt-get -y install needrestart
 sudo needrestart
 read -p "Press any key to continue..." -n1 -s
 echo ""
