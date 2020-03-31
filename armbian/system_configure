@@ -4,3 +4,5 @@ normal=$(tput sgr0)
 
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/maintain > ~/scripts/maintain -#
 sudo chmod u+x ~/scripts/maintain
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
+sudo chmod u+x ~/scripts/update
