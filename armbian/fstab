@@ -3,7 +3,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 sudo apt-get install lvm2
-dd if=/dev/zero of=/dev/sda bs=512 count=1 
+dd if=/dev/zero of=/dev/sda bs=512 count=1
 sudo pvcreate --dataalignment 128K /dev/sda
 
 sudo mkdir /mnt/oceanus
