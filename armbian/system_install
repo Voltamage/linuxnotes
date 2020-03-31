@@ -3,6 +3,8 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[Installing acl]${normal}"
+sudo apt-get -y acl
 echo "${bold}[Installing aria2]${normal}"
 sudo apt-get -y install aria2
 mkdir ~/.config/aria2
@@ -57,6 +59,8 @@ echo "${bold}[Installing sshfs]${normal}"
 sudo apt-get -y install sshfs
 echo "${bold}[Installing tmux]${normal}"
 sudo apt-get -y install tmux
+echo "${bold}[Installing xfsprogs]${normal}"
+sudo apt-get -y install xfsprogs
 
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking updates]${normal}"
