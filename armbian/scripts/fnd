@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo find / -path /mnt -prune -o -iname "*$1*" -print
