@@ -61,7 +61,12 @@ echo "${bold}[Installing tmux]${normal}"
 sudo apt-get install tmux
 
 echo "${bold}[POSTCHECKING]${normal}"
+echo "${bold}[Checking updates]${normal}"
+sudo apt-get update
+sudo apt-get dist-upgrade
 echo "${bold}[Checking reboot]${normal}"
 sudo needrestart
+read -p "Press any key to continue..." -n1 -s
+echo ""
 echo "${bold}[DONE]${normal}"
 exec zsh
