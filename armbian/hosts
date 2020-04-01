@@ -6,3 +6,4 @@ curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/hosts_
 cat /tmp/hosts_append >> /tmp/hosts
 rm /tmp/hosts_append
 sudo mv /tmp/hosts /etc/hosts
+cat /etc/hosts
