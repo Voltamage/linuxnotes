@@ -26,7 +26,7 @@ sudo chmod u+x ~/scripts/maintain
 echo "${bold}[Updating mfnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/mfnd > ~/scripts/mfnd -#
 sudo chmod u+x ~/scripts/mfnd
-echo "${bold}[Updating update]${normal}"
+echo "${bold}[Updating updater]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/updater > ~/scripts/updater -#
 sudo chmod u+x ~/scripts/updater
 echo "${bold}[Updating ALIASES]${normal}"
