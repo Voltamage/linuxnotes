@@ -26,7 +26,7 @@ sudo chsh --shell /usr/bin/zsh $USER
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking shell]${normal}"
 awk -F: -v user="$USER" '$1 == user {print $NF}' /etc/passwd
-read -p "Press any key to continue..." -n1 -s
-echo ""
+echo "${bold}[Checking default editor]${normal}"
+cat ~/.selected_editor
 echo "${bold}[DONE]${normal}"
 zsh
