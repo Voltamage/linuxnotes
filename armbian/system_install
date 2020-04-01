@@ -120,10 +120,6 @@ echo "${bold}[Review fstab]${normal}"
 cat /etc/fstab
 read -p "Press any key to continue..." -n1 -s
 echo ""
-echo "${bold}[Review mounts]${normal}"
-df -h
-read -p "Press any key to continue..." -n1 -s
-echo ""
 echo "${bold}[Review aria2]${normal}"
 cat ~/.config/aria2/aria2.conf
 read -p "Press any key to continue..." -n1 -s
@@ -153,6 +149,10 @@ echo "${bold}[Review filesystem]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 cat <(echo "[user folder]") <(ls -la ~/) <(echo "") <(echo "[scripts folder]") <(ls -la ~/scripts) <(echo "") <(echo "[root folder]") <(sudo ls -la /root) <(echo "") <(echo "[tmp folder]") <(ls -la /tmp) <(echo "") | less
+echo "${bold}[Review mounts]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+cat <(echo "[Mounts]") <(lsblk) <(echo "") <(echo "[Usage]") <(df -h)
 echo "${bold}[Review LVM]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
