@@ -45,13 +45,8 @@ echo "${bold}[Configuring DISK SHUTDOWN]${normal}"
 curl https://dn.odroid.com/5422/script/odroid.shutdown > /tmp/odroid.shutdown -#
 sudo install -o root -g root -m 0755 /tmp/odroid.shutdown /lib/systemd/system-shutdown/odroid.shutdown
 rm /tmp/odroid.shutdown
-echo "${bold}[Configuring SERVICES]${normal}"
+echo "${bold}[Configuring GLUSTERD SERVICE]${normal}"
 sudo systemctl enable --now glusterd
-systemctl --type=service | grep docker
-systemctl --type=service | grep rpcbind
-systemctl --type=service | grep glusterd
-read -p "Press any key to continue..." -n1 -s
-echo ""
 echo "${bold}[Configuring PACKAGES]${normal}"
 echo "${bold}[Configuring aria2]${normal}"
 mkdir ~/.config/aria2
@@ -104,19 +99,23 @@ echo "${bold}[REVIEW]${normal}"
 echo "${bold}[Review sources]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
-cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list | less
+cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 echo "${bold}[Review timezone]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
-timedatectl | less
+timedatectl
 echo "${bold}[Review locale]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
-locale -a | less
+locale -a
 echo "${bold}[Review disk shutdown]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 less /lib/systemd/system-shutdown/odroid.shutdown
+echo "${bold}[Review critical services]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+systemctl --type=service | grep 'docker\|rpcbind\|glusterd' | grep running
 
 ls -la /tmp
 
