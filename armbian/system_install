@@ -17,14 +17,7 @@ echo "${bold}[Updating SYSTEM)]${normal}"
 sudo apt-get dist-upgrade
 
 echo "${bold}[INSTALLING]${normal}"
-sudo apt-get -y acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux xfsprogs
-
-echo "${bold}[POSTCHECKING]${normal}"
-echo "${bold}[Installing needrestart / reboot check]${normal}"
-sudo apt-get -y install needrestart
-sudo needrestart
-read -p "Press any key to continue..." -n1 -s
-echo ""
+sudo apt-get -y acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux xfsprogs
 
 echo "${bold}[GLUSTERFS]${normal}"
 echo "${bold}[Formatting filesystem]${normal}"
