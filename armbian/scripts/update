@@ -26,13 +26,6 @@ sudo chmod u+x ~/scripts/maintain
 echo "${bold}[Updating mfnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/mfnd > ~/scripts/mfnd -#
 sudo chmod u+x ~/scripts/mfnd
-echo "${bold}[Updating msrsync]${normal}"
-curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
-sudo chmod u+x ~/scripts/msrsync
-echo "${bold}[Updating rmshit.py]${normal}"
-curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
-sed -i '/.viminfo/d' ~/scripts/rmshit.py
-sudo chmod u+x ~/scripts/rmshit.py
 echo "${bold}[Updating update]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
 sudo chmod u+x ~/scripts/update
