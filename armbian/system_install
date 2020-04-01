@@ -13,10 +13,10 @@ sudo apt-get update
 
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing PACKAGES]${normal}"
-sudo apt-get -y acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux vim xfsprogs
+sudo apt-get -y install acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux vim xfsprogs
 
 echo "${bold}[Updating SYSTEM]${normal}"
-sudo apt-get dist-upgrade
+sudo apt-get -y dist-upgrade
 
 echo "${bold}[Installing SCRIPTS]${normal}"
 echo "${bold}[Installing fnd]${normal}"
