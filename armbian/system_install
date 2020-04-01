@@ -37,31 +37,50 @@ cat /etc/fstab
 read -p "Press any key to continue..." -n1 -s
 echo ""
 
+echo "${bold}[CONFIGURING]${normal}"
+echo "${bold}[Configuring TIMEZONE]${normal}"
 sudo timedatectl set-timezone America/Los_Angeles
 timedatectl set-ntp true
 timedatectl
+read -p "Press any key to continue..." -n1 -s
+echo ""
+echo "${bold}[Configuring LOCALE]${normal}"
 locale | grep LANG=
-
-: sudo apt-get install 
-
-sudo systemctl enable --now glusterd
-systemctl --type=service | grep docker
-systemctl --type=service | grep rpcbind
-systemctl --type=service | grep glusterd
-
-sudo rm -rf /root/.config/htop
-sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
-
-mkdir ~/.config/neofetch
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
-
-mkdir ~/.config/aria2
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
-
+read -p "Press any key to continue..." -n1 -s
+echo ""
+echo "${bold}[Configuring DISK SHUTDOWN]${normal}"
 curl https://dn.odroid.com/5422/script/odroid.shutdown > /tmp/odroid.shutdown -#
 sudo install -o root -g root -m 0755 /tmp/odroid.shutdown /lib/systemd/system-shutdown/odroid.shutdown
 rm /tmp/odroid.shutdown
 cat /lib/systemd/system-shutdown/odroid.shutdown
+read -p "Press any key to continue..." -n1 -s
+echo ""
+echo "${bold}[Configuring SERVICES]${normal}"
+sudo systemctl enable --now glusterd
+systemctl --type=service | grep docker
+systemctl --type=service | grep rpcbind
+systemctl --type=service | grep glusterd
+read -p "Press any key to continue..." -n1 -s
+echo ""
+echo "${bold}[Configuring PACKAGES]${normal}"
+echo "${bold}[Configuring aria2]${normal}"
+mkdir ~/.config/aria2
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
+cat ~/.config/aria2/aria2.conf
+read -p "Press any key to continue..." -n1 -s
+echo ""
+echo "${bold}[Configuring htop]${normal}"
+sudo rm -rf /root/.config/htop
+sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
+cat ~/.config/htop/htoprc | grep tree_view
+read -p "Press any key to continue..." -n1 -s
+echo ""
+echo "${bold}[Configuring neofetch]${normal}"
+mkdir ~/.config/neofetch
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
+neofetch
+read -p "Press any key to continue..." -n1 -s
+echo ""
 
 ls -la /tmp
 
