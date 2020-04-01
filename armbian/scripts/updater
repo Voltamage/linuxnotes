@@ -2,7 +2,6 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-echo ""
 echo "${bold}[PRECHECKING]${normal}"
 echo "${bold}[Updating apt-cache]${normal}"
 sudo apt-get update
