@@ -17,18 +17,7 @@ echo "${bold}[Updating SYSTEM)]${normal}"
 sudo apt-get dist-upgrade
 
 echo "${bold}[INSTALLING]${normal}"
-sudo apt-get -y
-acl
-aria2
-armbian-config
-docker-ce docker-ce-cli docker-compose
-glusterfs-server rpcbind hdparm
-htop iotop lvm2
-man-db ncdu neofetch
-nload nmap file mediainfo ranger python rsync smartmontools
-sshfs
-tmux
-xfsprogs
+sudo apt-get -y acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux xfsprogs
 
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Installing needrestart / reboot check]${normal}"
