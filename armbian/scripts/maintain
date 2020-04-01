@@ -19,7 +19,7 @@ dpkg --list | grep '^rc '
 echo "${bold}[Sources]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
-cat /etc/apt/sources.list <(echo "") /etc/apt/sources.list.d/*.list | less
+cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list | less
 echo "${bold}[Network configuration]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
