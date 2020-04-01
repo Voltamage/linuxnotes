@@ -27,8 +27,8 @@ echo "${bold}[Updating mfnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/mfnd > ~/scripts/mfnd -#
 sudo chmod u+x ~/scripts/mfnd
 echo "${bold}[Updating update]${normal}"
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
-sudo chmod u+x ~/scripts/update
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/updater > ~/scripts/updater -#
+sudo chmod u+x ~/scripts/updater
 echo "${bold}[Updating ALIASES]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
 
