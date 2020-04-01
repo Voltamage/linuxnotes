@@ -31,6 +31,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/a
 ```
 personal>hostname>$NEWHOSTNAME  
 network>IP>static>$NEWIP  
+(may have to relogin ssh connection)  
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/hosts)"
 ```
