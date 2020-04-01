@@ -2,10 +2,12 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+echo ""
 echo "${bold}[PRECHECKING]${normal}"
 echo "${bold}[Updating apt-cache]${normal}"
 sudo apt-get update
 
+echo ""
 echo "${bold}[UPDATING]${normal}"
 echo "${bold}[Updating SYSTEM]${normal}"
 sudo apt-get dist-upgrade
@@ -32,6 +34,7 @@ sudo chmod u+x ~/scripts/updater
 echo "${bold}[Updating ALIASES]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
 
+echo ""
 echo "${bold}[CLEANING]${normal}"
 echo "${bold}[Cleaning orphaned packages]${normal}"
 sudo apt-get autoremove --purge
@@ -44,6 +47,7 @@ rm -rf ~/.lesshst
 rm -rf ~/.wget-hsts
 /home/$USER/scripts/rmshit.py
 
+echo ""
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking reboot]${normal}"
 sudo needrestart
