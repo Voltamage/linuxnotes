@@ -62,7 +62,7 @@ curl https://dn.odroid.com/5422/script/odroid.shutdown > /tmp/odroid.shutdown -#
 sudo install -o root -g root -m 0755 /tmp/odroid.shutdown /lib/systemd/system-shutdown/odroid.shutdown
 rm /tmp/odroid.shutdown
 echo "${bold}[Configuring GLUSTERD SERVICE]${normal}"
-sudo systemctl enable --now glusterd
+sudo systemctl enable --now glusterd.service
 echo "${bold}[Configuring PACKAGES]${normal}"
 echo "${bold}[Configuring aria2]${normal}"
 mkdir ~/.config/aria2
