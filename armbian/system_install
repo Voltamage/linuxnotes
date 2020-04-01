@@ -56,7 +56,7 @@ rm -rf ~/.wget-hsts
 echo "${bold}[CONFIGURING]${normal}"
 echo "${bold}[Configuring TIMEZONE]${normal}"
 sudo timedatectl set-timezone America/Los_Angeles
-timedatectl set-ntp true
+sudo timedatectl set-ntp true
 echo "${bold}[Configuring DISK SHUTDOWN]${normal}"
 curl https://dn.odroid.com/5422/script/odroid.shutdown > /tmp/odroid.shutdown -#
 sudo install -o root -g root -m 0755 /tmp/odroid.shutdown /lib/systemd/system-shutdown/odroid.shutdown
