@@ -67,12 +67,14 @@ sudo needrestart
 read -p "Press any key to continue..." -n1 -s
 echo ""
 
+echo "${bold}[GLUSTERFS]${normal}"
+echo "${bold}[Formatting filesystem]${normal}"
 dd if=/dev/zero of=/dev/sda bs=512 count=1
 sudo pvcreate /dev/sda
 sudo vgcreate vg_glusterfs /dev/sda
 sudo lvcreate --thin vg_glusterfs/oceanus_brick --extents 100%FREE --poolmetadatasize 16GB --zero n
 sudo mkfs.xfs -f -i size=512 -n size=8192 /dev/vg_glusterfs/oceanus_brick
-
+echo "${bold}[Mounting filesystem]${normal}"
 sudo mkdir /mnt/oceanus
 sudo cp /etc/fstab /etc/fstab.bak
 cp /etc/fstab /tmp/fstab
@@ -85,8 +87,6 @@ sudo timedatectl set-timezone America/Los_Angeles
 timedatectl set-ntp true
 timedatectl
 locale | grep LANG=
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
-
 
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/maintain > ~/scripts/maintain -#
 sudo chmod u+x ~/scripts/maintain
@@ -100,6 +100,9 @@ curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/ms
 sudo chmod u+x ~/scripts/msrsync
 curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
 sudo chmod u+x ~/scripts/rmshit.py
+
+echo "${bold}[Installing oh-my-zsh aliases]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
 
 echo "${bold}[DONE]${normal}"
 exec zsh
