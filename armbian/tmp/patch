@@ -4,3 +4,4 @@ normal=$(tput sgr0)
 
 echo ""
 echo "TEST PATCH, DOES NOTHING"
+sudo cat /root/.selected_editor
