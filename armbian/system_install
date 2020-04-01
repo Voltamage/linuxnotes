@@ -90,7 +90,26 @@ echo "/dev/vg_glusterfs/oceanus_brick /mnt/oceanus xfs rw,inode64,noatime,nouuid
 sudo mv /tmp/fstab /etc/fstab
 sudo mount -av
 
+
+sudo timedatectl set-timezone America/Los_Angeles
+timedatectl set-ntp true
+timedatectl
 locale | grep LANG=
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
+
+
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/maintain > ~/scripts/maintain -#
+sudo chmod u+x ~/scripts/maintain
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
+sudo chmod u+x ~/scripts/update
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
+sudo chmod u+x ~/scripts/fnd
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/mfnd > ~/scripts/mfnd -#
+sudo chmod u+x ~/scripts/mfnd
+curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
+sudo chmod u+x ~/scripts/msrsync
+curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
+sudo chmod u+x ~/scripts/rmshit.py
 
 echo "${bold}[DONE]${normal}"
 exec zsh
