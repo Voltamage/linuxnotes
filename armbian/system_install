@@ -120,6 +120,10 @@ echo "${bold}[Review fstab]${normal}"
 cat /etc/fstab
 read -p "Press any key to continue..." -n1 -s
 echo ""
+echo "${bold}[Review mounts]${normal}"
+df -h
+read -p "Press any key to continue..." -n1 -s
+echo ""
 echo "${bold}[Review aria2]${normal}"
 cat ~/.config/aria2/aria2.conf
 read -p "Press any key to continue..." -n1 -s
