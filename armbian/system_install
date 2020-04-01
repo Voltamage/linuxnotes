@@ -17,7 +17,28 @@ echo "${bold}[Updating SYSTEM)]${normal}"
 sudo apt-get dist-upgrade
 
 echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[Installing PACKAGES]${normal}"
 sudo apt-get -y acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux xfsprogs
+echo "${bold}[Installing SCRIPTS]${normal}"
+echo "${bold}[Installing fnd]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
+sudo chmod u+x ~/scripts/fnd
+echo "${bold}[Installing maintain]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/maintain > ~/scripts/maintain -#
+sudo chmod u+x ~/scripts/maintain
+echo "${bold}[Installing mfnd]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/mfnd > ~/scripts/mfnd -#
+sudo chmod u+x ~/scripts/mfnd
+echo "${bold}[Installing msrsync]${normal}"
+curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
+sudo chmod u+x ~/scripts/msrsync
+echo "${bold}[Installing rmshit.py]${normal}"
+curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
+sudo chmod u+x ~/scripts/rmshit.py
+sed -i '/.viminfo/d' ~/scripts/rmshit.py
+echo "${bold}[Installing update]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
+sudo chmod u+x ~/scripts/update
 
 echo "${bold}[CONFIGURING]${normal}"
 echo "${bold}[Configuring TIMEZONE]${normal}"
@@ -84,22 +105,12 @@ echo ""
 
 ls -la /tmp
 
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/maintain > ~/scripts/maintain -#
-sudo chmod u+x ~/scripts/maintain
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
-sudo chmod u+x ~/scripts/update
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
-sudo chmod u+x ~/scripts/fnd
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/mfnd > ~/scripts/mfnd -#
-sudo chmod u+x ~/scripts/mfnd
-curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
-sudo chmod u+x ~/scripts/msrsync
-curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
-sudo chmod u+x ~/scripts/rmshit.py
-sed -i '/.viminfo/d' ~/scripts/rmshit.py
-
 echo "${bold}[Installing oh-my-zsh aliases]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
+
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/packages -# >> ~/.zsh_history
+comm -12 <(grep 'sudo apt-get install' ~/.zsh_history | sed '/|/d' | awk '{$1=$2=$3=$4=""; print $0}' | sed s/\\s/\\n/g | sort -n) <(dpkg --list | awk '{print $2}' | sed 's/:amd64//' | sort -n) | sed '/^$/d' > ~/.pkglist
+cat ~/.pkglist
 
 echo "${bold}[DONE]${normal}"
 exec zsh
