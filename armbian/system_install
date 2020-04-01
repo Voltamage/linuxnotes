@@ -113,7 +113,7 @@ cat /lib/systemd/system-shutdown/odroid.shutdown
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review critical services]${normal}"
-systemctl --type=service | grep 'docker\|rpcbind\|glusterd' | grep running
+systemctl --type=service | grep 'docker\|rpcbind\|glusterd'
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review fstab]${normal}"
