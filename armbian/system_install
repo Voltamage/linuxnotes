@@ -109,7 +109,7 @@ locale -a
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review disk shutdown]${normal}"
-less /lib/systemd/system-shutdown/odroid.shutdown
+cat /lib/systemd/system-shutdown/odroid.shutdown
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review critical services]${normal}"
