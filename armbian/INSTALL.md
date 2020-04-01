@@ -29,3 +29,6 @@ apply changes to .zshrc|y
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/system_install)"
 ```
+personal>hostname>$NEWHOSTNAME  
+network>IP>static>$NEWIP  
+system>DTB>hc1>reboot  
