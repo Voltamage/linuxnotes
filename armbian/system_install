@@ -2,18 +2,23 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-echo "${bold}[INSTALLING]${normal}"
-sudo apt-get -y
-acl
-aria2
-armbian-config
-echo "${bold}[Installing docker]${normal}"
+echo "${bold}[UPDATING)]${normal}"
+echo "${bold}[Updating SOURCES (Adding docker)]${normal}"
 sudo apt-get -y install apt-transport-https ca-certificates gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 sudo sed -i -e '/deb-src/d' -e '/^$/d' /etc/apt/sources.list
 sudo apt-get update
+echo "${bold}[Updating SYSTEM)]${normal}"
+sudo apt-get dist-upgrade
+
+echo "${bold}[INSTALLING]${normal}"
+sudo apt-get -y
+acl
+aria2
+armbian-config
+echo "${bold}[Installing docker]${normal}"
 sudo apt-get -y install docker-ce docker-ce-cli docker-compose
 echo "${bold}[Installing glusterfs-server]${normal}"
 sudo apt-get -y install glusterfs-server rpcbind
