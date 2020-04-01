@@ -17,13 +17,27 @@ git -C ~/.oh-my-zsh/custom/themes/powerlevel10k pull
 echo "${bold}[Updating zsh-autosuggestions]${normal}"
 git -C ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions pull
 echo "${bold}[Updating SCRIPTS]${normal}"
+echo "${bold}[Updating fnd]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
+sudo chmod u+x ~/scripts/fnd
+echo "${bold}[Updating maintain]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/maintain > ~/scripts/maintain -#
+sudo chmod u+x ~/scripts/maintain
+echo "${bold}[Updating mfnd]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/mfnd > ~/scripts/mfnd -#
+sudo chmod u+x ~/scripts/mfnd
 echo "${bold}[Updating msrsync]${normal}"
 curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
 sudo chmod u+x ~/scripts/msrsync
 echo "${bold}[Updating rmshit.py]${normal}"
 curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
-sudo chmod u+x ~/scripts/rmshit.py
 sed -i '/.viminfo/d' ~/scripts/rmshit.py
+sudo chmod u+x ~/scripts/rmshit.py
+echo "${bold}[Updating update]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
+sudo chmod u+x ~/scripts/update
+echo "${bold}[Updating ALIASES]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
 
 echo "${bold}[CLEANING]${normal}"
 echo "${bold}[Cleaning orphaned packages]${normal}"
