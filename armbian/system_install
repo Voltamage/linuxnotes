@@ -41,9 +41,6 @@ echo "${bold}[CONFIGURING]${normal}"
 echo "${bold}[Configuring TIMEZONE]${normal}"
 sudo timedatectl set-timezone America/Los_Angeles
 timedatectl set-ntp true
-timedatectl
-read -p "Press any key to continue..." -n1 -s
-echo ""
 echo "${bold}[Configuring LOCALE]${normal}"
 locale | grep LANG=
 read -p "Press any key to continue..." -n1 -s
@@ -115,6 +112,10 @@ echo "${bold}[Review sources]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list | less
+echo "${bold}[Review timezone]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+timedatectl | less
 
 ls -la /tmp
 
