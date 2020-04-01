@@ -54,9 +54,6 @@ curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/ar
 echo "${bold}[Configuring htop]${normal}"
 sudo rm -rf /root/.config/htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
-cat ~/.config/htop/htoprc | grep tree_view
-read -p "Press any key to continue..." -n1 -s
-echo ""
 echo "${bold}[Configuring neofetch]${normal}"
 mkdir ~/.config/neofetch
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
@@ -117,6 +114,10 @@ echo "${bold}[Review aria2]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 cat ~/.config/aria2/aria2.conf
+echo "${bold}[Review htop]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+cat ~/.config/htop/htoprc | grep tree_view
 
 ls -la /tmp
 
