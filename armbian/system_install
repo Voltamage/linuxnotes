@@ -18,7 +18,7 @@ sudo apt-get dist-upgrade
 
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing PACKAGES]${normal}"
-sudo apt-get -y acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux xfsprogs
+sudo apt-get -y acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux vim xfsprogs
 echo "${bold}[Installing SCRIPTS]${normal}"
 echo "${bold}[Installing fnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
@@ -84,6 +84,12 @@ echo "${bold}[Configuring neofetch]${normal}"
 mkdir ~/.config/neofetch
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
 neofetch
+read -p "Press any key to continue..." -n1 -s
+echo ""
+echo "${bold}[Configuring vim]${normal}"
+echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
+sudo cp ~/.selected_editor /root
+cat ~/.selected_editor
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Configuring .pkglist]${normal}"
