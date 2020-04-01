@@ -2,6 +2,6 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+echo "${bold}[PATCH CHECK]${normal}"
+echo "No patch available"
 echo ""
-echo "TEST PATCH, DOES NOTHING"
-sudo cat /root/.selected_editor
