@@ -49,8 +49,6 @@ echo "${bold}[Installing ranger]${normal}"
 sudo apt-get -y install file mediainfo ranger
 echo "${bold}[Installing rsync (for mysrsync]${normal}"
 sudo apt-get -y install python rsync
-curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/msrsync -#
-sudo chmod u+x ~/scripts/msrsync
 echo "${bold}[Installing smartmontools (smartctl)]${normal}"
 sudo apt-get -y install smartmontools
 sed -i "\$a alias diskhealth='sudo smartctl -i /dev/sda && sudo smartctl -A /dev/sda'" ~/.oh-my-zsh/custom/aliases.zsh
