@@ -3,12 +3,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 echo "${bold}[INSTALLING]${normal}"
-echo "${bold}[Installing acl]${normal}"
-sudo apt-get -y acl
-echo "${bold}[Installing aria2]${normal}"
-sudo apt-get -y install aria2
-mkdir ~/.config/aria2
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
+sudo apt-get -y acl aria2
 echo "${bold}[Installing armbian-config]${normal}"
 sudo apt-get -y install armbian-config
 echo "${bold}[Installing docker]${normal}"
@@ -102,6 +97,9 @@ curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/ms
 sudo chmod u+x ~/scripts/msrsync
 curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
 sudo chmod u+x ~/scripts/rmshit.py
+
+mkdir ~/.config/aria2
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
 
 echo "${bold}[Installing oh-my-zsh aliases]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
