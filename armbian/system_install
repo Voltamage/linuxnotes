@@ -57,15 +57,9 @@ sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
 echo "${bold}[Configuring neofetch]${normal}"
 mkdir ~/.config/neofetch
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
-neofetch
-read -p "Press any key to continue..." -n1 -s
-echo ""
 echo "${bold}[Configuring vim]${normal}"
 echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
 sudo cp ~/.selected_editor /root
-cat ~/.selected_editor
-read -p "Press any key to continue..." -n1 -s
-echo ""
 echo "${bold}[Configuring .pkglist]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/packages -# >> ~/.zsh_history
 comm -12 <(grep 'sudo apt-get install' ~/.zsh_history | sed '/|/d' | awk '{$1=$2=$3=$4=""; print $0}' | sed s/\\s/\\n/g | sort -n) <(dpkg --list | awk '{print $2}' | sed 's/:amd64//' | sort -n) | sed '/^$/d' > ~/.pkglist
@@ -91,33 +85,29 @@ echo ""
 
 echo "${bold}[REVIEW]${normal}"
 echo "${bold}[Review sources]${normal}"
-read -p "Press any key to continue..." -n1 -s
-echo ""
 cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 echo "${bold}[Review timezone]${normal}"
-read -p "Press any key to continue..." -n1 -s
-echo ""
 timedatectl
 echo "${bold}[Review locale]${normal}"
-read -p "Press any key to continue..." -n1 -s
-echo ""
 locale -a
 echo "${bold}[Review disk shutdown]${normal}"
-read -p "Press any key to continue..." -n1 -s
-echo ""
 less /lib/systemd/system-shutdown/odroid.shutdown
 echo "${bold}[Review critical services]${normal}"
-read -p "Press any key to continue..." -n1 -s
-echo ""
 systemctl --type=service | grep 'docker\|rpcbind\|glusterd' | grep running
 echo "${bold}[Review aria2]${normal}"
-read -p "Press any key to continue..." -n1 -s
-echo ""
 cat ~/.config/aria2/aria2.conf
 echo "${bold}[Review htop]${normal}"
-read -p "Press any key to continue..." -n1 -s
-echo ""
+echo "[Root]"
+sudo cat /root/.config/htop/htoprc | grep tree_view
+echo "[User]"
 cat ~/.config/htop/htoprc | grep tree_view
+echo "${bold}[Review neofetch]${normal}"
+neofetch
+echo "${bold}[Review vim]${normal}"
+echo "[Root]"
+sudo cat /root/.selected_editor
+echo "[User]"
+cat ~/.selected_editor
 
 ls -la /tmp
 
