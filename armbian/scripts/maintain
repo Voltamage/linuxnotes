@@ -23,7 +23,7 @@ cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list | less
 echo "${bold}[Network configuration]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
-cat <(echo "[Interfaces]") /etc/network/interfaces <(echo "[Hostname]") /etc/hostname <(echo "[DNS servers]") /etc/resolv.conf <(echo "[Hosts]") /etc/hosts | less
+cat <(echo "[Interfaces]") /etc/network/interfaces <(echo "") <(echo "[Hostname]") /etc/hostname <(echo "") <(echo "[DNS servers]") /etc/resolv.conf <(echo "") <(echo "[Hosts]") /etc/hosts | less
 echo "${bold}[ZSH configuration]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
