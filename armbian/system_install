@@ -41,10 +41,6 @@ echo "${bold}[CONFIGURING]${normal}"
 echo "${bold}[Configuring TIMEZONE]${normal}"
 sudo timedatectl set-timezone America/Los_Angeles
 timedatectl set-ntp true
-echo "${bold}[Configuring LOCALE]${normal}"
-locale | grep LANG=
-read -p "Press any key to continue..." -n1 -s
-echo ""
 echo "${bold}[Configuring DISK SHUTDOWN]${normal}"
 curl https://dn.odroid.com/5422/script/odroid.shutdown > /tmp/odroid.shutdown -#
 sudo install -o root -g root -m 0755 /tmp/odroid.shutdown /lib/systemd/system-shutdown/odroid.shutdown
@@ -116,6 +112,10 @@ echo "${bold}[Review timezone]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 timedatectl | less
+echo "${bold}[Review locale]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+locale -a | less
 
 ls -la /tmp
 
