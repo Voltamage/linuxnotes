@@ -20,4 +20,7 @@ echo "${bold}[Checking script folder]${normal}"
 ls ~/ | grep scripts
 echo "${bold}[Checking .zshrc]${normal}"
 cat <(cat ~/.zshrc | sed -e '/#/d' -e '/^$/d')
+read -p "Press any key to continue..." -n1 -s
+echo ""
 echo "${bold}[DONE]${normal}"
+exec zsh
