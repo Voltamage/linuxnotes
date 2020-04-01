@@ -31,5 +31,8 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/a
 ```
 personal>hostname>$NEWHOSTNAME  
 network>IP>static>$NEWIP  
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/system_install)"
+```
 ``` sudo armbian-config```  
 system>DTB>hc1>reboot  
