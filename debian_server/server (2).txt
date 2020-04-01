@@ -1,5 +1,4 @@
 sudo armbian-config
-personal>timezone>america>Los Angeles
 personal>locales>en_US.UTF-8
 personal>hostname>$NEWHOSTNAME
 network>IP>static>$NEWIP
