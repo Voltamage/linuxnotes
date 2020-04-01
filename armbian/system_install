@@ -29,8 +29,8 @@ curl https://raw.githubusercontent.com/jbd/msrsync/master/msrsync > ~/scripts/ms
 sudo chmod u+x ~/scripts/msrsync
 echo "${bold}[Installing rmshit.py]${normal}"
 curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scripts/rmshit.py -#
-sudo chmod u+x ~/scripts/rmshit.py
 sed -i '/.viminfo/d' ~/scripts/rmshit.py
+sudo chmod u+x ~/scripts/rmshit.py
 echo "${bold}[Installing update]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/update > ~/scripts/update -#
 sudo chmod u+x ~/scripts/update
