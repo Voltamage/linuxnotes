@@ -21,17 +21,8 @@ sudo apt-get -y
 acl
 aria2
 armbian-config
-echo "${bold}[Installing docker]${normal}"
-sudo apt-get -y install docker-ce docker-ce-cli docker-compose
-echo "${bold}[Installing glusterfs-server]${normal}"
-sudo apt-get -y install glusterfs-server rpcbind
-sudo systemctl enable --now glusterd
-echo "${bold}[Installing hdparm (HDD park fix)]${normal}"
-sudo apt-get -y install hdparm
-curl https://dn.odroid.com/5422/script/odroid.shutdown > /tmp/odroid.shutdown -#
-sudo install -o root -g root -m 0755 /tmp/odroid.shutdown /lib/systemd/system-shutdown/odroid.shutdown
-rm /tmp/odroid.shutdown
-echo "${bold}[Installing htop]${normal}"
+docker-ce docker-ce-cli docker-compose
+glusterfs-server rpcbind hdparm
 sudo apt-get -y install htop
 sudo rm -rf /root/.config/htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
