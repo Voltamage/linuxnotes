@@ -3,9 +3,10 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 echo "${bold}[INSTALLING]${normal}"
-sudo apt-get -y acl aria2
-echo "${bold}[Installing armbian-config]${normal}"
-sudo apt-get -y install armbian-config
+sudo apt-get -y
+acl
+aria2
+armbian-config
 echo "${bold}[Installing docker]${normal}"
 sudo apt-get -y install apt-transport-https ca-certificates gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
