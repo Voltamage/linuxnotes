@@ -9,12 +9,7 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 sudo sed -i -e '/deb-src/d' -e '/^$/d' /etc/apt/sources.list
-cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list | less
-read -p "Press any key to continue..." -n1 -s
-echo ""
 sudo apt-get update
-echo "${bold}[Updating SYSTEM)]${normal}"
-sudo apt-get dist-upgrade
 
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing PACKAGES]${normal}"
@@ -114,6 +109,12 @@ sudo mount -av
 cat /etc/fstab
 read -p "Press any key to continue..." -n1 -s
 echo ""
+
+echo "${bold}[REVIEW]${normal}"
+echo "${bold}[Review sources]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list | less
 
 ls -la /tmp
 
