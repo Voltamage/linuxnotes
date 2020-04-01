@@ -23,37 +23,12 @@ aria2
 armbian-config
 docker-ce docker-ce-cli docker-compose
 glusterfs-server rpcbind hdparm
-sudo apt-get -y install htop
-sudo rm -rf /root/.config/htop
-sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
-echo "${bold}[Installing iotop]${normal}"
-sudo apt-get -y install iotop
-echo "${bold}[Installing lvm2]${normal}"
-sudo apt-get -y install lvm2
-echo "${bold}[Installing man-db]${normal}"
-sudo apt-get -y install man-db
-echo "${bold}[Installing ncdu]${normal}"
-sudo apt-get -y install ncdu
-echo "${bold}[Installing neofetch]${normal}"
-sudo apt-get -y install neofetch
-mkdir ~/.config/neofetch
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
-echo "${bold}[Installing nload]${normal}"
-sudo apt-get -y install nload
-echo "${bold}[Installing nmap]${normal}"
-sudo apt-get -y install nmap
-echo "${bold}[Installing ranger]${normal}"
-sudo apt-get -y install file mediainfo ranger
-echo "${bold}[Installing rsync (for mysrsync]${normal}"
-sudo apt-get -y install python rsync
-echo "${bold}[Installing smartmontools (smartctl)]${normal}"
-sudo apt-get -y install smartmontools
-echo "${bold}[Installing sshfs]${normal}"
-sudo apt-get -y install sshfs
-echo "${bold}[Installing tmux]${normal}"
-sudo apt-get -y install tmux
-echo "${bold}[Installing xfsprogs]${normal}"
-sudo apt-get -y install xfsprogs
+htop iotop lvm2
+man-db ncdu neofetch
+nload nmap file mediainfo ranger python rsync smartmontools
+sshfs
+tmux
+xfsprogs
 
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Installing needrestart / reboot check]${normal}"
