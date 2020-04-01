@@ -90,5 +90,7 @@ echo "/dev/vg_glusterfs/oceanus_brick /mnt/oceanus xfs rw,inode64,noatime,nouuid
 sudo mv /tmp/fstab /etc/fstab
 sudo mount -av
 
+locale | grep LANG=
+
 echo "${bold}[DONE]${normal}"
 exec zsh
