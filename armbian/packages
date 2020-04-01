@@ -1,9 +1,9 @@
 : sudo apt-get install 
 curl
-apt-transport-https ca-certificates gnupg2 software-properties-common
 git
 vim
 zsh
+apt-transport-https ca-certificates gnupg2 software-properties-common
 acl
 aria2
 armbian-config
