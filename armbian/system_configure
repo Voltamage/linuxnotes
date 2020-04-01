@@ -16,8 +16,5 @@ curl https://raw.githubusercontent.com/lahwaacz/Scripts/master/rmshit.py > ~/scr
 sudo chmod u+x ~/scripts/rmshit.py
 
 sudo timedatectl set-timezone America/Los_Angeles
-read -p "Input new hostname: " hostname
-sudo hostnamectl set-hostname $hostname
-sudo sed -i.bak 's/odroidxu4/$hostname/g' /etc/hosts
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
 exec zsh
