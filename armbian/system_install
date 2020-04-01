@@ -45,7 +45,6 @@ echo "${bold}[Installing nload]${normal}"
 sudo apt-get -y install nload
 echo "${bold}[Installing nmap]${normal}"
 sudo apt-get -y install nmap
-sed -i "\$a alias iplist='nmap -sP 192.168.2.1/24'" ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Installing ranger]${normal}"
 sudo apt-get -y install file mediainfo ranger
 echo "${bold}[Installing rsync (for mysrsync]${normal}"
