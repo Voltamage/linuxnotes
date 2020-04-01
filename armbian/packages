@@ -23,9 +23,9 @@ sshfs
 tmux
 xfsprogs
 
-systemctl --type=service | grep -i docker | grep -i running
-systemctl --type=service | grep -i rpcbind | grep -i running
-systemctl --type=service | grep -i glusterd | grep -i running
+systemctl --type=service | grep docker
+systemctl --type=service | grep rpcbind
+systemctl --type=service | grep glusterd
 
 cat /lib/systemd/system-shutdown/odroid.shutdown
 
