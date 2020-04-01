@@ -63,7 +63,6 @@ sudo cp ~/.selected_editor /root
 echo "${bold}[Configuring .pkglist]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/packages -# >> ~/.zsh_history
 comm -12 <(grep 'sudo apt-get install' ~/.zsh_history | sed '/|/d' | awk '{$1=$2=$3=$4=""; print $0}' | sed s/\\s/\\n/g | sort -n) <(dpkg --list | awk '{print $2}' | sed 's/:amd64//' | sort -n) | sed '/^$/d' > ~/.pkglist
-cat ~/.pkglist
 
 echo "${bold}[GLUSTERFS]${normal}"
 echo "${bold}[Formatting filesystem]${normal}"
@@ -108,6 +107,10 @@ echo "[Root]"
 sudo cat /root/.selected_editor
 echo "[User]"
 cat ~/.selected_editor
+echo "${bold}[Review .pkglist]${normal}"
+cat ~/.pkglist
+echo "${bold}[Review aliases]${normal}"
+cat ~/.oh-my-zsh/custom/aliases.zsh
 
 ls -la /tmp
 
