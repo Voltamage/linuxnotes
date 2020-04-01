@@ -28,6 +28,10 @@ echo "${bold}[ZSH configuration]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 cat <(cat ~/.zshrc | sed -e '/#/d' -e '/^$/d') | less
+echo "${bold}[Disk usage]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+df -h | less
 echo "${bold}[Docker configuration]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
