@@ -4,4 +4,5 @@ sudo cp /etc/hosts /etc/hosts.bak
 cp /etc/hosts /tmp/hosts
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/hosts_append > /tmp/hosts_append -#
 cat /tmp/hosts_append >> /tmp/hosts
+rm /tmp/hosts_append
 sudo mv /tmp/hosts /etc/hosts
