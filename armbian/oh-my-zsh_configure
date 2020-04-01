@@ -7,7 +7,9 @@ echo "${bold}[Installing zsh-autosuggestions]${normal}"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 echo "${bold}[CONFIGURING]${normal}"
+echo "${bold}[Configuring scripts folder]${normal}"
 mkdir ~/scripts
+echo "${bold}[Configuring .zshrc]${normal}"
 sed -i '/PATH=$HOME/ a export PATH=$HOME/scripts:$PATH' ~/.zshrc
 sed -i '/ZSH_THEME="/c\ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
 sed -i '/DISABLE_UPDATE_PROMPT/c\DISABLE_UPDATE_PROMPT="true"' ~/.zshrc
