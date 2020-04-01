@@ -125,9 +125,6 @@ cat ~/.config/aria2/aria2.conf
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review htop]${normal}"
-echo "[Root]"
-sudo cat /root/.config/htop/htoprc | grep tree_view
-echo "[User]"
 cat ~/.config/htop/htoprc | grep tree_view
 read -p "Press any key to continue..." -n1 -s
 echo ""
