@@ -28,12 +28,13 @@ instant prompt mode (verbose)|3
 apply changes to .zshrc|y
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/system_install)"
+sudo armbian-config
 ```
 personal>hostname>$NEWHOSTNAME  
 network>IP>static>$NEWIP  
 (may have to relogin ssh connection)  
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/hosts)"
-```
-``` sudo armbian-config```  
+sudo armbian-config
+```  
 system>DTB>hc1>reboot  
