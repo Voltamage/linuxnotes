@@ -16,7 +16,7 @@ sudo apt-get -y install apt-transport-https ca-certificates gnupg2 software-prop
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
-sudo sed -i '/deb-src/d' /etc/apt/sources.list
+sudo sed -i -e '/deb-src/d' -e '/^$/d' /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get -y install docker-ce docker-ce-cli docker-compose
 echo "${bold}[Installing glusterfs-server]${normal}"
