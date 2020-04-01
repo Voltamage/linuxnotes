@@ -1,13 +1,3 @@
-sudo armbian-config
-personal>locales>en_US.UTF-8
-personal>hostname>$NEWHOSTNAME
-network>IP>static>$NEWIP
-system>DTB>hc1>reboot
-
-(add all node ips to all your nodes)
-sudo rvim /etc/hosts
-	192.168.2.XXX $SERVERNAMEXX
-	
 sudo glusterfs --version
 sudo gluster peer probe $SERVERNAME
 sudo gluster peer status
@@ -21,9 +11,6 @@ sudo gluster volume bitrot $VOLUMENAME scrub-throttle lazy
 sudo gluster volume bitrot $VOLUMENAME scrub-frequency daily
 sudo gluster volume set $VOLUMENAME features.trash on
 sudo gluster volume set $VOLUMENAME features.trash-internal-op on
-
-sudo smartctl -A /dev/sda
-df -h
 
 CLIENT
 sudo modprobe fuse
