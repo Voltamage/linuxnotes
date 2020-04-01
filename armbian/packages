@@ -12,6 +12,16 @@ hdparm
 htop
 iotop
 lvm2
+ncdu
+neofetch
+nload
+nmap
+file mediainfo ranger
+python rsync
+smartmontools
+sshfs
+tmux
+xfsprogs
 
 systemctl --type=service | grep -i docker | grep -i running
 systemctl --type=service | grep -i rpcbind | grep -i running
