@@ -14,6 +14,10 @@ sudo apt-get update
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing PACKAGES]${normal}"
 sudo apt-get -y acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux vim xfsprogs
+
+echo "${bold}[Updating SYSTEM]${normal}"
+sudo apt-get dist-upgrade
+
 echo "${bold}[Installing SCRIPTS]${normal}"
 echo "${bold}[Installing fnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
@@ -36,6 +40,18 @@ curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/up
 sudo chmod u+x ~/scripts/update
 echo "${bold}[Installing ALIASES]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
+
+echo "${bold}[CLEANING]${normal}"
+echo "${bold}[Cleaning orphaned packages]${normal}"
+sudo apt-get autoremove --purge
+echo "${bold}[Cleaning package caches]${normal}"
+sudo apt-get clean
+echo "${bold}[Cleaning junk directories]${normal}"
+sudo rm -rf /root/.lesshst
+sudo rm -rf /root/.wget-hsts
+rm -rf ~/.lesshst
+rm -rf ~/.wget-hsts
+/home/$USER/scripts/rmshit.py
 
 echo "${bold}[CONFIGURING]${normal}"
 echo "${bold}[Configuring TIMEZONE]${normal}"
@@ -143,5 +159,8 @@ read -p "Press any key to continue..." -n1 -s
 echo ""
 cat <(echo "[Physical volumes]") <(sudo pvdisplay) <(echo "[Volume groups]") <(sudo vgdisplay) <(echo "[Logical volumes]") <(sudo lvdisplay) <(echo "[Metadata]") <(sudo lvs -o+metadata_percent) | less
 
+echo "${bold}[POSTCHECKING]${normal}"
+echo "${bold}[Checking reboot]${normal}"
+sudo needrestart
 echo "${bold}[DONE]${normal}"
 exec zsh
