@@ -35,6 +35,8 @@ echo "${bold}[Installing iotop]${normal}"
 sudo apt-get -y install iotop
 echo "${bold}[Installing lvm2]${normal}"
 sudo apt-get -y install lvm2
+echo "${bold}[Installing man-db]${normal}"
+sudo apt-get -y install man-db
 echo "${bold}[Installing ncdu]${normal}"
 sudo apt-get -y install ncdu
 echo "${bold}[Installing neofetch]${normal}"
@@ -59,14 +61,6 @@ echo "${bold}[Installing xfsprogs]${normal}"
 sudo apt-get -y install xfsprogs
 
 echo "${bold}[POSTCHECKING]${normal}"
-echo "${bold}[Checking updates]${normal}"
-sudo apt-get update
-sudo apt-get -y dist-upgrade
-echo "${bold}[Sorting aliases]${normal}"
-sort -n ~/.oh-my-zsh/custom/aliases.zsh > /tmp/aliases.zsh
-mv /tmp/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
-echo "${bold}[Installing man-db]${normal}"
-sudo apt-get -y install man-db
 echo "${bold}[Installing needrestart / reboot check]${normal}"
 sudo apt-get -y install needrestart
 sudo needrestart
