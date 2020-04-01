@@ -42,7 +42,7 @@ sudo rm -rf /root/.lesshst
 sudo rm -rf /root/.wget-hsts
 rm -rf ~/.lesshst
 rm -rf ~/.wget-hsts
-rmshit.py
+/home/$USER/scripts/rmshit.py
 
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking reboot]${normal}"
