@@ -32,6 +32,10 @@ echo "${bold}[Disk usage]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 df -h | less
+echo "${bold}[LVM statistics]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+cat <(echo "[Physical volumes]") <(sudo pvdisplay) <(echo "") <(echo "[Volume groups]") <(sudo vgdisplay) <(echo "") <(echo "[Logical volumes]") <(sudo lvdisplay) <(echo "") <(echo "[Metadata]") <(sudo lvs -o+metadata_percent) | less
 echo "${bold}[Docker configuration]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
