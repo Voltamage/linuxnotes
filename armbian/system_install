@@ -152,7 +152,7 @@ cat <(echo "[user folder]") <(ls -la ~/) <(echo "") <(echo "[scripts folder]") <
 echo "${bold}[Review mounts]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
-cat <(echo "[Mounts]") <(lsblk) <(echo "") <(echo "[Usage]") <(df -h)
+cat <(echo "[Mounts]") <(lsblk) <(echo "") <(echo "[Usage]") <(df -h) | less
 echo "${bold}[Review LVM]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
