@@ -51,9 +51,6 @@ echo "${bold}[Configuring PACKAGES]${normal}"
 echo "${bold}[Configuring aria2]${normal}"
 mkdir ~/.config/aria2
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
-cat ~/.config/aria2/aria2.conf
-read -p "Press any key to continue..." -n1 -s
-echo ""
 echo "${bold}[Configuring htop]${normal}"
 sudo rm -rf /root/.config/htop
 sed -i -e '/tree_view/c\tree_view=1' ~/.config/htop/htoprc
@@ -116,6 +113,10 @@ echo "${bold}[Review critical services]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 systemctl --type=service | grep 'docker\|rpcbind\|glusterd' | grep running
+echo "${bold}[Review aria2]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+cat ~/.config/aria2/aria2.conf
 
 ls -la /tmp
 
