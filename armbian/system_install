@@ -76,5 +76,19 @@ sudo apt-get -y install needrestart
 sudo needrestart
 read -p "Press any key to continue..." -n1 -s
 echo ""
+
+dd if=/dev/zero of=/dev/sda bs=512 count=1
+sudo pvcreate /dev/sda
+sudo vgcreate vg_glusterfs /dev/sda
+sudo lvcreate --thin vg_glusterfs/oceanus_brick --extents 100%FREE --poolmetadatasize 16GB --zero n
+sudo mkfs.xfs -f -i size=512 -n size=8192 /dev/vg_glusterfs/oceanus_brick
+
+sudo mkdir /mnt/oceanus
+sudo cp /etc/fstab /etc/fstab.bak
+cp /etc/fstab /tmp/fstab
+echo "/dev/vg_glusterfs/oceanus_brick /mnt/oceanus xfs rw,inode64,noatime,nouuid 0 2" >> /tmp/fstab
+sudo mv /tmp/fstab /etc/fstab
+sudo mount -av
+
 echo "${bold}[DONE]${normal}"
 exec zsh
