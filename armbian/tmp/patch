@@ -1,0 +1,6 @@
+#!/bin/bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+echo ""
+echo "TEST PATCH, DOES NOTHING"
