@@ -9,4 +9,5 @@ echo ""
 echo "${bold}[FETCHING LATEST UPDATER]${normal}"
 cp ~/scripts/updater /tmp/updater
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/updater > ~/scripts/updater -#
+sudo chmod u+x ~/scripts/updater
 echo ""
