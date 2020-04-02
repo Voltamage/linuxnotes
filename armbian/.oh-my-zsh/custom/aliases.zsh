@@ -2,5 +2,6 @@ alias aliases='vim ~/.oh-my-zsh/custom/aliases.zsh && sort -n ~/.oh-my-zsh/custo
 alias diskhealth='sudo smartctl -i /dev/sda && sudo smartctl -A /dev/sda'
 alias iplist='nmap -sP 192.168.2.1/24'
 alias mntdu='sudo ncdu /mnt'
+alias patch='bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/patcher)" && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/updater)"'
 alias sysdu='sudo ncdu / --exclude /mnt'
-alias update='bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/patcher)" && bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/updater)"'
+alias update='bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/updater)"'
