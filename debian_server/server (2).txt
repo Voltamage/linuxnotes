@@ -11,6 +11,7 @@ sudo gluster pool list
 sudo gluster volume create $VOLUMENAME replica 2 $SERVERNAME1:/mnt/gluster/brick $SERVERNAME2:/mnt/gluster/brick
 sudo gluster volume info
 sudo gluster volume start $VOLUMENAME
+sudo gluster volume info
 
 sudo gluster volume bitrot <VOLNAME> enable
 sudo gluster volume bitrot <VOLNAME> scrub-throttle lazy
