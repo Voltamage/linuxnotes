@@ -23,5 +23,7 @@ echo ""
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking shell]${normal}"
 awk -F: -v user="$USER" '$1 == user {print $NF}' /etc/passwd
+
+echo ""
 echo "${bold}[DONE]${normal}"
 zsh
