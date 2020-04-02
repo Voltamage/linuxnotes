@@ -43,6 +43,7 @@ echo "${bold}[Review fstab]${normal}"
 cat /etc/fstab
 read -p "Press any key to continue..." -n1 -s
 echo ""
+
 echo ""
 echo "${bold}[Review filesystem]${normal}"
 read -p "Press any key to continue..." -n1 -s
