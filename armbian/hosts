@@ -2,10 +2,9 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-echo "${bold}[BACKING UP HOSTS FILE]${normal}"
+echo "${bold}[APPENDING HOSTS]${normal}"
 sudo cp /etc/hosts /etc/hosts.bak
 cp /etc/hosts /tmp/hosts
-echo "${bold}[APPENDING HOSTS]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/hosts_append -# >> /tmp/hosts
 sudo mv /tmp/hosts /etc/hosts
 
