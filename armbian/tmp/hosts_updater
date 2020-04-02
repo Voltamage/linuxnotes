@@ -3,8 +3,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 echo "${bold}[UPDATING HOSTS]${normal}"
-sudo cp /etc/hosts.bak /etc/hosts
-cp /etc/hosts /tmp/hosts
+cp /etc/hosts.bak /tmp/hosts
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/hosts -# >> /tmp/hosts
 sudo mv /tmp/hosts /etc/hosts
 
