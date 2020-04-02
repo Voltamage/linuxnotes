@@ -20,7 +20,7 @@ sudo systemctl enable --now glusterd.service
 echo ""
 echo "${bold}[GLUSTERFS]${normal}"
 echo "${bold}[Formatting filesystem]${normal}"
-dd if=/dev/zero of=/dev/sda bs=512 count=1
+sudo dd if=/dev/zero of=/dev/sda bs=512 count=1
 sudo pvcreate /dev/sda
 sudo vgcreate gluster /dev/sda
 sudo lvcreate --thin gluster/brick --extents 100%FREE --poolmetadatasize 16GB --zero n
