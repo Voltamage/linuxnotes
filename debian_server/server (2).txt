@@ -1,16 +1,67 @@
+When using hostnames, the first server needs to be probed from one other server to set its hostname.
+
 sudo glusterfs --version
-sudo gluster peer probe $SERVERNAME
+$SERVER1: sudo gluster peer probe $SERVER2
+$SERVER2: sudo gluster peer probe $SERVER1
+$SERVER1: sudo gluster peer status
+$SERVER2: sudo gluster peer status
 sudo gluster peer status
 sudo gluster pool list
-sudo gluster volume create $VOLUMENAME replica 2 transport tcp $SERVERNAME1:/mnt/$VOLUMENAME/brick $SERVERNAME2:/mnt/$VOLUMENAME/brick
+
+sudo gluster volume create $VOLUMENAME replica 2 $SERVERNAME1:/mnt/gluster/brick $SERVERNAME2:/mnt/gluster/brick
 sudo gluster volume info
-sudo gluster volume start $VOLUMENAME
+sudo gluster volume start
 
 sudo gluster volume bitrot $VOLUMENAME enable
 sudo gluster volume bitrot $VOLUMENAME scrub-throttle lazy
 sudo gluster volume bitrot $VOLUMENAME scrub-frequency daily
 sudo gluster volume set $VOLUMENAME features.trash on
 sudo gluster volume set $VOLUMENAME features.trash-internal-op on
+
+
+transport tcp?
+
+Configure Firewall
+
+For the Gluster to communicate within a cluster either the firewalls have to be turned off or enable communication for each server.
+
+# iptables -I INPUT -p all -s `<ip-address>` -j ACCEPT
+
+
+For this step, we will use one of the servers to mount the volume. Typically, you would do this from an external machine, known as a "client". Since using this method would require additional packages to be installed on the client machine, we will use one of the servers as a simple place to test first , as if it were that "client".
+
+# mount -t glusterfs server1:/gv0 /mnt
+# for i in `seq -w 1 100`; do cp -rp /var/log/messages /mnt/copy-test-$i; done
+
+First, check the client mount point:
+
+# ls -lA /mnt/copy* | wc -l
+
+You should see 100 files returned. Next, check the GlusterFS brick mount points on each server:
+
+is debian glusterfs too old
+
+# ls -lA /data/brick1/gv0/copy*
+
+You should see 100 files on each server using the method we listed here. Without replication, in a distribute only volume (not detailed here), you should see about 33 files on each one.
+For this step, we will use one of the servers to mount the volume. Typically, you would do this from an external machine, known as a "client". Since using this method would require additional packages to be installed on the client machine, we will use one of the servers as a simple place to test first , as if it were that "client".
+
+# mount -t glusterfs server1:/gv0 /mnt
+# for i in `seq -w 1 100`; do cp -rp /var/log/messages /mnt/copy-test-$i; done
+
+First, check the client mount point:
+
+# ls -lA /mnt/copy* | wc -l
+
+You should see 100 files returned. Next, check the GlusterFS brick mount points on each server:
+
+# ls -lA /data/brick1/gv0/copy*
+
+You should see 100 files on each server using the method we listed here. Without replication, in a distribute only volume (not detailed here), you should see about 33 files on each one.
+
+For this test, if you do not have DNS set up, you can get away with using /etc/hosts entries for the two nodes. However, when you move from this basic setup to using Gluster in production, correct DNS entries (forward and reverse) and NTP are essential.
+
+Firewalls are great, except when they aren’t. For storage servers, being able to operate in a trusted environment without firewalls can mean huge gains in performance, and is recommended. In case you absolutely need to set up a firewall, have a look at Setting up clients for information on the ports used.
 
 CLIENT
 sudo modprobe fuse
