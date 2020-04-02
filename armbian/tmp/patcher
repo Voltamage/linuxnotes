@@ -4,4 +4,6 @@ normal=$(tput sgr0)
 
 echo "${bold}[PATCH CHECK]${normal}"
 echo "No patch available"
+read -p "Press any key to continue..." -n1 -s
+echo ""
 echo ""
