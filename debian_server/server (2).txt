@@ -5,7 +5,6 @@ $SERVER1: sudo gluster peer probe $SERVER2
 $SERVER2: sudo gluster peer probe $SERVER1
 $SERVER1: sudo gluster peer status
 $SERVER2: sudo gluster peer status
-sudo gluster peer status
 sudo gluster pool list
 
 sudo gluster volume create $VOLUMENAME replica 2 $SERVERNAME1:/mnt/gluster/brick $SERVERNAME2:/mnt/gluster/brick
