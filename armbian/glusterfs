@@ -2,6 +2,11 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+sudo apt-get -y install acl glusterfs-server rpcbind xfsprogs
+
+echo "${bold}[Configuring GLUSTERD SERVICE]${normal}"
+sudo systemctl enable --now glusterd.service
+
 echo "${bold}[GLUSTERFS]${normal}"
 echo "${bold}[Formatting filesystem]${normal}"
 dd if=/dev/zero of=/dev/sda bs=512 count=1
