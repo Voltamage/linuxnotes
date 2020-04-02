@@ -78,7 +78,6 @@ echo "${bold}[Configuring vim]${normal}"
 echo "SELECTED_EDITOR="/usr/bin/vim.basic"" > ~/.selected_editor
 sudo cp ~/.selected_editor /root
 echo "${bold}[Configuring .pkglist]${normal}"
-curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/packages -# >> ~/.zsh_history
 comm -12 <(grep 'sudo apt-get install' ~/.zsh_history | sed '/|/d' | awk '{$1=$2=$3=$4=""; print $0}' | sed s/\\s/\\n/g | sort -n) <(dpkg --list | awk '{print $2}' | sed 's/:armhf//' | sort -n) | sed '/^$/d' > ~/.pkglist
 
 echo ""
