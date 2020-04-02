@@ -34,7 +34,7 @@ personal>hostname>$NEWHOSTNAME
 network>IP>static>$NEWIP  
 (may have to relogin ssh connection)  
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/hosts)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/post_configure)"
 sudo armbian-config
 ```  
 system>DTB>hc1>reboot  
