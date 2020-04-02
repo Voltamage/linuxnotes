@@ -7,6 +7,7 @@ echo "${bold}[Installing PLUGINS]${normal}"
 echo "${bold}[Installing zsh-autosuggestions]${normal}"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+echo ""
 echo "${bold}[CONFIGURING]${normal}"
 echo "${bold}[Configuring scripts folder]${normal}"
 mkdir ~/scripts
@@ -16,6 +17,8 @@ sed -i '/ZSH_THEME="/c\ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
 sed -i '/DISABLE_UPDATE_PROMPT/c\DISABLE_UPDATE_PROMPT="true"' ~/.zshrc
 sed -i '/UPDATE_ZSH_DAYS/c\export UPDATE_ZSH_DAYS=1' ~/.zshrc
 sed -i '/plugins=(git)/c\plugins=(git zsh-autosuggestions)' ~/.zshrc
+
+echo ""
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking script folder]${normal}"
 ls ~/ | grep scripts
