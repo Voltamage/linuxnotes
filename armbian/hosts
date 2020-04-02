@@ -2,6 +2,10 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+echo "${bold}[RESTARTING]${normal}"
+echo "${bold}[Restarting smartd.service in case of failure]${normal}"
+sudo systemctl restart smartd.service
+
 echo "${bold}[APPENDING]${normal}"
 echo "${bold}[Appending HOSTS]${normal}"
 sudo cp /etc/hosts /etc/hosts.bak
@@ -16,6 +20,9 @@ rm ~/.zcompdump-odroidxu4*
 
 echo ""
 echo "${bold}[REVIEW]${normal}"
+echo "${bold}[REVIEW]${normal}"
+echo "${bold}[Review critical services]${normal}"
+systemctl --type=service | grep 'smartd'
 echo "${bold}[Review /etc/hosts]${normal}"
 echo "[Hosts]"
 cat /etc/hosts
