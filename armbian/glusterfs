@@ -2,11 +2,19 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[Installing prerequisites]${normal}"
 sudo apt-get -y install acl glusterfs-server rpcbind xfsprogs
+echo ": sudo apt-get install acl glusterfs-server rpcbind xfsprogs" >> ~/.zsh_history
+echo "${bold}[Updating .pkglist]${normal}"
+comm -12 <(grep 'sudo apt-get install' ~/.zsh_history | sed '/|/d' | awk '{$1=$2=$3=$4=""; print $0}' | sed s/\\s/\\n/g | sort -n) <(dpkg --list | awk '{print $2}' | sed 's/:armhf//' | sort -n) | sed '/^$/d' > ~/.pkglist
 
+echo ""
+echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Configuring GLUSTERD SERVICE]${normal}"
 sudo systemctl enable --now glusterd.service
 
+echo ""
 echo "${bold}[GLUSTERFS]${normal}"
 echo "${bold}[Formatting filesystem]${normal}"
 dd if=/dev/zero of=/dev/sda bs=512 count=1
@@ -22,14 +30,19 @@ echo "/dev/gluster/brick /mnt/gluster xfs rw,inode64,noatime,nouuid 0 2" >> /tmp
 sudo mv /tmp/fstab /etc/fstab
 sudo mount -av
 
+echo ""
+echo "${bold}[REVIEW]${normal}"
 echo "${bold}[Review critical services]${normal}"
 systemctl --type=service | grep 'rpcbind\|glusterd'
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review fstab]${normal}"
 cat /etc/fstab
+read -p "Press any key to continue..." -n1 -s
+echo ""
 
 echo ""
+echo "${bold}[REVIEW]${normal}"
 echo "${bold}[Review filesystem]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
@@ -43,3 +56,5 @@ read -p "Press any key to continue..." -n1 -s
 echo ""
 cat <(echo "[Physical volumes]") <(sudo pvdisplay) <(echo "[Volume groups]") <(sudo vgdisplay) <(echo "[Logical volumes]") <(sudo lvdisplay) <(echo "[Metadata]") <(sudo lvs -o+metadata_percent) | less
 
+echo ""
+echo "${bold}[DONE]${normal}"
