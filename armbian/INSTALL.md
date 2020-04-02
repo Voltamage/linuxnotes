@@ -38,5 +38,6 @@ sudo armbian-config
 ```  
 system>DTB>hc1>reboot  
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/system_configure)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/hosts)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/glusterfs)"
 ```
