@@ -17,6 +17,13 @@ echo "${bold}[Updating powerlevel10k]${normal}"
 git -C ~/.oh-my-zsh/custom/themes/powerlevel10k pull
 echo "${bold}[Updating zsh-autosuggestions]${normal}"
 git -C ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions pull
+echo "${bold}[Updating CONFIGS]${normal}"
+echo "${bold}[Updating aria2]${normal}"
+mkdir -p ~/.config/aria2
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/aria2/aria2.conf > ~/.config/aria2/aria2.conf -#
+echo "${bold}[Updating neofetch]${normal}"
+mkdir -p ~/.config/neofetch
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
 echo "${bold}[Updating SCRIPTS]${normal}"
 echo "${bold}[Updating fnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
