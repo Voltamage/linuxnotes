@@ -55,4 +55,9 @@ echo ""
 cat <(echo "[Physical volumes]") <(sudo pvdisplay) <(echo "[Volume groups]") <(sudo vgdisplay) <(echo "[Logical volumes]") <(sudo lvdisplay) <(echo "[Metadata]") <(sudo lvs -o+metadata_percent) | less
 
 echo ""
+echo "${bold}[POSTCHECKING]${normal}"
+echo "${bold}[Checking reboot]${normal}"
+sudo needrestart
+
+echo ""
 echo "${bold}[DONE]${normal}"
