@@ -101,7 +101,7 @@ cat /lib/systemd/system-shutdown/odroid.shutdown
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review critical services]${normal}"
-systemctl --type=service | grep 'docker'
+systemctl --type=service | grep 'docker\|smartd'
 read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review aria2]${normal}"
