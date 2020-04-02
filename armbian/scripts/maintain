@@ -11,7 +11,7 @@ timedatectl status | grep 'Local time\|Time zone\|synchronized\|NTP'
 echo "${bold}[Aliases]${normal}"
 cat ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Critical services]${normal}"
-systemctl --type=service | grep 'docker\|glusterd\|rpcbind\|smartd'
+systemctl --type=service | grep 'docker\|glusterd\|lvm2-monitor\|rpcbind\|smartd'
 echo "${bold}[Failed services]${normal}"
 systemctl --failed
 echo "${bold}[Orphaned configs]${normal}"
