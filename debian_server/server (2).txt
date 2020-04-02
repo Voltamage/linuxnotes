@@ -64,9 +64,9 @@ CLIENT
 yay -S glusterfs OR sudo apt-get install glusterfs-client
 sudo modprobe fuse
 dmesg | grep -i fuse
-mkdir /mnt/$SERVERNAME
-add to /etc/fstab
-$SERVERNAME1:/$VOLUMENAME /mnt/$SERVERNAME glusterfs defaults,_netdev 0 0
+sudo mkdir $MOUNTPOINT
+	add to /etc/fstab:
+$SERVERNAME1:/$VOLUMENAME $MOUNTPOINT glusterfs defaults,_netdev 0 0
 sudo mount -a
 mount | grep glusterfs
 df -h
