@@ -123,6 +123,10 @@ echo "[User]"
 cat ~/.selected_editor
 read -p "Press any key to continue..." -n1 -s
 echo ""
+echo "${bold}[Review .zshrc]${normal}"
+cat <(cat ~/.zshrc | sed -e '/#/d' -e '/^$/d')
+read -p "Press any key to continue..." -n1 -s
+echo ""
 echo "${bold}[Review aliases]${normal}"
 cat ~/.oh-my-zsh/custom/aliases.zsh
 
