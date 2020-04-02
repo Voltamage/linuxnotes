@@ -1,0 +1,20 @@
+#!/bin/bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+echo "${bold}[APPENDING HOSTS]${normal}"
+sudo cp /etc/hosts /etc/hosts.bak
+cp /etc/hosts /tmp/hosts
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/hosts -# >> /tmp/hosts
+sudo mv /tmp/hosts /etc/hosts
+
+echo ""
+echo "${bold}[REVIEW]${normal}"
+echo "${bold}[Review /etc/hosts]${normal}"
+
+echo ""
+echo "[Hosts]"
+cat /etc/hosts
+
+echo ""
+echo "${bold}[DONE]${normal}"
