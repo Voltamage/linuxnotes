@@ -19,10 +19,10 @@ sed -i '/UPDATE_ZSH_DAYS/c\export UPDATE_ZSH_DAYS=1' ~/.zshrc
 sed -i '/plugins=(git)/c\plugins=(git zsh-autosuggestions)' ~/.zshrc
 
 echo ""
-echo "${bold}[POSTCHECKING]${normal}"
-echo "${bold}[Checking script folder]${normal}"
+echo "${bold}[REVIEW]${normal}"
+echo "${bold}[Review script folder]${normal}"
 ls ~/ | grep scripts
-echo "${bold}[Checking .zshrc]${normal}"
+echo "${bold}[Review .zshrc]${normal}"
 cat <(cat ~/.zshrc | sed -e '/#/d' -e '/^$/d')
 read -p "Press any key to continue..." -n1 -s
 echo ""
