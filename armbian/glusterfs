@@ -45,10 +45,6 @@ read -p "Press any key to continue..." -n1 -s
 echo ""
 
 echo ""
-echo "${bold}[Review filesystem]${normal}"
-read -p "Press any key to continue..." -n1 -s
-echo ""
-cat <(echo "[user folder]") <(ls -la ~/) <(echo "") <(echo "[scripts folder]") <(ls -la ~/scripts) <(echo "") <(echo "[root folder]") <(sudo ls -la /root) <(echo "") <(echo "[tmp folder]") <(ls -la /tmp) <(echo "") | less
 echo "${bold}[Review mounts]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
