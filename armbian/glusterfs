@@ -28,5 +28,18 @@ read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review fstab]${normal}"
 cat /etc/fstab
+
+echo ""
+echo "${bold}[Review filesystem]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
+cat <(echo "[user folder]") <(ls -la ~/) <(echo "") <(echo "[scripts folder]") <(ls -la ~/scripts) <(echo "") <(echo "[root folder]") <(sudo ls -la /root) <(echo "") <(echo "[tmp folder]") <(ls -la /tmp) <(echo "") | less
+echo "${bold}[Review mounts]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+cat <(echo "[Mounts]") <(lsblk) <(echo "") <(echo "[Usage]") <(df -h) | less
+echo "${bold}[Review LVM]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+cat <(echo "[Physical volumes]") <(sudo pvdisplay) <(echo "[Volume groups]") <(sudo vgdisplay) <(echo "[Logical volumes]") <(sudo lvdisplay) <(echo "[Metadata]") <(sudo lvs -o+metadata_percent) | less
+
