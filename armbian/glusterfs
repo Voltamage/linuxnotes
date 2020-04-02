@@ -4,13 +4,16 @@ normal=$(tput sgr0)
 
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing prerequisites]${normal}"
-sudo apt-get -y install acl glusterfs-server rpcbind xfsprogs
-echo ": sudo apt-get install acl glusterfs-server rpcbind xfsprogs" >> ~/.zsh_history
+sudo apt-get -y install acl glusterfs-server lvm2 rpcbind xfsprogs
+echo ": sudo apt-get install acl glusterfs-server lvm2 rpcbind xfsprogs" >> ~/.zsh_history
+
+echo ""
+echo "${bold}[UPDATING]${normal}"
 echo "${bold}[Updating .pkglist]${normal}"
 comm -12 <(grep 'sudo apt-get install' ~/.zsh_history | sed '/|/d' | awk '{$1=$2=$3=$4=""; print $0}' | sed s/\\s/\\n/g | sort -n) <(dpkg --list | awk '{print $2}' | sed 's/:armhf//' | sort -n) | sed '/^$/d' > ~/.pkglist
 
 echo ""
-echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[CONFIGURING]${normal}"
 echo "${bold}[Configuring GLUSTERD SERVICE]${normal}"
 sudo systemctl enable --now glusterd.service
 
