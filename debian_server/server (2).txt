@@ -18,9 +18,6 @@ sudo gluster volume bitrot $VOLUMENAME scrub-frequency daily
 sudo gluster volume set $VOLUMENAME features.trash on
 sudo gluster volume set $VOLUMENAME features.trash-internal-op on
 
-
-transport tcp?
-
 Configure Firewall
 
 For the Gluster to communicate within a cluster either the firewalls have to be turned off or enable communication for each server.
