@@ -10,8 +10,6 @@ sudo mv /tmp/hosts /etc/hosts
 echo ""
 echo "${bold}[REVIEW]${normal}"
 echo "${bold}[Review /etc/hosts]${normal}"
-
-echo ""
 echo "[Hosts]"
 cat /etc/hosts
 
