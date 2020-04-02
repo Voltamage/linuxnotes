@@ -7,7 +7,7 @@ cat /etc/debian_version
 echo "${bold}[Installed kernels]${normal}"
 dpkg --list | grep linux-image
 echo "${bold}[Time]${normal}"
-timedatectl status | grep 'Time zone\|synchronized\|NTP'
+timedatectl status | grep 'Local time\|Time zone\|synchronized\|NTP'
 echo "${bold}[Aliases]${normal}"
 cat ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Critical services]${normal}"
