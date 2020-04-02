@@ -123,6 +123,7 @@ sudo gluster volume create oceanus replica 2 transport tcp oceanus01:/data/glust
 			  tmux ls
 			  tmux attach -t transfer
 msrsync --processes 16 --buckets ~/buckets --show --progress --stats --dry-run --rsync "--archive --xattrs" ~/old ~/server/old
+msrsync --processes 16 --show --progress --stats --dry-run --rsync "--archive --xattrs" ~/downloads ~/media/oceanus/test
 
 find ~/what/u/want/ -type f -print0 | xargs -0 mv -t ~/where/u/want
 perl-rename 's/oldshit/newshit/' **
