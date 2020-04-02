@@ -18,6 +18,7 @@ systemctl --failed
 echo "${bold}[Orphaned configs]${normal}"
 dpkg --list | grep '^rc '
 
+echo ""
 echo "${bold}[Sources]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
