@@ -1,4 +1,3 @@
-alias aliases='cat ~/.oh-my-zsh/custom/aliases.zsh'
 alias diskhealth='sudo smartctl -i /dev/sda && sudo smartctl -A /dev/sda'
 alias iplist='nmap -sP 192.168.2.1/24'
 alias mntdu='sudo ncdu /mnt'
