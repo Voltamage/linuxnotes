@@ -15,7 +15,7 @@ echo ""
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing PACKAGES]${normal}"
 sudo apt-get -y install aria2 armbian-config docker-ce docker-ce-cli docker-compose file hdparm htop iotop man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rsync smartmontools sshfs tmux vim
-echo ": sudo apt-get install aria2 armbian-config docker-ce docker-ce-cli docker-compose hdparm htop iotop mediainfo ncdu needrestart neofetch nload nmap ranger rsync smartmontools sshfs tmux vim" >> ~/.zsh_history
+echo ": sudo apt-get install aria2 armbian-config docker-ce docker-ce-cli docker-compose file hdparm htop iotop man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rsync smartmontools sshfs tmux vim" >> ~/.zsh_history
 
 echo ""
 echo "${bold}[Updating SYSTEM]${normal}"
