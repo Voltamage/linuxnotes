@@ -125,6 +125,8 @@ read -p "Press any key to continue..." -n1 -s
 echo ""
 echo "${bold}[Review aliases]${normal}"
 cat ~/.oh-my-zsh/custom/aliases.zsh
+
+echo ""
 echo "${bold}[Review .pkglist]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
