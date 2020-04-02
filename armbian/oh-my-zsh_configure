@@ -3,6 +3,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 echo "${bold}[INSTALLING]${normal}"
+echo "${bold}[Installing PLUGINS]${normal}"
 echo "${bold}[Installing zsh-autosuggestions]${normal}"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
