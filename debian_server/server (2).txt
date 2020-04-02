@@ -10,7 +10,7 @@ sudo gluster pool list
 
 sudo gluster volume create $VOLUMENAME replica 2 $SERVERNAME1:/mnt/gluster/brick $SERVERNAME2:/mnt/gluster/brick
 sudo gluster volume info
-sudo gluster volume start
+sudo gluster volume start $VOLUMENAME
 
 sudo gluster volume bitrot $VOLUMENAME enable
 sudo gluster volume bitrot $VOLUMENAME scrub-throttle lazy
@@ -62,10 +62,11 @@ Firewalls are great, except when they aren’t. For storage servers, being able 
 
 CLIENT
 sudo modprobe fuse
-mkdir ~/server
-(In fstab)
-$SERVERNAME1:/$VOLUMENAME /home/$USER/server glusterfs defaults,_netdev 0 0
-(REBOOT)
+dmesg | grep -i fuse
+mkdir /mnt/$SERVERNAME
+add to /etc/fstab
+$SERVERNAME1:/$VOLUMENAME /mnt/$SERVERNAME glusterfs defaults,_netdev 0 0
+sudo mount -a
 df -h
 
 ADDING BRICKS
