@@ -11,13 +11,16 @@ sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/debi
 sudo sed -i -e '/deb-src/d' -e '/^$/d' /etc/apt/sources.list
 sudo apt-get update
 
+echo ""
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing PACKAGES]${normal}"
 sudo apt-get -y install acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux vim xfsprogs
 
+echo ""
 echo "${bold}[Updating SYSTEM]${normal}"
 sudo apt-get -y dist-upgrade
 
+echo ""
 echo "${bold}[Installing SCRIPTS]${normal}"
 echo "${bold}[Installing fnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
@@ -41,6 +44,7 @@ sudo chmod u+x ~/scripts/update
 echo "${bold}[Installing ALIASES]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.oh-my-zsh/custom/aliases.zsh > ~/.oh-my-zsh/custom/aliases.zsh -#
 
+echo ""
 echo "${bold}[CLEANING]${normal}"
 echo "${bold}[Cleaning orphaned packages]${normal}"
 sudo apt-get autoremove --purge
@@ -53,6 +57,7 @@ rm -rf ~/.lesshst
 rm -rf ~/.wget-hsts
 /home/$USER/scripts/rmshit.py
 
+echo ""
 echo "${bold}[CONFIGURING]${normal}"
 echo "${bold}[Configuring TIMEZONE]${normal}"
 sudo timedatectl set-timezone America/Los_Angeles
@@ -95,6 +100,7 @@ echo "/dev/gluster/brick /mnt/gluster xfs rw,inode64,noatime,nouuid 0 2" >> /tmp
 sudo mv /tmp/fstab /etc/fstab
 sudo mount -av
 
+echo ""
 echo "${bold}[REVIEW]${normal}"
 echo "${bold}[Review sources]${normal}"
 cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list
@@ -158,6 +164,7 @@ read -p "Press any key to continue..." -n1 -s
 echo ""
 cat <(echo "[Physical volumes]") <(sudo pvdisplay) <(echo "[Volume groups]") <(sudo vgdisplay) <(echo "[Logical volumes]") <(sudo lvdisplay) <(echo "[Metadata]") <(sudo lvs -o+metadata_percent) | less
 
+echo ""
 echo "${bold}[POSTCHECKING]${normal}"
 echo "${bold}[Checking reboot]${normal}"
 sudo needrestart
