@@ -14,7 +14,7 @@ sudo apt-get update
 echo ""
 echo "${bold}[INSTALLING]${normal}"
 echo "${bold}[Installing PACKAGES]${normal}"
-sudo apt-get -y install acl aria2 armbian-config docker-ce docker-ce-cli docker-compose file glusterfs-server hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rpcbind rsync smartmontools sshfs tmux vim xfsprogs
+sudo apt-get -y install aria2 armbian-config docker-ce docker-ce-cli docker-compose file hdparm htop iotop lvm2 man-db mediainfo ncdu needrestart neofetch nload nmap python ranger rsync smartmontools sshfs tmux vim
 
 echo ""
 echo "${bold}[Updating SYSTEM]${normal}"
@@ -63,8 +63,6 @@ echo "${bold}[Configuring DISK SHUTDOWN]${normal}"
 curl https://dn.odroid.com/5422/script/odroid.shutdown > /tmp/odroid.shutdown -#
 sudo install -o root -g root -m 0755 /tmp/odroid.shutdown /lib/systemd/system-shutdown/odroid.shutdown
 rm /tmp/odroid.shutdown
-echo "${bold}[Configuring GLUSTERD SERVICE]${normal}"
-sudo systemctl enable --now glusterd.service
 echo "${bold}[Configuring PACKAGES]${normal}"
 echo "${bold}[Configuring aria2]${normal}"
 mkdir ~/.config/aria2
@@ -81,21 +79,6 @@ sudo cp ~/.selected_editor /root
 echo "${bold}[Configuring .pkglist]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/packages -# >> ~/.zsh_history
 comm -12 <(grep 'sudo apt-get install' ~/.zsh_history | sed '/|/d' | awk '{$1=$2=$3=$4=""; print $0}' | sed s/\\s/\\n/g | sort -n) <(dpkg --list | awk '{print $2}' | sed 's/:armhf//' | sort -n) | sed '/^$/d' > ~/.pkglist
-
-echo "${bold}[GLUSTERFS]${normal}"
-echo "${bold}[Formatting filesystem]${normal}"
-dd if=/dev/zero of=/dev/sda bs=512 count=1
-sudo pvcreate /dev/sda
-sudo vgcreate gluster /dev/sda
-sudo lvcreate --thin gluster/brick --extents 100%FREE --poolmetadatasize 16GB --zero n
-sudo mkfs.xfs -f -i size=512 -n size=8192 /dev/gluster/brick
-echo "${bold}[Mounting filesystem]${normal}"
-sudo mkdir /mnt/gluster
-sudo cp /etc/fstab /etc/fstab.bak
-cp /etc/fstab /tmp/fstab
-echo "/dev/gluster/brick /mnt/gluster xfs rw,inode64,noatime,nouuid 0 2" >> /tmp/fstab
-sudo mv /tmp/fstab /etc/fstab
-sudo mount -av
 
 echo ""
 echo "${bold}[REVIEW]${normal}"
