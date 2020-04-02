@@ -131,6 +131,10 @@ echo "${bold}[Review .pkglist]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 less ~/.pkglist
+echo "${bold}[Review filesystem]${normal}"
+read -p "Press any key to continue..." -n1 -s
+echo ""
+cat <(echo "[user folder]") <(ls -la ~/) <(echo "") <(echo "[scripts folder]") <(ls -la ~/scripts) <(echo "") <(echo "[root folder]") <(sudo ls -la /root) <(echo "") <(echo "[tmp folder]") <(ls -la /tmp) <(echo "") | less
 
 echo ""
 echo "${bold}[POSTCHECKING]${normal}"
