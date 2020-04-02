@@ -60,6 +60,16 @@ For this test, if you do not have DNS set up, you can get away with using /etc/h
 
 Firewalls are great, except when they aren’t. For storage servers, being able to operate in a trusted environment without firewalls can mean huge gains in performance, and is recommended. In case you absolutely need to set up a firewall, have a look at Setting up clients for information on the ports used.
 
+sudo gluster volume rebalance <volname> fix-layout start
+sudo gluster volume rebalance <volume> start
+sudo gluster volume rebalance <VOLNAME> start force
+sudo gluster volume rebalance <VOLNAME> status
+sudo gluster volume rebalance <VOLNAME> stop
+
+sudo gluster volume remove-brick <VOLNAME> <BRICKNAME> start
+sudo gluster volume remove-brick <VOLNAME> <BRICKNAME> status
+sudo gluster volume remove-brick <VOLNAME> <BRICKNAME> commit
+sudo gluster volume info
 CLIENT
 yay -S glusterfs OR sudo apt-get install glusterfs-client
 sudo modprobe fuse
@@ -73,8 +83,8 @@ df -h
 
 ADDING BRICKS
 sudo gluster peer probe $NEWSERVERNAME
-sudo gluster volume add-brick $VOLUMENAME $NEWSERVERNAME1:/data/glusterfs/$VOLUMENAME/brick01/brick $NEWSERVERNAME2:/data/glusterfs/$VOLUMENAME/brick01/brick
-sudo gluster volume info
+sudo gluster volume add-brick $VOLUMENAME $NEWSERVERNAME1:/mnt/gluster/brick $NEWSERVERNAME2:/mnt/gluster/brick
+sudo gluster volume info $VOLUMENAME
 sudo gluster volume status
 
 REBALANCING
