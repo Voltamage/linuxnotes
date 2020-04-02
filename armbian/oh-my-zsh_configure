@@ -26,5 +26,7 @@ echo "${bold}[Checking .zshrc]${normal}"
 cat <(cat ~/.zshrc | sed -e '/#/d' -e '/^$/d')
 read -p "Press any key to continue..." -n1 -s
 echo ""
+
+echo ""
 echo "${bold}[DONE]${normal}"
 exec zsh
