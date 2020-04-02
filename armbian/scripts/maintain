@@ -30,10 +30,10 @@ echo "${bold}[ZSH configuration]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 cat <(cat ~/.zshrc | sed -e '/#/d' -e '/^$/d') | less
-echo "${bold}[Disk usage]${normal}"
+echo "${bold}[Filesystem]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
-df -h | less
+cat <(echo "[Mounts]") <(lsblk) <(echo "") <(echo "[Usage]") <(df -h) | less
 echo "${bold}[LVM statistics]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
