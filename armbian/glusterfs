@@ -1,0 +1,18 @@
+#!/bin/bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+echo "${bold}[GLUSTERFS]${normal}"
+echo "${bold}[Formatting filesystem]${normal}"
+dd if=/dev/zero of=/dev/sda bs=512 count=1
+sudo pvcreate /dev/sda
+sudo vgcreate gluster /dev/sda
+sudo lvcreate --thin gluster/brick --extents 100%FREE --poolmetadatasize 16GB --zero n
+sudo mkfs.xfs -f -i size=512 -n size=8192 /dev/gluster/brick
+echo "${bold}[Mounting filesystem]${normal}"
+sudo mkdir /mnt/gluster
+sudo cp /etc/fstab /etc/fstab.bak
+cp /etc/fstab /tmp/fstab
+echo "/dev/gluster/brick /mnt/gluster xfs rw,inode64,noatime,nouuid 0 2" >> /tmp/fstab
+sudo mv /tmp/fstab /etc/fstab
+sudo mount -av
