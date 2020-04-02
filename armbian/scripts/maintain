@@ -26,7 +26,7 @@ echo "${bold}[Packages]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 comm -12 <(grep 'sudo apt-get install' ~/.zsh_history | sed '/|/d' | awk '{$1=$2=$3=$4=""; print $0}' | sed s/\\s/\\n/g | sort -n) <(dpkg --list | awk '{print $2}' | sed 's/:amd64//' | sort -n) | sed '/^$/d' > ~/.pkglist
-cat ~/.pkglist
+less ~/.pkglist
 echo "${bold}[Network configuration]${normal}"
 read -p "Press any key to continue..." -n1 -s
 echo ""
