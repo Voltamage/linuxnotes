@@ -1,2 +1,2 @@
 --verbose#!/bin/sh
-sudo /home/$USER/scripts/msrsync --processes 16 --show --progress --stats --rsync "--acls --archive --block-size=131072 --compress --executability --fake-super --partial --recursive --xattrs" $1 $2
+sudo /home/$USER/scripts/msrsync --processes 16 --show --progress --stats --rsync "--acls --archive --block-size=131072 --executability --fake-super --partial --recursive --xattrs" $1 $2
