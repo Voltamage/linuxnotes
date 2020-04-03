@@ -25,6 +25,9 @@ echo "${bold}[Updating neofetch]${normal}"
 mkdir -p ~/.config/neofetch
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/.config/neofetch/config.conf > ~/.config/neofetch/config.conf -#
 echo "${bold}[Updating SCRIPTS]${normal}"
+echo "${bold}[Updating brsync]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/brsync > ~/scripts/brsync -#
+sudo chmod u+x ~/scripts/brsync
 echo "${bold}[Updating fnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
 sudo chmod u+x ~/scripts/fnd
