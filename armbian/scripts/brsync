@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo /home/$USER/scripts/msrsync --processes 16 --show --progress --stats --rsync "--archive --xattrs" $1 $2
+sudo /home/$USER/scripts/msrsync --processes 16 --show --progress --stats --rsync "--archive --rsync-path="sudo rsync" --xattrs" $1 $2
