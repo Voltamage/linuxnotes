@@ -24,6 +24,9 @@ sudo apt-get -y dist-upgrade
 
 echo ""
 echo "${bold}[Installing SCRIPTS]${normal}"
+echo "${bold}[Installing brsync]${normal}"
+curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/brsync > ~/scripts/brsync -#
+sudo chmod u+x ~/scripts/brsync
 echo "${bold}[Installing fnd]${normal}"
 curl https://raw.githubusercontent.com/voltamage/notes/master/armbian/scripts/fnd > ~/scripts/fnd -#
 sudo chmod u+x ~/scripts/fnd
