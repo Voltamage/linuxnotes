@@ -8,6 +8,8 @@ echo "${bold}[Installed kernels]${normal}"
 dpkg --list | grep linux-image
 echo "${bold}[Time]${normal}"
 timedatectl status | grep 'Local time\|Time zone\|synchronized\|NTP'
+echo "${bold}[Local IP]${normal}"
+hostname -i | awk '{print $NF}'
 echo "${bold}[Aliases]${normal}"
 cat ~/.oh-my-zsh/custom/aliases.zsh
 echo "${bold}[Critical services]${normal}"
