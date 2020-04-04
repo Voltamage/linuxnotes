@@ -1,4 +1,4 @@
-alias crsync='sudo rsync --acls --archive --block-size=131072 --partial --recursive --xattrs'
+alias crsync='sudo rsync --acls --archive --block-size=131072 --partial --progress --recursive --stats --verbose --xattrs'
 alias diskhealth='sudo smartctl -i /dev/sda && sudo smartctl -A /dev/sda'
 alias glusterc='sudo ls -la -R /mnt/gluster | wc -l'
 alias hostsupdate='bash -c "$(curl -fsSL https://raw.githubusercontent.com/voltamage/notes/master/armbian/tmp/hosts_updater)"'
