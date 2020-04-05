@@ -4,33 +4,34 @@ normal=$(tput sgr0)
 
 echo "${bold}[PATCH CHECK]${normal}"
 #echo "No patch available"
-echo "Testing sources update"
+echo "Sources update"
 read -p "Press any key to continue..." -n1 -s
 echo ""
 
-#echo ""
-#echo "${bold}[Adding glusterfs key]${normal}"
-#curl -fsSL https://download.gluster.org/pub/gluster/glusterfs/7/rsa.pub | sudo apt-key add -
+echo ""
+echo "${bold}[Adding glusterfs key]${normal}"
+curl -fsSL https://download.gluster.org/pub/gluster/glusterfs/7/rsa.pub | sudo apt-key add -
 
 echo ""
 echo "${bold}[Patching glusterfs]${normal}"
 DEBID=$(grep 'VERSION_ID=' /etc/os-release | cut -d '=' -f 2 | tr -d '"')
 echo "deb https://download.gluster.org/pub/gluster/glusterfs/LATEST/Debian/${DEBID}/$(dpkg --print-architecture)/apt $(lsb_release -cs) main" > /tmp/gluster.list
-#sudo mv /tmp/gluster.list /etc/apt/sources.list.d/gluster.list
+sudo mv /tmp/gluster.list /etc/apt/sources.list.d/gluster.list
 
-#echo ""
-#echo "${bold}[Removing docker from main sources.list]${normal}"
-#sudo sed -i '/docker/d' /etc/apt/sources.list
+echo ""
+echo "${bold}[Removing docker from main sources.list]${normal}"
+sudo sed -i '/docker/d' /etc/apt/sources.list
 
 echo ""
 echo "${bold}[Patching docker]${normal}"
 echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /tmp/docker.list
-#sudo mv /etc/apt/sources.list.d/docker.list
-
-#echo ""
-#echo "${bold}[REVIEW]${normal}"
-#echo "${bold}[Review sources]${normal}"
-#cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+sudo mv /etc/apt/sources.list.d/docker.list
 
 echo ""
+echo "${bold}[REVIEW]${normal}"
+echo "${bold}[Review sources]${normal}"
+cat /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+
+echo ""
+echo "${bold}[Manually check all sources, update, and apply dist-upgrade]${normal}"
 echo "${bold}[DONE]${normal}"
