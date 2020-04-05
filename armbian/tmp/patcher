@@ -14,7 +14,6 @@ echo ""
 
 echo ""
 echo "${bold}[Patching glusterfs]${normal}"
-curl -fsSL https://download.gluster.org/pub/gluster/glusterfs/7/rsa.pub | sudo apt-key add -
 DEBID=$(grep 'VERSION_ID=' /etc/os-release | cut -d '=' -f 2 | tr -d '"')
 echo "deb https://download.gluster.org/pub/gluster/glusterfs/LATEST/Debian/${DEBID}/$(dpkg --print-architecture)/apt $(lsb_release -cs) main" > /tmp/gluster.list
 #sudo mv /tmp/gluster.list /etc/apt/sources.list.d/gluster.list
