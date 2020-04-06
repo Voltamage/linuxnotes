@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo /home/$USER/scripts/msrsync --processes 16 --show --progress --stats --rsync "--acls --archive --block-size=131072 --partial --recursive" $1 $2
