@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo find /mnt -iname "*$1*" -print
