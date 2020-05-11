@@ -21,6 +21,7 @@ removed desktop shortcuts
 cmd in administrator mode on taskbar
 set time and date to military time
 powercfg.exe /hibernate off
+turn off auto sleep
 settings/sound/manage sound devices/ disable all that aren't speakers or headphones, set to 70
 settings/gaming/game bar/ disable button and game bar
 settings/gaming/game mode/ off
