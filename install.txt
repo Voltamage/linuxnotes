@@ -1,0 +1,172 @@
+chocolatey
+run in administrative powershell
+needs reboot
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+time
+needs reboot
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation
+New > DWORD (32-bit) = RealTimeIsUniversal = 1
+
+WSL2
+needs reboot
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+install distro from store, dont use microsoft account
+
+small icons, removed everything besides file explorer, sound, clock, and notifications, replace cmd with powershel in menu off
+dark theme for everything
+closed ads on file explorer
+removed desktop shortcuts
+cmd in administrator mode on taskbar
+set time and date to military time
+powercfg.exe /hibernate off
+settings/sound/manage sound devices/ disable all that aren't speakers or headphones, set to 70
+settings/gaming/game bar/ disable button and game bar
+settings/gaming/game mode/ off
+control panel/network and internet/network connections/properties/ipv4 properties
+	ipconfig to check ip address
+	set ip
+	default subnet
+	gateway is router
+	preffered dns is router
+	alternate dns is cloudflare or something, 1.1.1.1 for example
+
+rename windows
+apply updates
+set background and lock screen to placeholder wallpaper
+install meslo fonts for regular user not all
+unpin quick access desktop, documents, pictures, remove music and videos from quick access
+monitor full dynamic range with nvidia control panel
+create C:\Users\volt\games
+delete all desktop icons
+turn on night light
+task manager more details
+turn off use sticky keys shortcut
+
+7zip
+shell context menu
+extract here option only
+
+bitwarden
+clear clipboard 5 minutes
+all tray icon options enabled
+dark theme
+keep in taskbar
+copy shortcut to C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+debian
+95 transparency and underscore cursor, properties and default
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
+discord
+input blue snowball
+disable in-game overlay
+disable desktop notifications, taskbar flashing
+font scaling 18px
+space between message groups 4px
+zoom level 90
+start minimized
+mute message sound
+leave in tray
+
+everything
+no tray icon
+
+explorer
+view hidden items and filename extensions
+
+mullvad
+second interface not discoverable on network
+update mullvad, will direct to internet
+launch on startup
+auto connect
+local network sharing
+block when disconnected
+
+spacesniffer
+admin shortcut in taskbar
+
+mpv.conf goes here
+C:\ProgramData\chocolatey\lib\mpv.install\tools\portable_config\mpv.conf
+set as default video player and music player
+
+spotify
+streaming quality very high
+show unavailable songs in playlists
+dont show announcements or friends activity
+dont autoplay songs
+no automixing
+dont start after turning on pc
+block cookies
+
+star citizen
+disable fullscreen optimizations for the exe
+dont enable foip
+nvidia global
+	Max Frame Rate: 60
+	Power management: Prefer maximum performance
+	Vertical sync: Fast
+game settings
+	cinematic cameras yes
+	show hints no
+	global camera shake no
+graphics
+	fullscreen no
+	quality very high
+	fov 100
+	fullscreen windowed yes
+	chromatic abberation 0
+	film grain no
+audio
+	dynamic range full (default)
+	device optimization headphones (default)
+	play audio when game in background yes
+comms
+	microphone device blue snowball
+	mute microphone no (default)
+	microphone volume 100
+	voip volume 100
+	enable level activated voice transmission yes
+	voice level on threshold -12
+in game
+	bind helmet toggle to [H]
+	cinematic camera for third person wide fov, hit + twice for full effect
+
+steam
+dont show downloading page again, show only ready to play games
+set screenshot to Downloads for temporary, don't display a notification, and save an uncompressed copy
+top right fps counter, high contrast
+dont run steam when my computer starts
+display steam url addr bar when available
+notify me about additions: disabled
+taskbar settings: library, friends, settings, exit steam
+download region: sacramento, la if vpn
+allow downloads during gameplay
+throttle downloads: disabled
+web browser homepage : duckduckgo
+put steam explicitly in taskbar
+
+fsviewer
+make default image viewer
+set theme to dark
+viewer > loop:enable
+viewer > no busy icon in fullscreen:enable
+don't show exit dialogue again
+
+eve
+sign in with non-steam account, pin
+download everything: enable
+Fixed Window
+Invert Zoom Direction
+Set radial menu to middle mouse button
+High Character Texture Quality
+Resource Cache Enabled
+Anti-Aliasing High
+Use Doppler shift for Audio
+Dont auto upload crashes
+dont show daily gifts on login
+dont ask again for logout confirmation
+dont ask for external links
+download evevision installer, and put shortcut in startup, and move taskbar icon to overflow
